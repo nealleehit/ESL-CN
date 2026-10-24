@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -499,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1293,8 +1290,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1629,8 +1626,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1715,8 +1712,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1727,8 +1724,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1811,8 +1808,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1823,8 +1820,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2096,8 +2093,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2108,8 +2105,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2348,8 +2345,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2861,59 +2858,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3032,18 +2981,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3074,30 +3011,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3122,13 +3035,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3194,8 +3107,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3231,13 +3192,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/10-Boosting-and-Additive-Trees/Bibliographic-Notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="1015">10.15 文献笔记<a class="headerlink" href="#1015" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3246,101 +3209,106 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
+<td>发布</td>
 <td>2017-09-05</td>
+</tr>
+<tr>
+<td>更新</td>
+<td>2026-09-22</td>
 </tr>
 </tbody>
 </table>
-<p>Schapire (1990)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>在PAC学习框架（Valiant, 1984<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>; Kearns and Vazirani, 1994<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>）发展了第一个简单的boosting过程。Schapire证明了弱学习器(weak learner)总是可以通过在输入数据流的过滤版本训练两个额外的分类器来提高效果。弱学习器是是产生两类别分类器的算法，该分类器保证了效果回避抛硬币猜测要显著地好。当在前$N$个训练点上学习出初始的分类器$G_1$，</p>
+<p>Schapire (1990)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> 在 PAC 学习框架中 (Valiant, 1984<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>; Kearns and Vazirani, 1994<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>) 发展了第一个简单的boosting 过程．Schapire 证明了 <strong>弱学习器 (weak learners)</strong> 总是可以通过在输入数据流的过滤版本训练两个额外的分类器来提高效果．弱学习器是产生两类别分类器的算法，该分类器保证了效果要显著地比抛硬币的猜测好．当在前 $N$ 个训练点上学习出初始的分类器 $G_1$，</p>
 <ul>
-<li>$G_2$在$N$个点的新样本中学习，其中有一半是被$G_1$误分类的；</li>
-<li>$G_3$在$G_1$和$G_2$都误分类的样本点上学习；</li>
-<li>boosted分类器则为$G_B=majority\; vote(G_1,G_2,G_3)$.</li>
+<li>$G_2$ 在 $N$ 新样本点中学习，其中有一半是被 $G_1$ 误分类的；</li>
+<li>$G_3$ 在 $G_1$ 和 $G_2$ 不一致的 $N$ 个样本点上学习；</li>
+<li>boosted 分类器则为 $G_B=majority\; vote(G_1,G_2,G_3)$.</li>
 </ul>
-<p>Schapire的“Strength of Weak Learnability”定理证明了$G_B$提高了$G_1$的效果。</p>
-<p>Freund (1995)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>提出了“boost by majority”的变体，它同时结合了许多弱分类器并且提高了Schapire简单的boosting算法的效果。<!--这个定理对要求弱分类器以固定误差率产生的分类器的算法都支持。-->这个定理假设弱分类器以固定误差率产生分类器。这导出了更自适应且更实际的AdaBoost（Freund and Schapire, 1996a<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>）以及其衍生算法，在AdaBoost及其衍生算法中去掉了那条假设。Freund and Schapire (1996a)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>和Schapire and Singer (1999)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>提供了一些理论来支持他们的算法，其中是以泛化误差上界的形式。这个理论在计算机学习邻域进化了，起初基于PAC学习的概念。其它一些理论试图从博弈论解释boosting（Freund and Schapire, 1996b<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>; Breiman, 1999<sup id="fnref:9"><a class="footnote-ref" href="#fn:9" rel="footnote">8</a></sup>; Breiman, 1998<sup id="fnref:10"><a class="footnote-ref" href="#fn:10" rel="footnote">9</a></sup>），以及从VC理论来解释（Schapire et al., 1998<sup id="fnref:11"><a class="footnote-ref" href="#fn:11" rel="footnote">10</a></sup>）。与AdaBoost算法有关的理论和界都很有趣，但是往往界太松了，实际的重要性不是很大。实际上，boosting达到了比这些界更深刻的结果。Schapire (2002)<sup id="fnref:12"><a class="footnote-ref" href="#fn:12" rel="footnote">11</a></sup>和Meir and Rätsch (2003)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13" rel="footnote">12</a></sup>给出了比本书第一版更新的结果的概述。</p>
-<p>Friedman et al. (2000)<sup id="fnref:16"><a class="footnote-ref" href="#fn:16" rel="footnote">14</a></sup>和Friedman (2001)<sup id="fnref:15"><a class="footnote-ref" href="#fn:15" rel="footnote">13</a></sup>是本章的基础。Friedman et al. (2000)<sup id="fnref2:16"><a class="footnote-ref" href="#fn:16" rel="footnote">14</a></sup>在统计上分析了AdaBoost，导出了指数准则，并且证明了它估计了类别概率的对数几率。他们提出了可加树模型，right-sized树以及10.11节的ANOVA表示，以及多类别logit的公司。Friedman (2001)<sup id="fnref:17"><a class="footnote-ref" href="#fn:17" rel="footnote">15</a></sup>发展了梯度boosting，以及分类和回归的收缩，而Friedman (1999)<sup id="fnref:18"><a class="footnote-ref" href="#fn:18" rel="footnote">16</a></sup>探索了boosting的随机变体。Mason et al. (2000)<sup id="fnref:19"><a class="footnote-ref" href="#fn:19" rel="footnote">17</a></sup>也包括boosting的梯度形式。正如Friedman et al. (2000)<sup id="fnref:20"><a class="footnote-ref" href="#fn:20" rel="footnote">18</a></sup>中发表的讨论中显示，关于boosting怎样以及为什么有效存在争议。</p>
-<p>因为在本书的第一版发表时，辩论仍然在进行，并且扩散到了统计邻域，有一系列的论文讨论boosting的一致性（Jiang, 2004<sup id="fnref:21"><a class="footnote-ref" href="#fn:21" rel="footnote">19</a></sup>; Lugosi and Vayatis, 2004<sup id="fnref:22"><a class="footnote-ref" href="#fn:22" rel="footnote">20</a></sup>; Zhang and Yu, 2005<sup id="fnref:23"><a class="footnote-ref" href="#fn:23" rel="footnote">21</a></sup>; Bartlett and Traskin, 2007<sup id="fnref:24"><a class="footnote-ref" href="#fn:24" rel="footnote">22</a></sup>）。Mease and Wyner (2008)<sup id="fnref:25"><a class="footnote-ref" href="#fn:25" rel="footnote">23</a></sup>通过一系列的仿真例子来质疑作者们关于boosting的解释；作者们的回应(Friedman et al., 2008a<sup id="fnref:26"><a class="footnote-ref" href="#fn:26" rel="footnote">24</a></sup>)解决了大部分的反对意见。最近Bühlmann and Hothorn (2007)<sup id="fnref:27"><a class="footnote-ref" href="#fn:27" rel="footnote">25</a></sup>的概述支持作者们boosting的方法。</p>
+<p>Schapire 的“Strength of Weak Learnability”定理证明了 $G_B$ 提高了 $G_1$ 的效果．</p>
+<p>Freund (1995)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>提出了“boost by majority”的变体，它同时结合了许多弱分类器并且提高了 Schapire 简单的 boosting 算法的效果．支持这些算法的理论要求弱分类器以固定误差率产生分类器．这导出了更自适应且更实际的 AdaBoost (Freund and Schapire, 1996a<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>) 以及其衍生算法，在 AdaBoost 及其衍生算法中去掉了那条假设．</p>
+<p>Freund and Schapire (1996a)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> 和 Schapire and Singer (1999)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> 提供了一些以泛化误差上界的形式的理论来支持他们的算法．这个理论已经在计算机学习领域中发展，起初基于 PAC 学习的概念．其它一些理论试图从博弈论解释 boosting (Freund and Schapire, 1996b<sup id="fnref2:6"><a class="footnote-ref" href="#fn:6">6</a></sup>; Breiman, 1999<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">8</a></sup>; Breiman, 1998<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">9</a></sup>)，以及从 VC 理论来解释 (Schapire et al., 1998<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">10</a></sup>)．与 AdaBoost 算法有关的理论和界都很有趣，但是往往界太松了，实际的重要性不是很大．实际中，boosting 达到了比这些界更深刻的结果．Schapire (2002)<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">11</a></sup> 和 Meir and Rätsch (2003)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">12</a></sup> 给出了比本书第一版更新的结果的概述．</p>
+<p>Friedman et al. (2000)<sup id="fnref:16"><a class="footnote-ref" href="#fn:16">14</a></sup> 和 Friedman (2001)<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">13</a></sup> 是本章的基础．Friedman et al. (2000)<sup id="fnref2:16"><a class="footnote-ref" href="#fn:16">14</a></sup> 在统计上分析了AdaBoost，导出了指数准则，并且证明了它估计了类别概率的对数几率．他们提出了可加树模型，right-sized 树以及 <a href="../10.11-Right-Sized-Trees-for-Boosting/index.html">10.11 节</a>的 ANOVA 表示，以及多类别逻辑斯蒂形式．Friedman (2001)<sup id="fnref:17"><a class="footnote-ref" href="#fn:17">15</a></sup> 发展了梯度 boosting，以及分类和回归的收缩，而 Friedman (1999)<sup id="fnref:18"><a class="footnote-ref" href="#fn:18">16</a></sup> 探索了 boosting 的随机变体．Mason et al. (2000)<sup id="fnref:19"><a class="footnote-ref" href="#fn:19">17</a></sup> 也包括boosting 的梯度形式．正如 Friedman et al. (2000)<sup id="fnref:20"><a class="footnote-ref" href="#fn:20">18</a></sup> 中发表的讨论中显示，关于 boosting 怎样以及为什么起作用仍存在争议．</p>
+<p>因为在本书的第一版发表时，辩论仍然在进行，并且扩散到了统计邻域，有一系列的论文讨论 boosting 的一致性 (Jiang, 2004<sup id="fnref:21"><a class="footnote-ref" href="#fn:21">19</a></sup>; Lugosi and Vayatis, 2004<sup id="fnref:22"><a class="footnote-ref" href="#fn:22">20</a></sup>; Zhang and Yu, 2005<sup id="fnref:23"><a class="footnote-ref" href="#fn:23">21</a></sup>; Bartlett and Traskin, 2007<sup id="fnref:24"><a class="footnote-ref" href="#fn:24">22</a></sup>)．Mease and Wyner (2008)<sup id="fnref:25"><a class="footnote-ref" href="#fn:25">23</a></sup> 通过一系列的仿真例子来质疑我们关于 boosting 的解释；我们的回应 (Friedman et al., 2008a<sup id="fnref:26"><a class="footnote-ref" href="#fn:26">24</a></sup>) 解决了大部分的反对意见．最近 Bühlmann and Hothorn (2007)<sup id="fnref:27"><a class="footnote-ref" href="#fn:27">25</a></sup> 的概述支持我们 boosting 的方法．</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Schapire, R. (1990). The strength of weak learnability, Machine Learning 5(2): 197–227.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Schapire, R. (1990). The strength of weak learnability, Machine Learning 5(2): 197–227.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Valiant, L. G. (1984). A theory of the learnable, Communications of the ACM 27: 1134–1142.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Valiant, L. G. (1984). A theory of the learnable, Communications of the ACM 27: 1134–1142.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Kearns, M. and Vazirani, U. (1994). An Introduction to Computational Learning Theory, MIT Press, Cambridge, MA.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Kearns, M. and Vazirani, U. (1994). An Introduction to Computational Learning Theory, MIT Press, Cambridge, MA.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Freund, Y. (1995). Boosting a weak learning algorithm by majority, Information and Computation 121(2): 256–285.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Freund, Y. (1995). Boosting a weak learning algorithm by majority, Information and Computation 121(2): 256–285.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>Freund, Y. and Schapire, R. (1996a). Experiments with a new boosting algorithm, Machine Learning: Proceedings of the Thirteenth International Conference, Morgan Kauffman, San Francisco, pp. 148–156.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Freund, Y. and Schapire, R. (1996a). Experiments with a new boosting algorithm, Machine Learning: Proceedings of the Thirteenth International Conference, Morgan Kauffman, San Francisco, pp. 148–156.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>Freund, Y. and Schapire, R. (1996b). Game theory, on-line prediction and boosting, Proceedings of the Ninth Annual Conference on Computational Learning Theory, Desenzano del Garda, Italy, pp. 325–332.&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>Freund, Y. and Schapire, R. (1996b). Game theory, on-line prediction and boosting, Proceedings of the Ninth Annual Conference on Computational Learning Theory, Desenzano del Garda, Italy, pp. 325–332.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 <li id="fn:7">
-<p>Schapire, R. and Singer, Y. (1999). Improved boosting algorithms using confidence-rated predictions, Machine Learning 37(3): 297–336.&#160;<a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<p>Schapire, R. and Singer, Y. (1999). Improved boosting algorithms using confidence-rated predictions, Machine Learning 37(3): 297–336.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 <li id="fn:9">
-<p>Breiman, L. (1999). Prediction games and arcing algorithms, Neural Computation 11(7): 1493–1517.&#160;<a class="footnote-backref" href="#fnref:9" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+<p>Breiman, L. (1999). Prediction games and arcing algorithms, Neural Computation 11(7): 1493–1517.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 <li id="fn:10">
-<p>Breiman, L. (1998). Arcing classifiers (with discussion), Annals of Statistics 26: 801–849.&#160;<a class="footnote-backref" href="#fnref:10" rev="footnote" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+<p>Breiman, L. (1998). Arcing classifiers (with discussion), Annals of Statistics 26: 801–849.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 9 in the text">&#8617;</a></p>
 </li>
 <li id="fn:11">
-<p>Schapire, R., Freund, Y., Bartlett, P. and Lee, W. (1998). Boosting the margin: a new explanation for the effectiveness of voting methods, Annals of Statistics 26(5): 1651–1686.&#160;<a class="footnote-backref" href="#fnref:11" rev="footnote" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+<p>Schapire, R., Freund, Y., Bartlett, P. and Lee, W. (1998). Boosting the margin: a new explanation for the effectiveness of voting methods, Annals of Statistics 26(5): 1651–1686.&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 10 in the text">&#8617;</a></p>
 </li>
 <li id="fn:12">
-<p>Schapire, R. (2002). The boosting approach to machine learning: an overview, in D. Denison, M. Hansen, C. Holmes, B. Mallick and B. Yu (eds), MSRI workshop on Nonlinear Estimation and Classification, Springer, New York.&#160;<a class="footnote-backref" href="#fnref:12" rev="footnote" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+<p>Schapire, R. (2002). The boosting approach to machine learning: an overview, in D. Denison, M. Hansen, C. Holmes, B. Mallick and B. Yu (eds), MSRI workshop on Nonlinear Estimation and Classification, Springer, New York.&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 11 in the text">&#8617;</a></p>
 </li>
 <li id="fn:13">
-<p>Meir, R. and Rätsch, G. (2003). An introduction to boosting and leveraging, in S. Mendelson and A. Smola (eds), Lecture notes in Computer Science, Advanced Lectures in Machine Learning, Springer, New York.&#160;<a class="footnote-backref" href="#fnref:13" rev="footnote" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+<p>Meir, R. and Rätsch, G. (2003). An introduction to boosting and leveraging, in S. Mendelson and A. Smola (eds), Lecture notes in Computer Science, Advanced Lectures in Machine Learning, Springer, New York.&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 12 in the text">&#8617;</a></p>
 </li>
 <li id="fn:15">
-<p>Friedman, J. (2001). Greedy function approximation: A gradient boosting machine, Annals of Statistics 29(5): 1189–1232.&#160;<a class="footnote-backref" href="#fnref:15" rev="footnote" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+<p>Friedman, J. (2001). Greedy function approximation: A gradient boosting machine, Annals of Statistics 29(5): 1189–1232.&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 13 in the text">&#8617;</a></p>
 </li>
 <li id="fn:16">
-<p>Friedman, J., Hastie, T. and Tibshirani, R. (2000). Additive logistic regression: a statistical view of boosting (with discussion), Annals of Statistics 28: 337–307.&#160;<a class="footnote-backref" href="#fnref:16" rev="footnote" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:16" rev="footnote" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+<p>Friedman, J., Hastie, T. and Tibshirani, R. (2000). Additive logistic regression: a statistical view of boosting (with discussion), Annals of Statistics 28: 337–307.&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:16" title="Jump back to footnote 14 in the text">&#8617;</a></p>
 </li>
 <li id="fn:17">
-<p>Friedman, J. (2001). Greedy function approximation: A gradient boosting machine, Annals of Statistics 29(5): 1189–1232.&#160;<a class="footnote-backref" href="#fnref:17" rev="footnote" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+<p>Friedman, J. (2001). Greedy function approximation: A gradient boosting machine, Annals of Statistics 29(5): 1189–1232.&#160;<a class="footnote-backref" href="#fnref:17" title="Jump back to footnote 15 in the text">&#8617;</a></p>
 </li>
 <li id="fn:18">
-<p>Friedman, J. (1999). Stochastic gradient boosting, Technical report, Stanford University.&#160;<a class="footnote-backref" href="#fnref:18" rev="footnote" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+<p>Friedman, J. (1999). Stochastic gradient boosting, Technical report, Stanford University.&#160;<a class="footnote-backref" href="#fnref:18" title="Jump back to footnote 16 in the text">&#8617;</a></p>
 </li>
 <li id="fn:19">
-<p>Mason, L., Baxter, J., Bartlett, P. and Frean, M. (2000). Boosting algorithms as gradient descent, 12: 512–518.&#160;<a class="footnote-backref" href="#fnref:19" rev="footnote" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+<p>Mason, L., Baxter, J., Bartlett, P. and Frean, M. (2000). Boosting algorithms as gradient descent, 12: 512–518.&#160;<a class="footnote-backref" href="#fnref:19" title="Jump back to footnote 17 in the text">&#8617;</a></p>
 </li>
 <li id="fn:20">
-<p>Friedman, J., Hastie, T. and Tibshirani, R. (2000). Additive logistic regression: a statistical view of boosting (with discussion), Annals of Statistics 28: 337–307.&#160;<a class="footnote-backref" href="#fnref:20" rev="footnote" title="Jump back to footnote 18 in the text">&#8617;</a></p>
+<p>Friedman, J., Hastie, T. and Tibshirani, R. (2000). Additive logistic regression: a statistical view of boosting (with discussion), Annals of Statistics 28: 337–307.&#160;<a class="footnote-backref" href="#fnref:20" title="Jump back to footnote 18 in the text">&#8617;</a></p>
 </li>
 <li id="fn:21">
-<p>Jiang, W. (2004). Process consistency for Adaboost, Annals of Statistics 32(1): 13–29.&#160;<a class="footnote-backref" href="#fnref:21" rev="footnote" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+<p>Jiang, W. (2004). Process consistency for Adaboost, Annals of Statistics 32(1): 13–29.&#160;<a class="footnote-backref" href="#fnref:21" title="Jump back to footnote 19 in the text">&#8617;</a></p>
 </li>
 <li id="fn:22">
-<p>Lugosi, G. and Vayatis, N. (2004). On the bayes-risk consistency of regularized boosting methods, Annals of Statistics 32(1): 30–55.&#160;<a class="footnote-backref" href="#fnref:22" rev="footnote" title="Jump back to footnote 20 in the text">&#8617;</a></p>
+<p>Lugosi, G. and Vayatis, N. (2004). On the bayes-risk consistency of regularized boosting methods, Annals of Statistics 32(1): 30–55.&#160;<a class="footnote-backref" href="#fnref:22" title="Jump back to footnote 20 in the text">&#8617;</a></p>
 </li>
 <li id="fn:23">
-<p>Zhang, T. and Yu, B. (2005). Boosting with early stopping: convergence and consistency, Annals of Statistics 33: 1538–1579.&#160;<a class="footnote-backref" href="#fnref:23" rev="footnote" title="Jump back to footnote 21 in the text">&#8617;</a></p>
+<p>Zhang, T. and Yu, B. (2005). Boosting with early stopping: convergence and consistency, Annals of Statistics 33: 1538–1579.&#160;<a class="footnote-backref" href="#fnref:23" title="Jump back to footnote 21 in the text">&#8617;</a></p>
 </li>
 <li id="fn:24">
 <p>Bartlett, P. and Traskin, M. (2007). Adaboost is consistent, in
 B. Schölkopf, J. Platt and T. Hoffman (eds), Advances in Neural Infor-
 mation Processing Systems 19, MIT Press, Cambridge, MA, pp. 105–
-112.&#160;<a class="footnote-backref" href="#fnref:24" rev="footnote" title="Jump back to footnote 22 in the text">&#8617;</a></p>
+112.&#160;<a class="footnote-backref" href="#fnref:24" title="Jump back to footnote 22 in the text">&#8617;</a></p>
 </li>
 <li id="fn:25">
-<p>Mease, D. and Wyner, A. (2008). Evidence contrary to the statistical view of boosting (with discussion), Journal of Machine Learning Research 9: 131–156.&#160;<a class="footnote-backref" href="#fnref:25" rev="footnote" title="Jump back to footnote 23 in the text">&#8617;</a></p>
+<p>Mease, D. and Wyner, A. (2008). Evidence contrary to the statistical view of boosting (with discussion), Journal of Machine Learning Research 9: 131–156.&#160;<a class="footnote-backref" href="#fnref:25" title="Jump back to footnote 23 in the text">&#8617;</a></p>
 </li>
 <li id="fn:26">
-<p>Friedman, J., Hastie, T. and Tibshirani, R. (2008a). Response to “Mease and Wyner: Evidence contrary to the statistical view of boosting”, Journal of Machine Learning Research 9: 175–180.&#160;<a class="footnote-backref" href="#fnref:26" rev="footnote" title="Jump back to footnote 24 in the text">&#8617;</a></p>
+<p>Friedman, J., Hastie, T. and Tibshirani, R. (2008a). Response to “Mease and Wyner: Evidence contrary to the statistical view of boosting”, Journal of Machine Learning Research 9: 175–180.&#160;<a class="footnote-backref" href="#fnref:26" title="Jump back to footnote 24 in the text">&#8617;</a></p>
 </li>
 <li id="fn:27">
-<p>Bühlmann, P. and Hothorn, T. (2007). Boosting algorithms: regularization, prediction and model fitting (with discussion), Statistical Science 22(4): 477–505.&#160;<a class="footnote-backref" href="#fnref:27" rev="footnote" title="Jump back to footnote 25 in the text">&#8617;</a></p>
+<p>Bühlmann, P. and Hothorn, T. (2007). Boosting algorithms: regularization, prediction and model fitting (with discussion), Statistical Science 22(4): 477–505.&#160;<a class="footnote-backref" href="#fnref:27" title="Jump back to footnote 25 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3350,18 +3318,44 @@ mation Processing Systems 19, MIT Press, Cambridge, MA, pp. 105–
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/10-Boosting-and-Additive-Trees/Bibliographic-Notes/index.html";
+      this.page.identifier =
+        "/10-Boosting-and-Additive-Trees/Bibliographic-Notes/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3412,7 +3406,7 @@ mation Processing Systems 19, MIT Press, Cambridge, MA, pp. 105–
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3422,7 +3416,7 @@ mation Processing Systems 19, MIT Press, Cambridge, MA, pp. 105–
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:37
+        Last Build Date UTC : 2026-10-24 02:32:56
       </div>
       
         
@@ -3435,7 +3429,7 @@ mation Processing Systems 19, MIT Press, Cambridge, MA, pp. 105–
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3455,18 +3449,57 @@ mation Processing Systems 19, MIT Press, Cambridge, MA, pp. 105–
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -501,7 +498,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1134,8 +1131,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -1344,8 +1341,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1680,8 +1677,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1764,8 +1761,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1776,8 +1773,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1860,8 +1857,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1872,8 +1869,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2136,8 +2133,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2148,8 +2145,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2388,8 +2385,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2901,59 +2898,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3072,18 +3021,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3114,30 +3051,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3162,13 +3075,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3234,8 +3147,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3281,8 +3242,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3298,13 +3259,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/06-Kernel-Smoothing-Methods/6.1-One-Dimensional-Kernel-Smoothers.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="61">6.1 一维核光滑器<a class="headerlink" href="#61" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3313,8 +3276,8 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2017-02-27：2017-02-28</td>
+<td>发布</td>
+<td>2017-03-01</td>
 </tr>
 <tr>
 <td>更新</td>
@@ -3328,20 +3291,20 @@
 </table>
 <p>第二章中，我们将 $k$-最近邻平均
 <script type="math/tex; mode=display">
-\hat f(x)=\mathrm{Ave}(y_i\mid x_i\in N_k(x))\tag{6.1}
+\hat f(x)=\mathrm{Ave}(y_i\mid x_i\in N_k(x))\tag{6.1}\label{6.1}
 </script>
-作为回归函数 $\E(Y\mid X=x)$ 的估计。这里 $N_k(x)$ 为在平方距离下，离 $x$ 最近的 $k$ 个点的集合，并且 $\mathrm{Ave}$ 记为平均（均值）。这个想法是松弛条件期望的定义，正如图 6.1 的左图所示一样，并且计算目标点邻域的平均。这种情形下我们采用 30-最近邻—— $x_0$ 处的拟合值为离 $x_0$ 最近的 30 个点的平均。在不同的 $x_0$ 处应用这个定义则得到绿色曲线。绿色曲线是颠簸不平的，因为 $\hat f(x)$ 在 $x$ 处不连续。当我们将 $x_0$ 从左移到右，$k$ 最近邻保持一致，直到 $x_0$ 右侧的点 $x_i$ 变得比 $x_0$ 左侧的邻域的最远点 $x_i&rsquo;$ 更近，这时 $x_i$ 换成 $x_i&rsquo;$。(6.1) 的平均以离散的方式变换，得到离散的 $\hat f(x)$。</p>
+作为回归函数 $\E(Y\mid X=x)$ 的估计．这里 $N_k(x)$ 为在平方距离下，离 $x$ 最近的 $k$ 个点的集合，并且 $\mathrm{Ave}$ 记为平均（均值）．这个想法是松弛条件期望的定义，正如图 6.1 的左图所示一样，并且计算目标点邻域的平均．这种情形下我们采用 30-最近邻—— $x_0$ 处的拟合值为离 $x_0$ 最近的 30 个点的平均．在不同的 $x_0$ 处应用这个定义则得到绿色曲线．绿色曲线是颠簸不平的，因为 $\hat f(x)$ 在 $x$ 处不连续．当我们将 $x_0$ 从左移到右，$k$ 最近邻保持一致，直到 $x_0$ 右侧的点 $x_i$ 变得比 $x_0$ 左侧的邻域的最远点 $x_i&rsquo;$ 更近，这时 $x_i$ 换成 $x_i&rsquo;$．\eqref{6.1} 的平均以离散的方式变换，得到离散的 $\hat f(x)$．</p>
 <p><img alt="" src="../../img/06/fig6.1.png" /></p>
 <blockquote>
-<p>图6.1. 每张图中从蓝色曲线加上高斯误差中随机产生100个数据对$x_i,y_i$：$Y=sin(4X)+\varepsilon,X\sim U[0,1],\varepsilon\sim N(0,1/3)$。左图的绿色曲线是30-最近邻滑动均值光滑器的结果。红色点是拟合的常数值$\hat f(x_0)$，红色圆圈表明对$x_0$处拟合有贡献的观测。实心黄色区域为赋予给观测的权重。右图中，绿色曲线是核权重平均，采用（半）窗宽度$\lambda=0.2$的Epanechnikov核。</p>
+<p>图6.1. 每张图中从蓝色曲线加上高斯误差中随机产生100个数据对 $x_i,y_i$：$Y=\sin(4X)+\varepsilon,X\sim U[0,1],\varepsilon\sim N(0,1/3)$．左图的绿色曲线是 30-最近邻滑动均值光滑器的结果．红色点是拟合的常数值 $\hat f(x_0)$，红色圆圈表明对 $x_0$ 处拟合有贡献的观测．实心黄色区域为赋予给观测的权重．右图中，绿色曲线是核权重平均，采用（半）窗宽度 $\lambda=0.2$ 的 Epanechnikov 核．</p>
 </blockquote>
-<p>不连续性是不好看并且不必要的。与其对邻域中的点赋予相等的权重，我们可以分配权重，使其随着与目标点的距离平滑降低。右图显示了这样的一个例子，使用被称作 Nadaraya–Watson 的核权重平均
+<p>不连续是不好看并且不必要的．与其对邻域中的点赋予相等的权重，我们可以分配权重，使其随着与目标点的距离平滑降低．右图显示了这样的一个例子，使用被称作 Nadaraya–Watson 的核权重平均
 <script type="math/tex; mode=display">
 \hat f(x_0)=\frac{\sum_{i=1}^NK_{\lambda}(x_0,x_i)y_i}{\sum_{i=1}^NK_{\lambda}(x_0,x_i)}\tag{6.2}
 </script>
 其中 Epanechnikov 平方核为
 <script type="math/tex; mode=display">
-K_\lambda(x_0,x) = D(\frac{\vert x-x_0\vert}{\lambda})\tag{6.3}
+K_\lambda(x_0,x) = D\left(\frac{\vert x-x_0\vert}{\lambda}\right)\tag{6.3}\label{6.3}
 </script>
 其中
 <script type="math/tex; mode=display">
@@ -3354,37 +3317,37 @@ D(t)=
 \right.
 \tag{6.4}
 </script>
-现在拟合函数为连续的，并且图 6.1 中的右图非常光滑。当我们将目标点从左移到右，进入邻域中的点初始化权重为 $0$，然后它们的贡献缓慢地增长（见<a href="https://github.com/szcf-weiya/ESL-CN/issues/147">练习 6.1</a>）。</p>
-<p>在右图中我们核拟合采用的度量窗口大小为 $\lambda=0.2$，当我们移动目标点 $x_0$ 时窗口大小不变，而 30 最近邻光滑窗口大小适应 $x_i$ 的局部密度。然而，核拟合也可以使用这种自适应的邻域，但是我们需要用更一般的记号。令 $h_\lambda(x_0)$ 为宽度函数（由 $\lambda$ 编号），它确定着 $x_0$ 处的邻域的宽度。于是更一般地我们有
+现在拟合函数为连续的，并且图 6.1 中的右图非常光滑．当我们将目标点从左移到右，进入邻域中的点初始化权重为 $0$，然后它们的贡献缓慢地增长（见<a href="https://github.com/szcf-weiya/ESL-CN/issues/147">练习 6.1</a>）．</p>
+<p>在右图中我们核拟合采用的度量窗口大小为 $\lambda=0.2$，当我们移动目标点 $x_0$ 时窗口大小不变，而 30 最近邻光滑窗口大小适应 $x_i$ 的局部密度．然而，核拟合也可以使用这种自适应的邻域，但是我们需要用更一般的记号．令 $h_\lambda(x_0)$ 为宽度函数（由 $\lambda$ 编号），它确定着 $x_0$ 处的邻域的宽度．于是更一般地我们有
 <script type="math/tex; mode=display">
-K_\lambda(x_0,x)=D(\frac{\vert x-x_0\vert}{h_\lambda(x_0)})\tag{6.5}
+K_\lambda(x_0,x)=D\left(\frac{\vert x-x_0\vert}{h_\lambda(x_0)}\right)\tag{6.5}
 </script>
-$(6.3)$ 中，$h_\lambda(x_0)=\lambda$ 为常值。对于 $k$ 最近邻域，用邻域大小 $k$ 代替 $\lambda$，并且我们有 $h_k(x_0)=\vert x_0-x_{[k]}\vert$，其中 $x_{[k]}$ 是离 $x_0$ 的第 $k$ 个最近的点。</p>
+\eqref{6.3} 中，$h_\lambda(x_0)=\lambda$ 为常值．对于 $k$ 最近邻域，用邻域大小 $k$ 代替 $\lambda$，并且我们有 $h_k(x_0)=\vert x_0-x_{[k]}\vert$，其中 $x_{[k]}$ 是离 $x_0$ 的第 $k$ 个最近的点．</p>
 <p>在实际中有许多细节需要注意：</p>
 <ul>
 <li>
-<p>需要确定光滑参数 $\lambda$，它决定了局部邻域的宽度。大 $\lambda$ 表明低方差（在更多的观测上平均）但高偏差（实质上假设在窗口中真实函数为常值的）。</p>
+<p>需要确定光滑参数 $\lambda$，它决定了局部邻域的宽度．大 $\lambda$ 表明低方差（在更多的观测上平均）但高偏差（实质上假设在窗口中真实函数为常值的）．</p>
 </li>
 <li>
-<p>度量窗口宽度（常值 $h_\lambda(x)$）趋向于保持估计的偏差为常值，但是方差与局部密度成反比。最近邻窗口宽度表现出相反地行为；方差为常值并且绝对偏差随局部密度反比例变化。</p>
+<p>度量窗口宽度（常值 $h_\lambda(x)$）趋向于保持估计的偏差为常值，但是方差与局部密度成反比．最近邻窗口宽度表现出相反地行为；方差为常值并且绝对偏差随局部密度反比例变化．</p>
 </li>
 <li>
-<p>当在 $x_i$ 处出现 <strong>结 (tie)</strong>，最近邻出现了问题。大部分的光滑技巧，可以简单地通过在打结的 $X$ 值处对 $y_i$ 平均来减少数据集，并且对 $x_i$ 处新的唯一观测赋予额外的权重 $w_i$（这个乘以核权重）。</p>
+<p>当在 $x_i$ 处出现 <strong>结 (tie)</strong>，最近邻出现了问题．大部分的光滑技巧，可以简单地通过在打结的 $X$ 值处对 $y_i$ 平均来减少数据集，并且对 $x_i$ 处新的唯一观测赋予额外的权重 $w_i$（这个乘以核权重）．</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：tied data</p>
-<p>简单理解为重复数据，参考 <a href="https://stats.stackexchange.com/questions/7941/what-is-tied-data-in-the-context-of-a-rank-correlation-coefficient">ranking - What is tied data in the context of a rank correlation coefficient? - Cross Validated</a>。</p>
+<p>简单理解为重复数据，参考 <a href="https://stats.stackexchange.com/questions/7941/what-is-tied-data-in-the-context-of-a-rank-correlation-coefficient">ranking - What is tied data in the context of a rank correlation coefficient? - Cross Validated</a>．</p>
 </div>
 <ul>
 <li>
-<p>有个更一般的问题需要处理：观测的权重 $w_i$。实际操作中我们在计算加权平均时简单地将它们乘上核权重。在最近邻中，保持邻域的总权重 $k$（与 $\sum w_i$ 相对）是自然的。在 <strong>超出 (overflow)</strong> 的情形中（邻域中最后一个需要的观测的权重 $w_j$ 会导致权重中和超出 $k$）,于是可以采用其中的一部分（也就相当于去掉超出的量）。</p>
+<p>有个更一般的问题需要处理：观测的权重 $w_i$．实际操作中我们在计算加权平均时简单地将它们乘上核权重．在最近邻中，保持邻域的总权重 $k$（与 $\sum w_i$ 相对）是自然的．在 <strong>超出 (overflow)</strong> 的情形中（邻域中最后一个需要的观测的权重 $w_j$ 会导致权重中和超出 $k$）,于是可以采用其中的一部分（也就相当于去掉超出的量）．</p>
 </li>
 <li>
-<p>产生边界问题。度量邻域趋向于在边界处包含更少的点，而最近邻趋向于变得更宽。</p>
+<p>产生边界问题．度量邻域趋向于在边界处包含更少的点，而最近邻趋向于变得更宽．</p>
 </li>
 <li>
-<p>Epanechnikov 核有紧的支撑集（当与最近邻窗口宽度同时使用会需要）。另外一个受欢迎的紧核 (compact kernel) 基于三次立方函数
+<p>Epanechnikov 核有紧的支撑集（当与最近邻窗口宽度同时使用会需要）．另外一个受欢迎的紧核 (compact kernel) 基于三次立方函数
   <script type="math/tex; mode=display">
   D(t)=
   \left\{
@@ -3395,45 +3358,49 @@ $(6.3)$ 中，$h_\lambda(x_0)=\lambda$ 为常值。对于 $k$ 最近邻域，用
   \right.
   \tag{6.6}
   </script>
-  这在上面是平的（与最近邻盒子类似）并且在支撑集的边界是可导的。高斯密度函数 $D(t)=\phi(t)$ 是受欢迎的非紧核，其中标准误差扮演了窗口大小的角色。图 6.2 比较了这三个。</p>
+  这在上面是平的（与最近邻盒子类似）并且在支撑集的边界是可导的．高斯密度函数 $D(t)=\phi(t)$ 是受欢迎的非紧核，其中标准误差扮演了窗口大小的角色．图 6.2 比较了这三个．</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：</p>
-<p><strong>紧核 (compact kernel)</strong> 应该是指那些在定义域上的积分等于 $1$ 的核。</p>
+<p><strong>紧核 (compact kernel)</strong> 应该是指支撑集为紧集的核．紧集或者紧致性的直观解释可以参见 <a href="https://www.zhihu.com/question/31734712/answer/72390708">如何直观地解释「紧致性」？ - 包遵信的回答 - 知乎</a>.</p>
 </div>
 <p><img alt="" src="../../img/06/fig6.2.png" /></p>
 <blockquote>
-<p>图 6.2 局部光滑的三个流行的核的比较。每个都已经经过校准使得积分为 $1$。三次立方核是紧的并且在支撑集的边界有二阶连续微分，而 Epanechnikov 没有。高斯核是连续可微的，但是有无限的支撑集。</p>
+<p>图 6.2 局部光滑的三个流行的核的比较．每个都已经经过校准使得积分为 $1$．三次立方核是紧的并且在支撑集的边界有二阶连续微分，而 Epanechnikov 没有．高斯核是连续可微的，但是有无限的支撑集．</p>
 </blockquote>
 <h2 id="_1">局部线性回归<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>我们已经从原始的滑动平均进步到通过使用核权重实现的光滑变化局部加权平均。然而，光滑核拟合仍然有问题，正如图 6.3（左）显示的那样。局部加权平均会在定义域边界处有严重的偏差，因为这个区域内核的不对称性。通过拟合直线而不是局部的常值，我们可以将偏差降至一阶；见图 6.3（右）。实际上，如果 $X$ 值不是相等的间隔（基于同样的原因，但是通常没有那么严重），偏差也可以表现在定义域的中间。再一次局部加权线性回归会纠正为一阶误差。</p>
+<p>我们已经从原始的滑动平均进步到通过使用核权重实现的光滑变化局部加权平均．然而，光滑核拟合仍然有问题，正如图 6.3（左）显示的那样．局部加权平均会在定义域边界处有严重的偏差，因为这个区域内核的不对称性．通过拟合直线而不是局部的常值，我们可以将偏差降至一阶；见图 6.3（右）．实际上，如果 $X$ 值不是相等的间隔（基于同样的原因，但是通常没有那么严重），偏差也可以表现在定义域的中间．再一次局部加权线性回归会纠正为一阶误差．</p>
 <p><img alt="" src="../../img/06/fig6.3.png" /></p>
 <blockquote>
-<p>图 6.3. 局部加权平均在定义域处或附近有着偏差问题。真实的函数在这里近似线性，但是邻域中大部分观测比目标点有更高的均值，所以尽管进行了加权，但是它们的均值将会向上偏。通过拟合局部的加权线性回归（右），这个偏差会降到一阶。</p>
+<p>图 6.3. 局部加权平均在定义域边界处或附近有着偏差问题．真实的函数在这里近似线性，但是邻域中大部分观测比目标点有更高的均值，所以尽管进行了加权，但是它们的均值将会向上偏．通过拟合局部的加权线性回归（右），这个偏差会降到一阶．</p>
 </blockquote>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：不对称性</p>
+<p>注意图中黄色阴影区域只有图 6.1 中右图的一半，对应的高度表示赋予给观测的权重。</p>
+</div>
 <p>局部加权回归解决了在每个目标点处独立的加权最小二乘问题：</p>
 <p>
 <script type="math/tex; mode=display">
 \underset{\alpha(x_0),\beta(x_0)}{\min}\sum\limits_{i=1}^NK_\lambda(x_0,x_i)[y_i-\alpha(x_0)-\beta(x_0)x_i]^2\tag{6.7}
 </script>
 </p>
-<p>于是估计为 $\hat f(x_0)=\hat\alpha(x_0)+\hat\beta(x_0)x_0$。注意到尽管我们对区域内的数据拟合整个线性模型，但是我们只用它来确定单点 $x_0$ 处的函数值。</p>
-<p>定义向量值函数为 $b(x)^T=(1,x)$。令 $\mathbf B$ 为 $N\times 2$ 的回归矩阵，第 $i$ 行为 $b(x_i)^T$，并且 $\mathbf W(x_0)$ 为 $N\times N$ 的对角矩阵，其中第 $i$ 个对角元为 $K_\lambda(x_0,x_i)$。于是</p>
+<p>于是估计为 $\hat f(x_0)=\hat\alpha(x_0)+\hat\beta(x_0)x_0$．注意到尽管我们对区域内的数据拟合整个线性模型，但是我们只用它来确定单点 $x_0$ 处的函数值．</p>
+<p>定义向量值函数为 $b(x)^T=(1,x)$．令 $\mathbf B$ 为 $N\times 2$ 的回归矩阵，第 $i$ 行为 $b(x_i)^T$，并且 $\mathbf W(x_0)$ 为 $N\times N$ 的对角矩阵，其中第 $i$ 个对角元为 $K_\lambda(x_0,x_i)$．于是</p>
 <p>
 <script type="math/tex; mode=display">
   \begin{align}
-  \hat f(x_0)&= b(x_0)^T(\mathbf {B^TW}(x_0)\mathbf B)^{-1}\mathbf B^T\mathbf W(x_0)\mathbf y\tag{6.8}\\
-  &=\sum\limits_{i=1}^Nl_i(x_0)y_i\tag{6.9}
+  \hat f(x_0)&= b(x_0)^T(\mathbf {B^TW}(x_0)\mathbf B)^{-1}\mathbf B^T\mathbf W(x_0)\mathbf y\tag{6.8}\label{6.8}\\
+  &=\sum\limits_{i=1}^Nl_i(x_0)y_i\tag{6.9}\label{6.9}
   \end{align}
 </script>
 </p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注</p>
-<p><strong>广义最小二乘估计 (GLSE)</strong>
+<p><strong>广义最小二乘估计 (generalized least squares estimation, GLSE)</strong>
 线性模型为
 <script type="math/tex; mode=display">
-\mathbf{Y=X}\beta+e,\; E(e)=0,\; Cov(e)=\sigma^2\mathbf\Sigma
+\mathbf{Y=X}\beta+e,\; \E(e)=0,\; \Cov(e)=\sigma^2\mathbf\Sigma
 </script>
 $\beta$ 估计为
 <script type="math/tex; mode=display">
@@ -3443,64 +3410,100 @@ $\beta$ 估计为
 <script type="math/tex; mode=display">
 \Cov(e)=\diag(\sigma_1^2,\cdots,\sigma^2_n)
 </script>
-有<strong>加权最小二乘估计 (WLSE)</strong></p>
+有<strong>加权最小二乘估计 (weighted least squares estimation, WLSE)</strong></p>
 </div>
-<p>等式 (6.8) 给出了局部线性回归估计的显式表达，式 (6.9) 强调了估计关于 $y_i$ 为线性的（$l_i(x_0)$ 不涉及 $\mathbf y$）。这些权重 $l_i(x_0)$ 结合了核 $K_\lambda(x_0,\cdot)$ 和最小二乘估计，并且有时称作 <strong>等价核 (equivalent kernel)</strong>。图 6.4 说明了局部线性回归在等价核上的影响。从历史上看，Nadaraya–Watson 和其他局部平均核方法中的偏差是通过修改这个核得到的。这些修改基于理论渐近的均方误差的考虑。局部线性回归自动地修改核将偏差矫正正好为一阶，这是被称为 <strong>自动核作品 (automatic kernel carpentry)</strong> 的现象。考虑下面 $\E\hat f(x_0)$ 的展开，利用局部回归的线性和真实函数 $f$ 在 $x_0$ 处的展开，
+<p>等式 \eqref{6.8} 给出了局部线性回归估计的显式表达，式 \eqref{6.9} 强调了估计关于 $y_i$ 为线性的（$l_i(x_0)$ 不涉及 $\mathbf y$）．这些权重 $l_i(x_0)$ 结合了核 $K_\lambda(x_0,\cdot)$ 和最小二乘估计，并且有时称作 <strong>等价核 (equivalent kernel)</strong>．图 6.4 说明了局部线性回归在等价核上的影响．从历史上看，Nadaraya–Watson 和其他局部平均核方法中的偏差是通过修改核本身进行纠正．这些修改基于理论渐近的均方误差，不仅很复杂，而且只对有限样本进行近似．局部线性回归自动地修改核将偏差矫正到恰好为一阶，这是被称为 <strong>自动核作品 (automatic kernel carpentry)</strong> 的现象．</p>
+<div class="admonition info">
+<p class="admonition-title">weiya 注：automatic kernel carpentry</p>
+<p>更多细节可以参考 <a href="https://projecteuclid.org/download/pdf_1/euclid.ss/1177011002">T. Hastie and C. Loader (1993). Local Regression: Automatic Kernel Carpentry</a></p>
+</div>
+<p>考虑下面 $\E\hat f(x_0)$ 的展开，利用局部回归的线性和真实函数 $f$ 在 $x_0$ 处的展开，
 <script type="math/tex; mode=display">
 \begin{align}
 \E\hat f(x_0)&=\sum\limits_{i=1}^Nl_i(x_0)f(x_i)\notag\\
 &=f(x_0)\sum\limits_{i=1}^Nl_i(x_0)+f'(x_0)\sum\limits_{i=1}^N(x_i-x_0)l_i(x_0)\notag\\
-&+\frac{f''(x_0)}{2}\sum\limits_{i=1}^N(x_i-x_0)^2l_i(x_0)+R\tag{6.10}
+&+\frac{f''(x_0)}{2}\sum\limits_{i=1}^N(x_i-x_0)^2l_i(x_0)+R\tag{6.10}\label{6.10}
 \end{align}
 </script>
-其中余项 $R$ 涉及 $f$ 的三阶微分和更高阶的微分，并且在合适的光滑性假设下一般是很小的。可以证明（<a href="https://github.com/szcf-weiya/ESL-CN/issues/148">练习 6.2</a>）对于局部线性回归，$\sum_{i=1}^Nl_i(x_0)=1$ 并且 $\sum_{i=1}^N(x_i-x_0)l_i(x_0)=0$。因此中间项为 $f(x_0)$，并且因为偏差为 $\E\hat f(x_0)-f(x_0)$，我们看到它仅仅取决于 $f$ 的平方项或更高阶的项。</p>
+其中余项 $R$ 涉及 $f$ 的三阶微分和更高阶的微分，并且在合适的光滑性假设下一般是很小的．可以证明（<a href="https://github.com/szcf-weiya/ESL-CN/issues/148">练习 6.2</a>）对于局部线性回归，$\sum_{i=1}^Nl_i(x_0)=1$ 并且 $\sum_{i=1}^N(x_i-x_0)l_i(x_0)=0$．因此中间项为 $f(x_0)$，并且因为偏差为 $\E\hat f(x_0)-f(x_0)$，我们看到它仅仅取决于 $f$ 的平方项或更高阶的项．</p>
 <div class="admonition info">
 <p class="admonition-title">weiya 注：</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/148">Issue 148: Ex. 6.2</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/148">Issue 148: Ex. 6.2</a>．</p>
 </div>
 <p><img alt="" src="../../img/06/fig6.4.png" /></p>
 <blockquote>
-<p>图 6.4. 绿色点显示了局部回归的等价核。这是 $\hat f(x_0)=\sum_{i=1}^Nl_i(x_0)y_i$ 中的系数，是关于对应 $x_i$ 的图像。为了展示的目的，这些已经进行了缩放，因为实际上它们相加等于 1。因为黄色阴影区域是Nadaraya–Watson 局部平均的（缩放的）等价核，所以我们看到局部回归是怎样自动修改权重核来纠正由于光滑窗口的不对称窗口的偏差。</p>
+<p>图 6.4. 绿色点显示了局部回归的等价核．这是 $\hat f(x_0)=\sum_{i=1}^Nl_i(x_0)y_i$ 中的系数，是关于对应 $x_i$ 的图像．为了展示的目的，这些已经进行了缩放，因为实际上它们相加等于 1．因为黄色阴影区域是 Nadaraya–Watson 局部平均的（缩放的）等价核，所以我们看到局部回归是怎样自动修改权重核来纠正由于光滑窗口的不对称窗口的偏差．</p>
 </blockquote>
 <h2 id="_2">局部多项式回归<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>为什么止步于局部线性拟合处？其实我们可以拟合任意阶 $d$ 的局部多项式拟合，
 <script type="math/tex; mode=display">
-\underset{\alpha(x_0),\beta_j(x_0),j=1,\ldots,d}{\min}\sum\limits_{i=1}^NK_\lambda(x_0,x_i)\Big[y_i-\alpha(x_0)-\sum\limits_{j=1}^d\beta_j(x_0)x_i^j\Big]\tag{6.11}
+\underset{\alpha(x_0),\beta_j(x_0),j=1,\ldots,d}{\min}\sum\limits_{i=1}^NK_\lambda(x_0,x_i)\Big[y_i-\alpha(x_0)-\sum\limits_{j=1}^d\beta_j(x_0)x_i^j\Big]^2\tag{6.11}
 </script>
-解为 $\hat f(x_0)=\hat \alpha(x_0)+\sum_{j=1}^d\hat\beta_j(x_0)x_0^j$。实际上，类似 (6.10) 的表达式将告诉我们偏差仅仅有 $d+1$ 阶和更高阶的组分（<a href="https://github.com/szcf-weiya/ESL-CN/issues/148">练习 6.2</a>）。图 6.5 说明了局部二次回归。局部线性拟合趋向于在真实函数的区域中有偏差，这个现象被称作 <strong>截断山坡 (trimming the hills)</strong> 和 <strong>填充山谷 (filling the valleys)</strong>。局部二次回归一般可以纠正这个偏差。</p>
+解为 $\hat f(x_0)=\hat \alpha(x_0)+\sum_{j=1}^d\hat\beta_j(x_0)x_0^j$．实际上，类似 \eqref{6.10} 的表达式将告诉我们偏差仅仅有 $d+1$ 阶和更高阶的组分（<a href="https://github.com/szcf-weiya/ESL-CN/issues/148">练习 6.2</a>）．图 6.5 说明了局部二次回归．局部线性拟合趋向于在真实函数的区域中有偏差，这个现象被称作 <strong>截断山坡 (trimming the hills)</strong> 和 <strong>填充山谷 (filling the valleys)</strong>．局部二次回归一般可以纠正这个偏差．</p>
 <p><img alt="" src="../../img/06/fig6.5.png" /></p>
 <blockquote>
-<p>图 6.5. 局部线性拟合在真是函数曲线区域中的偏差。局部二次拟合趋向于消除这个偏差。</p>
+<p>图 6.5. 局部线性拟合在真实函数曲线区域中的偏差．局部二次拟合趋向于消除这个偏差．</p>
 </blockquote>
-<p>当然为了减小这个偏差需要付出代价，也就是增加方差。图 6.5 的右图更摇摆，特别在尾巴处。假设模型 $y_i=f(x_i)+\varepsilon_i$，并且 $\varepsilon_i$ 独立，并且是均值为 $0$ 方差为 $\sigma^2$ 的同分布，$\Var(\hat f(x_0))=\sigma^2\Vert l(x_0)\Vert^2$，其中 $l(x_0)$ 是在 $x_0$ 处等价核权重的向量。可以证明（<a href="https://github.com/szcf-weiya/ESL-CN/issues/149">练习 6.3</a>）$\Vert l(x_0)\Vert$ 随着 $d$ 增加而增加，所以在选择多项式次数时存在偏差和方差之间的权衡。图 6.6 说明了次数为 0,1 和 2 的局部多项式的方差曲线。总结一下这个问题上一些正确的做法：</p>
+<p>当然为了减小这个偏差需要付出代价，也就是增加方差．图 6.5 的右图更摇摆，特别在尾巴处．假设模型 $y_i=f(x_i)+\varepsilon_i$，并且 $\varepsilon_i$ 独立，并且是均值为 $0$ 方差为 $\sigma^2$ 的同分布，$\Var(\hat f(x_0))=\sigma^2\Vert l(x_0)\Vert^2$，其中 $l(x_0)$ 是在 $x_0$ 处等价核权重的向量．可以证明（<a href="https://github.com/szcf-weiya/ESL-CN/issues/149">练习 6.3</a>）$\Vert l(x_0)\Vert$ 随着 $d$ 增加而增加，所以在选择多项式次数时存在偏差和方差之间的权衡．</p>
+<div class="admonition info">
+<p class="admonition-title">weiya 注：Ex. 6.3</p>
+<p>证明了 $W=I$ 的情形，但是对于一般的权重系数矩阵，卡住了。欢迎交流讨论，<a href="https://github.com/szcf-weiya/ESL-CN/issues/149">Issue 149: Ex. 6.3</a>.</p>
+</div>
+<p>图 6.6 说明了次数为 0,1 和 2 的局部多项式的方差曲线．总结一下这个问题上一些正确的做法：</p>
 <ul>
-<li>局部线性拟合在边界处以适合的方差代价对偏差有显著的帮助。局部二次拟合在边界处对偏差的贡献很少，但是大幅增加了方差。</li>
-<li>局部二次拟合在定义域内对于降低由于曲率造成的偏差趋向于是最有帮助的。</li>
-<li>渐近分析表明奇数阶的局部多项式表现得比偶数阶要好。大部分是因为渐近情况下，MSE 由边界影响主导。</li>
+<li>局部线性拟合在边界处以适合的方差代价对偏差有显著的帮助．但局部二次拟合在边界处对偏差的贡献很少，而且大幅增加了方差．</li>
+<li>局部二次拟合在定义域内部对于降低由于曲率造成的偏差趋向于是最有帮助的．</li>
+<li>渐近分析表明奇数阶的局部多项式表现得比偶数阶要好．大部分是因为渐近情况下，MSE 由边界影响主导．</li>
 </ul>
 <p><img alt="" src="../../img/06/fig6.6.png" /></p>
 <blockquote>
-<p>图 6.6. 对于度量窗口宽度（$\lambda=0.2$）的三次立方核方差函数 $\Vert l(x)\Vert^2$，局部常值，线性和方差回归的方差函数 $\Vert l(x)\Vert^2$。</p>
+<p>图 6.6. 对于度量窗口宽度（$\lambda=0.2$）的三次立方核方差函数 $\Vert l(x)\Vert^2$，局部常值，线性和二次回归的方差函数 $\Vert l(x)\Vert^2$．</p>
 </blockquote>
-<p>尽管这对修补可能会有帮助，在边界处采用局部线性拟合然后在内部采用局部二次拟合，但是我们不推荐这种策略。通常这个应用规定了拟合的阶数。举个例子，如果我们关心 <strong>向外推断 (extrapolation)</strong>，则我们对边界更感兴趣，并且局部线性拟合或许更可靠。</p>
+<p>尽管这对修补可能会有帮助，在边界处采用局部线性拟合然后在内部采用局部二次拟合，但是我们不推荐这种策略．通常具体的应用规定了拟合的阶数．举个例子，如果我们关心 <strong>向外推断 (extrapolation)</strong>，则我们对边界更感兴趣，此时局部线性拟合或许更可靠．</p>
                 
                   
                 
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/06-Kernel-Smoothing-Methods/6.1-One-Dimensional-Kernel-Smoothers/index.html";
+      this.page.identifier =
+        "/06-Kernel-Smoothing-Methods/6.1-One-Dimensional-Kernel-Smoothers/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3551,7 +3554,7 @@ $\beta$ 估计为
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3561,7 +3564,7 @@ $\beta$ 估计为
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:34
+        Last Build Date UTC : 2026-10-24 02:32:54
       </div>
       
         
@@ -3574,7 +3577,7 @@ $\beta$ 估计为
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3594,18 +3597,57 @@ $\beta$ 估计为
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

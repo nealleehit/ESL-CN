@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -499,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1291,8 +1288,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1627,8 +1624,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1711,8 +1708,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1723,8 +1720,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1807,8 +1804,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1819,8 +1816,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2083,8 +2080,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2095,8 +2092,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2337,8 +2334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2696,8 +2693,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -2915,59 +2912,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3086,18 +3035,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3128,30 +3065,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3176,13 +3089,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3248,8 +3161,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3309,8 +3270,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3326,13 +3287,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/17-Undirected-Graphical-Models/17.4-Undirected-Graphical-Models-for-Discrete-Variables.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="174">17.4 离散变量的无向图模型<a class="headerlink" href="#174" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf#page=657">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf#page=657">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3341,8 +3304,8 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2017-02-25:2017-02-26</td>
+<td>发布</td>
+<td>2016-09-30</td>
 </tr>
 <tr>
 <td>更新</td>
@@ -3356,42 +3319,58 @@
 </table>
 <blockquote>
 <p>写在前面</p>
-<p>这一节中我觉得最有应用价值的是 RBM，这跟深度学习很相关，在 LISA lab, University of Montreal 编的那本 Deep Learning Tutorial (Release 0.1) 中，有一节就是讲如何用 RBM 做手写数字识别。那段程序大概六个月前就已经接触了，但一直没搞清楚它在干嘛<img alt="😞" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f61e.svg" title=":disappointed:" />。其实，本节最后作者提到的用 RBM 做手写数字识别中的某一步其实就是那段程序干的事情。事实上，那段程序并没有真正地完成识别问题，仅仅是其中的一步——“采用对比发散训练包含 784 个可见单元和 500 个隐藏单元的RBM，来建立图像集的模型”，后续步骤还应该有“将这个 RBM 的隐藏状态作为训练第二个 RBM 的数据，第二个 RBM 含 500 个可见单元和 500 个隐藏单元。最后，第二个 RBM 的隐藏状态用作训练含 2000 个隐藏单元的RBM的输入特征，并且用上标签数据。” 或许，这导致当时没有理解程序所要完成的目标的原因吧<img alt="😖" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f616.svg" title=":confounded:" />  </p>
-<p>程序可以在<a href="https://github.com/szcf-weiya/ESL-CN/tree/master/code/rbm">这里</a> 中找到，或者参考<a href="http://deeplearning.net/tutorial/deeplearning.pdf">官方教程</a>。</p>
-<p>另外，在我的<a href="https://stats.hohoweiya.xyz//statisticallearning/2017/08/17/Restricted-Boltzmann-Machines/">英文博客</a>中有RBM的简要总结，欢迎提出宝贵建议<img alt="😂" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f602.svg" title=":joy:" />
+<p>这一节中我觉得最有应用价值的是 RBM，这跟深度学习很相关，在 LISA lab, University of Montreal 编的那本 Deep Learning Tutorial (Release 0.1) 中，有一节就是讲如何用 RBM 做手写数字识别．那段程序大概六个月前就已经接触了，但一直没搞清楚它在干嘛<img alt="😞" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f61e.svg" title=":disappointed:" />．其实，本节最后作者提到的用 RBM 做手写数字识别中的某一步其实就是那段程序干的事情．事实上，那段程序并没有真正地完成识别问题，仅仅是其中的一步——“采用对比发散训练包含 784 个可见单元和 500 个隐藏单元的RBM，来建立图像集的模型”，后续步骤还应该有“将这个 RBM 的隐藏状态作为训练第二个 RBM 的数据，第二个 RBM 含 500 个可见单元和 500 个隐藏单元．最后，第二个 RBM 的隐藏状态用作训练含 2000 个隐藏单元的RBM的输入特征，并且用上标签数据．” 或许，这导致当时没有理解程序所要完成的目标的原因吧<img alt="😖" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f616.svg" title=":confounded:" />  </p>
+<p>程序可以在<a href="https://github.com/szcf-weiya/ESL-CN/tree/master/code/rbm">这里</a> 中找到，或者参考<a href="http://deeplearning.net/tutorial/deeplearning.pdf">官方教程</a>．</p>
+<p>另外，在我的<a href="https://stats.hohoweiya.xyz//statisticallearning/2017/08/17/Restricted-Boltzmann-Machines/">英文博客</a>中有RBM 的简要总结，欢迎提出宝贵建议<img alt="😂" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f602.svg" title=":joy:" />
 @2017.08.27</p>
 </blockquote>
-<p>离散变量的无向马尔科夫网络是很流行的，而且特别地，二值变量的成对马尔科夫网络更普遍。在统计力学领域有时称为 Ising 模型，在机器学习领域称为<strong>玻尔兹曼机 (Boltzmann machines)</strong>，其中顶点称为“<strong>结点 (nodes)</strong>”或“<strong>单元 (units)</strong>”，而且是二值的。</p>
-<p>另外，每个结点处的值可以 <strong>被观测到 (visible)</strong> 或者 <strong>观测不到 (hidden)</strong>。结点通常由层来构成，这类似神经网络。玻尔兹曼机对于非监督学习和监督学习都是很有用的，特别对有结构化输入数据，比如图像，但是也受到计算上的限制。图 17.6 显示了一个约束的玻尔兹曼机（后面讨论），其中一些变量是隐藏的，而且只有一些结点对是相连的。我们所有 $p$ 个结点都是可见的简单情形，并且边的对 $(j,k)$ 取自 $E$。</p>
+<p>离散变量的无向马尔科夫网络是很流行的，而且特别地，二值变量的成对马尔科夫网络更普遍．在统计力学领域有时称为 Ising 模型，在机器学习领域称为 <strong>玻尔兹曼机 (Boltzmann machines)</strong>，其中顶点称为“<strong>结点 (nodes)</strong>”或“<strong>单元 (units)</strong>”，取值为 0 或 1.</p>
+<p>另外，每个结点处的值可以 <strong>被观测到 (visible)</strong> 或者 <strong>观测不到 (hidden)</strong>．结点通常由层来构成，这类似神经网络．玻尔兹曼机对于非监督学习和监督学习都是很有用的，特别对有结构化输入数据，比如图像，但是也受到计算上的限制．图 17.6 显示了一个约束的玻尔兹曼机（后面讨论），其中一些变量是隐藏的，而且只有一些结点对是相连的．我们所有 $p$ 个结点都是可见的简单情形，并且边的对 $(j,k)$ 取自 $E$．</p>
 <p>用 $X_j$ 标记结点 $j$ 处的二值变量，它们联合分布的 Ising 模型由下式给出
 <script type="math/tex; mode=display">
-p(X,\mathbf\Theta)=\exp[\sum\limits_{(j,k)\in E}\theta_{jk}X_jX_k-\Phi(\mathbf{\Theta})]\text{  for  }X\in{\cal X}\tag{17.28}
+p(X,\mathbf\Theta)=\exp\left[\sum\limits_{(j,k)\in E}\theta_{jk}X_jX_k-\Phi(\mathbf{\Theta})\right]\text{  for  }X\in{\cal X}\tag{17.28}\label{17.28}
 </script>
-其中 ${\cal X}=\{0,1\}^p$。和上一节的高斯模型一样，只有成对交叉项才进行建模。Ising 模型是在统计力学中发展的，而且现在更一般地用来建立成对交叉的联合影响。$\Phi\mathbf{(\Theta)}$ 为分割函数的对数，而且由下式定义
+其中 ${\cal X}=\{0,1\}^p$．和上一节的高斯模型一样，只对成对交叉项进行建模．Ising 模型是在统计力学中发展的，而且现在更一般地用来建立成对交叉的联合影响．$\Phi\mathbf{(\Theta)}$ 为 <strong>分割函数 (partition function)</strong> 的对数，而且由下式定义
 <script type="math/tex; mode=display">
-\Phi(\mathbf \Theta)=\mathrm{log}\sum\limits_{x\in\cal X}[\mathrm {exp}(\sum\limits_{(j,k)\in E}\theta_{jk}x_jx_k)]\tag{17.29}
+\Phi(\mathbf \Theta)=\log\sum\limits_{x\in\cal X}\left[\exp\left(\sum\limits_{(j,k)\in E}\theta_{jk}x_jx_k\right)\right]\tag{17.29}
 </script>
 </p>
-<p>分割函数保证在样本空间中概率相加起来为 1。$\theta_{jk}X_jX_k$ 项表示（对数）势函数（17.5）的特定参量化，而且因为技术上的原因需要包含 <strong>常值 (constant)</strong> 结点（与其他结点都有边相连） $X_0\equiv 1$（<a href="https://github.com/szcf-weiya/ESL-CN/issues/139">练习 17.10</a>）。</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：Recall</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align*}
+f^{(2)}(x,y,z)&=\frac{1}{Z}\psi(x,y)\psi(x,z)\psi(y,z)\\
+f^{(3)}(x,y,z)&=\frac{1}{Z}\psi(x,y,z)
+\end{align*}
+\tag{17.5}\label{17.5}
+</script>
+</p>
+</div>
+<p>分割函数保证在样本空间中概率相加起来为 1．$\theta_{jk}X_jX_k$ 项表示（对数）势函数 \eqref{17.5} 的特定参量化，而且因为技术上的原因需要包含 <strong>常值结点 (constant node)</strong> $X_0\equiv 1$，即与其他结点都有边相连.（<a href="https://github.com/szcf-weiya/ESL-CN/issues/139">练习 17.10</a>）．</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：Ex. 17.10</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/139">Issue 139: Ex. 17.10</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/139">Issue 139: Ex. 17.10</a>．</p>
 </div>
-<p>在统计领域中，这个模型等价于多路计算表（multiway tables of counts）的一阶交叉泊松对数线性模型（Bishop et al.，1975<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> ;McCullagh and Nelder,1989<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>; Agresti, 2002<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>）。</p>
-<p>Ising 模型暗示着每个结点在其它结点条件下由逻辑斯蒂形式（<a href="https://github.com/szcf-weiya/ESL-CN/issues/140">练习 17.11</a>）
+<p>在统计领域中，这个模型等价于 <strong>多路计数表 (multiway tables of counts)</strong> 的 <strong>一阶交叉泊松对数线性模型 (first-order-interaction Poisson log-linear model)</strong>（Bishop et al.，1975<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> ;McCullagh and Nelder,1989<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>; Agresti, 2002<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>）．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：multiway tables of counts</p>
+<p>Agresti (2002) 在 p17 介绍到，如果一个 <strong>列联表 (contigency table)</strong> 对两个（类别型）变量进行交叉分类，则称为 two-way table；如果对三个变量交叉分类，则称为 three-way table，以此类推. </p>
+</div>
+<p>Ising 模型暗示着每个结点在其它结点条件下有逻辑斯蒂形式（<a href="https://github.com/szcf-weiya/ESL-CN/issues/140">练习 17.11</a>）
 <script type="math/tex; mode=display">
-\Pr(X_j=1\mid X_{-j}=x_{-j})=\frac{1}{1+\exp(-\theta_{j0}-\sum_{(j,k)\in E}\theta_{jk}x_k)}\tag{17.30}
+\Pr(X_j=1\mid X_{-j}=x_{-j})=\frac{1}{1+\exp(-\theta_{j0}-\sum_{(j,k)\in E}\theta_{jk}x_k)}\tag{17.30}\label{17.30}
 </script>
-其中 $X_{-j}$ 记除了 $j$ 的所有结点。因此参数 $\theta_{jk}$ 衡量了在给定其它结点条件下，$X_j$ 在 $X_k$ 上的依赖性。</p>
+其中 $X_{-j}$ 记除了 $j$ 的所有结点．因此参数 $\theta_{jk}$ 衡量了在给定其它结点条件下，$X_j$ 在 $X_k$ 上的依赖性．</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：Ex. 17.11</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/140">Issue 140: Ex. 17.11</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/140">Issue 140: Ex. 17.11</a>．</p>
 </div>
 <h2 id="_1">当图结构已知时估计参数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>从模型中给出一些数据，我们可以怎么估计参数？假设我们有观测 $x_i=(x_{i1},x_{i2},\ldots,x_{ip})\in\{0,1\}^p,i=1,\ldots,N$。对数似然为
+<p>从模型中给出一些数据，我们可以怎么估计参数？假设我们有观测 $x_i=(x_{i1},x_{i2},\ldots,x_{ip})\in\{0,1\}^p,i=1,\ldots,N$．对数似然为
 <script type="math/tex; mode=display">
 \begin{align}
-\ell(\mathbf\Theta)&=\sum\limits_{i=1}^N\mathrm{log\; \Pr}_{\mathbf\Theta}(X_i=x_i)\notag\\
+\ell(\mathbf\Theta)&=\sum\limits_{i=1}^N\log \Pr\nolimits_{\mathbf\Theta}(X_i=x_i)\notag\\
 &=\sum\limits_{i=1}^N\Big[\sum\limits_{(j,k)\in E}\theta_{jk}x_{ij}x_{ik}-\Phi(\mathbf\Theta) \Big]\tag{17.31}
 \end{align}
 </script>
@@ -3408,91 +3387,104 @@ p(X,\mathbf\Theta)=\exp[\sum\limits_{(j,k)\in E}\theta_{jk}X_jX_k-\Phi(\mathbf{\
 </script>
 令梯度等于 0 得到
 <script type="math/tex; mode=display">
-\hat \E(X_jX_k)-\E_{\mathbf \Theta}(X_jX_k)=0\tag{17.34}
+\hat \E(X_jX_k)-\E_{\mathbf \Theta}(X_jX_k)=0\tag{17.34}\label{17.34}
 </script>
 其中我们定义
 <script type="math/tex; mode=display">
 \hat \E(X_jX_k)=\frac{1}{N}\sum\limits_{i=1}^Nx_{ij}x_{ik},\tag{17.35}
 </script>
-这是关于数据的经验分布取期望。注意 (17.34) 式，我们看到极大似然估计简单地把结点之间的内积估计和观测的内积匹配上了。这是指数族模型得分（梯度）等式的标准形式，其中令充分统计量等于模型下的期望。</p>
-<p>为了寻找极大似然估计，我们可以利用梯度搜索或者牛顿法。然而 $\E_{\mathbf \Theta}(X_jX_k)$ 的计算涉及 $p(X,\mathbf\Theta)$ 在 $X$ 的 $\vert{\cal X}\vert=2^p$ 种可能值中的 $2^{p-2}$ 种情形，</p>
+这是关于数据的经验分布取期望．注意 \eqref{17.34} 式，我们看到极大似然估计简单地把结点之间的内积估计和观测的内积匹配上了．这是指数族模型得分（梯度）等式的标准形式，其中令充分统计量等于模型下的期望．</p>
+<p>为了寻找极大似然估计，我们可以利用梯度搜索或者牛顿法．然而 $\E_{\mathbf \Theta}(X_jX_k)$ 的计算涉及 $p(X,\mathbf\Theta)$ 在 $X$ 的 $\vert{\cal X}\vert=2^p$ 种可能值中的 $2^{p-2}$ 种情形，</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：$2^{p-2}$</p>
-<p>可以这样理解，因为 $X_jX_k$ 的取值有四种情形，则对每一种 $X_jX_k$，总共有$2^p/4=2^{p-2}$种可能。</p>
+<p>可以这样理解，因为 $X_jX_k$ 的取值有四种情形，则对每一种 $X_jX_k$，总共有$2^p/4=2^{p-2}$种可能．</p>
 </div>
-<p>而且对于大的 $p$ 一般是不可行的（比如，大于 30）。对于小 $p$，有一系列标准的统计方法可以使用：</p>
+<p>而且对于大的 $p$ 一般是不可行的（比如，大于 30）．对于小 $p$，有一系列标准的统计方法可以使用：</p>
 <ul>
-<li><strong>泊松对数线性建模 (Poisson log-linear modeling)</strong>， 其中我们将问题看成是大规模回归问题（<a href="https://github.com/szcf-weiya/ESL-CN/issues/141">练习17.12</a>）。响应变量 $\mathbf y$ 是数据的多路表的每个单元中的 $2^p$ 维计数的向量。</li>
+<li><strong>泊松对数线性建模 (Poisson log-linear modeling)</strong>， 其中我们将问题看成是大规模回归问题（<a href="https://github.com/szcf-weiya/ESL-CN/issues/141">练习 17.12</a>）．响应变量 $\mathbf y$ 是数据的多路表的每个单元中的 $2^p$ 维计数的向量．</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">原书脚注：</p>
-<p>每个单元的计数看成是单个的独立泊松变量。在总数 $N$ 的条件下能得到对应 (17.28) 的多项式模型（在这个框架下也是泊松分布）。</p>
+<p>每个单元的计数看成是单个的独立泊松变量．在总数 $N$ 的条件下能得到对应 \eqref{17.28} 的多项式模型（在这个框架下也是泊松分布）．</p>
 </div>
+<!--
+不矛盾！！其实就是 $N=2^p$.
+
+!!! note "weiya 注：翻译疑问"
+    “The response vector y is the vector of $2^p$ counts in each of the cells of the multiway tabulation of the data.” 这里我理解为 $2^p$ 维，因为有 $2^p$ 个单元，每个单元是指代观测点的个数，但这样似乎与 [练习 17.12](https://github.com/szcf-weiya/ESL-CN/issues/141) 矛盾．或者只是记号本身有点差异？
+
+-->
+
 <div class="admonition note">
-<p class="admonition-title">weiya 注：翻译疑问</p>
-<p>“The response vector y is the vector of $2^p$ counts in each of the cells of the multiway tabulation of the data.” 这里我理解为 $2^p$ 维，因为有 $2^p$ 个单元，每个单元是指代观测点的个数，但这样似乎与 <a href="https://github.com/szcf-weiya/ESL-CN/issues/141">练习17.12</a> 矛盾。</p>
+<p class="admonition-title">weiya 注：Ex. 17.12</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/141">Issue 141: Ex. 17.12</a>.</p>
 </div>
-<p>预测矩阵 $\mathbf Z$ 有 $2^p$ 个行，以及 $1+p+p^2$ 个表征每个单元的列，尽管这个数字取决于图的稀疏程度。计算代价本质是该规模下回归问题的代价，即为 $O(p^42^p)$ 并且对于 $p &lt; 20$ 是可行的。牛顿更新一般通过迭代重赋权最小二乘法类似计算，并且步数通常是在个位数之内。详见 Agresti (2002)<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> 和 McCullagh and Nelder(1989)<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>。标准软件（比如 <code>R</code> 语言的 <code>glm</code> 包）可以用来拟合这个模型。</p>
+<p>预测矩阵 $\mathbf Z$ 有 $2^p$ 个行，以及 $1+p+p^2$ 个表征每个单元的列，尽管这个数字取决于图的稀疏程度．计算代价本质是该规模下回归问题的代价，即为 $O(p^42^p)$ 并且对于 $p &lt; 20$ 是可行的．<strong>牛顿更新 (Newton updates)</strong>一般通过 <strong>迭代重加权最小二乘法 (iteratively reweighted least squares)</strong> 来计算，并且步数通常是在个位数之内．详见 Agresti (2002)<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup> 和 McCullagh and Nelder(1989)<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup>．标准软件（比如 <code>R</code> 语言的 <code>glm</code> 包）可以用来拟合这个模型．</p>
 <ul>
 <li>
-<p><strong>梯度下降 (Gradient descent)</strong>至多需要 $O(p^22^{p-2})$ 的计算量来计算梯度，但是可能会比二阶牛顿法需要更多的梯度步数。然而，可以处理 $p\le 30$ 的稍微大点的问题。这些计算可以通过发现稀疏图中特别的团结构，采用 junction-tree 算法进行降低计算量。这里没有给出细节。</p>
+<p><strong>梯度下降 (gradient descent)</strong> 至多需要 $O(p^22^{p-2})$ 的计算量来计算梯度，但是可能会比二阶牛顿法需要更多的梯度步数．然而，可以处理稍微大点的 $p\le 30$ 的问题．计算量可以通过（采用 junction-tree 算法）找出稀疏图中特别的团结构来降低．这里没有给出细节．</p>
 </li>
 <li>
-<p><strong>迭代比例过滤 (Iterative proportional fitting, IPF)</strong> 在梯度式 (17.34) 中采用柱坐标系。每一步更新一个参数使得梯度等式正好为 0。这在柱坐标系中进行直到所有梯度为 0。一个完整的周期与梯度赋值花费同样的计算量，但是可能更有效。Jirouśek and Přeučil (1995)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> 采用 junction trees 实现了 IPF 的一个有效版本。</p>
+<p><strong>迭代比例过滤 (iterative proportional fitting, IPF)</strong> 在梯度式 \eqref{17.34} 中采用 <strong>循环坐标下降 (cyclical coordinate descent)</strong>．每一步更新一个参数使得梯度等式正好为 0．循环进行直到所有梯度为 0．一个完整的周期与梯度赋值花费同样的计算量，但是可能更有效．Jirouśek and Přeučil (1995)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> 采用 junction trees 实现了 IPF 的一个有效版本．</p>
 </li>
 </ul>
-<p>当 $p$ 大（&gt;30）可以采用其它的方法来近似梯度</p>
+<p>当 $p$ 变大 $(&gt;30)$ 可以采用其它的方法来近似梯度</p>
 <ul>
-<li>均值域近似（Peterson and Anderson, 1987<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>）用 $\E_{\mathbf\Theta}(X_j)\E_{\mathbf \Theta}(X_k)$ 来估计 $\E_{\Theta}(X_jX_k)$，并且将输入变量用它们的均值替换，得到一系列关于参数$\theta_{jk}$的非线性等式。</li>
-<li>为了得到近似解，使用吉布斯采样（<a href="../../08-Model-Inference-and-Averaging/8.6-MCMC-for-Sampling-from-the-Posterior/index.html">8.6 节</a>）来近似 $\E_{\mathbf\Theta}(X_jX_k)$，通过从估计模型 $\Pr_{\mathbf\Theta}(X_j\mid X_{-j})$来逐步抽样（见 Ripley (1996)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>）</li>
+<li>均值域近似（Peterson and Anderson, 1987<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>）用 $\E_{\mathbf\Theta}(X_j)\E_{\mathbf \Theta}(X_k)$ 来估计 $\E_{\Theta}(X_jX_k)$，并且将输入变量用它们的均值替换，得到一系列关于参数 $\theta_{jk}$ 的非线性等式．</li>
+<li>为了得到近似解，吉布斯采样（<a href="../../08-Model-Inference-and-Averaging/8.6-MCMC-for-Sampling-from-the-Posterior/index.html">8.6 节</a>）可以用来近似 $\E_{\mathbf\Theta}(X_jX_k)$，即对估计模型 $\Pr_{\mathbf\Theta}(X_j\mid X_{-j})$ 逐步抽样（见 Ripley (1996)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>）</li>
 </ul>
-<p>我们没有讨论 <strong>可分解模型 (decomposable models)</strong>，因为极大似然估计不需要任何迭代就可以在闭形式中找到。举个例子，这些模型来自树：截断树拓扑的特殊图。当要关心计算易处理性，树表示一个有用的模型类，并且它们回避本节中提出的计算上的考虑。详见 Whittaker(1990)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup> 的第 12 章的例子。</p>
+<p>我们没有讨论 <strong>可分解模型 (decomposable models)</strong>，因为此时极大似然估计不需要任何迭代就可以在闭形式中找到．举个例子，这些模型来自树：截断树拓扑的特殊图．当关心计算易处理性，树是一个有用的模型类，因为它们回避本节中提出的计算上的考虑．详见 Whittaker(1990)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> 的第 12 章的例子．</p>
 <h2 id="_2">隐藏结点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>我们可以通过包含潜在或隐藏结点来增加离散马尔科夫网络的复杂性。假设变量的子集 $X_{\cal H}$ 是未观测的或者“隐藏的”，并且剩余的变量 $X_{\cal V}$ 是观测的或者“可见的”。则观测数据的对数似然为
+<p>我们可以通过引入潜在或隐藏结点来增加离散马尔科夫网络的复杂性．假设变量的子集 $X_{\cal H}$ 是未观测的或者“隐藏的”，并且剩余的变量 $X_{\cal V}$ 是观测的或者“可见的”．则观测数据的对数似然为
 <script type="math/tex; mode=display">
 \begin{align}
-\ell(\mathbf\Theta)&=\sum\limits_{i=1}^N\mathrm{log}[\Pr_{\mathbf\Theta}(X_{\cal V}=x_{i\cal V})]\notag\\
-&=\sum\limits_{i=1}^N[\mathrm{log}\sum\limits_{x_{\cal H}\in{\cal X_H}}\exp\sum\limits_{(j,k)\in E}(\theta_{jk}x_{ij}x_{jk}-\Phi(\mathbf\Theta))]\tag{17.36}
+\ell(\mathbf\Theta)&=\sum_{i=1}^N\mathrm{log}[\Pr\nolimits_{\mathbf\Theta}(X_{\cal V}=x_{i\cal V})]\notag\\
+&=\sum_{i=1}^N\left[\mathrm{log}\sum\limits_{x_{\cal H}\in{\cal X_H}}\exp\sum\limits_{(j,k)\in E}(\theta_{jk}x_{ij}x_{jk}-\Phi(\mathbf\Theta))\right]\tag{17.36}
 \end{align}
 </script>
-对 $x_{\cal H}$ 求和意味着我们对隐藏单元的所有可能 ${0,1}$ 值进行求和。梯度为
+对 $x_{\cal H}$ 求和意味着我们对隐藏单元的所有可能 $\{0,1\}$ 值进行求和．梯度为
 <script type="math/tex; mode=display">
-\frac{d\ell(\mathbf\Theta)}{d\theta_{jk}}=\hat \E_{\cal V}\E_{\mathbf \Theta}(X_jX_k\mid X_{\cal V})-\E_{\mathbf\Theta}(X_jX_k)\tag{17.37}
+\frac{d\ell(\mathbf\Theta)}{d\theta_{jk}}=\hat \E_{\cal V}\E_{\mathbf \Theta}(X_jX_k\mid X_{\cal V})-\E_{\mathbf\Theta}(X_jX_k)\tag{17.37}\label{17.37}
 </script>
-第一项是当 $X_jX_k$ 都可见时的经验均值；如果其中一个或都隐藏，则在给定可见数据下进行第一次插值，然后在隐藏变量上平均。第二项是 $X_jX_k$ 的无条件期望。</p>
-<p>第一项中的内层期望可以用条件期望的基本法则和伯努利随机变量的性质进行赋值。具体地，对于观测 $i$，
+第一项是当 $X_jX_k$ 都可见时的经验均值；如果其中一个或都隐藏，则在给定可见数据下进行第一次插值，然后在隐藏变量上平均．第二项是 $X_jX_k$ 的无条件期望．</p>
+<p>第一项中的内层期望可以用条件期望的基本法则和伯努利随机变量的性质进行赋值．具体地，对于观测 $i$，
 <script type="math/tex; mode=display">
 \E_{\mathbf\Theta}(X_jX_k\mid X_{\cal V}=x_{i\cal V}) =
 \left\{
 \begin{array}{ll}
 x_{ij}x_{ik}& \text{if }j,k\in\cal V\\
-x_{ij}\Pr_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\cal V,k\in\cal H\\
-\Pr_{\mathbf\Theta}(X_j=1,X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j,k\in{\cal H}\end{array}
+x_{ij}\Pr\nolimits_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\cal V,k\in\cal H\\
+\Pr\nolimits_{\mathbf\Theta}(X_j=1,X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j,k\in{\cal H}\end{array}
 \right.
-\tag{17.38}
+\tag{17.38}\label{17.38}
 </script>
-现在需要进行两个独立的吉布斯采样；第一个是从上面的模型中采样估计 $\E_{\mathbf \Theta}(X_jX_k)$，第二个是估计 $\E_{\mathbf\Theta}(X_jX_k\mid X_{\cal V}=x_{i\cal V})$。对于后者，固定（“夹住”）可见单元为观测值，并且仅仅对隐藏变量进行取样。吉布斯采样必须对训练集中的每一个观测进行，在梯度搜索的每一阶段。结果是这个过程可以变得非常慢，甚至对于中等大小的模型也是如此。在 17.4.4 节我们考虑进一步的模型约束来使得计算可行。</p>
-<h2 id="_3">图结构的估计<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>Lee et al. (2007)<sup id="fnref2:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup> 和 Wainwright et al. (2007)<sup id="fnref:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup> 建议使用二值成对马尔科夫网络的 lasso 惩罚。第一个作者研究含惩罚的对数似然的精确最小化的共轭梯度过程。瓶颈是梯度中 $\E_{\mathbf\Theta}(X_jX_k)$ 的计算；通过 junction tree 算法的精确计算对于稀疏图是可行的但是对稠密的图变得难以处理。</p>
-<p>第二个作者提出近似的解法，类似对于高斯图模型的 Meinshausen and Bühlmann (2006)<sup id="fnref:9"><a class="footnote-ref" href="#fn:9" rel="footnote">9</a></sup> 的方法。它们将每个结点看成其他结点的函数的 $L_1$ 惩罚逻辑斯蒂回归，接着以某种方式对称边的参数。举个例子，如果 $\hat\theta_{jk}$ 为从输出变量为结点 $j$ 的逻辑斯蒂回归模型中得到的 $j$-$k$ 边参数的估计，“最小”的对称化设定 $\hat\theta_{jk}$ 为 $\tilde\theta_{jk}$ 或 $\tilde\theta_{kj}$ 中绝对值最小的，类似地定义“最大”准则。他们证明在确定条件下，随着样本大小变为无穷大，两种近似都估计正确的非零边。Hoefling and Tibshirani(2008)<sup id="fnref:10"><a class="footnote-ref" href="#fn:10" rel="footnote">10</a></sup> 将图 lasso 扩大为离散马尔科夫网络，得到比共轭梯度稍快的过程，但是依旧必须处理 $\E_{\mathbf\Theta}(X_jX_k)$ 的计算。他们也在广泛的模拟研究中比较精确和近似解，并且找到“最小”和“最大”近似仅仅比精确解略微不精确，对于估计非零边和估计边参数的真实值都是这样，而且快很多。此外，他们可以处理稠密图的情形，因为他们不需要计算 $\E_{\mathbf\Theta}(X_jX_k)$.</p>
-<p>最后，我们指出高斯和二值模型的关键区别。在高斯情况下，$\mathbf\Sigma$ 和其逆经常都是感兴趣的，而且图 lasso 过程都实现了这两个的估计。然而，Meinshausen and Bühlmann (2006)<sup id="fnref2:9"><a class="footnote-ref" href="#fn:9" rel="footnote">9</a></sup> 对于高斯图模型的近似类似Wainwright et al. (2007)<sup id="fnref2:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup> 对二值情形的近似，仅仅得到 $\mathbf\Sigma^{-1}$ 的估计。相反地，在二值数据的马尔科夫模型中，$\mathbf\Theta$ 是我们感兴趣的，而它的逆不是我们感兴趣的。Wainwright et al. (2007)<sup id="fnref3:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup> 近似的方法有效地估计 $\mathbf\Theta$，因此是二值问题的吸引人的解决方案。</p>
-<h2 id="_4">限制玻尔兹曼机<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>这节我们考虑受神经网络影响的一种特殊的图模型结构，该结构中，单元是按层进行组织的。<strong>限制玻尔兹曼机 (RBM)</strong> 包含一层可见单元和一层隐藏单元，单层之间没有联系。如果隐藏单元的连接被移除掉，计算条件期望变得很简单（如在式 (17.37) 和 (17.38)）。</p>
+</p>
 <div class="admonition note">
-<p class="admonition-title">weiya 注：<p>这样 (17.38) 式变成，对于观测 $i$，
+<p class="admonition-title">weiya 注：推导 \eqref{17.38}</p>
+<p>参见<a href="http://disq.us/p/22yh4r6">评论</a>.</p>
+</div>
+<p>现在需要进行两个独立的吉布斯采样；第一个是从上面的模型中采样估计 $\E_{\mathbf \Theta}(X_jX_k)$，第二个是估计 $\E_{\mathbf\Theta}(X_jX_k\mid X_{\cal V}=x_{i\cal V})$．对于后者，固定（“夹住”）可见单元为观测值，并且仅仅对隐藏变量进行取样．吉布斯采样必须对训练集中的每一个观测进行，在梯度搜索的每一阶段．结果是这个过程可以变得非常慢，甚至对于中等规模的模型也是如此．在 <a href="">17.4.4 节</a>我们考虑进一步的模型约束来使得计算可行．</p>
+<h2 id="_3">图结构的估计<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Lee et al. (2007)<sup id="fnref2:7"><a class="footnote-ref" href="#fn:7">7</a></sup> 和 Wainwright et al. (2007)<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup> 建议使用二值成对马尔科夫网络的 lasso 惩罚．第一篇作者们提出共轭梯度法来精确最大化含惩罚的对数似然．瓶颈是梯度中 $\E_{\mathbf\Theta}(X_jX_k)$ 的计算；通过 junction tree 算法的精确计算对于稀疏图是可行的但是对稠密的图变得难以处理．</p>
+<p>第二个篇文章提出近似的解法，类似对于高斯图模型的 Meinshausen and Bühlmann (2006)<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> 的方法．它们将每个结点看成其他结点的函数的 $L_1$ 惩罚逻辑斯蒂回归，接着以某种方式对称边的参数．举个例子，如果 $\hat\theta_{jk}$ 为从输出变量为结点 $j$ 的逻辑斯蒂回归模型中得到的 $j$-$k$ 边参数的估计，“最小”的对称化设定 $\hat\theta_{jk}$ 为 $\tilde\theta_{jk}$ 或 $\tilde\theta_{kj}$ 中绝对值最小的，类似地定义“最大”准则．他们证明在确定条件下，随着样本大小变为无穷大，两种近似都能估计正确的非零边．Hoefling and Tibshirani(2008)<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> 将 graphical lasso 应用到离散马尔科夫网络，得到比共轭梯度稍快的过程，但是依旧必须处理 $\E_{\mathbf\Theta}(X_jX_k)$ 的计算．他们也在大量的模拟研究中比较了精确解和近似解，并且发现“最小”和“最大”近似仅仅比精确解略微不精确，对于估计非零边和估计边参数的真实值都是这样，而且快很多．此外，他们可以处理稠密图的情形，因为他们不需要计算 $\E_{\mathbf\Theta}(X_jX_k)$.</p>
+<p>最后，我们指出高斯和二值模型的关键区别．在高斯情况下，$\mathbf\Sigma$ 和其逆经常都是感兴趣的，而且 graphical lasso 过程都实现了这两个的估计．然而，Meinshausen and Bühlmann (2006)<sup id="fnref2:9"><a class="footnote-ref" href="#fn:9">9</a></sup> 对于高斯图模型的近似类似 Wainwright et al. (2007)<sup id="fnref2:8"><a class="footnote-ref" href="#fn:8">8</a></sup> 对二值情形的近似，却仅仅得到 $\mathbf\Sigma^{-1}$ 的估计．相反地，在二值数据的马尔科夫模型中，$\mathbf\Theta$ 是我们感兴趣的，而它的逆不是我们感兴趣的．Wainwright et al. (2007)<sup id="fnref3:8"><a class="footnote-ref" href="#fn:8">8</a></sup> 近似的方法有效地估计 $\mathbf\Theta$，因此是二值问题的吸引人的解决方案．</p>
+<h2 id="_4">限制玻尔兹曼机<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>这节我们考虑受神经网络影响的一种特殊的图模型结构，该结构中，单元是按层进行组织的．<strong>限制玻尔兹曼机 (restricted Boltzmann machine, RBM)</strong> 包含一层可见单元和一层隐藏单元，单层之间没有联系．如果隐藏单元的连接被移除掉，计算条件期望变得很简单（如在式 \eqref{17.37} 和 \eqref{17.38}）．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：<p>这样 \eqref{17.38} 式变成，对于观测 $i$，
 <script type="math/tex; mode=display">
 \E_{\Theta}(X_jX_k\mid X_{\cal V}=x_{i\cal V})=
 \left\{
     \begin{array}{ll}
     x_{ij}x_{ik}&\text{if }j,k\in\cal V\\
-    \Pr_{\Theta}(X_j=1,X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j,k\in\cal H
+    \Pr\nolimits_{\Theta}(X_j=1,X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j,k\in\cal H
     \end{array}
     \right.
 </script>
 </p>
 </p>
 </div>
-<p>图 17.6 显示了一个例子；可见层被分成了输入变量 $\cal V_1$ 和输出变量 $\cal V_2$，且有一个隐藏层 $\cal H$。我们将这样一个网络表示成</p>
+<p>图 17.6 显示了一个例子；可见层被分成了输入变量 $\cal V_1$ 和输出变量 $\cal V_2$，且有一个隐藏层 $\cal H$．我们将这样一个网络表示成</p>
 <p>
 <script type="math/tex; mode=display">
 {\cal V}_1\leftrightarrow {\cal H\leftrightarrow\cal V}_2\tag{17.39}
@@ -3500,65 +3492,65 @@ x_{ij}\Pr_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\c
 </p>
 <p><img alt="" src="../../img/17/fig17.6.png" /></p>
 <blockquote>
-<p>图 17.6. 同一层中的结点没有连接的 <strong>限制玻尔兹曼机 (RBM)</strong>。可见单元细分成了 $\cal V_1$ 和 $\cal V_2$，允许 RBM 建立特征 $\cal V_1$ 和标签 $\cal V_2$ 之间的联合密度。</p>
+<p>图 17.6. 同一层中的结点没有连接的 <strong>限制玻尔兹曼机 (restricted Boltzmann machine, RBM)</strong>．可见单元细分成了 $\cal V_1$ 和 $\cal V_2$，允许 RBM 建立特征 $\cal V_1$ 和标签 $\cal V_2$ 之间的联合密度．</p>
 </blockquote>
-<p>举个例子， $\cal V_1$ 可以是手写字体图像的二值像素，$\cal V_2$ 可以有10个单元，每个单元是观测的类别标签 0-9 中的一个。</p>
-<p>这个模型的约束形式简化了估计 (17.37) 中期望的吉布斯采样，因为每一层的变量在给定其它层中的变量时独立于其它变量。因此它们可以采用由式 (7.30) 给出的条件概率一起取样。</p>
-<p>最终的模型没有玻尔兹曼机一般，但是仍然很有用；举个例子，可以经过学习从图像中提取有趣的特征。</p>
-<p>通过对图 17.6 中 RBM 的每一层中的变量进行交替取样，从联合密度模型中产生样本是可能的。如果可见层的 $\cal V_1$ 部分在交替取样时固定为特定的特征向量，从给定 $\cal V_1$ 的标签分布中取样是可能的。另外测试项的分类也可以通过比较观测到的特征和每个类别标签的未标准化联合密度来实现。我们不需要计算分割函数因为对于所有的组合都是一样的（？？？？）。</p>
-<p>正如所注意到的约束玻尔兹曼机有与单层隐藏层神经网络一样的一般形式（<a href="../../11-Neural-Networks/11.3-Neural-Networks/index.html">11.3 节</a>）。神经网络中边是有向的，隐藏单元经常是实值的，并且拟合准则不一样。神经网络在输入特征的情况下，最小化目标与模型预测之间的误差（交叉熵）。相反地，约束玻尔兹曼机最大化所有可见单元（也就是，特征和目标）的联合分布的对数似然。可以从输入特征中提取对预测标签有用的信息，但是，与监督学习方法不同，可能也使用一些隐藏单元对特征向量中的结构进行建模，而这与预测标签不是直接相关的。然而，这些特征当与从隐藏层中导出的特征结合起来会变得有用。</p>
-<p>不幸的是，约束玻尔兹曼机中的吉布斯采样会非常慢，因为需要花费很长时间达到稳态。当网络参数变得更大，这些链混合得更慢，并且我们需要更多的步骤来得到无条件的估计。Hinton (2002)<sup id="fnref:11"><a class="footnote-ref" href="#fn:11" rel="footnote">11</a></sup> 根据经验注意到当我们通过在数据中启动马尔科夫链并仅仅运行几步（不是直到收敛）来估计 (17.37) 中的第二个期望，学习仍然有用。他称这个为 <strong>对比发散 (contrastive divergence)</strong>：我们给定 $\cal V_1,V_2$ 对 $\cal H$ 取样，然后给定 $\cal H$对 $\cal V_1,V_2$ 取样，最后再次给定 $\cal V_1,V_2$ 对$ \cal H$ 取样。思想是，当参数与解相差很多，迭代吉布斯取样达到稳态是浪费的，因为仅仅一个迭代就是发现改变估计的一个好方向。</p>
+<p>举个例子， $\cal V_1$ 可以是手写字体图像的二值像素，$\cal V_2$ 可以有10个单元，每个单元是观测的类别标签 0-9 中的一个．</p>
+<p>这个模型的约束形式简化了估计 \eqref{17.37} 中期望的吉布斯采样，因为每一层的变量在给定其它层中的变量时相互独立．因此它们可以采用由式 \eqref{17.30} 给出的条件概率一起取样．</p>
+<p>虽然这样得到的最终模型没有玻尔兹曼机一般，但是仍然很有用；举个例子，可以经过学习从图像中提取有趣的特征．通过对图 17.6 中 RBM 的每一层中的变量进行交替取样，从联合密度模型中产生样本是可能的．如果可见层的 $\cal V_1$ 部分在交替取样时固定为特定的特征向量，从给定 $\cal V_1$ 的标签分布中取样是可能的．另外测试项的分类也可以通过比较观测到的特征和每个类别标签的（未标准化）联合密度来实现．我们不需要计算分割函数因为对于所有的组合都是一样的．</p>
+<p>正如所注意到的约束玻尔兹曼机有与单层隐藏层神经网络一样的一般形式（<a href="../../11-Neural-Networks/11.3-Neural-Networks/index.html">11.3 节</a>）．神经网络中边是有向的，隐藏单元经常是实值的，并且拟合准则不一样．神经网络在输入特征的情况下，最小化目标与模型预测之间的误差（交叉熵）．相反地，约束玻尔兹曼机最大化所有可见单元（也就是，特征和目标）的联合分布的对数似然．可以从输入特征中提取对预测标签有用的信息，但是，与监督学习方法不同，可能也使用一些隐藏单元对特征向量中的结构进行建模，而这与预测标签不是直接相关的．然而，这些特征当与从隐藏层中导出的特征结合起来会变得有用．</p>
+<p>不幸的是，约束玻尔兹曼机中的吉布斯采样会非常慢，因为需要花费很长时间达到稳态．当网络参数变得更大，这些链混合得更慢，并且我们需要更多的步骤来得到无条件的估计．Hinton (2002)<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup> 根据经验注意到当我们通过在数据中启动马尔科夫链并仅仅运行几步（不是直到收敛）来估计 \eqref{17.37} 中的第二个期望，学习仍然有用．他称这个为 <strong>对比发散 (contrastive divergence, CD)</strong>：我们给定 $\cal V_1,V_2$ 对 $\cal H$ 取样，然后给定 $\cal H$ 对 $\cal V_1,V_2$ 取样，最后再次给定 $\cal V_1,V_2$ 对$ \cal H$ 取样．思想是，当参数与解相差很多，迭代吉布斯取样达到稳态是浪费的，因为仅仅一个迭代就能发现改变估计的一个好方向．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya 注<p><img alt="" src="../../img/17/hvGibbs.png" />
+<p class="admonition-title">weiya 注</p>
+<p><img alt="" src="../../img/17/hvGibbs.png" />
 截图自<a href="http://deeplearning.net/tutorial/">http://deeplearning.net/tutorial/</a></p>
-</p>
+<p>另见 <a href="https://doi.org/10.1561/2200000006">Bengio, Y. (2009). Learning Deep Architectures for AI. Foundations and Trends® in Machine Learning, 2(1), 1–127.</a></p>
 </div>
-<p>我们现在给出说明 RBM 用法的一个例子。采用 <strong>对比发散 (CD)</strong>，训练 RBM 来识别 MNIST 数据集中的手写字体是可能的（LeCun et al.，1998<sup id="fnref:12"><a class="footnote-ref" href="#fn:12" rel="footnote">12</a></sup>）。2000 个隐藏单元，784 个表示二值像素强度的单元，以及表示标签的 10-way multinomial（weiya注：取值为0-9）可见单元，RBM 可以在测试集值达到 1.9% 的错误率。这比支持向量机达到的 1.4% 略高一点，与通过向后传播训练的神经网络得到的误差率相当。然而，用 500 个从图像中得到的不含任何标签信息的特征来替换 784 个像素强度，RBM 的误差率会降至 1.25%。首先，采用对比发散训练包含 784 个可见单元和 500 个隐藏单元的 RBM，来建立图像集的模型。然后第一个 RBM 的隐藏状态作为训练第二个 RBM 的数据，第二个 RBM 含 500 个可见单元和 500 个隐藏单元。最后，第二个 RBM 的隐藏状态用作训练含 2000 个隐藏单元的 RBM 的输入特征。这种以贪婪、逐层的方式来学习特征的细节及证明在 Hinton et al. (2006)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13" rel="footnote">13</a></sup> 中给出。图 17.7 给出了以这种方式学习的复合模型的一个表示，也显示了一些它能够应付的变形的字体的例子。</p>
+<p>我们现在给出说明 RBM 用法的一个例子．采用对比发散，训练 RBM 来识别 MNIST 数据集中的手写字体是可能的（LeCun et al.，1998<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup>）．$2000$ 个隐藏单元，$784$ 个表示二值像素强度的单元，以及表示标签的 10-way multinomial（weiya 注：取值为0-9）可见单元，RBM 可以在测试集值达到 $1.9\%$ 的错误率．这比支持向量机达到的 $1.4\%$ 略高一点，与通过向后传播训练的神经网络得到的误差率相当．然而，用 $500$ 个从图像中得到的不含任何标签信息的特征来替换 784 个像素强度，RBM 的误差率会降至 $1.25\%$．首先，采用对比发散训练包含 784 个可见单元和 500 个隐藏单元的 RBM，来建立图像集的模型．然后第一个 RBM 的隐藏状态作为训练第二个 RBM 的数据，第二个 RBM 含 500 个可见单元和 500 个隐藏单元．最后，第二个 RBM 的隐藏状态用作训练含 2000 个隐藏单元的 RBM 的输入特征．这种以贪婪、逐层的方式来学习特征的细节及证明在 Hinton et al. (2006)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup> 中给出．图 17.7 给出了以这种方式学习的复合模型的一个表示，也显示了一些它能够应付的变形的字体的例子．</p>
 <p><img alt="" src="../../img/17/fig17.7.png" /></p>
 <blockquote>
-<p>图 17.7 约束玻尔兹曼机处理手写字体数字的例子。网络用左边的原理图来描述。右边显示了一些该模型分类正确的难的测试图像。</p>
+<p>图 17.7 约束玻尔兹曼机处理手写字体数字的例子．网络用左边的原理图来描述．右边显示了一些该模型分类正确的难的测试图像．</p>
 </blockquote>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Bishop, Y., Fienberg, S. and Holland, P. (1975). Discrete Multivariate Analysis, MIT Press, Cambridge, MA.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Bishop, Y., Fienberg, S. and Holland, P. (1975). Discrete Multivariate Analysis, MIT Press, Cambridge, MA.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>McCullagh, P. and Nelder, J. (1989). Generalized Linear Models, Chapman and Hall, London.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>McCullagh, P. and Nelder, J. (1989). Generalized Linear Models, Chapman and Hall, London.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Agresti, A. (1996). An Introduction to Categorical Data Analysis, Wiley, New York.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Agresti, A. (1996). An Introduction to Categorical Data Analysis, Wiley, New York.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Jirouśek, R. and Přeučil, S. (1995). On the effective implementation of the iterative proportional fitting procedure, Computational Statistics and Data Analysis 19: 177–189.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Jirouśek, R. and Přeučil, S. (1995). On the effective implementation of the iterative proportional fitting procedure, Computational Statistics and Data Analysis 19: 177–189.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>Peterson and Anderson, J. R. (1987). A mean field theory learning algorithm for neural networks, Complex Systems 1: 995–1019.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Peterson and Anderson, J. R. (1987). A mean field theory learning algorithm for neural networks, Complex Systems 1: 995–1019.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>Ripley, B. D. (1996). Pattern Recognition and Neural Networks, Cambridge University Press.&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>Ripley, B. D. (1996). Pattern Recognition and Neural Networks, Cambridge University Press.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 <li id="fn:7">
-<p>Lee, S.-I., Ganapathi, V. and Koller, D. (2007). Efficient structure learning of markov networks using l 1 -regularization, in B. Schölkopf, J. Platt and T. Hoffman (eds), Advances in Neural Information Processing Systems 19, MIT Press, Cambridge, MA, pp. 817–824.&#160;<a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<p>Lee, S.-I., Ganapathi, V. and Koller, D. (2007). Efficient structure learning of markov networks using l 1 -regularization, in B. Schölkopf, J. Platt and T. Hoffman (eds), Advances in Neural Information Processing Systems 19, MIT Press, Cambridge, MA, pp. 817–824.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 <li id="fn:8">
-<p>Wainwright, M. J., Ravikumar, P. and Lafferty, J. D. (2007). High-dimensional graphical model selection using l 1 -regularized logistic regression, in B. Schölkopf, J. Platt and T. Hoffman (eds), Advances in Neural Information Processing Systems 19, MIT Press, Cambridge, MA, pp. 1465–1472.&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+<p>Wainwright, M. J., Ravikumar, P. and Lafferty, J. D. (2007). High-dimensional graphical model selection using l 1 -regularized logistic regression, in B. Schölkopf, J. Platt and T. Hoffman (eds), Advances in Neural Information Processing Systems 19, MIT Press, Cambridge, MA, pp. 1465–1472.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:8" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 <li id="fn:9">
-<p>Meinshausen, N. and Bühlmann, P. (2006). High-dimensional graphs and variable selection with the lasso, Annals of Statistics 34: 1436–1462.&#160;<a class="footnote-backref" href="#fnref:9" rev="footnote" title="Jump back to footnote 9 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:9" rev="footnote" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+<p>Meinshausen, N. and Bühlmann, P. (2006). High-dimensional graphs and variable selection with the lasso, Annals of Statistics 34: 1436–1462.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
 </li>
 <li id="fn:10">
-<p>Hoefling, H. and Tibshirani, R. (2008). Estimation of sparse Markov networks using modified logistic regression and the lasso, submitted.&#160;<a class="footnote-backref" href="#fnref:10" rev="footnote" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+<p>Hoefling, H. and Tibshirani, R. (2008). Estimation of sparse Markov networks using modified logistic regression and the lasso, submitted.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
 </li>
 <li id="fn:11">
-<p>Hinton, G. (2002). Training products of experts by minimizing contrastive divergence, Neural Computation 14: 1771–1800.&#160;<a class="footnote-backref" href="#fnref:11" rev="footnote" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+<p>Hinton, G. (2002). Training products of experts by minimizing contrastive divergence, Neural Computation 14: 1771–1800.&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
 </li>
 <li id="fn:12">
-<p>Le Cun, Y., Bottou, L., Bengio, Y. and Haffner, P. (1998). Gradient-based learning applied to document recognition, Proceedings of the IEEE 86(11): 2278–2324.&#160;<a class="footnote-backref" href="#fnref:12" rev="footnote" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+<p>Le Cun, Y., Bottou, L., Bengio, Y. and Haffner, P. (1998). Gradient-based learning applied to document recognition, Proceedings of the IEEE 86(11): 2278–2324.&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
 </li>
 <li id="fn:13">
-<p>Hinton, G., Osindero, S. and Teh, Y.-W. (2006). A fast learning algorithm for deep belief nets, Neural Computation 18: 1527–1554. <a href="../../references/Hinton2006.pdf">下载</a>&#160;<a class="footnote-backref" href="#fnref:13" rev="footnote" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+<p>Hinton, G., Osindero, S. and Teh, Y.-W. (2006). A fast learning algorithm for deep belief nets, Neural Computation 18: 1527–1554. <a href="../../references/Hinton2006.pdf">下载</a>&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3568,18 +3560,44 @@ x_{ij}\Pr_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\c
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/17-Undirected-Graphical-Models/17.4-Undirected-Graphical-Models-for-Discrete-Variables/index.html";
+      this.page.identifier =
+        "/17-Undirected-Graphical-Models/17.4-Undirected-Graphical-Models-for-Discrete-Variables/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3630,7 +3648,7 @@ x_{ij}\Pr_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\c
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3640,7 +3658,7 @@ x_{ij}\Pr_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\c
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:39
+        Last Build Date UTC : 2026-10-24 02:32:57
       </div>
       
         
@@ -3653,7 +3671,7 @@ x_{ij}\Pr_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\c
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3673,18 +3691,57 @@ x_{ij}\Pr_{\cal\mathbf\Theta}(X_k=1\mid X_{\cal V}=x_{i\cal V})&\text{if }j\in\c
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

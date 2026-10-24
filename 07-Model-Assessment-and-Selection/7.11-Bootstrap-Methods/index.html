@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -499,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1295,8 +1292,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1415,8 +1412,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -1673,8 +1670,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1757,8 +1754,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1769,8 +1766,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1853,8 +1850,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1865,8 +1862,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2129,8 +2126,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2141,8 +2138,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2381,8 +2378,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2894,59 +2891,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3065,18 +3014,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3107,30 +3044,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3155,13 +3068,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3227,8 +3140,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3267,8 +3228,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3284,13 +3245,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/07-Model-Assessment-and-Selection/7.11-Bootstrap-Methods.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="711">7.11 自助法<a class="headerlink" href="#711" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3299,12 +3262,12 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2017-02-19:2017-02-19</td>
+<td>发布</td>
+<td>2017-02-20</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2017-09-17, 2018-03-16</td>
+<td>2019-07-27 22:07:23</td>
 </tr>
 <tr>
 <td>状态</td>
@@ -3317,71 +3280,71 @@
 <p>自助法我觉得是最“独立”，最“自强”的方法了</p>
 <p>无论是那个传说中的 Baron pick himself up by his own bootstraps</p>
 <p>还是被作者称为 poor man&rsquo;s Bayes posterior（8.4节）</p>
-<p>所以这也是我最喜欢的统计方法了。<img alt="😀" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f600.svg" title=":grinning:" /></p>
-<p>另外，参照Hastie和Tibshirani他们 <a href="https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/info">HumanitiesSciences&rsquo;s StatLearning</a>课程，<a href="https://github.com/szcf-weiya/ESL-CN/tree/master/code/Resampling">这里</a> 有bootstrap解决具体问题的代码。</p>
+<p>所以这也是我最喜欢的统计方法了．<img alt="😀" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f600.svg" title=":grinning:" /></p>
+<p>另外，参照Hastie和Tibshirani他们 <a href="https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/info">HumanitiesSciences&rsquo;s StatLearning</a>课程，<a href="https://github.com/szcf-weiya/ESL-CN/tree/master/code/Resampling">这里</a> 有bootstrap解决具体问题的代码．</p>
 </blockquote>
-<p>自助法是评价统计精确性的通用工具。首先我们描述一般的自助法，接着介绍它怎么用来估计<strong>样本外预测误差 (extra-sample prediction error)</strong>。如同交叉验证一样，自助法力求估计条件误差 $\Err_{\cal T}$，但一般只对期望预测误差 $\Err$ 有良好的估计。</p>
-<p>假设我们有一个根据训练数据拟合的模型。训练集记为 $\mathbf Z=(z_1,z_2,\ldots,z_N)$，其中 $z_i=(x_i,y_i)$。基本思想是从训练集中有放回地随机选取数据集，每个样本的大小与原始数据集相同。做 $B$ 次（如 $B=100$）选取的操作，得到 $B$ 个自助训练集，正如图 7.12 显示的那样。接着我们对每个自助法数据集重新拟合模型，并且检验在$B$个复制集上拟合的表现。</p>
+<p>自助法是评价统计精确性的通用工具．首先我们描述一般的自助法，接着介绍它怎么用来估计 <strong>样本外预测误差 (extra-sample prediction error)</strong>．如同交叉验证一样，自助法力求估计条件误差 $\Err_{\cal T}$，但一般只对期望预测误差 $\Err$ 有良好的估计．</p>
+<p>假设我们有一个根据训练数据拟合的模型．训练集记为 $\mathbf Z=(z_1,z_2,\ldots,z_N)$，其中 $z_i=(x_i,y_i)$．基本思想是从训练集中有放回地随机选取数据集，每个样本的大小与原始数据集相同．做 $B$ 次（如 $B=100$）选取的操作，得到 $B$ 个自助训练集，正如图 7.12 显示的那样．接着我们对每个自助法数据集重新拟合模型，并且检验在 $B$ 个复制集上拟合的表现．</p>
 <p><img alt="" src="../../img/07/fig7.12.png" /></p>
 <blockquote>
-<p>图7.12. 自助法过程的原理图。我们希望评估根据数据集计算的 $S(\mathbf Z)$ 值的统计精确性。$B$ 个训练集为$\mathbf Z^{*b},b=1,\ldots,B$，每个都是从原始数据集中有放回抽取的样本。我们感兴趣的$S(\mathbf Z)$值是从每个自助法训练集中计算得到，而且值$S(\mathbf Z^{*1}),\ldots,S(\mathbf Z^{*B})$用来评估$S(\mathbf Z)$的统计精确性。</p>
+<p>图 7.12. 自助法过程的原理图．我们希望评估根据数据集计算的 $S(\mathbf Z)$ 值的统计精确性．$B$ 个训练集为$\mathbf Z^{*b},b=1,\ldots,B$，每个都是从原始数据集中有放回抽取的样本．我们感兴趣的 $S(\mathbf Z)$ 值是从每个自助法训练集中计算得到，而且值 $S(\mathbf Z^{*1}),\ldots,S(\mathbf Z^{*B})$ 用来评估 $S(\mathbf Z)$ 的统计精确性．</p>
 </blockquote>
-<p>在图中，$S(\mathbf Z)$是根据数据$\mathbf Z$计算的任意值，例如，在部分输入点的预测值。从自助法采样我们可以估计 $S(\mathbf Z)$分布的任意统计量，例如，它的方差，</p>
+<p>在图中，$S(\mathbf Z)$ 是根据数据 $\mathbf Z$ 计算的任意值，例如，在部分输入点的预测值．从自助法采样我们可以估计 $S(\mathbf Z)$ 分布的任意统计量，例如，它的方差，</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：关于翻译</p>
-<p>原文为“any aspect of the distribution”，考虑易读性，这里将“any aspect”具体翻译为“统计量”。</p>
+<p>原文为“any aspect of the distribution”，考虑易读性，这里将“any aspect”具体翻译为“统计量”．</p>
 </div>
 <p>
 <script type="math/tex; mode=display">
 \widehat{\Var}[S(\mathbf Z)]=\frac{1}{B-1}\sum\limits_{i=1}^B(S(\mathbf Z^{*b})-\bar S^*)^2,\tag{7.53}
 </script>
-其中 $\bar S^*=\sum_b S(\mathbf Z^{*b})/B$。注意到 $\widehat{\Var}[S(\mathbf Z)]$ 可以认为是从数据 $(z_1,z_2,\ldots,z_N)$ 的经验分布 $\hat F$ 中取样对 $S(\mathbf Z)$ 的方差的蒙特卡洛估计。</p>
-<p>我们怎样应用自助法来估计预测误差？一种方式是在自助样本集合上拟合问题中的模型，然后跟踪它预测原始训练集的好坏。如果 $\hat f^{*b}(x_i)$ 是在 $x_i$ 处根据第 $b$ 个自助法数据集拟合出的模型的预测值，我们的估计为
+其中 $\bar S^*=\sum_b S(\mathbf Z^{*b})/B$．注意到 $\widehat{\Var}[S(\mathbf Z)]$ 可以认为是从数据 $(z_1,z_2,\ldots,z_N)$ 的经验分布 $\hat F$ 中取样对 $S(\mathbf Z)$ 的方差的蒙特卡洛估计．</p>
+<p>我们怎样应用自助法来估计预测误差？一种方式是在自助样本集合上拟合问题中的模型，然后跟踪它预测原始训练集的好坏．如果 $\hat f^{*b}(x_i)$ 是在 $x_i$ 处根据第 $b$ 个自助法数据集拟合出的模型的预测值，我们的估计为
 <script type="math/tex; mode=display">
 \widehat{\Err}_{boot}=\frac{1}{B}\frac{1}{N}\sum\limits_{b=1}^B\sum\limits_{i=1}^NL(y_i,\hat f^{*b}(x_i))\tag{7.54}
 </script>
-然而，可以简单地看到一般情形下$\widehat{\Err}_{boot}$不会给出良好估计。原因在于自助法数据集是作为训练样本，而原始训练集是作为测试样本，而且这两个样本有共同的观测。这种重合会使得过拟合的预测看起来不可思议地好，这也是交叉验证为什么明确地使用非重合的数据作为训练和测试样本。考虑对两个类别的分类问题应用 1 最近邻分类器的例子，每个类有相同数目的观测值，预测变量和类别标签实际上是独立的。于是真实误差率为 0.5。但是对自助法估计 $\widehat{\Err}_{boot}$ 的贡献值会是0，除非观测 $i$ 不出现在自助法样本 $b$ 中。后一种情形中会有正确的期望值 0.5。现在
+然而，可以简单地看到一般情形下 $\widehat{\Err}_{boot}$ 不会给出良好估计．原因在于自助法数据集是作为训练样本，而原始训练集是作为测试样本，而且这两个样本有共同的观测．这种重合会使得过拟合的预测看起来不可思议地好，这也是交叉验证为什么明确地使用非重合的数据作为训练和测试样本．考虑二分类问题中应用 1 最近邻分类器的例子，每个类有相同数目的观测值，预测变量和类别标签实际上是独立的．于是真实误差率为 0.5．但是对自助法估计 $\widehat{\Err}_{boot}$ 的贡献值会是 0，除非观测 $i$ 不出现在自助法样本 $b$ 中．后一种情形中会有正确的期望值 0.5．现在
 <script type="math/tex; mode=display">
 \begin{align}
 \Pr\{\text{观测}i\in\text{自助法样本}b\}&=1-(1-\frac{1}{N})^N\notag\\
 &\approx 1-e^{-1}\notag\\
-&=0.632\tag{7.55}
+&=0.632\tag{7.55}\label{7.55}
 \end{align}
 </script>
-因此$\widehat{\Err}_{boot}$的期望为$0.5\times 0.368=0.184$，远远低于正确的误差率0.5。</p>
-<p>通过模仿交叉验证，可以得到更好的自助法估计。对于每个观测，我们仅仅跟踪自助法样本中不包含该观测的预测。这个舍一法预测误差的自助法估计由下式定义
+因此 $\widehat{\Err}_{boot}$ 的期望为 $0.5\times 0.368=0.184$，远远低于正确的误差率 0.5．</p>
+<p>通过模仿交叉验证，可以得到更好的自助法估计．对于每个观测，我们仅仅跟踪自助法样本中不包含该观测的预测．这个舍一法预测误差的自助法估计由下式定义
 <script type="math/tex; mode=display">
-\widehat{\Err}^{(1)}=\frac{1}{N}\sum\limits_{i=1}^N\frac{1}{\vert C^{-i}\vert}\sum\limits_{b\in C^{-i}}L(y_i,\hat f^{*b}(x_i))\tag{7.56}
+\widehat{\Err}^{(1)}=\frac{1}{N}\sum\limits_{i=1}^N\frac{1}{\vert C^{-i}\vert}\sum\limits_{b\in C^{-i}}L(y_i,\hat f^{*b}(x_i))\tag{7.56}\label{7.56}
 </script>
-这里$C^{-i}$是不包含观测 $i$ 的自助法样本 $b$ 的指标集，而且 $\vert C^{-i}\vert$ 为这些样本的个数。在计算$\widehat{\Err}^{(1)}$时，我们要么必须选择充分大的 $B$ 来保证所有的 $\vert C^{-i}\vert$ 都大于 0，或者我们可以直接删掉(7.56) 式中 $\vert C^{-i}\vert=0$ 的项。</p>
-<p>舍一自助法解决了 $\widehat{\Err}_{boot}$ 遭受的过拟合问题，但是会有在讨论交叉验证中提到的<strong>训练集大小偏差 (training-set-size)</strong> 问题。每个自助法样本中不同观测的平均个数大约为 $0.632\cdot N$，所以它的偏差会大致表现得和两折交叉验证一样。因此如果学习曲线在样本大小为 $N/2$ 时有相当大的斜率，则舍一自助法作为真实误差的估计会有一个<strong>向上的偏差 (upward bias)</strong>。</p>
-<p>“.632估计”是为了减轻偏差而设计的。由下式定义
+这里 $C^{-i}$ 是不包含观测 $i$ 的自助法样本 $b$ 的指标集，而且 $\vert C^{-i}\vert$ 为这些样本的个数．在计算 $\widehat{\Err}^{(1)}$ 时，我们要么必须选择充分大的 $B$ 来保证所有的 $\vert C^{-i}\vert$ 都大于 0，或者我们可以直接删掉 \eqref{7.56} 式中 $\vert C^{-i}\vert=0$ 的项．</p>
+<p>舍一自助法解决了 $\widehat{\Err}_{boot}$ 遭受的过拟合问题，但是会有在讨论交叉验证中提到的 <strong>训练集大小偏差 (training-set-size)</strong> 问题．每个自助法样本中不同观测的平均个数大约为 $0.632\cdot N$，所以它的偏差会大致表现得和两折交叉验证一样．因此如果学习曲线在样本大小为 $N/2$ 时有相当大的斜率，则舍一自助法作为真实误差的估计会有一个 <strong>向上的偏差 (upward bias)</strong>．</p>
+<p>“.632 估计”是为了减轻偏差而设计的．由下式定义
 <script type="math/tex; mode=display">
 \widehat{\Err}^{(.632)}=.368\cdot\overline{\err}+.632\cdot\widehat{\Err}^{(1)}\tag{7.57}
 </script>
-0.632 估计的来源是很复杂的；直观上它将舍一自助的估计向训练误差率靠近，也因此降低了向上的偏差。常值 .632 与式 (7.55) 有关。</p>
-<p>.632 估计在“轻拟合”情形下表现很好，但是在过拟合情形下会变糟。Breiman et al. (1984) <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>有一个例子。假设我们有两个相同大小的类，目标变量与类别标签独立，而且我们采用 1 最近邻规则。则 $\overline{\err}=0,\widehat{\Err}^{(1)}=0.5$，而且因此 $\widehat{\Err}^{(.632)}=.632\times 0.5=.316$。然而，真实误差率为0.5。</p>
-<p>可以通过考虑过拟合的程度来改善 .632 估计。首先我们定义 $\gamma$ 为<strong>无信息误差率 (no-information error rate)</strong> ：这是如果输入变量与类别标签独立时的预测规则的误差率。$\gamma$ 的估计可以通过在所有可能的目标 $y_i$ 和预测 $x_{i&rsquo;}$ 的组合上应用预测规则得到
+0.632 估计的来源是很复杂的；直观上它将舍一自助的估计向训练误差率靠近，也因此降低了向上的偏差．常值 .632 与式 \eqref{7.55} 有关．</p>
+<p>.632 估计在“<strong>轻拟合 (light fitting)</strong>”情形下表现很好，但是在过拟合情形下会变糟．Breiman et al. (1984) <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>有一个例子．假设我们有两个相同大小的类，目标变量与类别标签独立，而且我们采用 1 最近邻规则．则 $\overline{\err}=0,\widehat{\Err}^{(1)}=0.5$，而且因此 $\widehat{\Err}^{(.632)}=.632\times 0.5=.316$．然而，真实误差率为0.5．</p>
+<p>可以通过考虑过拟合的程度来改善 .632 估计．首先我们定义 $\gamma$ 为 <strong>无信息误差率 (no-information error rate)</strong>：这是如果输入变量与类别标签独立时的预测规则的误差率．$\gamma$ 的估计可以通过在所有可能的目标 $y_i$ 和预测 $x_{i&rsquo;}$ 的组合上应用预测规则得到
 <script type="math/tex; mode=display">
 \hat\gamma = \frac{1}{N^2}\sum\limits_{i=1}^N\sum\limits_{i'=1}^NL(y_i,\hat f(x_{i'}))\tag{7.58}
 </script>
-举个例子，考虑二叉分类问题：令$\hat p_1$为响应变量$y_i=1$的观测比例，令$\hat q_1$为$\hat f(x_{i&rsquo;})=1$的观测比例。于是
+举个例子，考虑二分类问题：令 $\hat p_1$ 为响应变量 $y_i=1$ 的观测比例，令 $\hat q_1$ 为 $\hat f(x_{i&rsquo;})=1$ 的观测比例．于是
 <script type="math/tex; mode=display">
-\hat\gamma = \hat p_1(1-\hat q_1)+(1-\hat p_1)\hat q_1\tag{7.59}
+\hat\gamma = \hat p_1(1-\hat q_1)+(1-\hat p_1)\hat q_1\tag{7.59}\label{7.59}
 </script>
-$\hat q_1=\hat p_1$时采用像1-最近邻的规则，则$\hat \gamma$值为$2\hat p_1(1-\hat p_1)$。（7.59）的多类别推广形式为$\hat \gamma=\sum_\ell \hat p_\ell(1-\hat q_\ell)$.</p>
-<p>应用这些，<strong>相对过拟合率 (relative overfitting rate)</strong> 定义为
+像 1-最近邻的规则，$\hat q_1=\hat p_1$，则$\hat \gamma$值为$2\hat p_1(1-\hat p_1)$．\eqref{7.59} 的多类别推广形式为 $\hat \gamma=\sum_\ell \hat p_\ell(1-\hat q_\ell)$.</p>
+<p>用这些来定义<strong>相对过拟合率 (relative overfitting rate)</strong>：
 <script type="math/tex; mode=display">
 \hat R=\frac{\widehat{\Err}^{(1)}-\overline{\err}}{\hat\gamma-\overline{\err}}\tag{7.60}
 </script>
-这是一个取值为 0 到 1 的量，当不存在过拟合时等于 0 ($\widehat{\Err}^{(1)}=\overline{\err}$)，当过拟合等于无信息值$\hat\gamma-\overline{err}$时则等于 1。最后，我们定义“.632+”如下
+这是一个取值为 0 到 1 的量，当不存在过拟合时等于 0 ($\widehat{\Err}^{(1)}=\overline{\err}$)，当过拟合等于无信息值 $\hat\gamma-\overline{\err}$ 时则等于 1．最后，我们定义“.632+”如下
 <script type="math/tex; mode=display">
 \begin{align}
-\widehat{\Err}^{(.632+)}&=(1-\hat w)\cdot \overline{err}+\hat w\cdot \widehat{\Err}^{(1)}\tag{7.61}\\
+\widehat{\Err}^{(.632+)}&=(1-\hat w)\cdot \overline{err}+\hat w\cdot \widehat{\Err}^{(1)}\tag{7.61}\label{7.61}\\
 \text{其中}\hat w &=\frac{.632}{1-.368\hat R}\notag
 \end{align}
 </script>
-系数 $w$ 取值为 0.632（若 $\hat R=0$）到 1（若$\hat R=1$），所以 $\widehat{\Err}^{(.632+)}$ 取值为$\widehat{\Err}^{(.632)}$到$\widehat{\Err}^{(1)}$。同样地，(7.61) 的来源也是很复杂的：大致来讲，它得到舍一自助法和训练误差率之间的权衡，权衡依赖于模型过拟合的程度。对于类别标签与输入独立的 1 最近邻问题，$\hat w=\hat R=1$，因此$\widehat{\Err}^{(.632+)}=\widehat{\Err}^{(1)}$，有正确的期望值0.5。在其它不太过拟合的问题中，$\widehat{\Err}^{.632+}$会在$\overline{\err}$和$\widehat{\Err}^{(1)}$中取值。</p>
+系数 $w$ 取值为 0.632（若 $\hat R=0$）到 1（若$\hat R=1$），所以 $\widehat{\Err}^{(.632+)}$ 取值为 $\widehat{\Err}^{(.632)}$ 到 $\widehat{\Err}^{(1)}$．同样地，\eqref{7.61} 的来源也是很复杂的：大致来讲，它得到舍一自助法和训练误差率之间的权衡，权衡依赖于模型过拟合的程度．对于类别标签与输入独立的 1 最近邻问题，$\hat w=\hat R=1$，因此 $\widehat{\Err}^{(.632+)}=\widehat{\Err}^{(1)}$，有正确的期望值0.5．在其它不太过拟合的问题中，$\widehat{\Err}^{.632+}$ 会在 $\overline{\err}$ 和 $\widehat{\Err}^{(1)}$ 之间取值．</p>
 <div class="admonition tip">
 <p class="admonition-title">R Programming</p>
 <p>R 语言中 <code>caret</code> 包中的函数 <code>trainControl()</code>，其输入参数 <code>method</code> 定义重采样方法，有<code>boot</code>，<code>boot632</code>， <code>cv</code>， <code>LOOCV</code>， <code>LGOCV</code>，具体方法名称如下</p>
@@ -3397,16 +3360,16 @@ $\hat q_1=\hat p_1$时采用像1-最近邻的规则，则$\hat \gamma$值为$2\h
 <h2 id="_1">例子（继续）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../img/07/fig7.13.png" /></p>
 <blockquote>
-<p>图7.13. 箱线图显示了图7.3的四种情形下相对误差$100\cdot [\Err_{\hat \alpha}-\min_\alpha Err(\alpha)]/[\max_\alpha \Err(\alpha)-\min_\alpha \Err(\alpha)]$的分布。这是使用选择的模型相对于使用最优模型的误差。每个箱线图中有100个训练集。</p>
+<p>图 7.13. 箱线图显示了图 7.3 的四种情形下相对误差 $100\cdot [\Err_{\hat \alpha}-\min_\alpha \Err(\alpha)]/[\max_\alpha \Err(\alpha)-\min_\alpha \Err(\alpha)]$ 的分布．这是使用选择的模型相对于使用最优模型的误差．每个箱线图中有 100 个训练集．</p>
 </blockquote>
-<p>图7.13显示了图 7.7 中同样的 4 个问题应用 10 折交叉验证和 .632+ 自助法估计的结果。正如图中所示，图 7.13 显示了$100\cdot [\Err_{\hat \alpha}-\min_\alpha \Err(\alpha)]/[\max_\alpha \Err(\alpha)-\min_\alpha \Err(\alpha)]$的箱线图，这是使用选择的模型相对于使用最优模型的误差。每个箱线图表示 100 个不同的训练集。整体上看两种方式都表现不错，或许和图 7.7 的AIC一样或者略差点。</p>
-<p>我们的结论是，对于这些特定的问题和拟合方法，AIC 和交叉验证的最小化，或者自助法都得到相当接近最好的可行模型。注意到模型选择的目的，这些衡量方式可能都有偏差，但是这不会有影响，只要偏差不会改变这些方法的相对表现。举个例子，对所有的衡量方式都加上常数不会改变最终选择的模型。然而，对于许多自适应非线性技巧（比如树），估计参数的有效个数是非常困难的。这使得像 AIC 之类的方法不可行，只留下交叉验证和自助法供我们选择。</p>
-<p>换个不同的问题：每个方法对测试误差估计得有多好？平均上看，四种情形下 AIC 准则分别高估了所选模型的预测误差38%，37%，51%和30%，BIC表现也类似。而交叉验证高估了 1%，4%，0% 和 4%，自助法表现也相同。因此如果需要正确估计测试误差，计算交叉误差或者自助法的衡量的额外工作是值得的。像树之类的其它拟合方法，交叉验证和自助法可以低估真实误差 10%。在这些情形下，只有分离的测试集会提供测试误差的无偏估计。</p>
+<p>图 7.13 显示了图 7.7 中同样的 4 个问题应用 10 折交叉验证和 .632+ 自助法估计的结果．正如图中所示，图 7.13 展示了 $100\cdot [\Err_{\hat \alpha}-\min_\alpha \Err(\alpha)]/[\max_\alpha \Err(\alpha)-\min_\alpha \Err(\alpha)]$ 的箱线图，这是使用选择的模型相对于使用最优模型的误差．每个箱线图表示 100 个不同的训练集．整体上看两种方式都表现不错，或许和图 7.7 的 AIC 一样或者略差点．</p>
+<p>我们的结论是，对于这些特定的问题和拟合方法，AIC 和交叉验证的最小化，或者自助法都得到相当接近最好的可行模型．注意到模型选择的目的，这些衡量方式可能都有偏差，但是这不会有影响，只要偏差不会改变这些方法的相对表现．举个例子，对所有的衡量方式都加上常数不会改变最终选择的模型．然而，对于许多自适应非线性技巧（比如树），估计参数的有效个数是非常困难的．这使得像 AIC 之类的方法不可行，只留下交叉验证和自助法供我们选择．</p>
+<p>换个不同的问题：每个方法对测试误差估计得有多好？平均上看，四种情形下 AIC 准则分别高估了所选模型的预测误差 38%，37%，51% 和 30%，BIC表现也类似．而交叉验证高估了 1%，4%，0% 和 4%，自助法表现也相同．因此如果需要正确估计测试误差，计算交叉误差或者自助法的衡量的额外工作是值得的．像树之类的其它拟合方法，交叉验证和自助法可以低估真实误差 10%．在这些情形下，只有分离的测试集会提供测试误差的无偏估计．</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Breiman, L. and Ihaka, R. (1984). Nonlinear discriminant analysis via scaling and ACE, Technical report, University of California, Berkeley.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Breiman, L. and Ihaka, R. (1984). Nonlinear discriminant analysis via scaling and ACE, Technical report, University of California, Berkeley.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3416,18 +3379,44 @@ $\hat q_1=\hat p_1$时采用像1-最近邻的规则，则$\hat \gamma$值为$2\h
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/07-Model-Assessment-and-Selection/7.11-Bootstrap-Methods/index.html";
+      this.page.identifier =
+        "/07-Model-Assessment-and-Selection/7.11-Bootstrap-Methods/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3478,7 +3467,7 @@ $\hat q_1=\hat p_1$时采用像1-最近邻的规则，则$\hat \gamma$值为$2\h
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3488,7 +3477,7 @@ $\hat q_1=\hat p_1$时采用像1-最近邻的规则，则$\hat \gamma$值为$2\h
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:35
+        Last Build Date UTC : 2026-10-24 02:32:55
       </div>
       
         
@@ -3501,7 +3490,7 @@ $\hat q_1=\hat p_1$时采用像1-最近邻的规则，则$\hat \gamma$值为$2\h
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3521,18 +3510,57 @@ $\hat q_1=\hat p_1$时采用像1-最近邻的规则，则$\hat \gamma$值为$2\h
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

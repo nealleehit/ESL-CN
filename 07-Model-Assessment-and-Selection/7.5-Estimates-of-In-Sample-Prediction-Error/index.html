@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -499,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1295,8 +1292,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1640,8 +1637,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1724,8 +1721,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1736,8 +1733,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1820,8 +1817,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1832,8 +1829,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2096,8 +2093,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2108,8 +2105,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2348,8 +2345,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2861,59 +2858,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3032,18 +2981,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3074,30 +3011,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3122,13 +3035,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3194,8 +3107,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3231,13 +3192,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/07-Model-Assessment-and-Selection/7.5-Estimates-of-In-Sample-Prediction-Error.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="75">7.5 样本内误差的估计<a class="headerlink" href="#75" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3246,73 +3209,81 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2017-02-18:2017-02-18</td>
+<td>发布</td>
+<td>2016-09-30</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2017-09-17, 2018-01-04</td>
+<td>2019-07-27 12:30:55</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
-<p class="admonition-title">weiya注</p>
-<p>本节很多地方需要用到上一节的(7.23)式
+<p class="admonition-title">weiya 注：Recall</p>
+<p>本节很多地方需要用到上一节的 \eqref{7.23} 式
 <script type="math/tex; mode=display">
-\sum\limits_{i=1}^NCov(\hat y_i,y_i) = d\sigma_{\varepsilon}^2\tag{7.23}
+\sum\limits_{i=1}^N\Cov(\hat y_i,y_i) = d\sigma_{\varepsilon}^2\tag{7.23}\label{7.23}
 </script>
-和(7.24)式
+和 \eqref{7.24} 式
 <script type="math/tex; mode=display">
-E_{\mathbf y}(Err_{in})=E_{\mathbf y}(\overline{err})+2\cdot\frac{d}{N}\sigma_\varepsilon^2\tag{7.24}
+\E_{\mathbf y}(\Err_{\text{in}})=\E_{\mathbf y}(\overline{\err})+2\cdot\frac{d}{N}\sigma_\varepsilon^2\tag{7.24}\label{7.24}
 </script>
 </p>
 </div>
 <p>样本内误差估计的一般形式为</p>
 <p>
 <script type="math/tex; mode=display">
-\widehat{Err}_{in}=\overline{err}+\hat\omega\tag{7.25}
+\widehat{\Err}_{\text{in}}=\overline{\err}+\hat\omega\tag{7.25}
 </script>
 </p>
-<p>其中$\hat\omega$是optimism平均值的估计。</p>
-<p>当在平方误差损失下拟合$d$个参数后，是可以应用式(7.24)的；利用表达式(7.24)导出被称作$C_p$的统计量
+<p>其中 $\hat\omega$ 是 <strong>乐观偏差 (optimism)</strong> 平均值的估计．</p>
+<p>当在平方误差损失下拟合 $d$ 个参数后，是可以应用式 \eqref{7.24} 的；利用表达式 \eqref{7.24} 可以导出被称作 $C_p$ 的统计量
 <script type="math/tex; mode=display">
-C_p=\overline{err}+2\cdot\frac{d}{N}\hat \sigma^2_\varepsilon\tag{7.26}
+C_p=\overline{\err}+2\cdot\frac{d}{N}\hat \sigma^2_\varepsilon\tag{7.26}
 </script>
-这里$\hat\sigma_\varepsilon^2$是噪声方差的估计，由低偏差模型的均方误差得到。使用这个准则，我们用一个与使用的基函数个数成比例的因子来调节训练误差。</p>
-<p>当采用对数似然损失函数时，Akaike信息准则（Akaike information criterion）是类似的但使用更普遍的$Err_{in}$的估计。它依赖于与（7.24）类似的关系式，在$N\rightarrow \infty$渐近地成立：
+这里 $\hat\sigma_\varepsilon^2$ 是噪声方差的估计，由低偏差模型的均方误差得到．使用这个准则，我们用一个与使用的基函数个数成比例的因子来调节训练误差．</p>
+<p>当采用对数似然损失函数时，<strong>Akaike 信息准则 (Akaike information criterion)</strong> 是类似的但使用更普遍的 $\Err_{\text{in}}$ 的估计．它依赖于与 \eqref{7.24} 类似的关系式，在 $N\rightarrow \infty$ 渐近地有下式成立：
 <script type="math/tex; mode=display">
--2\cdot E[\mathrm{log}Pr_{\hat \theta}(Y)]\approx -\frac{2}{N}\cdot E[\mathrm{loglik}]+2\cdot\frac{d}{N}\tag{7.27}
+-2\cdot \E[\mathrm{log}\Pr\nolimits_{\hat \theta}(Y)]\approx -\frac{2}{N}\cdot \E[\mathrm{loglik}]+2\cdot\frac{d}{N}\tag{7.27}
 </script>
-这里$Pr_{\theta}(Y)$是$Y$密度函数族（包含“真正的”密度），$\hat\theta$是$\theta$的极大似然估计，并且“loglik”是最大化的对数似然
+这里 $\Pr_{\theta}(Y)$ 是 $Y$ 密度函数族（包含“真正的”密度），$\hat\theta$ 是 $\theta$ 的极大似然估计，并且“loglik”是最大化的对数似然
 <script type="math/tex; mode=display">
-loglik=\sum\limits_{i=1}^N\mathrm{log }Pr_{\hat\theta}(y_i)\tag{7.28}
+\mathrm{loglik}=\sum\limits_{i=1}^N\log \Pr\nolimits_{\hat\theta}(y_i)\tag{7.28}
 </script>
 举个例子，对于逻辑斯蒂回归模型，采用二项对数似然，我们有
 <script type="math/tex; mode=display">
-AIC=-\frac{2}{N}\cdot loglik+2\cdot \frac{d}N\tag{7.29}
+\mathrm{AIC}=-\frac{2}{N}\cdot \mathrm{loglik}+2\cdot \frac{d}N\tag{7.29}
 </script>
-对于高斯模型（假设方差$\sigma_\varepsilon^2=\hat\sigma_\varepsilon^2$已知），AIC统计量等于$C_p$，因此我们称它们一起称为AIC。</p>
-<p>采用AIC来进行模型选择，我们在考虑的模型中选择具有最小的AIC的模型。对于非线性或者其他复杂模型，我们需要将$d$换成其它衡量模型复杂度的量。我们将在7.6节讨论这点。</p>
-<p>给定由调整参数$\alpha$编号的一系列模型，用$\overline{err}(\alpha)$和$d(\alpha)$记为每个模型的训练误差和参数的个数。接着对于模型序列我们定义
+对于高斯模型（假设方差 $\sigma_\varepsilon^2=\hat\sigma_\varepsilon^2$ 已知），AIC 统计量等于 $C_p$，因此我们把它们一起称为 AIC．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：</p>
+<p>注意此处假设 $\sigma_\varepsilon^2$ 已知，如果也将其看成是未知的，并通过 MLE 求解，则 AIC 准则（忽略常数）为
 <script type="math/tex; mode=display">
-AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsilon^2\tag{7.30}
+\mathrm{AIC} = N\log\mathrm{RSS} + 2d\,,
 </script>
-函数$AIC(\alpha)$给出了测试误差曲线的一个估计，而且我们找到最小化它的调整参数$\hat \alpha$。我们最终选择的模型是$f_{\hat\alpha}(x)$。注意到如果我们基函数是自适应地选择，（7.23）不再成立。举个例子，如果我们总共有$p$个输入，选择含有$d&lt;p$个输入的最优线性拟合模型，optimism将会超过$(2d/N)\sigma_\varepsilon^2$。换句话说，通过选择含有$d$个输入的最优拟合模型，有效参数的个数将会超过$d$。</p>
-<p>图7.4显示了将AIC用于148页上5.2.3节的音素识别的例子的效果。输入向量是口语元音的对数周期图，在256个均匀间隔的频率上取值。采用线性逻辑斯蒂回归模型来预测音素的类别，参数函数为$\beta(f)=\sum_{m=1}^Mh_m(f)\theta_m$，是$M$个样条基函数的展开。对于给定的$M$，对$h_m$应用自然三次样条，在频率范围内均匀选取结点（因此$d(\alpha)=d(M)=M$）。使用AIC来选择基函数的个数会近似最小化损失函数为熵损失和0-1损失时的$Err(M)$。</p>
+详见 <a href="https://en.wikipedia.org/wiki/Akaike_information_criterion#Comparison_with_least_squares">Wiki: AIC</a></p>
+</div>
+<p>采用 AIC 来进行模型选择时，我们在考虑的模型中选择具有最小的 AIC 的模型．对于非线性或者其他复杂模型，我们需要将 $d$ 换成其它衡量模型复杂度的量．我们将在 <a href="../7.6-The-Effective-Number-of-Parameters/index.html">7.6 节</a>讨论这点．</p>
+<p>给定由调整参数 $\alpha$ 编号的一系列模型，用 $\overline{\err}(\alpha)$ 和 $d(\alpha)$ 记为每个模型的训练误差和参数的个数．接着对于模型序列我们定义
+<script type="math/tex; mode=display">
+\mathrm{AIC}(\alpha)=\overline{\err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsilon^2\tag{7.30}
+</script>
+函数 $\mathrm{AIC}(\alpha)$ 给出了测试误差曲线的一个估计，而且我们找到最小化它的调整参数 $\hat \alpha$．我们最终选择的模型是 $f_{\hat\alpha}(x)$．注意到如果我们基函数是自适应地选择，\eqref{7.23}不再成立．举个例子，如果我们总共有 $p$ 个输入，选择含有 $d &lt; p$ 个输入的最优线性拟合模型，optimism 将会超过 $(2d/N)\sigma_\varepsilon^2$．换句话说，通过选择含有 $d$ 个输入的最优拟合模型，有效参数的个数将会超过 $d$．</p>
+<p>图 7.4 显示了将 AIC 用于 <a href="../../05-Basis-Expansions-and-Regularization/5.2-Piecewise-Polynomials-and-Splines/index.html#_3">5.2.3 节</a>的音素识别的例子的效果．输入向量是口语元音的对数周期图，在 256 个均匀间隔的频率上取值．采用线性逻辑斯蒂回归模型来预测音素的类别，参数函数为 $\beta(f)=\sum_{m=1}^Mh_m(f)\theta_m$，是 $M$ 个样条基函数的展开．对于给定的 $M$，对 $h_m$ 应用自然三次样条，在频率范围内均匀选取结点（因此 $d(\alpha)=d(M)=M$）．使用 AIC 来选择基函数的个数会近似最小化损失函数为熵损失和 0-1 损失时的 $\Err(M)$．</p>
 <p><img alt="" src="../../img/07/fig7.4.png" /></p>
 <blockquote>
-<p>图7.4.对5.2.3节的音素识别的例子应用AIC来做模型选择。逻辑斯蒂回归参数函数$\beta(f)=\sum_{m=1}^Mh_m(f)\theta_m$建模成$M$个样条基函数的展开。在左图中我们看到采用对数似然损失时用来估计$Err_{in}$的AIC统计量。也画出了基于独立的测试样本的$Err$估计。除了极端过参数化的情形（$N=1000$个观测时含有$M=256$个参数）都估计得很好。右图是在0-1损失下重复左图的工作。尽管这里AIC准则严格上不能应用，但是在这种情形下估计也是合理的。</p>
+<p>图 7.4. 对 5.2.3 节的音素识别的例子应用 AIC 来做模型选择．逻辑斯蒂回归参数函数 $\beta(f)=\sum_{m=1}^Mh_m(f)\theta_m$ 建模成 $M$ 个样条基函数的展开．在左图中我们看到采用对数似然损失时用来估计 $\Err_{in}$ 的 AIC 统计量．也画出了基于独立的测试样本的 $\Err$ 估计．除了极端过参数化的情形（ $N=1000$ 个观测时含有 $M=256$ 个参数）都估计得很好．右图是在 0-1 损失下重复左图的工作．尽管这里 AIC 准则严格上不能应用，但是在这种情形下估计也是合理的．</p>
 </blockquote>
 <p>下式这一简单的法则
 <script type="math/tex; mode=display">
 2/N\sum\limits_{i=1}^N\mathrm{Cov}(\hat y_i,y_i)=(2d/N)\sigma_\varepsilon^2
 </script>
-对于含有加性误差的线性模型在平方误差损失下是精确成立的，在对数似然损失下是近似成立的。特别地，这个法则一般地对于0-1损失是不成立的（Efron，1986<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>），尽管许多作者仍然在这种情形下使用它（图7.4的右图）</p>
+对于含有加性误差的线性模型在平方误差损失下是精确成立的，在对数似然损失下是近似成立的．特别地，这个法则一般地对于 0-1 损失是不成立的（Efron，1986<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>），尽管许多作者仍然在这种情形下使用它（图 7.4 的右图）.</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Efron, B. (1986). How biased is the apparent error rate of a prediction rule?, Journal of the American Statistical Association 81: 461–70.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Efron, B. (1986). How biased is the apparent error rate of a prediction rule?, Journal of the American Statistical Association 81: 461–70.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3322,18 +3293,44 @@ AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsil
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/07-Model-Assessment-and-Selection/7.5-Estimates-of-In-Sample-Prediction-Error/index.html";
+      this.page.identifier =
+        "/07-Model-Assessment-and-Selection/7.5-Estimates-of-In-Sample-Prediction-Error/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3347,7 +3344,7 @@ AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsil
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3356,7 +3353,7 @@ AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsil
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                7.4 测试误差率的 optimism
+                7.4 测试误差率的乐观偏差
               </span>
             </div>
           </a>
@@ -3384,7 +3381,7 @@ AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsil
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3394,7 +3391,7 @@ AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsil
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:35
+        Last Build Date UTC : 2026-10-24 02:32:55
       </div>
       
         
@@ -3407,7 +3404,7 @@ AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsil
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3427,18 +3424,57 @@ AIC(\alpha)=\overline{err}(\alpha)+2\cdot\frac{d(\alpha)}{N}\hat\sigma_\varepsil
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

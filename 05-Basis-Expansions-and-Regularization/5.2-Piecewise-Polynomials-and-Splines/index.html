@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -501,7 +498,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -985,8 +982,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -1351,8 +1348,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1687,8 +1684,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1771,8 +1768,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1783,8 +1780,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1867,8 +1864,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1879,8 +1876,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2143,8 +2140,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2155,8 +2152,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2395,8 +2392,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2908,59 +2905,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3079,18 +3028,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3121,30 +3058,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3169,13 +3082,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3241,8 +3154,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3295,8 +3256,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3312,13 +3273,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/05-Basis-Expansions-and-Regularization/5.2-Piecewise-Polynomials-and-Splines.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="52">5.2 分段多项式和样条<a class="headerlink" href="#52" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf#page=160">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf#page=160">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3327,45 +3290,45 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2017-02-08:2017-02-16</td>
+<td>发布</td>
+<td>2017-02-08</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2017-09-13&amp; 2017-10-18 &amp; 2018-01-04</td>
+<td>2026-09-22</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
 <p class="admonition-title">更新笔记</p>
-<p>@2017.09.13 这一节在 FRM 课程上，张老师特别介绍了三次样条，当时才意识到样条的order和degree是不同的，当时看这一节时还挺纳闷为啥阶数比自己理解的多1。<a href="https://en.wikipedia.org/wiki/Order_of_a_polynomial">wiki</a>上也提到了“the order of a spline, either the degree+1 of the polynomials defining the spline or the number of knot points used to determine it.” 比如3次样条的order为4，但 degree 才是我们熟悉的阶数，degree等于3。<strong>故在本节的翻译中，原文为order的直接用order，其它情况了类似称“三次多项式”均指degree。</strong> 当然上面仅限于样条，对于微分方程的 order 与 degree，用下面的例子来说明
+<p>@2017.09.13 这一节在 FRM 课程上，张老师特别介绍了三次样条，当时才意识到样条的order和degree是不同的，当时看这一节时还挺纳闷为啥阶数比自己理解的多 1．<a href="https://en.wikipedia.org/wiki/Order_of_a_polynomial">wiki</a>上也提到了“the order of a spline, either the degree+1 of the polynomials defining the spline or the number of knot points used to determine it.” 比如 3 次样条的 order 为 4，但 degree 才是我们熟悉的阶数，degree等于 3．<strong>故在本节的翻译中，原文为 order 的直接用 order，其它情况了类似称“三次多项式”均指 degree．</strong> 当然上面仅限于样条，对于微分方程的 order 与 degree，用下面的例子来说明
 <script type="math/tex; mode=display">
 \frac{d^2y}{d x^2}+3\frac{dy}{dx}+2y=0
 </script>
-微分方程的order指的是方程中最高次的微分，所以上式的 order 为 2；而 degree 指的是最高次微分的幂，所以上式 degree 为 1。值得注意的是，order 的定义是完整的，但 degree 的定义是不完整的，对于非多项式的微分方程，不能定义其 degree，也就是并不知道 $sin(\frac{dy}{dx})$ 的 degree 是多少。
+微分方程的 order 指的是方程中最高次的微分，所以上式的 order 为 2；而 degree 指的是最高次微分的幂，所以上式 degree 为 1．值得注意的是，order 的定义是完整的，但 degree 的定义是不完整的，对于非多项式的微分方程，不能定义其 degree，也就是并不知道 $\sin(\frac{dy}{dx})$ 的 degree 是多少．
 关于这两者的区别，可以参见 Quora 上的一篇回答 <a href="https://www.quora.com/What-is-the-difference-between-the-degree-and-order-of-a-differential-equation">What is the difference between the degree and order of a differential equation?</a></p>
-<p>@2017.10.18 今天跟 yy 同学简要讨论了一下样条方法，ta觉得“样条方法本身其实就是最小二乘，惩罚样条也不过就是跟最小二乘的Lasso 之类一个原理，没什么新意，不过这种非参估计因为假设放宽所以渐近性要比线性模型证明起来复杂的多。” 说得很对，但我觉得并非没有新意，看上去确实是像最小二乘（或者说是广义最小二乘或者加权最小二乘），但想到样条方法的初衷，不就是将线性模型拓展到超线性吗，而这种超线性的体现在于可加的分量是$h(X)$，是原始变量$X$的某个变换，比如样条基。所以我觉得表现形式很像最小二乘（或广义最小二乘）是很自然的，并且其惩罚也应该对应着线性中的惩罚，无论是lasso，还是 $L_2$。另外，我个人一个很大的感受是，看上去很general的东西但看他们的论文或者书并不会觉得没有新意，比如esl中很多方法你似乎看上去都可以归结为最最一般的方法，但还是惊叹于新方法的巧妙。</p>
+<p>@2017.10.18 今天跟 yy 同学简要讨论了一下样条方法，ta觉得“样条方法本身其实就是最小二乘，惩罚样条也不过就是跟最小二乘的Lasso 之类一个原理，没什么新意，不过这种非参估计因为假设放宽所以渐近性要比线性模型证明起来复杂的多．” 说得很对，但我觉得并非没有新意，看上去确实是像最小二乘（或者说是广义最小二乘或者加权最小二乘），但想到样条方法的初衷，不就是将线性模型拓展到超线性吗，而这种超线性的体现在于可加的分量是$h(X)$，是原始变量$X$的某个变换，比如样条基．所以我觉得表现形式很像最小二乘（或广义最小二乘）是很自然的，并且其惩罚也应该对应着线性中的惩罚，无论是lasso，还是 $L_2$．另外，我个人一个很大的感受是，看上去很general的东西但看他们的论文或者书并不会觉得没有新意，比如esl中很多方法你似乎看上去都可以归结为最最一般的方法，但还是惊叹于新方法的巧妙．</p>
 </div>
-<p>直到 <a href="../5.7-Multidimensional-Splines/index.html">5.7 节</a> 我们都假设 $X$ 为一维向量。分段多项式函数 $f(X)$ 通过将 $X$ 的定义域分成连续的区间得到，并且在每个区间内用单独的多项式来表示 $f$。图 5.1 显示了两个简单的分段多项式。第一个是分段常值，含有三个基函数：
+<p>直到 <a href="../5.7-Multidimensional-Splines/index.html">5.7 节</a> 我们都假设 $X$ 为一维向量．分段多项式函数 $f(X)$ 通过将 $X$ 的定义域分成连续的区间得到，并且在每个区间内用单独的多项式来表示 $f$．图 5.1 显示了两个简单的分段多项式．第一个是分段常值，含有三个基函数：
 <script type="math/tex; mode=display">
 h_1(X)=I(X<\xi_1),\;h_2(X)=I(\xi_1\le X\le \xi_2),\;h_3(X)=I(\xi_2\le X)
 </script>
-因为这些在不连续区域都为正值，模型 $f(X)=\sum_{m=1}^3\beta_mh_m(X)$ 的最小二乘估计等价于 $\hat\beta_m=\overline{Y}_m$，即为 $Y$ 在第 $m$ 个区域的均值。</p>
+因为这些在不连续区域都为正值，模型 $f(X)=\sum_{m=1}^3\beta_mh_m(X)$ 的最小二乘估计等价于 $\hat\beta_m=\overline{Y}_m$，即为 $Y$ 在第 $m$ 个区域的均值．</p>
 <p><img alt="" src="../../img/05/fig5.1.png" /></p>
 <blockquote>
-<p>图 5.1. 上面两张图显示了对一些模拟数据的分段常值函数拟合。垂直虚线表示两个结点 $\xi_1$ 和 $\xi_2$。蓝色曲线表示真正的函数，数据是通过函数加上高斯噪声产生的。下面板的图显示了对同样数据的分段线性函数拟合——上面板的图没有限制，而下面板的图限制为在结点处连续——右上图没有限制，而左下图限制为在结点处连续。右下图显示了分段线性的基函数，$h_3(X)=(X-\xi_1)_+$,它在 $\xi_1$ 处连续。黑色点表示样本取值 $h_3(x_i),i=1,2,\ldots,N$。</p>
+<p>图 5.1. 上面两张图显示了对一些模拟数据的分段常值函数拟合．垂直虚线表示两个结点 $\xi_1$ 和 $\xi_2$．蓝色曲线表示真正的函数，数据是通过函数加上高斯噪声产生的．下面板的图显示了对同样数据的分段线性函数拟合——上面板的图没有限制，而下面板的图限制为在结点处连续——右上图没有限制，而左下图限制为在结点处连续．右下图显示了分段线性的基函数，$h_3(X)=(X-\xi_1)_+$,它在 $\xi_1$ 处连续．黑色点表示样本取值 $h_3(x_i),i=1,2,\ldots,N$．</p>
 </blockquote>
-<p>右上图显示了分段线性拟合。需要三个额外的基函数：$h_{m+3}=h_m(X)X,m=1,2,3$。除了在特殊情况下，我们一般更想要第三个面板的图，也是分段线性，但在间隔点上连续。这些连续性的约束导致在参数上存在线性约束；举个例子，$f(\xi_1^-)=f(\xi_1^+)$ 意味着 $\beta_1+\xi_1\beta_4=\beta_2+\xi_1\beta_5$。在这种情形下，因为存在两个约束，我们则减少了两个参数，最终得到 4 个自由参数。</p>
+<p>右上图显示了分段线性拟合．需要三个额外的基函数：$h_{m+3}=h_m(X)X,m=1,2,3$．除了在特殊情况下，我们一般更想要第三个面板的图，也是分段线性，但在间隔点上连续．这些连续性的约束导致在参数上存在线性约束；举个例子，$f(\xi_1^-)=f(\xi_1^+)$ 意味着 $\beta_1+\xi_1\beta_4=\beta_2+\xi_1\beta_5$．在这种情形下，因为存在两个约束，我们则减少了两个参数，最终得到 4 个自由参数．</p>
 <p>这种情形下更直接的方式是将约束结合起来的基函数：
 <script type="math/tex; mode=display">
 h_1(X)=1,\;h_2(X)=X,\;h_3(X)=(X-\xi_1)_+,\;h_4(X)=(X-\xi_2)_+
 </script>
-其中 $t_+$ 记为正的部分。函数 $h_3$ 的图象如图 5.1 右下角图所示。我们经常偏好光滑函数，这个可以通过增加局部多项式的阶数实现。</p>
+其中 $t_+$ 记为正的部分．函数 $h_3$ 的图象如图 5.1 右下角图所示．我们经常偏好光滑函数，这个可以通过增加局部多项式的阶数实现．</p>
 <p><img alt="" src="../../img/05/fig5.2.png" /></p>
 <blockquote>
-<p>图 5.2. 一系列分段 3 次多项式拟合，其中增加了连续性的阶数。</p>
+<p>图 5.2. 一系列分段 3 次多项式拟合，其中增加了连续性的阶数．</p>
 </blockquote>
-<p>图 5.2 展示了一系列对同样数据进行的分段 3 次多项式拟合，增加了结点处连续性的阶数。右下图的函数是连续的，且在结点处的一阶微分和二阶微分均连续。这称为三次样条。再加一阶的连续性可以得到全局三次多项式。不难证明（<a href="https://github.com/szcf-weiya/ESL-CN/issues/29">练习 5.1</a>）下面的基函数表示结点为 $\xi_1$ 和 $\xi_2$ 的三次样条。
+<p>图 5.2 展示了一系列对同样数据进行的分段 3 次多项式拟合，增加了结点处连续性的阶数．右下图的函数是连续的，且在结点处的一阶微分和二阶微分均连续．这称为三次样条．再加一阶的连续性可以得到全局三次多项式．不难证明（<a href="https://github.com/szcf-weiya/ESL-CN/issues/29">练习 5.1</a>）下面的基函数表示结点为 $\xi_1$ 和 $\xi_2$ 的三次样条．
 <script type="math/tex; mode=display">
 \begin{align*}
 h_1(X)=1,\;h_3(X)=X^2,\;&h_5(X)=(X-\xi_1)_+^3\\
@@ -3376,20 +3339,20 @@ h_2(X)=X,\;h_4(X)=X^3,\;&h_6(X)=(X-\xi_2)_+^3
 </p>
 <div class="admonition info">
 <p class="admonition-title">weiya 注：Ex. 5.1</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/29">Issue 29: Ex. 5.1</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/29">Issue 29: Ex. 5.1</a>．</p>
 </div>
-<p>这里 6 个基函数对应 6 维函数的线性空间。快速地确定参数个数：（3 个区域）$\times$ (每个区域 4 个参数)-（2 个结点）$\times$（每个结点 3 个限制）= 6.</p>
+<p>这里 6 个基函数对应 6 维函数的线性空间．快速地确定参数个数：（3 个区域）$\times$ (每个区域 4 个参数)-（2 个结点）$\times$（每个结点 3 个限制）= 6.</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注</p>
-<p>单独考虑每个区域，因每个区域是三阶多项式，则需要确定的参数有四个，每个结点处，需要保持连续、一阶微分连续、二阶微分连续，所以每个结点3个限制。
-从另一个角度看，因 $\sum_{m=1}^6\beta_mh_m$ 需要确定的就是 $\beta_m$ 这 6 个参数。</p>
+<p>单独考虑每个区域，因每个区域是三阶多项式，则需要确定的参数有四个，每个结点处，需要保持连续、一阶微分连续、二阶微分连续，所以每个结点3个限制．
+从另一个角度看，因 $\sum_{m=1}^6\beta_mh_m$ 需要确定的就是 $\beta_m$ 这 6 个参数．</p>
 </div>
 <!--
-单独考虑每个区域，则需要确定的参数有四个，$\sum_{i=1}^4\beta_mh_m$，每个结点处，需要保持连续、一阶微分连续、二阶微分连续，所以每个结点3个限制。
-从另一个角度看，因$\sum_{i=1}^6\beta_mh_m$需要确定的就是$\beta_i$这6个参数。
+单独考虑每个区域，则需要确定的参数有四个，$\sum_{i=1}^4\beta_mh_m$，每个结点处，需要保持连续、一阶微分连续、二阶微分连续，所以每个结点3个限制．
+从另一个角度看，因$\sum_{i=1}^6\beta_mh_m$需要确定的就是$\beta_i$这6个参数．
 -->
 
-<p>更一般地，结点为 $\xi_j,j=1,\ldots,K$ 的 order 为 $M$ 的样条是 order 为 $M$ 的分段多项式，而且有连续的 $M-2$ 次微分。三次样条的 $M=4$。实际上图 5.1 的分段常数函数是 order 为 1 的样条，而连续的分段线性函数是 order 为 2 的样条。同样地，<strong>截断幂 (truncated-power)</strong> 基的集合是
+<p>更一般地，结点为 $\xi_j,j=1,\ldots,K$ 的 order 为 $M$ 的样条是 order 为 $M$ 的分段多项式，而且有连续的 $M-2$ 次微分．三次样条的 $M=4$．实际上图 5.1 的分段常数函数是 order 为 1 的样条，而连续的分段线性函数是 order 为 2 的样条．同样地，<strong>截断幂 (truncated-power)</strong> 基的集合是
 <script type="math/tex; mode=display">
 \begin{align*}
 h_j(X)&=X^{j-1},j=1,\ldots,M\\
@@ -3397,23 +3360,37 @@ h_{M+\ell}(X)&=(X-\xi_\ell)_+^{M-1},\ell=1,\ldots,K
 \end{align*}
 </script>
 </p>
-<p>据说三次样条是人眼看不出结点不连续的最低阶样条。很少有更好的理由去选择更高次的样条，除非对光滑的微分感兴趣。实际中，用得最多的 order 还是 $M=1,2,4$。</p>
-<p>这些固定结点的样条也称作 <strong>回归样条 (regression splines)</strong>。我们需要选择样条的阶数，结点的个数以及它们的位置。一种简单方式是用基函数或自由度来参量化样条族，并用观测 $x_i$ 来确定结点的位置。举个例子，<code>R</code> 语言中的命令 <code>bs(x,df=7)</code> 产生在 <code>x</code> 的 $N$ 个观测点取值的三次样条基函数，其中有 $7-3=4$ 个内结点，内结点在 <code>x</code> 的（20,40,60 和 80）分位数处。（含四个结点的三次样条有 8 个维度。<code>bs()</code>函数默认忽略基函数里面的常数项，因为这样的项一般包含在模型的其它项里面。）</p>
+<p>据说三次样条是人眼看不出结点不连续的最低阶样条．很少有更好的理由去选择更高次的样条，除非对光滑的微分感兴趣．实际中，用得最多的 order 还是 $M=1,2,4$．</p>
+<p>这些固定结点的样条也称作 <strong>回归样条 (regression splines)</strong>．我们需要选择样条的阶数，结点的个数以及它们的位置．一种简单方式是用基函数或自由度来参量化样条族，并用观测 $x_i$ 来确定结点的位置．举个例子，<code>R</code> 语言中的命令 <code>bs(x,df=7)</code> 产生在 <code>x</code> 的 $N$ 个观测点取值的三次样条基函数，其中有 $7-3=4$ 个内结点，内结点在 <code>x</code> 的（20,40,60 和 80）分位数处．（含四个结点的三次样条有 8 个维度．<code>bs()</code>函数默认忽略基函数里面的常数项，因为这样的项一般包含在模型的其它项里面．）</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注： </p>
 <p>order 为 $M$，含有 $K$ 个结点的样条其自由度为
 <script type="math/tex; mode=display">
 M(K+1)-(M-1)K=K+M
 </script>
-左边第一项表示 $K+1$ 个区域中每个区域需要 $M$ 个参数，而第二项表明 $K$ 个结点中需要 $M-1$ 个限制。比如，对于三次样条，$M=4$，则自由度为 $K+4$。在 <code>bs(x,df=7)</code> 中，原本四个结点的三次样条自由度为 8，但是由于 <code>bs()</code> 函数本身默认在基中去掉常数项。原书中解释说，“这样的项一般包含在模型的其它项里面”，能否举个例子？</p>
+左边第一项表示 $K+1$ 个区域中每个区域需要 $M$ 个参数，而第二项表明 $K$ 个结点中需要 $M-1$ 个限制．比如，对于三次样条，$M=4$，则自由度为 $K+4$．
+<code>bs()</code> 默认参数 <code>intercept = FALSE</code>, 它会忽略基函数中的常数项，从而 <code>bs(x, df=7)</code>返回在 4 个内结点处取值的三次样条基函数，如果不去掉常数项，则 4 个内结点的三次样条基函数应该有 8 个。具体地，</p>
+<div class="highlight"><pre><span></span>&gt; x = runif(10)
+&gt; attr(bs(x, df = 7), &quot;knots&quot;)
+    20%       40%       60%       80% 
+0.1976368 0.3924345 0.5557125 0.7541854 
+&gt; ncol(bs(x, knots = attr(bs(x, df = 7), &quot;knots&quot;), intercept = TRUE))
+[1] 8
+</pre></div>
+<p>在回归样条中，如果去掉基函数里的常数项，则回归应写成 </p>
+<div class="highlight"><pre><span></span>lm(y ~ bs(x, intercept=FALSE))
+</pre></div>
+<p>而如果保留基函数里的常数项，则回归中就无需截距，即</p>
+<div class="highlight"><pre><span></span><span class="nf">lm</span><span class="p">(</span><span class="n">y</span> <span class="o">~</span> <span class="m">0</span> <span class="o">+</span> <span class="nf">bs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">intercept</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">))</span>
+</pre></div>
 </div>
-<p>然而，也可以更明确地指出，<code>bs(x, degree=1, knots=c(0.2,0.4,0.6))</code> 产生有三个内结点的线性样条的基，并且返回一个 $N\times 4$ 的矩阵。</p>
-<p>因为特定 order 以及结点序列的样条函数的空间是向量空间，所以表示它们会有许多等价的基底（就像普通多项式一样。）尽管截断幂基在概念上很简单，但是数值计算时不是很吸引人：较大的幂次会导致非常严重的舍入问题。在本章附录中描述的 B 样条基即使在结点数 $K$ 很大时也有很高的计算效率。</p>
+<p>然而，也可以更明确地指出，<code>bs(x, degree=1, knots=c(0.2,0.4,0.6))</code> 产生有三个内结点的线性样条的基，并且返回一个 $N\times 4$ 的矩阵．</p>
+<p>因为特定 order 以及结点序列的样条函数的空间是向量空间，所以表示它们会有许多等价的基底（就像普通多项式一样．）尽管截断幂基在概念上很简单，但是数值计算时不是很吸引人：较大的幂次会导致非常严重的舍入问题．在本章附录中描述的 B 样条基即使在结点数 $K$ 很大时也有很高的计算效率．</p>
 <h2 id="_1">自然三次样条<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>我们知道对数据的多项式拟合的行为在边界处有不稳定的趋势，而且外推法会很危险。样条进一步恶化了这些问题。边界结点之外的多项式拟合的表现比该区域对应的全局多项式拟合更野蛮。从最小二乘拟合的样条函数的 <strong>逐点方差 (pairwise variance)</strong>，可以很方便地看到这一点（更多细节见下一节的计算这些方差的例子）。图 5.3 比较了不同模型的逐点方差。在边界处的方差爆炸是显而易见的，对于三次样条这必要会更糟糕。</p>
+<p>我们知道对数据的多项式拟合的行为在边界处有不稳定的趋势，而且外推法会很危险．样条进一步恶化了这些问题．边界结点之外的多项式拟合的表现比该区域对应的全局多项式拟合更野蛮．从最小二乘拟合的样条函数的 <strong>逐点方差 (pairwise variance)</strong>，可以很方便地看到这一点（更多细节见下一节的计算这些方差的例子）．图 5.3 比较了不同模型的逐点方差．在边界处的方差爆炸是显而易见的，对于三次样条这必要会更糟糕．</p>
 <p><img alt="" src="../../img/05/fig5.3.png" /></p>
-<p><strong>自然三次样条 (natural cubic spline)</strong> 添加额外的限制，具体地，令边界结点之外的函数是线性的。这样减少了 4 个自由度（两个边界区域分别两个限制条件），这四个自由度可以通过在内部区域取更多的结点花费掉。图 5.3 用方差表示了这种权衡。在边界附近需要在偏差上付出代价，但是假设边界附近（不管怎样，我们的信息很少）为线性函数通常是合理的考虑。</p>
-<p>含 $K$ 个结点的自然三次样条用 $K$ 个基函数来表示。可以从三次样条的出发，通过强加上边界限制导出降维的基。举个例子，从 5.2 节描述的truncated power序列基出发，我们得到（练习 5.4）：
+<p><strong>自然三次样条 (natural cubic spline)</strong> 添加额外的限制，具体地，令边界结点之外的函数是线性的．这样减少了 4 个自由度（两个边界区域分别两个限制条件），这四个自由度可以通过在内部区域取更多的结点花费掉．图 5.3 用方差表示了这种权衡．在边界附近需要在偏差上付出代价，但是假设边界附近（不管怎样，我们的信息很少）为线性函数通常是合理的考虑．</p>
+<p>含 $K$ 个结点的自然三次样条用 $K$ 个基函数来表示．可以从三次样条的出发，通过强加上边界限制导出降维的基．举个例子，从 5.2 节描述的truncated power序列基出发，我们得到（<a href="https://github.com/szcf-weiya/ESL-CN/issues/31">练习 5.4</a>）：
 <script type="math/tex; mode=display">
 N_1(X)=1,\;N_2(X)=X,\; N_{k+2}(X)=d_k(X)-d_{K-1}(X),\tag{5.4}
 </script>
@@ -3422,47 +3399,69 @@ N_1(X)=1,\;N_2(X)=X,\; N_{k+2}(X)=d_k(X)-d_{K-1}(X),\tag{5.4}
 d_k(X)=\frac{(X-\xi_k)_+^3-(X-\xi_K)_+^3}{\xi_K-\xi_k}\tag{5.5}
 </script>
 可以看到当$X\ge \xi_K$时每个基函数的二阶微分和三阶微分均为0.</p>
+<div class="admonition info">
+<p class="admonition-title">weiya 注：Ex. 5.4</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/31">Issue 31: Ex. 5.4</a>，欢迎讨论交流．</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">weiya 注</p>
-<p>下面说明对于自然三次样条而言，基函数个数即为结点个数。
+<p>下面说明对于自然三次样条而言，基函数个数即为结点个数．
 设有 $K$ 个结点，则有 $K-2$ 个内结点，$(K-2+1)$ 个区域，每个区域参数为 4 个，每个内结点减掉 3 个参数，每个边界点减掉一个参数，则还剩下
 <script type="math/tex; mode=display">
 (K-1)\cdot 4-3(K-2)-2\times 1 = K
 </script>
-也就是 $K$ 个基函数。</p>
+也就是 $K$ 个基函数．</p>
+<p>具体地，假设某内结点 $\xi$ 的左右区域函数分别为
+<script type="math/tex; mode=display">
+f_i(x) = a_ix^3+b_ix^2+c_ix+d_i,\quad i=1,2\,,
+</script>
+则自由参数有 8 个 $(a_i,b_i,c_i,d_i),i=1,2$，结点 $\xi$ 处需要满足“函数值相等”、“一阶导相等”、“二阶导相等”，即
+<script type="math/tex; mode=display">
+\begin{align*}
+f_1(\xi) &=f_2(\xi)\\
+f_1'(\xi) &=f_2'(\xi)\\
+f_1''(\xi) &=f_2''(\xi)
+\end{align*}
+</script>
+相当于减少了 3 个自由参数（换句话说，有三个参数可以被其他 5 个参数表示出来）。</p>
+<p>对于某边界点 $\xi_0$，其所在区域的函数为 $f(x)=ax^3+bx^2+cx+d$，边界点需要满足“二阶导为零”的约束，即
+<script type="math/tex; mode=display">
+f''(\xi_0) = 0\,,
+</script>
+这减少了 1 个自由参数。</p>
 </div>
 <h2 id="_2">例子：南非心脏病（继续）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>在 4.4.2 节我们对南非心脏病数据进行了线性逻辑斯蒂回归拟合。这里我们以采用自然样条的函数来探索非线性。模型的函数有如下形式：
+<p>在 4.4.2 节我们对南非心脏病数据进行了线性逻辑斯蒂回归拟合．这里我们以采用自然样条的函数来探索非线性．模型的函数有如下形式：
 <script type="math/tex; mode=display">
 \mathrm{logit}[\Pr(chd\mid X)]=\theta_0+h_1(X_1)^T\theta_1+h_2(X_2)^T\theta_2+\cdots+h_p(X_p)^T\theta_p\tag{5.6}
 </script>
-其中每个 $\theta_i$ 都是乘以对应自然样条基函数 $h_j$ 的系数向量。</p>
-<p>我们在模型中对每一项采用4个自然样条基。举个例子，$X_1$ 代表 <code>sbp</code>，$h_1(X_1)$ 是包含四个基函数的基。因为我们把 $h_j$ 的常数项提取出来了，所以这实际上表明有三个而非两个内结点（在 <code>sbp</code> 的均匀分位数结点处取值），另外在数据端点有两个边界结点。</p>
+其中每个 $\theta_i$ 都是乘以对应自然样条基函数 $h_j$ 的系数向量．</p>
+<p>我们在模型中对每一项采用4个自然样条基．举个例子，$X_1$ 代表 <code>sbp</code>，$h_1(X_1)$ 是包含四个基函数的基．因为我们把 $h_j$ 的常数项提取出来了，所以这实际上表明有三个而非两个内结点（在 <code>sbp</code> 的均匀分位数结点处取值），另外在数据端点有两个边界结点．</p>
 <!--
 > weiya注：
 >
-> 因为把常数项单独提出来，所以原本应该为5个基函数。对于自然三次样条来说，$K$个基函数表示含有$K$个结点。
+> 因为把常数项单独提出来，所以原本应该为5个基函数．对于自然三次样条来说，$K$个基函数表示含有$K$个结点．
 >
 > 因为三次样条$M=4$，$K$为结点个数（含边界点）
 >
 > $M+K=4+$基函数个数
 >
-> 则$K$个基函数表示含有$K$个结点。
+> 则$K$个基函数表示含有$K$个结点．
 >
-> 这里，总共5个结点，除去边界点，则还剩3个内结点。
+> 这里，总共5个结点，除去边界点，则还剩3个内结点．
 -->
 
 <!--
 !!! note "weiya注："
-    因为把常数项单独提出来，所以原本应该为5个基函数。对于自然三次样条来说，$K$个基函数表示含有$K$个结点。
+    因为把常数项单独提出来，所以原本应该为5个基函数．对于自然三次样条来说，$K$个基函数表示含有$K$个结点．
 
     因为三次样条$M=4$，$K$为结点个数（含边界点）
 
     $M+K=4+$基函数个数
 
-    则$K$个基函数表示含有$K$个结点。
+    则$K$个基函数表示含有$K$个结点．
 
-    这里，总共5个结点，除去边界点，则还剩3个内结点。
+    这里，总共5个结点，除去边界点，则还剩3个内结点．
 
 !!! note "weiya 注"
     上文 $h_j$ 中的常数项已经提出，所以实际上含 $K$ 个基函数的自然三次样条，其内结点个数为
@@ -3474,30 +3473,30 @@ d_k(X)=\frac{(X-\xi_k)_+^3-(X-\xi_K)_+^3}{\xi_K-\xi_k}\tag{5.5}
 
 <div class="admonition note">
 <p class="admonition-title">weiya 注：</p>
-<p>因为把常数项单独提出来，所以原本应该为 5 个基函数。考虑到对于自然三次样条，$K$ 个基函数表示含有 $K$ 个结点。所以这里也就是总共 5 个结点，除去边界点，则还剩 3 个内结点。</p>
+<p>因为把常数项单独提出来，所以原本应该为 5 个基函数．考虑到对于自然三次样条，$K$ 个基函数表示含有 $K$ 个结点．所以这里也就是总共 5 个结点，除去边界点，则还剩 3 个内结点．</p>
 </div>
-<p>因为 <code>famhist</code> 是含两个水平的因子，所以用一个二值变量或者虚拟变量来编码，而且它与拟合的模型中的单个系数有关。</p>
-<p>更简洁地，我们将 $p$ 维基函数（以及常数项）向量结合成一个向量 $h(X)$，则模型简化为 $h(X)^T\theta$，总参数个数为 $df=1+\sum_{j=1}^pdf_j$，是每个组分中参数个数的和。每个基函数在 $N$ 个样本中分别取值，得到一个 $N\times df$ 的基矩阵 $\mathbf H$。在这点上看，模型类似于其他的线性逻辑斯蒂回归模型，应用的算法在 4.4.1 节描述。</p>
+<p>因为 <code>famhist</code> 是含两个水平的因子，所以用一个二值变量或者虚拟变量来编码，而且它与拟合的模型中的单个系数有关．</p>
+<p>更简洁地，我们将 $p$ 维基函数（以及常数项）向量结合成一个向量 $h(X)$，则模型简化为 $h(X)^T\theta$，总参数个数为 $df=1+\sum_{j=1}^pdf_j$，是每个组分中参数个数的和．每个基函数在 $N$ 个样本中分别取值，得到一个 $N\times df$ 的基矩阵 $\mathbf H$．在这点上看，模型类似于其他的线性逻辑斯蒂回归模型，应用的算法在 4.4.1 节描述．</p>
 <p><img alt="" src="../../img/05/fig5.4.png" /></p>
-<p>我们采用向后逐步删除过程，从模型中删除项并且保持每个项的整体结构，而不是每次删除一个系数。AIC 统计量（7.5 节）用来删除项，并且在最后模型中保留下来的所有项如果被删掉都会导致 AIC 增大（见表 5.1）。图 5.4 显示了通过逐步回归选择出的最终模型的图象。对于每个变量 $X_j$，画出的函数是$\hat f_j(X_j)=h_j(X_j)^T\hat\theta_j$。协方差矩阵 $\Cov(\hat\theta)=\mathbf\Sigma$ 通过 $\mathbf{\hat\Sigma=(H^TWH)^{-1}}$ 来估计，其中 $\mathbf W$ 为逻辑斯蒂回归的对角元素构成的权重矩阵。因此 $v_j(X_j)=\Var[\hat f_j(X_j)]=h_j(X_j)^T\mathbf{\hat \Sigma}_{jj}h_j(X_j)$ 是 $\hat f_j$ 的逐点方差函数，其中 $\Cov(\hat\theta_j)=\hat{\mathbf\Sigma}_{jj}$ 是 $\hat{\mathbf\Sigma}$ 对应的子矩阵。图 5.4 中每张图的阴影区域由 $\hat f_j(X_j)\pm2\sqrt{v_j(X_j)}$ 定义。</p>
-<p>AIC统计量比似然比检验（偏差检验）更“宽容”（generous）。<code>sbp</code>和<code>obesity</code>都被包含进模型中，而这两个量都不在线性模型中。图象解释了为什么它们的贡献本质上是非线性。这些影响乍看或许很奇怪，但这因为是回顾性数据的本质。这些指标有时是当病人患上心脏病后测出来的，而且在很多情形下他们已经受益于健康饮食和生活状态，因此在<code>obesity</code>和<code>sbp</code>值较低时会有明显的增长。表5.1总结了部分模型的效果。</p>
+<p>我们采用向后逐步删除过程，从模型中删除项并且保持每个项的整体结构，而不是每次删除一个系数．AIC 统计量（7.5 节）用来删除项，并且在最后模型中保留下来的所有项如果被删掉都会导致 AIC 增大（见表 5.1）．图 5.4 显示了通过逐步回归选择出的最终模型的图象．对于每个变量 $X_j$，画出的函数是$\hat{f_j}(X_j)=h_j(X_j)^T\hat\theta_j$．协方差矩阵 $\Cov(\hat\theta)=\mathbf\Sigma$ 通过 $\mathbf{\hat\Sigma=(H^TWH)^{-1}}$ 来估计，其中 $\mathbf W$ 为逻辑斯蒂回归的对角元素构成的权重矩阵．因此 $v_j(X_j)=\Var[\hat{f_j}(X_j)]=h_j(X_j)^T\mathbf{\hat \Sigma}_{jj}h_j(X_j)$ 是 $\hat{f_j}$ 的逐点方差函数，其中 $\Cov(\hat\theta_j)=\hat{\mathbf\Sigma}_{jj}$ 是 $\hat{\mathbf\Sigma}$ 对应的子矩阵．图 5.4 中每张图的阴影区域由 $\hat{f_j}(X_j)\pm2\sqrt{v_j(X_j)}$ 定义．</p>
+<p>AIC统计量比似然比检验（偏差检验）更“宽容”（generous）．<code>sbp</code>和<code>obesity</code>都被包含进模型中，而这两个量都不在线性模型中．图象解释了为什么它们的贡献本质上是非线性．这些影响乍看或许很奇怪，但这因为是回顾性数据的本质．这些指标有时是当病人患上心脏病后测出来的，而且在很多情形下他们已经受益于健康饮食和生活状态，因此在<code>obesity</code>和<code>sbp</code>值较低时会有明显的增长．表5.1总结了部分模型的效果．</p>
 <p><img alt="" src="../../img/05/tab5.1.png" /></p>
 <h2 id="_3">例子：音素识别<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>在这个例子中我们采用样条来降低灵活性而非增大灵活性；这个应用是属于一般的函数型(functional)建模。图5.5的上图显示了在256个频率下分别测量两个音素“aa”和“ao”的15个对数周期图。目标是应用这些数据对口语音素进行分类。选择这两个音素是因为它们很难被分开。</p>
+<p>在这个例子中我们采用样条来降低灵活性而非增大灵活性；这个应用是属于一般的 <strong>函数型 (functional)</strong> 建模．图 5.5 的上图显示了在 256 个频率下分别s测量两个音素“aa”和“ao”的 15 个对数周期图．目标是应用这些数据对口语音素进行分类．选择这两个音素是因为它们很难被分开．</p>
 <p><img alt="" src="../../img/05/fig5.5.png" /></p>
 <blockquote>
-<p>图5.5 上图显示了对数周期图作为15个例子中的频率的函数，例子中每个音素“aa”和“ao”从总共695个“aa”和1022个“ao”中选取。每个对数周期图在256个均匀的空间频率处测量。下图显示了对数据进行极大似然拟合逻辑斯蒂回归得到的系数（作为频率的函数）的图象，将256个对数周期图值作为输入。带约束的逻辑斯底回归的系数随频率变化是光滑的红色曲线，而在锯齿状灰色曲线是无约束的逻辑斯底回归情形下系数随频率变化的曲线。</p>
+<p>图 5.5 上图显示了对数周期图作为 15个例子中的频率的函数，例子中每个音素“aa”和“ao”从总共695个“aa”和1022个“ao”中选取．每个对数周期图在256个均匀的空间频率处测量．下图显示了对数据进行极大似然拟合逻辑斯蒂回归得到的系数（作为频率的函数）的图象，将256个对数周期图值作为输入．带约束的逻辑斯蒂回归的系数随频率变化是光滑的红色曲线，而在锯齿状灰色曲线是无约束的逻辑斯蒂回归情形下系数随频率变化的曲线．</p>
 </blockquote>
 <div class="admonition note">
 <p class="admonition-title">weiya注</p>
-<p>周期图（Periodogram）：在信号处理中，周期图是信号谱密度的估计。
-抛开背景知识，直观理解便是上图绘制了每条曲线代表一个例子，其中15条表示&rdquo;aa&rdquo;，另外15条表示&rdquo;ao&rdquo;。</p>
+<p>周期图（Periodogram）：在信号处理中，周期图是信号谱密度的估计．
+抛开背景知识，直观理解便是上图绘制了每条曲线代表一个例子，其中 15 条表示&rdquo;aa&rdquo;，另外 15 条表示&rdquo;ao&rdquo;．</p>
 </div>
-<p>输入特征是长度为256的向量$x$，我们可以看成是在频率$f$的节点上取值的函数值$X(f)$向量。实际上，存在一个连续的类似信号，它是频率的函数，这里我们可以将$X(f)看成$是它的一个取样版本。</p>
-<p>图5.5的下图显示了对从695个“aa”和1022个“ao”选出的1000个训练样本进行极大似然拟合得到的线性逻辑斯蒂回归模型的系数。也作出了系数关于频率的函数图象，而且实际上我们可以根据下面的连续形式来思考模型</p>
+<p>输入特征是长度为 256 的向量 $x$，我们可以看成是在频率 $f$ 的节点上取值的函数值 $X(f)$ 向量．实际上，存在一个连续的类似信号，它是频率的函数，这里我们可以将 $X(f)$ 看成是它的一个取样版本．</p>
+<p>图 5.5 的下图显示了对从 695 个“aa”和 1022 个“ao”选出的 1000 个训练样本进行极大似然拟合得到的线性逻辑斯蒂回归模型的系数．也作出了系数关于频率的函数图象，而且实际上我们可以根据下面的连续形式来思考模型</p>
 <p>
 <script type="math/tex; mode=display">
-\mathrm{log}\frac{Pr(aa\mid X)}{Pr(ao\mid X)}=\int X(f)\beta(f)df\tag{5.7}
+\log\frac{\Pr(\mathrm{aa}\mid X)}{\Pr(\mathrm{ao}\mid X)}=\int X(f)\beta(f)df\tag{5.7}
 </script>
 </p>
 <p>可以用下式来近似</p>
@@ -3506,30 +3505,18 @@ d_k(X)=\frac{(X-\xi_k)_+^3-(X-\xi_K)_+^3}{\xi_K-\xi_k}\tag{5.5}
 \sum\limits_{j=1}^{256}X(f_j)\beta(f_j)=\sum\limits_{j=1}^{256}x_j\beta_j\tag{5.8}
 </script>
 </p>
-<p>系数计算出对比度函数(contrast functional)，而且将会在频域内有显著的值，其中对数周期图会区分这两个类。</p>
-<p>灰色曲线十分粗糙。因为输入信号有相当强的正自相关性，这导致系数中的负自相关。另外，样本大小仅仅为每个系数仅仅提供了4个有效的观测。</p>
+<p>系数计算出对比度函数 (contrast functional)，而且将会在频域内有显著的值，其中对数周期图会区分这两个类．</p>
+<p>灰色曲线十分粗糙．因为输入信号有相当强的正自相关性，这导致系数中的负自相关．另外，样本大小仅仅为每个系数仅仅提供了 4 个有效的观测值．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya注： question</p>
-<p>why? refer to <a href="https://github.com/szcf-weiya/ESL-CN/issues/32">issues#32</a></p>
+<p class="admonition-title">weiya注：</p>
+<p>我的理解是，因为训练样本大小为 1000，而系数共有 256，所以平均下来应该是每个系数仅有四个观测值。</p>
 </div>
-<p>类似这样的应用允许自然的正则化(natural regularization)。我们强制系数作为频率的函数均匀变化。图5.5中下图的红色曲线显示了对这些数据应用这样一个光滑参数曲线。我们看到低频率的差异性很明显。这个光滑不仅允许对它们的差异进行更简单的解读，而且得到更加精确的分类器：</p>
+<p>类似这样的应用允许 <strong>自然的正则化 (natural regularization)</strong>．我们强制系数作为频率的函数均匀变化．图 5.5 中下图的红色曲线显示了对这些数据应用这样一个光滑参数曲线．我们看到低频率的差异性很明显．这个光滑不仅允许对它们的差异进行更简单的解读，而且得到更加精确的分类器：</p>
 <p><img alt="" src="../../img/05/tabno1.png" /></p>
-<p>红色光滑曲线可以应用非常简单的自然三次样条得到。我们可以将系数函数表达成样条$\beta(f)=\sum_{m=1}^Mh_m(f)\theta_m$的展开。实际中这意味着$\beta=\mathbf H\theta$，其中，$\mathbf H$是 $p\times M$三次样条的基矩阵，定义在频率集上。这里我们采用$M=12$个基函数，其中结点均匀分布在表示频率的整数$1,2,\ldots,256$上。因为$x^T\beta=x^T\mathbf H\theta$，我们可以简单地将输入特征$x$替换成滤波（filtered）形式<script type="math/tex">x^*=\mathbf{H}^Tx</script>，并在$x^*$上通过线性逻辑斯蒂回归拟合$\theta$。因此红色曲线是$\beta(f)=h(f)^T\hat\theta$。</p>
+<p>红色光滑曲线可以应用非常简单的自然三次样条得到．我们可以将系数函数表达成样条 $\beta(f)=\sum_{m=1}^Mh_m(f)\theta_m$ 的展开．实际中这意味着 $\beta=\mathbf H\theta$，其中，$\mathbf H$ 是 $p\times M$ 三次样条的基矩阵，定义在频率集上．这里我们采用 $M=12$ 个基函数，其中结点均匀分布在表示频率的整数 $1,2,\ldots,256$ 上．因为 $x^T\beta=x^T\mathbf H\theta$，我们可以简单地将输入特征 $x$ 替换成 <strong>滤波 (filtered)</strong> 形式<script type="math/tex">x^*=\mathbf{H}^Tx</script>，并在$x^*$上通过线性逻辑斯蒂回归拟合$\theta$．因此红色曲线是$\beta(f)=h(f)^T\hat\theta$．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya注</p>
-<p>
-<script type="math/tex; mode=display">
-\mathbf H=
-\left[
-\begin{array}{cccc}
-h_1(f_1)&h_2(f_1)&\ldots & h_M(f_1)\\
-h_1(f_2)&h_2(f_2)&\ldots & h_M(f_2)\\
-\vdots &\vdots & \ddots &\vdots\\
-h_1(f_p)&h_2(f_p)&\ldots&h_M(f_p)
-\end{array}
-\right]
-</script>
-故$p$其实为256</p>
+<p class="admonition-title">weiya 注：</p>
+<p>这里其实就是 <strong>函数型线性模型 (functional linear model)</strong> 的策略，为了保持光滑化，用样条基函数来表示系数函数。更多细节可以参见 Ramsay, J. O., &amp; Silverman, B. W. (2005). Functional data analysis (Second edition). Springer. 这本书的第 13 章。</p>
 </div>
                 
                   
@@ -3537,18 +3524,44 @@ h_1(f_p)&h_2(f_p)&\ldots&h_M(f_p)
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/05-Basis-Expansions-and-Regularization/5.2-Piecewise-Polynomials-and-Splines/index.html";
+      this.page.identifier =
+        "/05-Basis-Expansions-and-Regularization/5.2-Piecewise-Polynomials-and-Splines/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3599,7 +3612,7 @@ h_1(f_p)&h_2(f_p)&\ldots&h_M(f_p)
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3609,7 +3622,7 @@ h_1(f_p)&h_2(f_p)&\ldots&h_M(f_p)
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:34
+        Last Build Date UTC : 2026-10-24 02:32:54
       </div>
       
         
@@ -3622,7 +3635,7 @@ h_1(f_p)&h_2(f_p)&\ldots&h_M(f_p)
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3642,18 +3655,57 @@ h_1(f_p)&h_2(f_p)&\ldots&h_M(f_p)
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

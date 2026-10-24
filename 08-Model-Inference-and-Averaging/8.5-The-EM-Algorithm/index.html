@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -499,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1293,8 +1290,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1537,8 +1534,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -1687,8 +1684,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1771,8 +1768,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1783,8 +1780,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1867,8 +1864,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1879,8 +1876,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2143,8 +2140,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2155,8 +2152,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2395,8 +2392,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2908,59 +2905,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3079,18 +3028,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3121,30 +3058,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3169,13 +3082,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3241,8 +3154,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3295,8 +3256,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3312,13 +3273,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/08-Model-Inference-and-Averaging/8.5-The-EM-Algorithm.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="85-em">8.5 EM 算法<a class="headerlink" href="#85-em" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf#page=291">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf#page=291">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3327,12 +3290,12 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2016-12-20 &amp; 2017-02-01:2017-02-03</td>
+<td>发布</td>
+<td>2017-02-08</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2018-04-29, 2018-10-04</td>
+<td>2026-09-22</td>
 </tr>
 <tr>
 <td>状态</td>
@@ -3340,48 +3303,48 @@
 </tr>
 </tbody>
 </table>
-<p>EM 算法是简化复杂极大似然问题的一种很受欢迎的工具。我们首先在一个简单的混合模型中讨论它。</p>
+<p>EM 算法是简化复杂极大似然问题的一种很受欢迎的工具．我们首先在一个简单的混合模型中讨论它．</p>
 <h2 id="_1">两个组分的混合模型<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>这一节我们描述一个密度估计的简单混合模型，以及对应的求解极大似然估计的 EM 算法。这与贝叶斯推断中的 Gibbs 取样方法有着本质的联系。混合模型在本书其他部分的章节有讨论，特别是 <a href="../../06-Kernel-Smoothing-Methods/6.8-Mixture-Models-for-Density-Estimation-and-Classification/index.html">6.8</a>，<a href="">12.7</a> 和 <a href="../../13%20Prototype%20Methods%20and%20Nearest-Neighbors/13.2%20Prototype%20Methods/index.html">13.2.3 节</a>。</p>
+<p>这一节我们描述一个密度估计的简单混合模型，以及对应的求解极大似然估计的 EM 算法．这与贝叶斯推断中的 Gibbs 取样方法有着本质的联系．混合模型在本书其他部分的章节有讨论，特别是 <a href="../../06-Kernel-Smoothing-Methods/6.8-Mixture-Models-for-Density-Estimation-and-Classification/index.html">6.8</a>，<a href="">12.7</a> 和 <a href="../../13%20Prototype%20Methods%20and%20Nearest-Neighbors/13.2%20Prototype%20Methods/index.html">13.2.3 节</a>．</p>
 <div class="admonition note">
 <p class="admonition-title">weiya注：Gibbs sampling</p>
-<p>假设我们需要从 $\mathbf X=(x_1,x_2,\ldots,x_n)$ 中得到 $k$ 个样本，联合分布为 $p(x_1,x_2,\ldots,x_n)$。</p>
-<p>记第 $i$ 个样本为 $\mathbf X^{(i)}=(x_1^{(i)},\ldots,x_n^{(i)})$。我们按下列步骤进行：
+<p>假设我们需要从 $\mathbf X=(x_1,x_2,\ldots,x_n)$ 中得到 $k$ 个样本，联合分布为 $p(x_1,x_2,\ldots,x_n)$．</p>
+<p>记第 $i$ 个样本为 $\mathbf X^{(i)}=(x_1^{(i)},\ldots,x_n^{(i)})$．我们按下列步骤进行：
 <br><br></p>
 <ol>
 <li>
 <p>以初始值 $X^{(i)}$ 开始</p>
 </li>
 <li>
-<p>需要下一个样本，记为 $X^{(i+1)}$。因为 $\mathbf X^{(i+1)}=(x_1^{(i+1)},\ldots,x_n^{(i+1)})$ 是向量，我们需要对向量的每一个组分进行抽样，基于 $p(x_j^{(i+1)}\mid x_1^{(i+1)},\ldots,x_{j-1}^{(i+1)},x_{j+1}^{(i)},\ldots,x_n^{(i)})$ 的分布对 $x_j^{(i+1)}$ 抽样.</p>
+<p>需要下一个样本，记为 $X^{(i+1)}$．因为 $\mathbf X^{(i+1)}=(x_1^{(i+1)},\ldots,x_n^{(i+1)})$ 是向量，我们需要对向量的每一个组分进行抽样，基于 $p(x_j^{(i+1)}\mid x_1^{(i+1)},\ldots,x_{j-1}^{(i+1)},x_{j+1}^{(i)},\ldots,x_n^{(i)})$ 的分布对 $x_j^{(i+1)}$ 抽样.</p>
 </li>
 <li>
-<p>重复上述步骤 $k$ 次。</p>
+<p>重复上述步骤 $k$ 次．</p>
 </li>
 </ol>
 </div>
-<p>图 8.5 的左图显示了表 8.1 中的 20 个模拟数据的直方图。</p>
+<p>图 8.5 的左图显示了表 8.1 中的 20 个模拟数据的直方图．</p>
 <p><img alt="" src="../../img/08/fig8.5.png" /></p>
 <blockquote>
-<p>图 8.5. 混合模型的例子。（左图：）数据的直方图。（右图：）高斯密度的最大似然拟合（红色实线）和观测值 $y$ 的左边成分的解释度（绿色点线）作为 $y$ 的函数。</p>
+<p>图 8.5. 混合模型的例子．（左图：）数据的直方图．（右图：）高斯密度的最大似然拟合（红色实线）和观测值 $y$ 的左边成分的解释度（绿色点线）作为 $y$ 的函数．</p>
 </blockquote>
 <p><img alt="" src="../../img/08/tab8.1.png" /></p>
 <blockquote>
-<p>表 8.1. 图 8.5 中两个组分混合的例子中使用的 20 个模拟数据。</p>
+<p>表 8.1. 图 8.5 中两个组分混合的例子中使用的 20 个模拟数据．</p>
 </blockquote>
-<p>我们想要建立数据点的密度模型，然后由于数据点呈现明显的双峰，高斯分布不是合适的选择。这里似乎有两个潜在的分开的形式，所以我们将 $Y$ 看成两个正态分布混合的模型：
+<p>我们想要建立数据点的密度模型，然后由于数据点呈现明显的双峰，高斯分布不是合适的选择．这里似乎有两个潜在的分开的形式，所以我们将 $Y$ 看成两个正态分布混合的模型：
 <script type="math/tex; mode=display">
 \begin{align}
 Y_1&\sim N(\mu_1,\sigma^2_1)\notag\\
-Y_2&\sim N(\mu_2,\sigma_2^2)\qquad \qquad \qquad\tag{8.36}\\
+Y_2&\sim N(\mu_2,\sigma_2^2)\qquad \qquad \qquad\tag{8.36}\label{8.36}\\
 Y&=(1-\Delta)\cdot Y_1 + \Delta\cdot Y_2\notag
 \end{align}
 </script>
-其中 $\Delta\in \{0,1\}$，且 $\Pr(\Delta =1)=\pi$。产生过程是很显然的：以概率 $\pi$ 产生 $\Delta\in\{0,1\}$，然后根据输出结果，分配给 $Y_1$ 或 $Y_2$。令 $\phi_{\theta}(x)$ 记为参数为$\theta=(\mu,\sigma^2)$ 的正态分布。则 $Y$ 的密度为
+其中 $\Delta\in \{0,1\}$，且 $\Pr(\Delta =1)=\pi$．产生过程是很显然的：以概率 $\pi$ 产生 $\Delta\in\{0,1\}$，然后根据输出结果，分配给 $Y_1$ 或 $Y_2$．令 $\phi_{\theta}(x)$ 记为参数为$\theta=(\mu,\sigma^2)$ 的正态分布．则 $Y$ 的密度为
 <script type="math/tex; mode=display">
 g_Y(y)=(1-\pi)\phi_{\theta_1}(y)+\pi\phi_{\theta_2}(y)\tag{8.37}
 </script>
-现在假设我们希望通过极大似然估计来拟合图 8.5 中数据的模型。参数为
+现在假设我们希望通过极大似然估计来拟合图 8.5 中数据的模型．参数为
 <script type="math/tex; mode=display">
 \theta=(\pi,\theta_1,\theta_2)=(\pi,\mu_1,\sigma^2_1,\mu_2,\sigma_2^2)\tag{8.38}
 </script>
@@ -3389,11 +3352,11 @@ g_Y(y)=(1-\pi)\phi_{\theta_1}(y)+\pi\phi_{\theta_2}(y)\tag{8.37}
 <script type="math/tex; mode=display">
 \ell(\theta;\mathbf Z)=\sum\limits_{i=1}^N\log[(1-\pi)\phi_{\theta_1}(y_i)+\pi\phi_{\theta_2}(y_i)]\tag{8.39}
 </script>
-直接对 $\ell(\theta;\mathbf Z)$ 进行最大化在数值上是很困难的，因为求和项在 $\log$ 函数里面。然而，这里有一个更简单的方式。我们考虑一个类似 (8.36) 中取 0 或 1 的潜变量 $\Delta_i$：若 $\Delta_i=1$ 则 $Y_i$ 来自模型 2，否则来自模型 1。假设我们已经知道了 $\Delta_i$ 的值。则对数概率为
+直接对 $\ell(\theta;\mathbf Z)$ 进行最大化在数值上是很困难的，因为求和项在 $\log$ 函数里面．然而，这里有一个更简单的方式．我们考虑一个类似 \eqref{8.36} 中取 0 或 1 的潜变量 $\Delta_i$：若 $\Delta_i=1$ 则 $Y_i$ 来自模型 2，否则来自模型 1．假设我们已经知道了 $\Delta_i$ 的值．则对数概率为
 <script type="math/tex; mode=display">
 \begin{align}
 \ell_0(\theta;\bf Z,\bf{\Delta})&=\sum\limits_{i=1}^N[(1-\Delta_i)\log\phi_{\theta_1}(y_i)+\Delta_i\log\phi_{\theta_2}(y_i)]\notag\\
-&+\sum\limits_{i=1}^N[(1-\Delta_i)\log(1-\pi)+\Delta_i\log\pi]\tag{8.40}
+&+\sum\limits_{i=1}^N[(1-\Delta_i)\log(1-\pi)+\Delta_i\log\pi]\tag{8.40}\label{8.40}
 \end{align}
 </script>
 </p>
@@ -3403,20 +3366,25 @@ g_Y(y)=(1-\pi)\phi_{\theta_1}(y)+\pi\phi_{\theta_2}(y)\tag{8.37}
 <script type="math/tex; mode=display">
 L(\theta,\mathbf{Z,\Delta}) = \prod\limits_{i=1}^n[(1-\pi)\phi_{\theta_1}(y_i)]^{1-\Delta_i}[\pi\phi_{\theta_2}(y_i)]^{\Delta_i}.
 </script>
-<!-- 假设我们已经知道 $\Delta_i$ 的值，设 $\Delta_i=0,i\in \cal I$，且$ \Delta_i=1,i\in\cal J$。注意到 $p(\Delta_i=0)=1-\pi;p(\Delta_i=1)=\pi$，则似然函数为
+<!-- 假设我们已经知道 $\Delta_i$ 的值，设 $\Delta_i=0,i\in \cal I$，且$ \Delta_i=1,i\in\cal J$．注意到 $p(\Delta_i=0)=1-\pi;p(\Delta_i=1)=\pi$，则似然函数为
 <script type="math/tex; mode=display">
 L(\theta,\mathbf{Z,\Delta}) = \prod\limits_{i\in \cal I} (1-\Delta_i)(1-\pi)\phi_{\theta_1}(y_i)\prod\limits_{i\in \cal J}\Delta_i\pi\phi_{\theta_2}(y_i)
 </script>
-上式 $i\in \cal I$ 部分，乘以 $(1-\Delta_i)$ 也就相当于乘以 1，同理对于 $i\in \cal J$。这样取对数似然便有 (8.40) 式。 --></p>
+上式 $i\in \cal I$ 部分，乘以 $(1-\Delta_i)$ 也就相当于乘以 1，同理对于 $i\in \cal J$．这样取对数似然便有 (8.40) 式． --></p>
 </div>
-<p>而且 $\mu_1$ 和 $\sigma_1^2$ 的极大似然估计为 $\Delta_i=0$ 时样本均值和方差，类似地对于 $\mu_2$ 和 $\sigma_2^2$ 的极大似然估计为 $\Delta_i=1$ 时的样本均值和方差。$\pi$ 的估计为 $\Delta_i=1$ 的比例。</p>
-<p>因为 $\Delta_i$ 的值实际上是不知道的，我们用一种迭代方式，替换 (8.40) 中的每个 $\Delta_i$，它的期望值
+<p>而且 $\mu_1$ 和 $\sigma_1^2$ 的极大似然估计为 $\Delta_i=0$ 时样本均值和方差，类似地对于 $\mu_2$ 和 $\sigma_2^2$ 的极大似然估计为 $\Delta_i=1$ 时的样本均值和方差．$\pi$ 的估计为 $\Delta_i=1$ 的比例．</p>
+<p>因为 $\Delta_i$ 的值实际上是不知道的，我们用一种迭代方式，替换 \eqref{8.40} 中的每个 $\Delta_i$，它的期望值
 <script type="math/tex; mode=display">
 \gamma_i(\theta)=\E(\Delta_i\mid\theta,\mathbf Z)=\Pr(\Delta_i=1\mid \theta,\mathbf Z)\tag{8.41}
 </script>
-也称为模型 2 对于每个观测 $i$ 的责任 (responsibility)。我们用一种称作 EM 算法（算法 8.1 中给出）的过程来求解这个特殊的高斯混合模型。在期望 (expectation) 这一步，我们对每一个模型的每一个观测做一个软赋值：根据每个模型下训练集点的相对密度，参数的当前估计用来给 responsibilities 赋值。在最大化(maximization) 那一步，对极大似然估计中使用的 responsibilities 进行加权用来更新参数估计。</p>
-<p>构造初始的 $\hat\mu_1$ 和 $\hat\mu_2$ 的一种很好的方式便是简单地随机选择 $y_i$ 中的两个值。$\hat\sigma^2_1$ 和 $\hat\sigma^2_2$ 都等于整体的样本方差 $\sum_{i=1}^N(y_i-\hat y)^2/N$。最大比例的 $\hat\pi$ 可以从 0.5 开始。</p>
-<p>注意到实际中概率的最大值发生在当我们固定一个数据点，换句话说，对于一些 $i$ 令 $\hat\mu_1=y_i$，$\hat\sigma^2_1=0$。这给出了无限大的概率，但是这不是一个有用的解。因此实际上我们寻找概率的一个良好的局部最大值，满足 $\hat\sigma^2_1,\hat\sigma^2_2&gt;0$。进一步，可以有多个局部最大值满足$\hat\sigma^2_1,\hat\sigma^2_2&gt;0$。在我们例子中，我们用一系列不同的初始参数值来运行 EM 算法，所有的都满足 $\hat\sigma^2_k&gt;0.5$，然后选择使得概率最大的那个。图 8.6 显示了在最大化对数概率的 EM 算法的过程。表 8.2 显示了在给定迭代次数的 EM 过程下 $\hat\pi=\sum_i\hat\gamma_i/N$ 是类别 2 中观测值比例的极大似然估计。</p>
+也称为模型 2 对于每个观测 $i$ 的责任 (responsibility)．我们用一种称作 EM 算法（算法 8.1 中给出）的过程来求解这个特殊的高斯混合模型．在期望 (expectation) 这一步，我们对每一个模型的每一个观测做一个软赋值：根据每个模型下训练集点的相对密度，参数的当前估计用来给 responsibilities 赋值．在最大化(maximization) 那一步，对极大似然估计中使用的 responsibilities 进行加权用来更新参数估计．</p>
+<p>构造初始的 $\hat\mu_1$ 和 $\hat\mu_2$ 的一种很好的方式便是简单地随机选择 $y_i$ 中的两个值．$\hat\sigma^2_1$ 和 $\hat\sigma^2_2$ 都等于整体的样本方差 $\sum_{i=1}^N(y_i-\bar y)^2/N$．最大比例的 $\hat\pi$ 可以从 0.5 开始．</p>
+<p>注意到实际中概率的最大值发生在当我们固定一个数据点，换句话说，对于一些 $i$ 令 $\hat\mu_1=y_i$，$\hat\sigma^2_1=0$．这给出了无限大的概率，但是这不是一个有用的解．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：无界的似然函数</p>
+<p>另见 <a href="https://stats.stackexchange.com/a/153256/">Convergence of EM for Mixture of Gaussians</a></p>
+</div>
+<p>因此实际上我们寻找概率的一个良好的局部最大值，满足 $\hat\sigma^2_1,\hat\sigma^2_2&gt;0$．进一步，可以有多个局部最大值满足$\hat\sigma^2_1,\hat\sigma^2_2&gt;0$．在我们例子中，我们用一系列不同的初始参数值来运行 EM 算法，所有的都满足 $\hat\sigma^2_k&gt;0.5$，然后选择使得概率最大的那个．图 8.6 显示了在最大化对数概率的 EM 算法的过程．表 8.2 显示了在给定迭代次数的 EM 过程下 $\hat\pi=\sum_i\hat\gamma_i/N$ 是类别 2 中观测值比例的极大似然估计．</p>
 <p><img alt="" src="../../img/08/alg8.1.png" /></p>
 <p><img alt="" src="../../img/08/tab8.2.png" /></p>
 <blockquote>
@@ -3432,17 +3400,17 @@ L(\theta,\mathbf{Z,\Delta}) = \prod\limits_{i\in \cal I} (1-\Delta_i)(1-\pi)\phi
 \hat\mu_2=1.06\qquad \sigma^2_2=0.77\\
 \hat\pi=0.546
 </script>
-图 8.5 的右图显示了从这个过程估计的混合高斯分布的密度（实心红色曲线），以及 responsibilities（绿色点曲线）。注意到混合在监督学习中也很有用；在 <a href="../../06-Kernel-Smoothing-Methods/6.8-Mixture-Models-for-Density-Estimation-and-Classification/index.html">6.7 节</a>我们显示了高斯混合模型怎样导出 radial 基函数的版本。</p>
+图 8.5 的右图显示了从这个过程估计的混合高斯分布的密度（实心红色曲线），以及 responsibilities（绿色点曲线）．注意到混合在监督学习中也很有用；在 <a href="../../06-Kernel-Smoothing-Methods/6.8-Mixture-Models-for-Density-Estimation-and-Classification/index.html">6.7 节</a>我们显示了高斯混合模型怎样导出 radial 基函数的版本．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya注<p>自己实现了上述的模拟过程，具体 R 代码在<a href="https://github.com/szcf-weiya/ESL-CN/blob/master/code/EM/em.R">这里</a></p>
-</p>
+<p class="admonition-title">weiya 注: Fig. 8.6 + Tab. 8.2</p>
+<p>已重现，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/249">Issue 249</a></p>
 </div>
 <h2 id="em">广义 EM 算法<a class="headerlink" href="#em" title="Permanent link">&para;</a></h2>
-<p>上面的过程是对于特定问题的类别下最大化概率的 EM（或者 Baum-Welch）算法。这些问题的概率最大化是困难的，但是通过运用潜在数据（未观测）增大样本会变得简单。这也称作数据增广。这里潜在数据是模型成员 $\Delta_i$。在其它问题中，潜在数据是理应被观测到的实际数据但是缺失了。</p>
-<p>算法 8.2 给出了 EM 算法的一般形式。我们的观测数据是 $\mathbf Z$，其对数概率 $\ell(\theta;\mathbf Z)$ 取决于参数 $\theta$。潜在数据或者缺失数据为 $\mathbf Z^m$，因此完整数据为 $\mathbf {T=(Z,Z^m)}$，对数似然函数为 $\ell_0(\theta;\mathbf T)$，$\ell_0$ 基于完整的密度函数。在混合问题中，$(\mathbf{Z,Z^m)=(y,}\Delta)$，且 $\ell_0(\theta;\mathbf T)$ 由 (8.40) 式给出。</p>
+<p>上面的过程是对于特定问题的类别下最大化概率的 EM（或者 Baum-Welch）算法．这些问题的概率最大化是困难的，但是通过运用潜在数据（未观测）增大样本会变得简单．这也称作数据增广．这里潜在数据是模型成员 $\Delta_i$．在其它问题中，潜在数据是理应被观测到的实际数据但是缺失了．</p>
+<p>算法 8.2 给出了 EM 算法的一般形式．我们的观测数据是 $\mathbf Z$，其对数概率 $\ell(\theta;\mathbf Z)$ 取决于参数 $\theta$．潜在数据或者缺失数据为 $\mathbf Z^m$，因此完整数据为 $\mathbf {T=(Z,Z^m)}$，对数似然函数为 $\ell_0(\theta;\mathbf T)$，$\ell_0$ 基于完整的密度函数．在混合问题中，$(\mathbf{Z,Z^m)=(y,}\Delta)$，且 $\ell_0(\theta;\mathbf T)$ 由 \eqref{8.40} 式给出．</p>
 <p><img alt="" src="../../img/08/alg8.2.png" /></p>
-<p>在我们的混合例子中，$\E(\ell_0(\theta&rsquo;;\mathbf T)\mid \mathbf Z,\hat \theta^{(j)})$ 是式(8.40)，只是后者中的 $\Delta_i$ 替换成了解释度 $\hat\gamma_i(\hat \theta)$。第三步的最大化仅仅是加权均值和方差。</p>
-<p>我们现在给出一个为什么一般情况下 EM 算法有用的解释。</p>
+<p>在我们的混合例子中，$\E(\ell_0(\theta&rsquo;;\mathbf T)\mid \mathbf Z,\hat \theta^{(j)})$ 是将式 \eqref{8.40} 中的 $\Delta_i$ 替换成了解释度 $\hat\gamma_i(\hat \theta)$．第三步的最大化仅仅是加权均值和方差．</p>
+<p>我们现在给出一个为什么一般情况下 EM 算法有用的解释．</p>
 <p>因为
 <script type="math/tex; mode=display">
 \Pr(\mathbf Z^m\mid \mathbf Z,\theta')=\frac{\Pr(\mathbf Z^m,\mathbf Z\mid \theta')}{\Pr(\mathbf Z\mid \theta')}\tag{8.44}
@@ -3451,14 +3419,14 @@ L(\theta,\mathbf{Z,\Delta}) = \prod\limits_{i\in \cal I} (1-\Delta_i)(1-\pi)\phi
 <script type="math/tex; mode=display">
 \Pr(\mathbf Z\mid \theta')=\frac{\Pr(\mathbf T\mid \theta')}{\Pr(\mathbf Z^m\mid \mathbf Z,\theta')}\tag{8.45}
 </script>
-表示成对数似然函数，我们有 $\ell(\theta&rsquo;;\mathbf Z)=\ell_0(\theta&rsquo;;\mathbf T)-\ell_1(\theta&rsquo;;\mathbf{Z^m\mid Z})$，其中 $\ell_1$ 是基于条件密度 $\Pr(\mathbf{Z^m\mid Z,\theta&rsquo;})$。取关于由参数 $\theta$ 确定的 $\mathbf{T\mid Z}$ 分布的条件期望有
+表示成对数似然函数，我们有 $\ell(\theta&rsquo;;\mathbf Z)=\ell_0(\theta&rsquo;;\mathbf T)-\ell_1(\theta&rsquo;;\mathbf{Z^m\mid Z})$，其中 $\ell_1$ 是基于条件密度 $\Pr(\mathbf{Z^m\mid Z,\theta&rsquo;})$．取关于由参数 $\theta$ 确定的 $\mathbf{T\mid Z}$ 分布的条件期望有
 <script type="math/tex; mode=display">
 \begin{align}
 \ell(\theta';\mathbf Z)&=\E[\ell_0(\theta';\mathbf T)\mid \mathbf Z,\theta]-\E[\ell_1(\theta';\mathbf{Z^m\mid Z)\mid Z,\theta}]\notag\\
-&\equiv Q(\theta',\theta)-R(\theta',\theta)\qquad\tag{8.46}
+&\equiv Q(\theta',\theta)-R(\theta',\theta)\qquad\tag{8.46}\label{8.46}
 \end{align}
 </script>
-在最大化那一步，EM 算法最大化关于 $\theta&rsquo;$ 的 $Q(\theta&rsquo;,\theta)$，而不是实际的目标函数 $\ell(\theta&rsquo;;\mathbf Z)$。为什么这样能成功地最大化 $\ell(\theta&rsquo;;\mathbf Z)$？注意到 $R(\theta^*,\theta)$ 是关于 $\theta^*$ 的密度的期望，得到的密度是关于 $\theta$ 的，因此（由琴生不等式）当 $\theta^*=\theta$ 时（见<a href="https://github.com/szcf-weiya/ESL-CN/issues/125">练习 8.1</a>）最大化关于 $\theta^*$ 的函数。</p>
+在最大化那一步，EM 算法最大化关于 $\theta&rsquo;$ 的 $Q(\theta&rsquo;,\theta)$，而不是实际的目标函数 $\ell(\theta&rsquo;;\mathbf Z)$．为什么这样能成功地最大化 $\ell(\theta&rsquo;;\mathbf Z)$？注意到 $R(\theta^*,\theta)$ 是关于 $\theta^*$ 的对数密度的期望，得到的密度是关于 $\theta$ 的，因此（由琴生不等式）当 $\theta^*=\theta$ 时（见<a href="https://github.com/szcf-weiya/ESL-CN/issues/125">练习 8.1</a>）最大化关于 $\theta^*$ 的函数．</p>
 <!-- !!! note "weiya注"
         练习 8.1 如下：
         ![](../img/08/ex8.1.png)
@@ -3471,8 +3439,8 @@ L(\theta,\mathbf{Z,\Delta}) = \prod\limits_{i\in \cal I} (1-\Delta_i)(1-\pi)\phi
         $$
         \E(\LOG(\frac{r(y)}{q(y)}))=\E(-\LOG(\frac{q(y)}{r(y)}))\ge-\LOG\frac{q(y)}{E(r(y))}=\LOG \E\frac{r(y)}{q(y)}
         $$
-        当$r(y)=q(y)$时取等。
-        于是$\E(\LOG r(Y)/q(Y))$在$r(y)=q(y)$时取等。
+        当$r(y)=q(y)$时取等．
+        于是$\E(\LOG r(Y)/q(Y))$在$r(y)=q(y)$时取等．
         对于$R(\theta',\theta)$，我们有
         $$
         R(\theta',\theta)=\frac{\E (\1_{\mathbf Z,\theta}\ell_1(\theta';\mathbf Z^m\mid \mathbf Z))}{P(\mathbf Z,\theta)}
@@ -3481,7 +3449,7 @@ L(\theta,\mathbf{Z,\Delta}) = \prod\limits_{i\in \cal I} (1-\Delta_i)(1-\pi)\phi
 
 <div class="admonition info">
 <p class="admonition-title">Ex. 8.1</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/125">Issue 125: Ex. 8.1</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/125">Issue 125: Ex. 8.1</a>．</p>
 </div>
 <p>所以如果 $\theta&rsquo;$ 最大化 $Q(\theta&rsquo;,\theta)$，我们可以看到
 <script type="math/tex; mode=display">
@@ -3490,36 +3458,41 @@ L(\theta,\mathbf{Z,\Delta}) = \prod\limits_{i\in \cal I} (1-\Delta_i)(1-\pi)\phi
 &\ge 0\qquad\qquad\qquad \tag{8.47}
 \end{align}
 </script>
-因此 EM 迭代不会降低对数似然值。</p>
-<p>这个论据也让我们明白在最大化那一步整体最大化不是必要的：我们仅仅需要找到一个值 $\hat\theta^{(j+1)}$ 使得 $Q(\theta&rsquo;,\hat\theta^{(j)})$ 关于第一个变量是增的，也就是 $Q(\hat\theta^{(j+1)},\hat\theta^{(j)}) &gt; Q(\hat\theta^{(j)},\hat\theta^{(j)})$。这一过程称之为 GEM（广义 EM）算法。EM 算法也可以看成是最小化的过程：见<a href="https://github.com/szcf-weiya/ESL-CN/issues/126">练习 8.7</a>。</p>
+因此 EM 迭代不会降低对数似然值．</p>
+<p>这个论据也让我们明白在最大化那一步整体最大化不是必要的：我们仅仅需要找到一个值 $\hat\theta^{(j+1)}$ 使得 $Q(\theta&rsquo;,\hat\theta^{(j)})$ 关于第一个变量是增的，也就是 $Q(\hat\theta^{(j+1)},\hat\theta^{(j)}) &gt; Q(\hat\theta^{(j)},\hat\theta^{(j)})$．这一过程称之为 GEM（广义 EM）算法．EM 算法也可以看成是最小化的过程：见<a href="https://github.com/szcf-weiya/ESL-CN/issues/126">练习 8.7</a>．</p>
 <div class="admonition info">
 <p class="admonition-title">Ex. 8.7</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/126">Issue 126: Ex. 8.7</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/126">Issue 126: Ex. 8.7</a>．</p>
 </div>
 <h2 id="em-">EM 作为一个最大化-最大化的过程<a class="headerlink" href="#em-" title="Permanent link">&para;</a></h2>
-<p>这里从一个不同的角度来看 EM 过程，看成一个 <strong>联合最大化 (joint maximization)</strong> 算法。考虑函数
+<p>这里从一个不同的角度来看 EM 过程，看成一个 <strong>联合最大化 (joint maximization)</strong> 算法．考虑函数
 <script type="math/tex; mode=display">
 F(\theta',\tilde P) = \E_{\tilde P}[\ell_0(\theta';\mathbf T)] - \E_{\tilde P}[\log\tilde P(\mathbf Z^m)]\tag{8.48}
 </script>
-这里 $\tilde P(\mathbf Z^m)$ 是潜在数据 $\mathbf Z^m$ 的任意分布。在混合例子中，$\tilde P(\mathbf Z^m)$ 构成了概率 $\gamma_i=\Pr(\Delta_i=1\mid \theta,\mathbf Z)$ 的集合。注意到从 $(8.46)$ 式看，$F$ 在 $\tilde P(\mathbf Z^m)=\Pr(\mathbf Z^m\mid \mathbf Z,\theta&rsquo;)$ 上取值，它是观测数据的对数似然函数。函数 $F$ 扩大了对数似然的定义域来，使得能够进行最大化。</p>
+这里 $\tilde P(\mathbf Z^m)$ 是潜在数据 $\mathbf Z^m$ 的任意分布．在混合例子中，$\tilde P(\mathbf Z^m)$ 构成了概率 $\gamma_i=\Pr(\Delta_i=1\mid \theta,\mathbf Z)$ 的集合．注意到从 \eqref{8.46} 式看，$F$ 是观测数据的对数似然函数（在 $\tilde P(\mathbf Z^m)=\Pr(\mathbf Z^m\mid \mathbf Z,\theta&rsquo;)$ 上取值）．函数 $F$ 扩大了对数似然的定义域来，使得能够进行最大化．</p>
 <div class="admonition note">
 <p class="admonition-title">原书脚注：</p>
-<p>$(8.46)$ 式对所有 $\theta$ 都成立，包含 $\theta=\theta&rsquo;$。</p>
+<p>\eqref{8.46} 式对所有 $\theta$ 都成立，包含 $\theta=\theta&rsquo;$．</p>
 </div>
-<p>EM 算法可以看成 $F$ 关于 $\theta&rsquo;$ 和 $\tilde P(\mathbf Z^m)$ 的联合最大化，通过固定一个变量来最大化另外一个变量。固定 $\theta&rsquo;$ 来对 $\tilde P(\mathbf Z^m)$ 最大化可以证明是
+<p>EM 算法可以看成 $F$ 关于 $\theta&rsquo;$ 和 $\tilde P(\mathbf Z^m)$ 的联合最大化，通过固定一个变量来最大化另外一个变量．固定 $\theta&rsquo;$ 来对 $\tilde P(\mathbf Z^m)$ 最大化可以证明是
 <script type="math/tex; mode=display">
 \tilde P(\mathbf Z^m) = \Pr(\mathbf Z^m\mid \mathbf Z,\theta')\tag{8.49}
 </script>
-（<a href="https://github.com/szcf-weiya/ESL-CN/issues/127">练习 8.2</a>）。这是在求期望的步骤 E 计算得到的分布，举个例子，如在混合的例子中计算得到的 $(8.42)$。在 M 步骤时，我们固定 $\tilde P$ 来对 $\theta&rsquo;$ 最大化 $F(\theta&rsquo;,\tilde P)$：因为第二项不涉及 $\theta&rsquo;$，所以这与最大化第一项 $\E_{\tilde P}[\ell_0(\theta&rsquo;;\mathbf T)\mid \mathbf Z,\theta]$ 是一样的。</p>
-<p>最后，因为当 $\tilde P(\mathbf Z^m)=\Pr(\mathbf Z^m\mid \mathbf Z,\theta&rsquo;)$ 时，$F(\theta&rsquo;,\tilde P)$ 和观测数据的对数似然函数是一致的，对前者的最大化也实现了对后者的最大化。图 8.7 展现了这一过程的示意图。</p>
+（<a href="https://github.com/szcf-weiya/ESL-CN/issues/127">练习 8.2</a>）．</p>
+<div class="admonition info">
+<p class="admonition-title">weiya 注：Ex. 8.2</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/127">Issue 127: Ex. 8.2</a>.</p>
+</div>
+<p>这是在求期望的步骤 E 计算得到的分布，举个例子，如在混合的例子中计算得到的 $(8.42)$．在 M 步骤时，我们固定 $\tilde P$ 来对 $\theta&rsquo;$ 最大化 $F(\theta&rsquo;,\tilde P)$：因为第二项不涉及 $\theta&rsquo;$，所以这与最大化第一项 $\E_{\tilde P}[\ell_0(\theta&rsquo;;\mathbf T)\mid \mathbf Z,\theta]$ 是一样的．</p>
+<p>最后，因为当 $\tilde P(\mathbf Z^m)=\Pr(\mathbf Z^m\mid \mathbf Z,\theta&rsquo;)$ 时，$F(\theta&rsquo;,\tilde P)$ 和观测数据的对数似然函数是一致的，对前者的最大化也实现了对后者的最大化．图 8.7 展现了这一过程的示意图．</p>
 <p><img alt="" src="../../img/08/fig8.7.png" /></p>
 <blockquote>
-<p>图 8.7. EM 算法的最大化-最大化角度。图中画出了（增广）观测数据对数似然函数 $F(\theta&rsquo;,\tilde P)$ 的等高线。步骤 E 等价于在潜在数据分布的参数上最大化对数似然函数。步骤 M 在对数似然参数上进行最大化。红色曲线对应观测数据的对数似然函数，这是对每个 $\theta&rsquo;$ 值进行最大化 $F(\theta&rsquo;,\tilde P)$ 得到的曲线。</p>
+<p>图 8.7. EM 算法的最大化-最大化角度．图中画出了（增广）观测数据对数似然函数 $F(\theta&rsquo;,\tilde P)$ 的等高线．步骤 E 等价于在潜在数据分布的参数上最大化对数似然函数．步骤 M 在对数似然参数上进行最大化．红色曲线对应观测数据的对数似然函数，这是对每个 $\theta&rsquo;$ 值进行最大化 $F(\theta&rsquo;,\tilde P)$ 得到的曲线．</p>
 </blockquote>
-<p>EM 算法的这个角度导出了 <strong>轮换最大化过程 (alternative maximization procedure)</strong>。举个例子，虽然不需要一次性对所有潜在数据参数进行最大化，但是可以每次最大化其中的一个，通过在步骤 M 来 <strong>轮换 (alternate)</strong>。</p>
+<p>EM 算法的这个角度导出了 <strong>轮换最大化过程 (alternative maximization procedure)</strong>．举个例子，虽然不需要一次性对所有潜在数据参数进行最大化，但是可以每次最大化其中的一个，通过在步骤 M 来 <strong>轮换 (alternate)</strong>．</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注</p>
-<p>有点类似于 <strong>坐标轮换 (univariate search)</strong>，关于坐标轮换及其其他优化方法的介绍，可以参见<a href="https://sites.ualberta.ca/~aksikas/nlpm.pdf">nlpm</a>。</p>
+<p>有点类似于 <strong>坐标轮换 (univariate search)</strong>，关于坐标轮换及其其他优化方法的介绍，可以参见<a href="https://sites.ualberta.ca/~aksikas/nlpm.pdf">nlpm</a>．</p>
 </div>
                 
                   
@@ -3527,18 +3500,44 @@ F(\theta',\tilde P) = \E_{\tilde P}[\ell_0(\theta';\mathbf T)] - \E_{\tilde P}[\
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/08-Model-Inference-and-Averaging/8.5-The-EM-Algorithm/index.html";
+      this.page.identifier =
+        "/08-Model-Inference-and-Averaging/8.5-The-EM-Algorithm/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3589,7 +3588,7 @@ F(\theta',\tilde P) = \E_{\tilde P}[\ell_0(\theta';\mathbf T)] - \E_{\tilde P}[\
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3599,7 +3598,7 @@ F(\theta',\tilde P) = \E_{\tilde P}[\ell_0(\theta';\mathbf T)] - \E_{\tilde P}[\
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:36
+        Last Build Date UTC : 2026-10-24 02:32:55
       </div>
       
         
@@ -3612,7 +3611,7 @@ F(\theta',\tilde P) = \E_{\tilde P}[\ell_0(\theta';\mathbf T)] - \E_{\tilde P}[\
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3632,18 +3631,57 @@ F(\theta',\tilde P) = \E_{\tilde P}[\ell_0(\theta';\mathbf T)] - \E_{\tilde P}[\
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

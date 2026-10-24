@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -499,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1293,8 +1290,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1629,8 +1626,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1713,8 +1710,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1725,8 +1722,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1809,8 +1806,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1821,8 +1818,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2097,29 +2094,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#svm_1" title="SVM作为惩罚的方法" class="md-nav__link">
-    SVM作为惩罚的方法
+  <a href="#svm_1" title="SVM 作为惩罚的方法" class="md-nav__link">
+    SVM 作为惩罚的方法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" title="函数估计和重生核" class="md-nav__link">
-    函数估计和重生核
+  <a href="#_1" title="函数估计和再生核" class="md-nav__link">
+    函数估计和再生核
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#svm_2" title="SVM和维数灾难" class="md-nav__link">
-    SVM和维数灾难
+  <a href="#svm_2" title="SVM 和维数灾难" class="md-nav__link">
+    SVM 和维数灾难
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#svm_3" title="SVM分类器的路径算法" class="md-nav__link">
-    SVM分类器的路径算法
+  <a href="#svm_3" title="SVM 分类器的路径算法" class="md-nav__link">
+    SVM 分类器的路径算法
   </a>
   
 </li>
@@ -2148,8 +2145,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -2178,8 +2175,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2190,8 +2187,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2430,8 +2427,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2943,59 +2940,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3114,18 +3063,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3156,30 +3093,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3204,13 +3117,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3276,8 +3189,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3314,29 +3275,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#svm_1" title="SVM作为惩罚的方法" class="md-nav__link">
-    SVM作为惩罚的方法
+  <a href="#svm_1" title="SVM 作为惩罚的方法" class="md-nav__link">
+    SVM 作为惩罚的方法
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" title="函数估计和重生核" class="md-nav__link">
-    函数估计和重生核
+  <a href="#_1" title="函数估计和再生核" class="md-nav__link">
+    函数估计和再生核
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#svm_2" title="SVM和维数灾难" class="md-nav__link">
-    SVM和维数灾难
+  <a href="#svm_2" title="SVM 和维数灾难" class="md-nav__link">
+    SVM 和维数灾难
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#svm_3" title="SVM分类器的路径算法" class="md-nav__link">
-    SVM分类器的路径算法
+  <a href="#svm_3" title="SVM 分类器的路径算法" class="md-nav__link">
+    SVM 分类器的路径算法
   </a>
   
 </li>
@@ -3365,8 +3326,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3382,13 +3343,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="123">12.3 支持向量机和核<a class="headerlink" href="#123" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf#page=442">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3397,12 +3360,12 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2016-12-19:2016-12-20</td>
+<td>发布</td>
+<td>2016-09-30</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2017.12.12; 2017.12.18; 2018.02.12; 2018.02.13; 2018.03.01-2018.03.03; 2018.03.06</td>
+<td>2026-09-22</td>
 </tr>
 <tr>
 <td>状态</td>
@@ -3410,94 +3373,94 @@
 </tr>
 </tbody>
 </table>
-<p>至今所描述的支持向量机是在输入特征空间中寻找线性边界。和其他的线性方法一样，我们可以用基展开的方式来增大特征空间，从而让这一过程更灵活，如多项式或者样条（第 5 章）。一般地，在增长的空间的线性边界能够达到更好的训练类别分割的效果，进而转换为原始空间中的非线性边界。一旦选定基函数$h_m(x),m=1,\ldots,M$，则该过程和之前一样。我们采用输入特征 $h(x_i)=(h_1(x_i),h_2(x_i),\ldots,h_M(x_i)),i=1,\ldots,N$ 拟合SV分类器，并且得到（非线性）函数$\hat f(x)=h(x)^T\hat\beta+\hat\beta_0$。分类器和之前一样，为$\hat G(x)=\sign(\hat f(x))$。</p>
-<p>支持向量机(support vector machine)分类器是这个想法的拓展，其中增长空间的维数允许非常大，有时甚至可以是无限维的。计算似乎会变得难以承受。而且似乎当有了充分多的基函数，数据会变得可分，同时也会发生过拟合。我们首先介绍SVM怎样处理这些问题。接着我们将看到实际中SVM分类器是采用特定的准则和正则化形式来解决函数拟合问题，而且这是包含第5章的光滑样条的更大类别的问题的一部分。读者可能希望参照<a href="https://esl.hohoweiya.xyz/05%20Basis%20Expansions%20and%20Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html">5.8节</a>，它提供了背景材料并且与接下来的两节会有一定的重复。</p>
+<p>至今所描述的支持向量机是在输入特征空间中寻找线性边界．和其他的线性方法一样，我们可以用基展开的方式来增大特征空间，从而让这一过程更灵活，如多项式或者样条（<a href="../../05-Basis-Expansions-and-Regularization/5.1-Introduction/index.html">第 5 章</a>）．一般地，在增长的空间的线性边界能够达到更好的训练类别分割的效果，进而转换为原始空间中的非线性边界．一旦选定基函数 $h_m(x),m=1,\ldots,M$，则该过程和之前一样．我们采用输入特征 $h(x_i)=(h_1(x_i),h_2(x_i),\ldots,h_M(x_i)),i=1,\ldots,N$ 拟合 SV 分类器，并且得到（非线性）函数 $\hat f(x)=h(x)^T\hat\beta+\hat\beta_0$．分类器和之前一样，为 $\hat G(x)=\sign(\hat f(x))$．</p>
+<p><strong>支持向量机 (support vector machine)</strong> 分类器是这个想法的拓展，其中增长空间的维数允许非常大，有时甚至可以是无限维的．计算似乎会变得难以承受．而且似乎当有了充分多的基函数，数据会变得可分，同时也会发生过拟合．我们首先介绍 SVM 怎样处理这些问题．接着我们将看到实际中 SVM 分类器是采用特定的准则和正则化形式来解决函数拟合问题，而且这是包含第 5 章的光滑样条的更大类别的问题的一部分．读者可能希望参照 <a href="../../05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html">5.8 节</a>，它提供了背景材料并且与接下来的两节会有一定的重复．</p>
 <h2 id="svm">用于分类的 SVM<a class="headerlink" href="#svm" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Recall</p>
 <p>
 <script type="math/tex; mode=display">
-L_P=\frac{1}{2}\Vert\beta\Vert^2+C\sum\limits_{i=1}^N\xi_i-\sum\limits_{i=1}^N\alpha_i[y_i(x_i^T\beta+\beta_0)-(1-\xi_i)]-\sum\limits_{i=1}^{N}\mu_i\xi_i\tag{12.9}
+L_P=\frac{1}{2}\Vert\beta\Vert^2+C\sum\limits_{i=1}^N\xi_i-\sum\limits_{i=1}^N\alpha_i[y_i(x_i^T\beta+\beta_0)-(1-\xi_i)]-\sum\limits_{i=1}^{N}\mu_i\xi_i\label{12.9}\tag{12.9}
 </script>
 <script type="math/tex; mode=display">
-\begin{align}
-\beta&=\sum\limits_{i=1}^N\alpha_iy_ix_i& (12.10)\\
-0&= \sum\limits_{i=1}^N\alpha_iy_i& (12.11)\\
-\alpha_i&=C-\mu_i,\;\forall i,& (12.12)
-\end{align}
+\begin{align*}
+\beta&=\sum\limits_{i=1}^N\alpha_iy_ix_i\label{12.10}\tag{12.10}\\
+0&= \sum\limits_{i=1}^N\alpha_iy_i \label{12.11}\tag{12.11}\\
+\alpha_i&=C-\mu_i,\;\forall i,\label{12.12}\tag{12.12}
+\end{align*}
 </script>
 <script type="math/tex; mode=display">
-L_D = \sum\limits_{i=1}^N\alpha_i-\frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{i'=1}^N\alpha_i\alpha_{i'}y_iy_{i'}x_i^Tx_{i'}\tag{12.13}
+L_D = \sum\limits_{i=1}^N\alpha_i-\frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{i'=1}^N\alpha_i\alpha_{i'}y_iy_{i'}x_i^Tx_{i'}\label{12.13}\tag{12.13}
 </script>
 </p>
 </div>
-<p>我们可以用一种特殊的方式来表示优化问题(12.9)和它的解，这种方式只涉及通过内积来涉及输入特征。我们对这个变换后的特征向量$h(x_i)$直接进行这样的操作。则我们将看到对于特定选择的$h$，这些内积可以很方便地进行计算。</p>
-<p>lagrange对偶函数(12.13)有如下形式：</p>
+<p>我们可以用一种特殊的方式来表示优化问题 \eqref{12.9} 和它的解，这种方式只通过内积来涉及输入特征．我们对这个变换后的特征向量 $h(x_i)$ 直接进行这样的操作．我们将看到对于特定选择的 $h$，这些内积可以很方便地进行计算．</p>
+<p>Lagrange 对偶函数 \eqref{12.13} 有如下形式：</p>
 <p>
 <script type="math/tex; mode=display">
-L_D=\sum\limits_{i=1}^N\alpha_i-\frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{i'=1}^N\alpha_i\alpha_{i'}y_iy_{i'}\langle h(x_i), h(x_{i'})\rangle\tag{12.19}
+L_D=\sum\limits_{i=1}^N\alpha_i-\frac{1}{2}\sum\limits_{i=1}^N\sum\limits_{i'=1}^N\alpha_i\alpha_{i'}y_iy_{i'}\langle h(x_i), h(x_{i'})\rangle\label{12.19}\tag{12.19}
 </script>
 </p>
-<p>从(12.10)中我们看到解函数$f(x)$可以写成</p>
+<p>从 \eqref{12.10} 中我们看到解函数 $f(x)$ 可以写成</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{align}
-f(x)&=h(x)^T\beta+\beta_0\\
-&=\sum\limits_{i=1}^N\alpha_iy_i\langle h(x),h(x_i) \rangle+\beta_0\tag{12.20}
+f(x)&=h(x)^T\beta+\beta_0\notag\\
+&=\sum\limits_{i=1}^N\alpha_iy_i\langle h(x),h(x_i) \rangle+\beta_0\label{12.20}\tag{12.20}
 \end{align}
 </script>
 </p>
-<p>和之前一样，给定$\alpha_i$，当$0 &lt; \alpha_i &lt; C$时，$\beta_0$可以通过对任意（或所有）$x_i$求解$y_if(x_i)=1$来确定。</p>
-<p>所以(12.19)和(12.20)仅仅通过内积涉及$h(x)$。实际上，我们根本不需要明确变换关系$h(x)$，而仅仅要求知道在转换后的空间中计算内积的核函数</p>
+<p>和之前一样，给定 $\alpha_i$，当 $0 &lt; \alpha_i &lt; C$ 时，$\beta_0$ 可以通过对任意（或所有）$x_i$ 求解 $y_if(x_i)=1$ 来确定．</p>
+<p>所以 \eqref{12.19} 和 \eqref{12.20} 仅仅通过内积涉及 $h(x)$．实际上，我们根本不需要明确变换关系 $h(x)$，而仅仅要求知道在转换后的空间中计算内积的核函数</p>
 <p>
 <script type="math/tex; mode=display">
 K(x,x')=\langle h(x), h(x') \rangle\tag{12.21}
 </script>
 </p>
-<p>$K$应该是一个对称的(半)正定函数：见<a href="../../05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html#_1">5.8.1节</a>。</p>
-<p>在SVM中有三种流行的$K$可以选择</p>
+<p>$K$ 应该是一个对称的(半)正定函数：见<a href="../../05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html#_1">5.8.1节</a>．</p>
+<p>在 SVM 中有三种流行的 $K$ 可以选择</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{array}{rl}
-d\text{阶多项式：} & K(x,x')=(1+\langle x,x' \rangle)^d\\
-\text{径向基：} & K(x, x')=\exp(-\gamma \Vert x-x'\Vert^2)\tag{12.22}\\
+d\text{ 阶多项式：} & K(x,x')=(1+\langle x,x' \rangle)^d\\
+\text{径向基：} & K(x, x')=\exp(-\gamma \Vert x-x'\Vert^2)\tag{12.22}\label{12.22}\\
 \text{神经网络：} & K(x,x')=\tanh(\kappa_1\langle x,x' \rangle+\kappa_2)\\
 \end{array}
 </script>
 </p>
-<p>考虑含有两个输入变量$X_1$和$X_2$的特征空间，以及2阶的多项式核。则</p>
+<p>考虑含有两个输入变量 $X_1$ 和 $X_2$ 的特征空间，以及 2 阶的多项式核．则</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{array}{ll}
 K(x,x')&=(1+\langle X,X' \rangle)^2\\
 &=(1+X_1X_1'+X_2X_2')^2\\
-&=1+2X_1X_1'+2X_2X_2'+(X_1X_1')^2+(X_2X_2')^2+2X_1X_1'X_2X_2'\quad (12.23)
+&=1+2X_1X_1'+2X_2X_2'+(X_1X_1')^2+(X_2X_2')^2+2X_1X_1'X_2X_2'\tag{12.23}\label{12.23}
 \end{array}
 </script>
 </p>
-<p>则$M=6$，而且如果我们选择$h_1(X)=1,h_2(X)=\sqrt{2}X_1,h_3(X)=\sqrt{2}X_2,h_4(X)=X_1^2,h_5(X)=X_2^2$，以及$h_6(X)=\sqrt{2}X_1X_2$，则$K(X,X&rsquo;)=\langle h(X),h(X&rsquo;)\rangle$。</p>
-<p>从$(12.20)$我们可以看出该解可以写成</p>
+<p>则 $M=6$，而且如果我们选择 $h_1(X)=1,h_2(X)=\sqrt{2}X_1,h_3(X)=\sqrt{2}X_2,h_4(X)=X_1^2,h_5(X)=X_2^2$，以及 $h_6(X)=\sqrt{2}X_1X_2$，则$K(X,X&rsquo;)=\langle h(X),h(X&rsquo;)\rangle$．</p>
+<p>从 \eqref{12.20} 我们可以看出该解可以写成</p>
 <p>
 <script type="math/tex; mode=display">
-\hat f(x)=\sum\limits_{i=1}^N\hat \alpha_iy_iK(x,x_i)+\hat\beta_0\tag{12.24}
+\hat f(x)=\sum\limits_{i=1}^N\hat \alpha_iy_iK(x,x_i)+\hat\beta_0\tag{12.24}\label{12.24}
 </script>
 </p>
-<p>在增广的特征空间中，参数$C$的角色更加清晰，因为在这里经常会存在完美的分割。较大的$C$会抑制任何正的$\xi_i$，并且得到在原始特征空间中过拟合的弯弯曲曲的边界；较小的$C$值会鼓励较小的$\Vert\beta\Vert$，反过来会导致$f(x)$以及边界更加地光滑。图12.3显示了应用到第2章中的混合模型的两个支持向量机。两种情形下的正则化参数都是为了实现更好的测试误差。对该例子而言，径向基得到类似贝叶斯最优边界；与图2.5进行比较。</p>
+<p>在增广的特征空间中，参数 $C$ 的角色更加清晰，因为在这里经常会存在完美的分割．较大的 $C$ 会抑制任何正的 $\xi_i$，并且得到在原始特征空间中过拟合的弯弯曲曲的边界；较小的 $C$ 值会鼓励较小的 $\Vert\beta\Vert$，反过来会导致 $f(x)$ 以及边界更加地光滑．图 12.3 显示了应用到第 2 章中的混合模型的两个支持向量机．两种情形下的正则化参数都是为了实现更好的测试误差．对该例子而言，径向基得到类似贝叶斯最优边界；与图 2.5 进行比较．</p>
 <p><img alt="" src="../../img/12/fig12.3.png" /></p>
-<p>在支持向量的早期研究中，有断言称，支持向量机的核性质是唯一的，并且允许对维数灾难进行巧妙地处理。</p>
-<p>这些断言都不是正确的，我们将在下一节详细讨论这些问题。</p>
+<p>在支持向量的早期研究中，有断言称，支持向量机的核性质是唯一的，并且允许对维数灾难进行巧妙地处理．</p>
+<p>这些断言都不是正确的，我们将在下一节详细讨论这些问题．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya注：SVM with Gaussian kernel</p>
-<p>知乎上看到这样一个问题，<a href="https://www.zhihu.com/question/267999284">支持向量机高斯核方法？ - 知乎</a>，觉得很有意思，具体探索过程见<a href="https://github.com/szcf-weiya/ESL-CN/issues/77">Issue 77: SVM with Gaussian kernel</a>。</p>
+<p class="admonition-title">weiya 注：SVM with Gaussian kernel</p>
+<p>知乎上看到这样一个问题，<a href="https://www.zhihu.com/question/267999284">支持向量机高斯核方法？ - 知乎</a>，觉得很有意思，具体探索过程见<a href="https://github.com/szcf-weiya/ESL-CN/issues/77">Issue 77: SVM with Gaussian kernel</a>．</p>
 </div>
-<h2 id="svm_1">SVM作为惩罚的方法<a class="headerlink" href="#svm_1" title="Permanent link">&para;</a></h2>
-<p>对于$f(x)=h(x)^T\beta+\beta_0$，考虑下列的优化问题</p>
+<h2 id="svm_1">SVM 作为惩罚的方法<a class="headerlink" href="#svm_1" title="Permanent link">&para;</a></h2>
+<p>对于 $f(x)=h(x)^T\beta+\beta_0$，考虑下列的优化问题</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{\beta_0,\beta}{\min}\sum\limits_{i=1}^N[1-y_if(x_i)]_++\frac{\lambda}{2}\Vert\beta\Vert^2\tag{12.25}
+\underset{\beta_0,\beta}{\min}\sum\limits_{i=1}^N[1-y_if(x_i)]_++\frac{\lambda}{2}\Vert\beta\Vert^2\label{12.25}\tag{12.25}
 </script>
 </p>
-<p>其中下标“$+$”表示正的部分。上式是“损失+惩罚”的形式，这在函数估计中是个很熟悉的范例。可以很简单地证明当$\lambda=1/C$时，(12.25)的解与(12.8)的解相同（<a href="https://github.com/szcf-weiya/ESL-CN/issues/78">练习12.1</a>）。</p>
+<p>其中下标“$+$”表示正的部分．上式是“损失+惩罚”的形式，这在函数估计中是个很熟悉的范例．可以很简单地证明当 $\lambda=1/C$ 时，\eqref{12.25} 的解与 \eqref{12.8} 的解相同（<a href="https://github.com/szcf-weiya/ESL-CN/issues/78">练习 12.1</a>）．</p>
 <div class="admonition note">
 <p class="admonition-title">Recall</p>
 <p>
@@ -3506,96 +3469,101 @@ K(x,x')&=(1+\langle X,X' \rangle)^2\\
 \underset{\beta,\beta_0}{\min}&\;\frac{1}{2}\Vert\beta\Vert^2+C\sum\limits_{i=1}^N\xi_i\\
 s.t.& \xi_i\ge 0,y_i(x_i^T\beta+\beta_0)\ge 1-\xi_i,\forall i
 \end{array}
+\label{12.8}
 \tag{12.8}
 </script>
 </p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>练习12.1已解决。详细证明过程见<a href="https://github.com/szcf-weiya/ESL-CN/issues/78">Issue 78: Ex. 12.1</a></p>
+<p class="admonition-title">weiya 注：Ex. 12.1</p>
+<p>已解决．详细证明过程见<a href="https://github.com/szcf-weiya/ESL-CN/issues/78">Issue 78: Ex. 12.1</a></p>
 </div>
-<p>对“hinge”损失函数$L(y,f)=[1-yf]_+$的检验表明，它用于二类别分类是很合理的。图12.4将之与逻辑斯蒂回归的<strong>对数似然损失(log-likelihood loss)</strong>进行比较，以及平方误差损失及其的变种(variant)。（负）对数似然或者二项偏差和SVM损失有着类似的尾分布，对margin中的点赋予零 惩罚，对在错误一侧的点赋予线性惩罚。另一方面，平方误差给出了平方惩罚，在各自margin中的点对模型也有很强的影响。<strong>squared hinge</strong>损失$L(y,f)=[1-yf]_+^2$类似平方损失，但它对于各自margin中的点惩罚为0。它在左尾中平方增长，而且对于误分类的观测点，没有hinge或者偏差稳健。最近Rosset and Zhu (2007)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>提出<strong>squared hinge损失的“Huberized”版本</strong>，在$yf=-1$处将其平滑转换为了线性损失。</p>
+<p>对“hinge”损失函数 $L(y,f)=[1-yf]_+$ 的检验表明，它用于二类别分类是很合理的．图 12.4 将之与逻辑斯蒂回归的 <strong>对数似然损失(log-likelihood loss)</strong> 进行比较，以及平方误差损失及其的变种．负对数似然或者二项偏差和 SVM 损失有着类似的尾分布，对 margin 中的点赋予零惩罚，对在错误一侧的点赋予线性惩罚．另一方面，平方误差给出了平方惩罚，在各自margin中的点对模型也有很强的影响．<strong>squared hinge</strong>损失$L(y,f)=[1-yf]_+^2$类似平方损失，但它对于各自margin中的点惩罚为0．它在左尾中平方增长，而且对于误分类的观测点，没有hinge或者偏差稳健．最近 Rosset and Zhu (2007)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> 提出 <strong>squared hinge 损失的“Huberized”版本</strong>，在 $yf=-1$ 处将其平滑转换为了线性损失．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya注：Huberized squared hinge loss</p>
-<p>文献Rosset and Zhu (2007)<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>中提出的Huberized squared hinge loss的表述更一般，可以在任意$t &lt; 1$处进行Huberized，文献截图如下：
+<p class="admonition-title">weiya 注：Huberized squared hinge loss</p>
+<p>文献Rosset and Zhu (2007)<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>中提出的 Huberized squared hinge loss 的表述更一般，可以在任意 $t &lt; 1$ 处进行 Huberized，文献截图如下：
 <img alt="" src="../../../img/12/ref_eq_11.png" />
 <img alt="" src="../../../img/12/ref_eq_15.png" /></p>
 </div>
 <p><img alt="" src="../../img/12/fig12.4.png" /></p>
-<p>我们可以在总体水平上用估计量来区分这些损失函数。我们考虑最小化$\E L(Y,f(x)$。</p>
+<p>我们可以在总体水平上用估计量来区分这些损失函数．我们考虑最小化 $\E L(Y,f(x)$．</p>
 <p><img alt="" src="../../img/12/tab12.1.png" /></p>
-<p>表12.1总结了这些结果。然而hinge损失估计了分类器$G(x)$本身，而其他的都估计类别后验概率的某个变换。“Huberized” square hinge损失有着与逻辑斯蒂回归相同的吸引人的性质（光滑的损失函数，估计概率），以及SVM的hinge损失的良好性质（支撑点）。</p>
-<p>形式(12.25)将SVM看成正则函数估计问题，其中线性展开$f(x)=\beta_0+h(x)^T\beta$的系数向0收缩（除了常值）。如果$h(x)$表示有相同的序结构（比如按粗糙程度排序）的<strong>分层基(hierarchical basis)</strong>，如果在向量$h$中有更粗糙的元素$h_j$有更小的范数，则均一化收缩是有意义的。</p>
+<p>表 12.1 总结了这些结果．然而 hinge 损失估计了分类器 $G(x)$ 本身，而其他的都估计类别后验概率的某个变换．“Huberized” square hinge损失有着与逻辑斯蒂回归相同的吸引人的性质（光滑的损失函数，估计概率），以及 SVM 的 hinge 损失的良好性质（支撑点）．</p>
+<p>式 \eqref{12.25} 将 SVM 看成正则化的函数估计问题，其中线性展开 $f(x)=\beta_0+h(x)^T\beta$ 的系数向 0 收缩（除了常值）．如果 $h(x)$ 表示有相同的序结构（比如按粗糙程度排序）的 <strong>分层基 (hierarchical basis)</strong>，如果在向量 $h$ 中更粗糙的元素 $h_j$ 有更小的范数，则均一化收缩是更有意义的．</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
 <p>什么是 hierarchical basis？探索过程见<a href="https://github.com/szcf-weiya/ESL-CN/issues/79">Issues 79: hierarchical basis</a></p>
 </div>
-<p>除了平方误差，表12.1中所有的损失函数，都称之为“margin maximizing loss-functions”（Rosset et al., 2004b<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>）。这意味着如果数据是可分的，则当$\lambda\rightarrow 0$时，$\hat\beta_\lambda$的极限定义为最优分离超平面。</p>
+<p>除了平方误差，表 12.1 中所有的损失函数，都称之为 “margin maximizing loss-functions”（Rosset et al., 2004b<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>）．这意味着如果数据是可分的，则当 $\lambda\rightarrow 0$ 时，$\hat\beta_\lambda$ 的极限定义为最优分离超平面．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya注：原书脚注</p>
-<p>对于可分数据的逻辑斯蒂回归，$\hat\beta_\lambda$发散，但是$\hat\beta_\lambda/\Vert\hat\beta_\lambda\Vert$收敛到最优分离超平面。</p>
+<p class="admonition-title">weiya 注：原书脚注</p>
+<p>对于可分数据的逻辑斯蒂回归，$\hat\beta_\lambda$ 发散，但是 $\hat\beta_\lambda/\Vert\hat\beta_\lambda\Vert$ 收敛到最优分离超平面．(Why?)</p>
 </div>
-<h2 id="_1">函数估计和重生核<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>这里我们用<strong>重生核希尔伯特空间(reproducing kernel Hilbert spaces)</strong>中的函数估计来描述SVM，其中有许多的核性质。这里讨论的内容在<a href="https://esl.hohoweiya.xyz/05%20Basis%20Expansions%20and%20Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html">5.8节</a>有详细讨论。这里给出支持向量分类器的另一个视角，并且帮助理清它如何工作。</p>
-<p>假设基$h$来自与正定核$K$的（可能是有限的）特征展开，</p>
+<h2 id="_1">函数估计和再生核<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>这里我们用 <strong>再生核希尔伯特空间 (reproducing kernel Hilbert space, RKHS)</strong> 中的函数估计来描述 SVM，其中有许多的核性质．这里的内容在<a href="../../05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html"> 5.8 节</a>有详细讨论．这里给出支持向量分类器的另一个视角，并且帮助理清它如何工作．</p>
+<p>假设基 $h$ 来自与正定核 $K$ 的（可能是有限的）特征展开，</p>
 <p>
 <script type="math/tex; mode=display">
-K(x, x')=\sum\limits_{m=1}^{\infty}\phi_m(x)\phi_m(x')\delta_m\tag{12.26}
+K(x, x')=\sum\limits_{m=1}^{\infty}\phi_m(x)\phi_m(x')\delta_m\label{12.26}\tag{12.26}
 </script>
 </p>
 <div class="admonition note">
-<p class="admonition-title">weiya注：Mercer&rsquo;s theorem</p>
-<p>(12.26)的分解由Mercer&rsquo;s theorem保证
+<p class="admonition-title">weiya 注：Mercer&rsquo;s theorem</p>
+<p>\eqref{12.26} 的分解由 Mercer&rsquo;s theorem 保证
 <img alt="" src="../../../img/12/wiki_mercer.PNG" />
 图片来源: <a href="https://en.wikipedia.org/wiki/Mercer%27s_theorem">Wiki: Mercer&rsquo;s theorem</a></p>
 </div>
-<p>并且$h_m(x)=\sqrt{\delta_m}\phi_m(x)$。则当$\theta_m=\sqrt{\delta_m}\beta_m$，我们可以把(12.25)写成</p>
+<p>并且 $h_m(x)=\sqrt{\delta_m}\phi_m(x)$．则当$\theta_m=\sqrt{\delta_m}\beta_m$，我们可以把 \eqref{12.25} 写成</p>
 <p>
 <script type="math/tex; mode=display">
 \underset{\beta_0, \theta}{\min}\sum\limits_{i=1}^N\Big[
     1-y_i(\beta_0+\sum\limits_{m=1}^{\infty}\theta_m\phi_m(x_i))
     \Big]_+ + \frac{\lambda}{2}\sum\limits_{m=1}^{\infty}\frac{\theta_m^2}{\delta_m}
-    \tag{12.27}
+    \tag{12.27}\label{12.27}
 </script>
 </p>
 <div class="admonition note">
 <p class="admonition-title">Recall</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{\{c_j\}_1^\infty}{\min}\Big[\sum\limits_{i=1}^NL(y_i, \sum\limits_{j=1}^\infty c_j\phi_j(x_i))+\lambda \sum\limits_{j=1}^\infty c_j^2/\gamma_j\Big]\tag{5.49}
+\underset{\{c_j\}_1^\infty}{\min}\Big[\sum\limits_{i=1}^NL(y_i, \sum\limits_{j=1}^\infty c_j\phi_j(x_i))+\lambda \sum\limits_{j=1}^\infty c_j^2/\gamma_j\Big]\label{5.49}\tag{5.49}
 </script>
 <script type="math/tex; mode=display">
 \underset{\alpha_0,\aalpha}{\min}\Big\{
 \sum\limits_{i=1}^N[1-y_if(x_i)]_+ + \frac{\lambda}{2}\aalpha^T\K\aalpha
-\Big\}\tag{5.67}
+\Big\}\label{5.67}\tag{5.67}
 </script>
 </p>
 </div>
-<p>现在(12.27)与5.8节中的(5.49)形式相同，并且重生希尔伯特空间的理论保证了形如下式的有限维的解</p>
+<p>现在 \eqref{12.27} 与 <a href="../../05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html">5.8 节</a>中的 \eqref{5.49} 形式相同，并且再生希尔伯特空间的理论保证了形如下式的有限维的解</p>
 <p>
 <script type="math/tex; mode=display">
-f(x)=\beta_0+\sum\limits_{i=1}^N\alpha_iK(x, x_i)\tag{12.28}
+f(x)=\beta_0+\sum\limits_{i=1}^N\alpha_iK(x, x_i)\tag{12.28}\label{12.28}
 </script>
 </p>
-<p>特别地，我们看到存在等价的优化准则[5.8.2节的式(5.67)；也可以参见Wahba et al. (2000)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>]</p>
+<p>特别地，我们看到存在等价的优化准则【5.8.2节的式 \eqref{5.67}；也可以参见 Wahba et al. (2000)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>】</p>
 <p>
 <script type="math/tex; mode=display">
 \underset{\beta_0, \alpha}{\min}\sum\limits_{i=1}^N(1-y_if(x_i))_++\frac{\lambda}{2}\alpha^T\K\alpha\tag{12.29}
 </script>
 </p>
-<p>其中$\K$是所有成对训练特征的核的赋值（<a href="https://github.com/szcf-weiya/ESL-CN/issues/80">练习12.2</a>）。</p>
-<p>这些模型非常一般，举个例子，包含第5和第9章中讨论的整个光滑样条族，可加和交叉样条模型，更多细节参见Wahba (1990)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>和Hastie and Tibshirani (1990)<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>。它们可以更一般地表示为</p>
+<p>其中 $\K$ 是所有成对训练特征的核的赋值（<a href="https://github.com/szcf-weiya/ESL-CN/issues/80">练习 12.2</a>）．</p>
+<div class="admonition info">
+<p class="admonition-title">weiya 注：Ex. 12.2</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/80">Issue 80: Ex. 12.2</a>，欢迎交流讨论。</p>
+</div>
+<p>这些模型非常一般，举个例子，包含第 5 和第 9 章中讨论的整个光滑样条族，可加和交叉样条模型，更多细节参见 Wahba (1990)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> 和 Hastie and Tibshirani (1990)<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>．它们可以更一般地表示为</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{f\in{\cal H}}{\min}\sum\limits_{i=1}^N[1-y_if(x_i)]_+ + \lambda J(f)\tag{12.30}
+\underset{f\in{\cal H}}{\min}\sum\limits_{i=1}^N[1-y_if(x_i)]_+ + \lambda J(f)\tag{12.30}\label{12.30}
 </script>
 </p>
-<p>其中$\cal H$是<strong>函数的结构空间(the structured space of functions)</strong>，并且$J(f)$是在该空间上合适的正则器。举个例子，假设$\cal H$是可加函数$f(x)=\sum_{j=1}^pf_j(x_j)$，并且$J(f)=\sum_j\int\{f^{\prime\prime}_j(x_j)\}^2dx_j$。则(12.30)的解为可加三次样条，并且有核表示$K(x,x&rsquo;)=\sum_{j=1}^pK_j(x_j,x_j&rsquo;)$。每个$K_j$是关于$x_j$的合适的单变量光滑样条的核(Wahba, 1990)<sup id="fnref2:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>。</p>
-<p>反过来，这个讨论也表明，举个例子，任意(12.22)中提到的核都可以和凸损失函数一起使用，并且将会得到形如(12.28)的有限维表示。图12.5采用和图12.3同样的核函数，除了采用二项对数似然作为损失函数。因此拟合函数是log-odds的估计</p>
+<p>其中 $\cal H$ 是 <strong>函数的结构空间 (structured space of functions)</strong>，并且 $J(f)$ 是在该空间上合适的正则器．举个例子，假设$\cal H$是可加函数 $f(x)=\sum_{j=1}^pf_j(x_j)$，并且$J(f)=\sum_j\int\{f^{\prime\prime}_j(x_j)\}^2dx_j$．则 \eqref{12.30} 的解为可加三次样条，并且有核表示 $K(x,x&rsquo;)=\sum_{j=1}^pK_j(x_j,x_j&rsquo;)$．每个 $K_j$ 是关于 $x_j$ 的合适的单变量光滑样条的核(Wahba, 1990)<sup id="fnref2:4"><a class="footnote-ref" href="#fn:4">4</a></sup>．</p>
+<p>反过来，这个讨论也表明，举个例子，任意 \eqref{12.22} 中提到的核都可以和凸损失函数一起使用，并且将会得到形如 \eqref{12.28} 的有限维表示．图 12.5 采用和图 12.3 同样的核函数，除了采用二项对数似然作为损失函数．因此拟合函数是 log-odds 的估计</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{align}
-\hat f(x) &=\LOG \frac{\hat\pr (Y=+1\mid x)}{\hat\pr (Y=-1\mid x)}\\
+\hat f(x) &=\log \frac{\hat\pr (Y=+1\mid x)}{\hat\pr (Y=-1\mid x)}\notag\\
 &=\hat\beta_0+\sum\limits_{i=1}^N\hat\alpha_iK(x,x_i)\tag{12.31}
 \end{align}
 </script>
@@ -3606,66 +3574,66 @@ f(x)=\beta_0+\sum\limits_{i=1}^N\alpha_iK(x, x_i)\tag{12.28}
 \hat\pr(Y=+1\mid x)=\frac{1}{1+e^{-\hat\beta_0-\sum_{i=1}^N\hat\alpha_iK(x,x_i)}}\tag{12.32}
 </script>
 </p>
-<p>这些拟合的模型在形状和表现效果上都非常相似。<a href="../../05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html">5.8节</a>给出了例子以及更多的细节。</p>
-<p>对于SVM也是一样，$N$个$\alpha_i$中的一部分可以为0（非支持点）。在图12.3的两个例子中，这些比例分别为$42\%$和$45\%$。这是准则(12.25)的第一部分分段线性的本质。（在训练数据上）类别重叠越少，这个比例越大。降低$\lambda$一般会降低重叠（允许更灵活的$f$）。较少的支持点意味着$\hat f(x)$可以更快地进行赋值，这在查找时很重要。当然，过分降低重叠会导致泛化能力太差。</p>
-<h2 id="svm_2">SVM和维数灾难<a class="headerlink" href="#svm_2" title="Permanent link">&para;</a></h2>
-<p>在这一节，我们提出问题：SVMs是否存在维数灾难？注意到在展开式(12.23)中，我们不允许在幂和乘积的空间中有完全一般的内积。举个例子，所有形如$2X_jX_j&rsquo;$赋予相同的权重，<del class="critic">并且核不能自动更新来集中到子空间中</del>。</p>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>原文为&rdquo;the kernel cannot adapt itself to concentrate on subspaces.&rdquo; 怎么理解？</p>
+<p>这些拟合的模型在形状和表现效果上都非常相似．<a href="../../05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html">5.8节</a>给出了例子以及更多的细节．</p>
+<p>对于 SVM 也是一样，$N$ 个 $\alpha_i$ 中的一部分可以为 0（非支持点）．在图 12.3 的两个例子中，这些比例分别为 $42\%$ 和 $45\%$．这是准则 \eqref{12.25} 的第一部分分段线性的本质．（在训练数据上）类别重叠越少，这个比例越大．降低 $\lambda$ 一般会降低重叠（允许更灵活的$f$）．较少的支持点意味着 $\hat f(x)$ 可以更快地进行赋值，这在查找时很重要．当然，过分降低重叠会导致泛化能力太差．</p>
+<h2 id="svm_2">SVM 和维数灾难<a class="headerlink" href="#svm_2" title="Permanent link">&para;</a></h2>
+<p>在这一节，我们回答“SVMs是否存在维数灾难”的问题。注意到在展开式 \eqref{12.23} 中，我们不允许在幂和乘积的空间中有完全一般的内积．举个例子，所有形如 $2X_jX_j&rsquo;$ 赋予相同的权重，并且核不能自适应地集中到某子空间中．</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>基于下文的比较，特别是高阶多项式与低阶多项式，这里应当是指 SVM 中的核不允许退化，比如某个参数为 0，并不具有像 MARS 等方法的自适应能力。</p>
 </div>
-<p>如果特征的数量$p$很大，但是类别分类仅仅发生在$X_1$和$X_2$张成的子空间，这个核不会简单地找到其结构并且需要在很多维度下搜寻。必须将子空间的信息考虑进核中；也就是，忽略<strong>除了</strong>前两个的输入。如果有信息能够得到先验，大多数统计学习会变得很简单。自适应方法的主要目标是发现类似的结构。</p>
-<p>我们用一个例子来支持上面的陈述。我们在两个类别中产生100个观测值。第一类有4个标准正态独立特征$X_1,X_2,X_3,X_4$。第二类也有四个标准正态独立特征，但是条件为$9\le \sum X_j^2\le 16$。这是个相对简单的问题。同时考虑第二个更难的问题，用6个标准高斯噪声特征作为增广特征。因此在四维子空间中第二类完全包围了第一类，类似橘子皮包围着橘子。该问题的贝叶斯误差率为0.029（不考虑维数）。我们产生1000个测试观测量来比较不同的过程。在有无噪声特征的情况下，平均测试误差在50个模拟中得到，如表12.2所示。</p>
+<p>如果特征的数量 $p$ 很大，但是类别分类仅仅发生在 $X_1$ 和 $X_2$ 张成的子空间，这个核不会简单地找到其结构并且需要在很多维度下搜寻．必须将子空间的信息考虑进核中，也就是，忽略 <strong>除了</strong> 前两个的输入．如果有信息能够得到先验，大多数统计学习会变得很简单．自适应方法的主要目标是发现类似的结构．</p>
+<p>我们用一个例子来支持上面的陈述．我们在两个类别中产生 100 个观测值．第一类有 4 个标准正态独立特征 $X_1,X_2,X_3,X_4$．第二类也有四个标准正态独立特征，但是条件为 $9\le \sum X_j^2\le 16$．这是个相对简单的问题．同时考虑第二个更难的问题，用 6 个标准高斯噪声特征作为增广特征．因此在四维子空间中第二类完全包围了第一类，类似橘子皮包围着橘子．该问题的贝叶斯误差率为 0.029（不考虑维数）．我们产生 1000 个测试观测量来比较不同的过程．在有无噪声特征的情况下，平均测试误差在 50 个模拟中得到，如表 12.2 所示．</p>
 <p><img alt="" src="../../img/12/tab12.2.png" /></p>
-<p>表中第一行在原特征空间中使用支持向量分类器。第2到第4行表示使用2，5和10维多项式核的支持向量机。对于所有的支持向量过程，我们选择代价参数$C$来最小化测试误差，使得对这个方法尽可能公平。第5行采用可加模型的BRUTO算法（Hastie and Tibshirani (1990)），通过最小二乘对$(-1,+1)$响应变量拟合可加样条模型。第6行采用MARS（多变量自适应回归样条）允许任意阶的交叉影响，在第9章中有介绍；同样地，其与SVM/poly 10进行比较。BRUTO和MARS算法均有能力忽略冗余变量。第5和第6行并不采用测试误差来选择光滑参数。</p>
+<p>表中第一行在原特征空间中使用支持向量分类器．第 2 到第 4 行表示使用 2，5 和 10 维多项式核的支持向量机．对于所有的支持向量过程，我们选择代价参数 $C$ 来最小化测试误差，使得对这个方法尽可能公平．第 5 行采用可加模型的 BRUTO 算法（Hastie and Tibshirani (1990)），通过最小二乘对 $(-1,+1)$ 响应变量拟合可加样条模型．第 6 行采用 MARS（多变量自适应回归样条）允许任意阶的交叉影响，在第 9 章中有介绍；同样地，其与 SVM/poly 10 进行比较．BRUTO 和 MARS 算法均有能力忽略冗余变量．第 5 和第 6 行并不采用测试误差来选择光滑参数．</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>笔记<a href="../../notes/SVM/skin-of-the-orange/index.html">模拟：Tab. 12.2</a>重现了表12.2的结果。</p>
+<p>笔记<a href="../../notes/SVM/skin-of-the-orange/index.html">模拟：Tab. 12.2</a>重现了表 12.2 的结果．</p>
 </div>
-<p>在原始特征空间中，超平面不能分离类别，而且支持向量分类器（第一行）表现很差。多项式支持向量机在测试误差率方面取得显著改善，但同时也被6个噪声特征严重影响。这对核的选择非常敏感：二阶多项式核（第2行）表现最好，因为真实的判别边界就是二阶多项式。然而，高阶多项式（第3和第4行）表现很差。BRUTO表现得很好，因为其边界是可加的。BRUTO和MARS自适应得很好：因为噪声的存在，所以它们的表现不会退化太大。</p>
-<h2 id="svm_3">SVM分类器的路径算法<a class="headerlink" href="#svm_3" title="Permanent link">&para;</a></h2>
-<p>SVM分类器的正则化参数是代价参数$C$，或者(12.25)中$\lambda$的倒数。通常用法是将$C$设得比较高，这通常会过拟合分类器。</p>
-<p>图12.6展示了混合数据的测试误差作为$C$的函数的变化图像，其中采用不同的radial核参数$\gamma$。</p>
+<p>在原始特征空间中，超平面不能分离类别，而且支持向量分类器（第一行）表现很差．多项式支持向量机在测试误差率方面取得显著改善，但同时也被6个噪声特征严重影响．这对核的选择非常敏感：二阶多项式核（第2行）表现最好，因为真实的判别边界就是二阶多项式．然而，高阶多项式（第3和第4行）表现很差．BRUTO 表现得很好，因为其边界是可加的．BRUTO 和 MARS 自适应得很好：因为噪声的存在，所以它们的表现不会退化太大．</p>
+<h2 id="svm_3">SVM 分类器的路径算法<a class="headerlink" href="#svm_3" title="Permanent link">&para;</a></h2>
+<p>SVM 分类器的正则化参数是代价参数 $C$，或者 \eqref{12.25} 中 $\lambda$ 的倒数．通常用法是将 $C$ 设得比较高，这通常会过拟合分类器．</p>
+<p>图 12.6 展示了混合数据的测试误差作为 $C$ 的函数的变化图像，其中采用不同的径向核参数 $\gamma$．</p>
 <p><img alt="" src="../../img/12/fig12.6.png" /></p>
-<p>当$\gamma=5$时(narrow peaked kernels)，需要最重的正则化（即较小$C$）。当$\gamma=1$时（图12.3所用的值），需要中等大小的$C$。显然在这些情形中，我们需要确定合适的$C$，或许可以通过交叉验证实现。这里我们描述一种路径算法（受<a href="../../03-Linear-Methods-for-Regression/3.8-More-on-the-Lasso-and-Related-Path-Algorithms/index.html">3.8节</a>的启发），可以用来有效拟合改变$C$得到的SVM模型序列。</p>
-<p>使用(12.25)的损失+惩罚的形式以及图12.4中的损失函数是很方便的。这可以得到在给定$\lambda$处$\beta$的解：</p>
+<p>当 $\gamma=5$ 时(narrow peaked kernels)，需要最重的正则化（即较小 $C$）．当 $\gamma=1$时（图 12.3 所用的值），需要中等大小的 $C$．显然在这些情形中，我们需要确定合适的 $C$，或许可以通过交叉验证实现．这里我们描述一种路径算法（受<a href="../../03-Linear-Methods-for-Regression/3.8-More-on-the-Lasso-and-Related-Path-Algorithms/index.html">3.8节</a>的启发），可以用来有效拟合改变 $C$ 得到的 SVM 模型序列．</p>
+<p>使用 \eqref{12.25} 的损失+惩罚的形式以及图 12.4 中的损失函数是很方便的．这可以得到在给定 $\lambda$ 处 $\beta$ 的解：</p>
 <p>
 <script type="math/tex; mode=display">
-\beta_\lambda = \frac{1}{\lambda}\sum\limits_{i=1}^N\alpha_iy_ix_i\tag{12.33}
+\beta_\lambda = \frac{1}{\lambda}\sum\limits_{i=1}^N\alpha_iy_ix_i\tag{12.33}\label{12.33}
 </script>
 </p>
-<p>其中$\alpha_i$仍然是Lagrange乘子，但是在这种情形下它们都在[0, 1]中取值。</p>
-<p>图12.7说明了这个过程。</p>
+<p>其中 $\alpha_i$ 仍然是 Lagrange 乘子，但是在这种情形下它们都在 [0, 1] 中取值．</p>
+<p>图 12.7 说明了这个过程．</p>
 <p><img alt="" src="../../img/12/fig12.7.png" /></p>
-<p>可以看到KKT优化条件表明点$(x_i,y_i)$落在三个不同的区域中：</p>
+<p>可以看到 KKT 优化条件表明点 $(x_i,y_i)$ 落在三个不同的区域中：</p>
 <ul>
-<li>正确分类且落在各自margins之外。它们满足$y_if(x_i) &gt; 1$，并且Lagrange乘子满足$\alpha_i=0$。比如图中橘黄色的点8，9和11，以及蓝色点1和4。</li>
-<li>正好落在各自margin上，满足$y_if(x_i)=1$，其中Lagrange乘子$\alpha_i\in [0, 1]$。比如图中橘黄色点7，以及蓝色点2和6。</li>
-<li>在margin之内，满足$y_if(x_i) &lt; 1$，且$\alpha_i=1$。比如蓝色点3和5，以及橘黄色点10和12。</li>
+<li>正确分类且落在各自 margins 之外．它们满足 $y_if(x_i) &gt; 1$，并且 Lagrange 乘子满足 $\alpha_i=0$．比如图中橘黄色的点 8，9和 11，以及蓝色点 1 和 4．</li>
+<li>正好落在各自 margin 上，满足 $y_if(x_i)=1$，其中 Lagrange 乘子 $\alpha_i\in [0, 1]$．比如图中橘黄色点7，以及蓝色点2和6．</li>
+<li>在 margin 之内，满足 $y_if(x_i) &lt; 1$，且 $\alpha_i=1$．比如蓝色点3和5，以及橘黄色点10和12．</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">weiya注：KKT条件及三种划分</p>
-<p>这在上一节也有讨论，参见<a href="../12.2-The-Support-Vector-Classifier/index.html">12.2 支持向量分类器</a>。唯一区别在于这里$\alpha_i$的分界点为1，而上一节为$C$。但这很好理解，因为用$\frac{1}{\lambda}$作为参数，相对于(12.8)，除以了$C$，更多细节可以参见<a href="https://github.com/szcf-weiya/ESL-CN/issues/78">Issue 78: Ex. 12.1</a></p>
+<p>这在上一节也有讨论，参见<a href="../12.2-The-Support-Vector-Classifier/index.html">12.2 支持向量分类器</a>．唯一区别在于这里$\alpha_i$的分界点为1，而上一节为$C$．但这很好理解，因为用$\frac{1}{\lambda}$作为参数，相对于(12.8)，除以了$C$，更多细节可以参见<a href="https://github.com/szcf-weiya/ESL-CN/issues/78">Issue 78: Ex. 12.1</a></p>
 </div>
-<p>路径算法的思想如下。选择较大的$\lambda$来初始化，则margin的宽度$1/\Vert \beta_\lambda\Vert$较宽，所有点都在各自margin中且$\alpha_i=1$。当$\lambda$减小时，$\frac{1}{\Vert\beta_\lambda\Vert}$减小，则margin变窄。有些点会各自margin内移到margin之外，并且它们$\alpha_i$从1变为0。由$\alpha_i(\lambda)$的连续性，这些点在转移的过程中会在margin上停留(linger)。由(12.33)，我们看到$\alpha_i=1$的点对$\beta(\lambda)$的贡献是固定的，而那些$\alpha_i=0$的点没有贡献。所以当$\lambda$减小时，改变量是那些在margin上的点，它们满足$\alpha_i\in[0,1]$。因为这些点都满足$y_if(x_i)=1$，这一小部分的线性等式的解决定了(prescribe)$\alpha_i(\lambda)$以及由其导致的$\beta(\lambda)$在这些转移过程中的变化。对于$\alpha_i(\lambda)$的每个值，这些解是分段线性路径。断点仅发生在穿过margin的时候。图12.7的右面板展示了$\alpha_i(\lambda)$在左面板例子中的图象。</p>
-<p>尽管我们只介绍了线性SVMs的方法，但是对于非线性模型，想法完全一样，只需要将(12.33)换成</p>
+<p>路径算法的思想如下．选择较大的 $\lambda$ 来初始化，则 margin 的宽度 $1/\Vert \beta_\lambda\Vert$ 较宽，所有点都在各自margin 中且 $\alpha_i=1$．当 $\lambda$ 减小时，$\frac{1}{\Vert\beta_\lambda\Vert}$ 减小，则 margin 变窄．有些点会各自margin 内移到 margin 之外，并且它们 $\alpha_i$ 从 1 变为 0．由 $\alpha_i(\lambda)$ 的连续性，这些点在转移的过程中会在 margin 上停留(linger)．由 \eqref{12.33}，我们看到 $\alpha_i=1$ 的点对 $\beta(\lambda)$ 的贡献是固定的，而那些 $\alpha_i=0$ 的点没有贡献．所以当 $\lambda$ 减小时，改变量是那些在 margin 边界上的点，它们满足 $\alpha_i\in[0,1]$．因为这些点都满足 $y_if(x_i)=1$，这一小部分的线性等式的解决定了 $\alpha_i(\lambda)$ 以及由其导致的 $\beta(\lambda)$ 在这些转移过程中的变化．对于 $\alpha_i(\lambda)$ 的每个值，这些解是分段线性路径．断点仅发生在穿过 margin 的时候．图 12.7 的右面板展示了 $\alpha_i(\lambda)$ 在左面板例子中的图象．</p>
+<p>尽管我们只介绍了线性 SVMs 的方法，但是对于非线性模型，想法完全一样，只需要将 \eqref{12.33} 换成</p>
 <p>
 <script type="math/tex; mode=display">
 f_\lambda(x) = \frac{1}{\lambda}\sum\limits_{i=1}^N\alpha_iy_iK(x,x_i)\tag{12.34}
 </script>
 </p>
-<p>细节可以在Hastie et al. (2004)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>中找到。CRAN上<code>R</code>包<code>svmpath</code>可以用来拟合这些模型。</p>
+<p>细节可以在 Hastie et al. (2004)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>中找到．CRAN上<code>R</code>包<code>svmpath</code>可以用来拟合这些模型．</p>
 <h2 id="_2">用于回归的支持向量机<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>在这一节，我们将要展示SVMs如何用于定量响应变量的回归问题，方法继承了SVM分类器的某些性质。我们首先讨论线性回归模型</p>
+<p>在这一节，我们将要展示 SVMs 如何用于定量响应变量的回归问题，方法继承了 SVM 分类器的某些性质．我们首先讨论线性回归模型</p>
 <p>
 <script type="math/tex; mode=display">
 f(x)=x^T\beta+\beta_0\tag{12.35}
 </script>
 </p>
-<p>接下来处理非线性的推广情形。为了估计$\beta$，我们考虑下式的最小化</p>
+<p>接下来处理非线性的推广情形．为了估计 $\beta$，我们考虑下式的最小化</p>
 <p>
 <script type="math/tex; mode=display">
-H(\beta, \beta_0) = \sum\limits_{i=1}^N V(y_i-f(x_i)) + \frac{\lambda}{2}\Vert \beta\Vert^2\tag{12.36}
+H(\beta, \beta_0) = \sum\limits_{i=1}^N V(y_i-f(x_i)) + \frac{\lambda}{2}\Vert \beta\Vert^2\tag{12.36}\label{12.36}
 </script>
 </p>
 <p>其中</p>
@@ -3678,13 +3646,13 @@ V_{\epsilon}(r)=
 \vert r\vert -\epsilon, &\text{otherwise}
 \end{array}
 \right.
-\tag{12.37}
+\tag{12.37}\label{12.37}
 </script>
 </p>
-<p>这是一种“$\epsilon$-insensitive”的误差度量，它忽略了大小小于$\epsilon$的误差（图12.8的左图）。</p>
+<p>这是一种“$\epsilon$-insensitive”的误差度量，它忽略了小于 $\epsilon$ 的误差（图 12.8 的左图）．</p>
 <p><img alt="" src="../../img/12/fig12.8.png" /></p>
-<p>这一点类似支持向量机在分类问题中的设定，处于判别边界正确一侧的点以及远离边界的点在优化过程中都被忽略了。在回归中，这些“low error”的点是残差较小的点。</p>
-<p>将这个误差度量与统计中鲁棒回归中采用的误差度量比较是很有趣的。图12.8的右图展示了鲁棒回归中误差度量的最受欢迎的形式(Huber (1964)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>)：</p>
+<p>这一点类似支持向量机在分类问题中的设定，处于判别边界正确一侧的点以及远离边界的点在优化过程中都被忽略了．在回归中，这些“low error”的点是残差较小的点．</p>
+<p>将这个误差度量与统计中鲁棒回归中采用的误差度量比较是很有趣的．图 12.8 的右图展示了鲁棒回归中误差度量的最受欢迎的形式(Huber (1964)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>)：</p>
 <p>
 <script type="math/tex; mode=display">
 V_{H}(r)=
@@ -3697,56 +3665,56 @@ c\vert r\vert -c^2/2, &\vert r\vert > c
 \tag{12.38}
 </script>
 </p>
-<p>当绝对残差大于预先给定的某个常值$c$时，函数将观测的贡献从二次降至一次。这使得拟合对离群点更加不敏感。支持向量误差衡量(12.37)也有线性尾(tail)（大于$\epsilon$），但是除此之外，它压缩了小偏差情形下观测点的贡献。</p>
-<p>如果$\hat\beta,\; \hat\beta_0$是$H$的最小值点，则解函数有如下形式</p>
+<p>当绝对残差大于预先给定的某个常值 $c$ 时，函数将观测的贡献从二次降至一次．这使得拟合对离群点更加不敏感．支持向量误差衡量 \eqref{12.37} 也有线性尾 (tail)（大于 $\epsilon$），但是除此之外，它压缩了小偏差情形下观测点的贡献．</p>
+<p>如果 $\hat\beta,\; \hat\beta_0$ 是 $H$ 的最小值点，则解函数有如下形式</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{align}
-\hat\beta & = \sum\limits_{i=1}^N(\hat\alpha_i^*-\hat\alpha_i)x_i & (12.39)\\
-\hat f(x) & = \sum\limits_{i=1}^N(\hat\alpha_i^*-\hat\alpha_i)\langle x, x_i\rangle+\beta_0 & (12.40)
+\hat\beta & = \sum\limits_{i=1}^N(\hat\alpha_i^*-\hat\alpha_i)x_i \tag{12.39}\\
+\hat f(x) & = \sum\limits_{i=1}^N(\hat\alpha_i^*-\hat\alpha_i)\langle x, x_i\rangle+\beta_0 \tag{12.40}
 \end{align}
 </script>
 </p>
-<p>其中$\hat\alpha_i,\; \hat\alpha_i^*$是正的，且是下列的二次规划问题的解</p>
+<p>其中 $\hat\alpha_i,\; \hat\alpha_i^*$ 是正的，且是下列的二次规划问题的解</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{\alpha_i,\alpha_i^*}{\min}\epsilon \sum\limits_{i=1}^N(\alpha_i^*+\alpha_i)-\sum\limits_{i=1}^Ny_i(\hat\alpha_i^*-\alpha_i)+\frac 12(\alpha_i^*-\alpha_i)(\alpha_{i'}^*-\alpha_{i'})\langle x_i, x_{i'}\rangle
+\underset{\alpha_i,\alpha_i^*}{\min}\;\epsilon \sum\limits_{i=1}^N(\alpha_i^*+\alpha_i)-\sum\limits_{i=1}^Ny_i(\alpha_i^*-\alpha_i)+\frac 12\sum_{i,i'=1}^N(\alpha_i^*-\alpha_i)(\alpha_{i'}^*-\alpha_{i'})\langle x_i, x_{i'}\rangle
 </script>
 </p>
 <p>约束条件如下</p>
 <p>
 <script type="math/tex; mode=display">
-\begin{align}
+\begin{align*}
 0\le \alpha_i,\alpha_i^*\le \frac{1}{\lambda}\\
 \sum\limits_{i=1}^N(\alpha_i^*-\alpha_i)=0\\
 \alpha_i\alpha_i^*=0
-\end{align}
+\end{align*}
 \tag{12.41}
 </script>
 </p>
-<p>考虑到这些约束的本质，一般仅仅有部分的解$(\hat \alpha_i^*-\hat\alpha_i)$非零， 并且对应的数据称为支持向量。和分类问题中的设定一样，解仅仅通过内积$\langle x_i, x_{i&rsquo;}\rangle$来关联输入的数据。因此我们可以通过定义合适的内积将这个方法推广到高维空间，举个例子，采用(12.22)中定义的任意一个。</p>
-<p>注意到参数$\epsilon$和$\lambda$与准则(12.36)有关。它们似乎扮演不同的角色，$\epsilon$是损失函数$V_{\epsilon}$的参数，这和$c$是$V_H$的参数一样。注意到$V_{\epsilon}$和$V_H$都依赖$y$的尺度，因此依赖于$r$。如果我们对响应变量进行缩放（也因此需要用$V_H(r/\sigma)$和$V_\epsilon(r/\sigma)$），则我们可能考虑采用预先设定的$c$和$\epsilon$（对于高斯情形，取$c=1.345$能达到$95\%$的有效度）。$\lambda$是更传统的正则参数，并且可以通过交叉验证来估计。</p>
+<p>考虑到这些约束的本质，一般仅仅有部分的解 $(\hat \alpha_i^*-\hat\alpha_i)$ 非零， 并且对应的数据称为支持向量．和分类问题中的设定一样，解仅仅通过内积 $\langle x_i, x_{i&rsquo;}\rangle$ 来关联输入的数据．因此我们可以通过定义合适的内积将这个方法推广到高维空间，举个例子，采用 \eqref{12.22} 中定义的任意一个．</p>
+<p>注意到参数 $\epsilon$ 和 $\lambda$ 与准则 \eqref{12.36} 有关．它们似乎扮演不同的角色，$\epsilon$ 是损失函数 $V_{\epsilon}$ 的参数，这和 $c$ 是 $V_H$ 的参数一样．注意到 $V_{\epsilon}$ 和 $V_H$ 都依赖 $y$ 的尺度，因此依赖于 $r$．如果我们对响应变量进行缩放（也因此需要用 $V_H(r/\sigma)$ 和 $V_\epsilon(r/\sigma)$），则我们可能考虑采用预先设定的 $c$ 和 $\epsilon$（对于高斯情形，取 $c=1.345$ 能达到 $95\%$ 的有效度）．$\lambda$ 是更传统的正则参数，并且可以通过交叉验证来估计．</p>
 <h2 id="_3">回归和核<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>正如12.3.3节讨论的一样，SVM的核性质不唯一。假设我们考虑用基函数$\{h_m(x)\},m=1,2,\ldots,M$近似的回归函数：</p>
+<p>正如 <a href="">12.3.3 节</a>讨论的一样，SVM 的核性质不唯一．假设我们考虑用基函数 $\{h_m(x)\},m=1,2,\ldots,M$ 近似的回归函数：</p>
 <p>
 <script type="math/tex; mode=display">
 f(x) = \sum\limits_{m=1}^M\beta_mh_m(x)+\beta_0\tag{12.42}
 </script>
 </p>
-<p>为了估计$\beta$和$\beta_0$，对于一般的误差度量$V(r$，我们需要最小化</p>
+<p>为了估计 $\beta$ 和 $\beta_0$，对于一般的误差度量$V(r)$，我们需要最小化</p>
 <p>
 <script type="math/tex; mode=display">
 H(\beta, \beta_0) = \sum\limits_{i=1}^NV(y_i-f(x_i)) + \frac{\lambda}{2}\sum\beta_m^2\tag{12.43}
 </script>
 </p>
-<p>对于任意选择的$V(r)$，解$\hat f(x)=\sum\hat\beta_mh_m(x)+\hat\beta_0$有如下形式</p>
+<p>对于任意选择的 $V(r)$，解 $\hat f(x)=\sum\hat\beta_mh_m(x)+\hat\beta_0$ 有如下形式</p>
 <p>
 <script type="math/tex; mode=display">
-\hat f(x) = \sum\limits_{i=1}^N\hat\alpha_iK(x,x_i)\tag{12.44}
+\hat f(x) = \sum\limits_{i=1}^N\hat\alpha_iK(x,x_i)\tag{12.44}\label{12.44}
 </script>
 </p>
-<p>其中$K(x,y)=\sum_{m=1}^Mh_m(x)h_m(y)$。注意到这与径向基函数展开和正则化估计的形式一样，它们在第5章和第6章有讨论。</p>
-<p>具体地(For concreteness)，考虑$V(r)=r^2$的情形。令$\H$为$N\times M$的基矩阵，第$im$个元素为$h_m(x_i)$，并且假设$M &gt; N$较大。为了简单起见，假设$\beta_0 = 0$，或者将常数包含进$h$中；<a href="https://github.com/szcf-weiya/ESL-CN/issues/82">练习12.3</a>给出了另一种方式。</p>
+<p>其中 $K(x,y)=\sum_{m=1}^Mh_m(x)h_m(y)$．注意到这与径向基函数展开和正则化估计的形式一样，它们在<a href="../../05-Basis-Expansions-and-Regularization/5.1-Introduction/index.html">第 5 章</a>和<a href="../../06-Kernel-Smoothing-Methods/6.0-Introduction/index.html">第 6 章</a>有讨论．</p>
+<p>具体地(For concreteness)，考虑$V(r)=r^2$的情形．令 $\H$ 为 $N\times M$ 的基矩阵，第 $im$ 个元素为 $h_m(x_i)$，并且假设 $M &gt; N$ 较大．为了简单起见，假设 $\beta_0 = 0$，或者将常数包含进 $h$ 中；<a href="https://github.com/szcf-weiya/ESL-CN/issues/82">练习12.3</a>给出了另一种方式．</p>
 <p>通过最小化带惩罚的最小二乘准则来估计$\beta$</p>
 <p>
 <script type="math/tex; mode=display">
@@ -3765,94 +3733,81 @@ H(\beta) = (\y -\H\beta)^T(\y-\H\beta)+\lambda\Vert \beta\Vert^2\tag{12.45}
 -\H^T(\y-\H\hat\beta)+\lambda\hat\beta=0\tag{12.47}
 </script>
 </p>
-<p>从这里看，我们似乎需要在转换后的空间中对内积的$N\times M$的矩阵进行赋值。然而，我们可以乘以$\H$得到</p>
+<p>从这里看，我们似乎需要在转换后的空间中对内积的 $M\times M$ 的矩阵进行赋值．然而，我们可以乘以 $\H$ 得到</p>
 <p>
 <script type="math/tex; mode=display">
 \H\hat\beta = (\H\H^T+\lambda\I)^{-1}\H\H^T\y\tag{12.48}
 </script>
 </p>
-<p>$N\times N$的矩阵$\H\H^T$包含了成对观测$i,i&rsquo;$间的内积；也就是，内积核$\{\H\H^T\}_{i.i&rsquo;}=K(x_i,x_{i&rsquo;}=K(x,x_{i&rsquo;})$的赋值。易证(12.44)正是这种情形，在任意点$x$的预测值满足</p>
+<p>$N\times N$ 的矩阵 $\H\H^T$ 包含了成对观测 $i,i&rsquo;$ 间的内积；也就是，内积核$\{\H\H^T\}_{i.i&rsquo;}=K(x,x_{i&rsquo;})$的赋值．易证 \eqref{12.44} 正是这种情形，在任意点 $x$ 的预测值满足</p>
 <p>
 <script type="math/tex; mode=display">
-\begin{align}
+\begin{align*}
 \hat f(x) & = h(x)^T\hat\beta\\
 &=\sum\limits_{i=1}^N\hat\alpha_iK(x,x_i)\tag{12.49}
-\end{align}
+\end{align*}
 </script>
 </p>
-<p>其中$\hat\alpha=(\H\H^T+\lambda\I)^{-1}\y$。和SVM中一样，我们不需要确定或者计算函数集$h_1(x), h_2(x),\ldots,h_M(x)$。仅仅需要在$N$个训练点中，对每个$i,i&rsquo;$计算内积核$K(x_i,x_{i&rsquo;})$，以及预测时对预测点$x$计算内积核。小心选择$h_m(x)$（比如特殊的、容易计算的核$K$）会使得计算$K$时$\H\H^T$计算量为$N^2/2$，而不是直接计算时的$N^2M$。</p>
-<p>然而，注意到，这个性质取决于惩罚项中平方范数$\Vert\beta\Vert^2$的选择。举个例子，对于可能会得到更好模型的$L_1$范数$\vert\beta\vert$，这个性质并不满足。</p>
+<p>其中 $\hat\alpha=(\H\H^T+\lambda\I)^{-1}\y$．和 SVM 中一样，我们不需要确定或者计算函数集 $h_1(x), h_2(x),\ldots,h_M(x)$．仅仅需要在 $N$ 个训练点中，对每个 $i,i&rsquo;$ 计算内积核 $K(x_i,x_{i&rsquo;})$，以及预测时对预测点 $x$ 计算内积核．小心选择 $h_m(x)$（比如特殊的、容易计算的核$K$ $K$ 时$\H\H^T$ 计算量为 $N^2/2$，而不是直接计算时的 $N^2M$．</p>
+<p>然而，注意到，这个性质取决于惩罚项中平方范数 $\Vert\beta\Vert^2$ 的选择．举个例子，对于可能会得到更好模型的 $L_1$ 范数 $\vert\beta\vert$，这个性质并不满足．</p>
 <h2 id="_4">讨论<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>SVM可以拓展到对类别问题，本质上是求解多个两个类别的问题。对每个成对类别建立分类器，最终的分类器是起主要作用(dominates)的分类器(Kressel, 1999<sup id="fnref:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup>; Friedman, 1996<sup id="fnref:9"><a class="footnote-ref" href="#fn:9" rel="footnote">9</a></sup>; Hastie and Tibshirani, 1998<sup id="fnref:10"><a class="footnote-ref" href="#fn:10" rel="footnote">10</a></sup>)。另外，可以采用合适核的多项损失函数，就像<a href="#_1">12.3.3节</a>一样。SVMs在许多监督学习和非监督学习的问题中都有应用。在本文的写作时间，经验表明它在许多实际学习问题中表现得非常好。</p>
-<p>最后，我们提出SVM和结构风险最小化(7.9)的联系。</p>
+<p>SVM可以拓展到多类别问题，本质上是求解多个两个类别的问题．对每个成对类别建立分类器，最终的分类器是起主要作用的分类器(Kressel, 1999<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>; Friedman, 1996<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>; Hastie and Tibshirani, 1998<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>)．另外，可以采用合适核的多项损失函数，就像 <a href="#_1">12.3.3 节</a>一样．SVMs在许多监督学习和非监督学习的问题中都有应用．在本文的写作时间，经验表明它在许多实际学习问题中表现得非常好．</p>
+<p>最后，我们提出 SVM 和 <strong>结构风险最小化 (structural risk minimization, SRM)</strong> （<a href="../../07-Model-Assessment-and-Selection/7.9-Vapnik-Chervonenkis-Dimension/index.html">7.9 节</a>）间的联系．</p>
+<p>假设训练点（或者它们的基函数展开）在半径为 $R$ 的球体中，并且令 \eqref{12.2} 中的 $G(x)=\sign[f(x)]=\sign[\beta^Tx+\beta_0]$．</p>
 <div class="admonition note">
 <p class="admonition-title">Recall</p>
 <p>
 <script type="math/tex; mode=display">
-\begin{align}
-Err(x_0)&=E[(Y-\hat f(x_0))^2\mid X=x_0]\\
-&=\sigma_\varepsilon^2+[E\hat f(x_0)-f(x_0)]^2+E[\hat f(x_0)-E\hat f(x_0)]^2\\
-&=\sigma_\varepsilon^2+Bias^2(\hat f(x_0))+Var(\hat f(x_0))\\
-&=\text{Irreducible Error} + \text{Bias}^2+\text{Variance}\tag{7.9}
-\end{align}
+G(x)=\sign[x^T\beta+\beta_0]\tag{12.2}\label{12.2}
 </script>
 </p>
 </div>
-<p>假设训练点（或者它们的基函数展开）在半径为$R$的球体中，并且令(12.2)中的$G(x)=\sign[f(x)]=\sign[\beta^Tx+\beta_0]$。</p>
-<div class="admonition note">
-<p class="admonition-title">Recall</p>
-<p>
-<script type="math/tex; mode=display">
-G(x)=\sign[x^T\beta+\beta_0]\tag{12.2}
-</script>
-</p>
-</div>
-<p>则可以证明类别函数${G(x),\Vert\beta\Vert\le A}$的VC维$h$满足</p>
+<p>则可以证明类别函数 ${G(x),\Vert\beta\Vert\le A}$ 的 VC 维 $h$ 满足</p>
 <p>
 <script type="math/tex; mode=display">
 h\le R^2A^2\tag{12.50}
 </script>
 </p>
-<p>如果$f(x)$分离训练数据，对于$\Vert \beta\Vert\le A$是最优的，则在训练集上至少有概率$1-\eta$满足</p>
+<p>如果 $f(x)$ 分离训练数据，对于 $\Vert \beta\Vert\le A$ 是最优的，则在训练集上至少有概率 $1-\eta$ 满足</p>
 <p>
 <script type="math/tex; mode=display">
-\mathrm{Error}_{\mathrm{Test}}\le 4\frac{h[\log(2N/h)+1]-\log(\eta/4)}{N}\tag{12.51}
+\mathrm{Error}_{\mathrm{Test}}\le 4\frac{h[\log(2N/h)+1]-\log(\eta/4)}{N}\tag{12.51}\label{12.51}
 </script>
 </p>
-<p>支持向量分类器是第一个可以得到VC维的有效界的实际学习过程，因此SRM程序可以运行。然而，在推导的时候，依赖特征的观测值，称为“balls are put around the data points”。因此在严格意义上，类别的VC复杂度不是在知道特征之前预先固定的。</p>
-<p>正则参数$C$控制了分类器的VC为的上界。遵循SRM的范式，我们可以通过最小化测试误差(12.51)的上界来选择$C$。然而，并不清楚它与通过交叉验证来选$C$有什么优势。</p>
+<p>支持向量分类器是第一个可以得到 VC 维的有效界的实际学习过程，因此可以应用 SRM．然而，在推导的时候，计算过程依赖特征的观测值，称为“balls are put around the data points”．因此在严格意义上，类别的 VC 复杂度在知道特征之前不是预先固定的．</p>
+<p>正则参数 $C$ 控制了分类器的 VC 维的上界．遵循 SRM 的范式，我们可以通过最小化测试误差 \eqref{12.51} 的上界来选择 $C$．然而，并不清楚它与通过交叉验证来选 $C$ 有什么优势．</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Rosset, S. and Zhu, J. (2007). Piecewise linear regularized solution paths, Annals of Statistics 35(3): 1012–1030. <a href="../../../references/euclid.aos.1185303996.pdf">下载</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Rosset, S. and Zhu, J. (2007). Piecewise linear regularized solution paths, Annals of Statistics 35(3): 1012–1030. <a href="../../../references/euclid.aos.1185303996.pdf">下载</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Rosset, S., Zhu, J. and Hastie, T. (2004b). Margin maximizing loss functions, in S. Thrun, L. Saul and B. Schölkopf (eds), Advances in Neural Information Processing Systems 16, MIT Press, Cambridge, MA.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Rosset, S., Zhu, J. and Hastie, T. (2004b). Margin maximizing loss functions, in S. Thrun, L. Saul and B. Schölkopf (eds), Advances in Neural Information Processing Systems 16, MIT Press, Cambridge, MA.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Wahba, G., Lin, Y. and Zhang, H. (2000). GACV for support vector machines, in A. Smola, P. Bartlett, B. Sch¨olkopf and D. Schuurmans (eds), Advances in Large Margin Classifiers, MIT Press, Cambridge, MA., pp. 297–311.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Wahba, G., Lin, Y. and Zhang, H. (2000). GACV for support vector machines, in A. Smola, P. Bartlett, B. Sch¨olkopf and D. Schuurmans (eds), Advances in Large Margin Classifiers, MIT Press, Cambridge, MA., pp. 297–311.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Wahba, G. (1990). Spline Models for Observational Data, SIAM, Philadelphia.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Wahba, G. (1990). Spline Models for Observational Data, SIAM, Philadelphia.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>Hastie, T. and Herman, A. (1990). An analysis of gestational age, neonatal size and neonatal death using nonparametric logistic regression, Journal of Clinical Epidemiology 43: 1179–90.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Hastie, T. and Herman, A. (1990). An analysis of gestational age, neonatal size and neonatal death using nonparametric logistic regression, Journal of Clinical Epidemiology 43: 1179–90.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>Hastie, T., Rosset, S., Tibshirani, R. and Zhu, J. (2004). The entire regularization path for the support vector machine, Journal of Machine Learning Research 5: 1391–1415.&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>Hastie, T., Rosset, S., Tibshirani, R. and Zhu, J. (2004). The entire regularization path for the support vector machine, Journal of Machine Learning Research 5: 1391–1415.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 <li id="fn:7">
-<p>Huber, P. (1964). Robust estimation of a location parameter, Annals of Mathematical Statistics 53: 73–101.&#160;<a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<p>Huber, P. (1964). Robust estimation of a location parameter, Annals of Mathematical Statistics 53: 73–101.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 <li id="fn:8">
-<p>Kressel, U. (1999). Pairwise classification and support vector machines, in B. Sch¨olkopf, C. Burges and A. Smola (eds), Advances in Kernel Methods - Support Vector Learning, MIT Press, Cambridge, MA.,pp. 255–268.&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+<p>Kressel, U. (1999). Pairwise classification and support vector machines, in B. Sch¨olkopf, C. Burges and A. Smola (eds), Advances in Kernel Methods - Support Vector Learning, MIT Press, Cambridge, MA.,pp. 255–268.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 <li id="fn:9">
-<p>Friedman, J. (1996). Another approach to polychotomous classification, Technical report, Stanford University&#160;<a class="footnote-backref" href="#fnref:9" rev="footnote" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+<p>Friedman, J. (1996). Another approach to polychotomous classification, Technical report, Stanford University&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
 </li>
 <li id="fn:10">
-<p>Hastie, T. and Tibshirani, R. (1998). Classification by pairwise coupling, Annals of Statistics 26(2): 451–471.&#160;<a class="footnote-backref" href="#fnref:10" rev="footnote" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+<p>Hastie, T. and Tibshirani, R. (1998). Classification by pairwise coupling, Annals of Statistics 26(2): 451–471.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3862,18 +3817,44 @@ h\le R^2A^2\tag{12.50}
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels/index.html";
+      this.page.identifier =
+        "/12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3924,7 +3905,7 @@ h\le R^2A^2\tag{12.50}
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3934,7 +3915,7 @@ h\le R^2A^2\tag{12.50}
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:37
+        Last Build Date UTC : 2026-10-24 02:32:56
       </div>
       
         
@@ -3947,7 +3928,7 @@ h\le R^2A^2\tag{12.50}
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3967,18 +3948,57 @@ h\le R^2A^2\tag{12.50}
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

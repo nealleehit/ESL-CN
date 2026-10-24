@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -501,7 +498,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1304,8 +1301,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1640,8 +1637,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1724,8 +1721,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1736,8 +1733,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1820,8 +1817,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1832,8 +1829,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2096,8 +2093,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2108,8 +2105,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2348,8 +2345,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2861,59 +2858,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3032,18 +2981,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3074,30 +3011,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3122,13 +3035,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3194,8 +3107,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3231,13 +3192,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/04-Linear-Methods-for-Classification/4.2-Linear-Regression-of-an-Indicator-Matrix.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="42">4.2 指示矩阵的线性回归<a class="headerlink" href="#42" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf#page=122">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf#page=122">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3246,12 +3209,12 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2016-12-06</td>
+<td>发布</td>
+<td>2016-12-16</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2018-02-13, 2018-03-10</td>
+<td>2026-09-22</td>
 </tr>
 <tr>
 <td>状态</td>
@@ -3259,16 +3222,16 @@
 </tr>
 </tbody>
 </table>
-<p>这里每个类别型响应变量用一个指示变量来编码。因此如果 $\cal G$ 有 $K$ 个类别，则会有 $K$ 个指示变量 $Y_k,\;k=1,\ldots,K$，若 $G=k,\;Y_k=1$，否则 $Y_k=0$。用向量 $Y=(Y_1,\ldots,Y_K)$ 来表示它们, 则这种形式的 $N$ 个训练实例组成了 $N\times K$ 的<strong>指示变量响应矩阵 (indicator response matrix)</strong> $\mathbf Y$。$\mathbf Y$ 由 0 和 1 组成，每一行只含有一个 1。我们对 $\mathbf Y$ 的每一列同时用线性回归模型做拟合，拟合值由下式给出</p>
+<p>这里每个类别型响应变量用一个指示变量来编码．因此如果 $\cal G$ 有 $K$ 个类别，则会有 $K$ 个指示变量 $Y_k,\;k=1,\ldots,K$，若 $G=k$，则 $Y_k=1$，否则 $Y_k=0$．用向量 $Y=(Y_1,\ldots,Y_K)$ 来表示它们, 则这种形式的 $N$ 个训练实例组成了 $N\times K$ 的 <strong>指示变量响应矩阵 (indicator response matrix)</strong> $\mathbf Y$．$\mathbf Y$ 由 0 和 1 组成，每一行只含有一个 1．我们对 $\mathbf Y$ 的每一列同时用线性回归模型做拟合，拟合值由下式给出</p>
 <p>
 <script type="math/tex; mode=display">
 \mathbf{ \hat Y = {X(X^TX)^{-1}X^TY}} \tag{4.3}
 </script>
 </p>
-<p>第三章给出了线性回归的更多细节。注意到我们对于每个预测变量的列 $\mathbf y_k$ 都有一个系数向量，因此有一个 $(p+1)\times K$ 的系数矩阵 $\mathbf{\hat B=(X^TX)^{-1}X^TY}$。这里 $\mathbf X$ 是有 $p+1$ 列的模型矩阵，它对应 $p$ 个输入，以及一个截距项为 1 的列。</p>
-<p>一个输入为 $x$ 的观测按下列步骤进行分类。</p>
+<p>第三章给出了线性回归的更多细节．注意到我们对于每个预测变量的列 $\mathbf y_k$ 都有一个系数向量，因此有一个 $(p+1)\times K$ 的系数矩阵 $\mathbf{\hat B=(X^TX)^{-1}X^TY}$．这里 $\mathbf X$ 是有 $p+1$ 列的模型矩阵，它对应 $p$ 个输入，以及一个截距项为 1 的列．</p>
+<p>一个输入为 $x$ 的观测按下列步骤进行分类．</p>
 <ul>
-<li>计算输出的拟合值 $\hat f(x)^T=(1,x^T)\mathbf{\hat B}$，这是一个 $K$ 维向量。</li>
+<li>计算输出的拟合值 $\hat f(x)^T=(1,x^T)\mathbf{\hat B}$，这是一个 $K$ 维向量．</li>
 <li>确定值最大的组分从而进行分类</li>
 </ul>
 <p>
@@ -3277,15 +3240,15 @@
 \label{eq:4.4}
 </script>
 </p>
-<p>这种方式的理论根据是什么？更加正式的理由是把回归看成条件期望的估计。对于随机变量 $Y_k$，$\E(Y_k\mid X=x)=\Pr(G=k\mid X=x)$，则每个随机变量 $Y_k$ 的条件期望似乎是一个明智的选择。真正问题是，除了刚性的 (rigid) 线性回归模型，条件期望的近似还可以达到什么程度？或者说，$\hat f_k(x)$ 是否是后验概率 $\Pr(G=k\mid X=x)$ 的合理估计，以及更重要地，这是否有用？</p>
-<p>可以很直接地证明对于任意 $x$，只要模型中有截距（即 $\mathbf X$ 中元素为 1 的列），则有 $\sum_{k\in\cal G}\hat f_k(x)=1$。然而，$\hat f_k(x)$ 可以是负数或者比 1 大，而且事实上确实是这样。这是线性回归的结果刚性的本质，特别是如果我们在训练数据之外做预测。这些违背常识的特点不能保证这个方法起作用，事实上在许多问题上它给出与标准的用于分类的线性方法类似的结果。如果我们允许在输入的基展开 $h(X)$ 上做线性回归，这个方法可以导出概率的一致估计。当训练集的规模 $N$ 变大时，我们自适应地加入更多的基元素使得在这些基函数的线性回归达到条件期望。我们将在<a href="../../05-Basis-Expansions-and-Regularization/5.1-Introduction/index.html">第 5 章</a>中讨论。</p>
-<p>一个更简单的角度是对每个类别构造<strong>目标值 (target)</strong> $t_k$，其中 $t_k$ 是 $K\times K$ 单位矩阵的第 $k$ 列。我们的预测问题是对一个观测尝试并且再生出合适的目标值。和之前的编码一样，对于第 $i$ 个观测的响应向量 $y_i$（$\mathbf Y$ 的第 $i$ 行），当 $g_i=k$ 时，$y_i=t_k$。我们可以通过最小二乘法来拟合线性模型</p>
+<p>这种方式的理论根据是什么？更加正式的理由是把回归看成条件期望的估计．对于随机变量 $Y_k$，$\E(Y_k\mid X=x)=\Pr(G=k\mid X=x)$，则每个随机变量 $Y_k$ 的条件期望似乎是一个明智的选择．真正问题是，除了刚性的 (rigid) 线性回归模型，条件期望的近似还可以达到什么程度？或者说，$\hat f_k(x)$ 是否是后验概率 $\Pr(G=k\mid X=x)$ 的合理估计，以及更重要地，这是否有用？</p>
+<p>可以很直接地证明对于任意 $x$，只要模型中有截距（即 $\mathbf X$ 中元素为 1 的列），则有 $\sum_{k\in\cal G}\hat f_k(x)=1$．然而，$\hat f_k(x)$ 可以是负数或者比 1 大，而且事实上确实是这样．这是线性回归 <strong>刚性本质 (ridge nature)</strong> 的结果，特别是如果我们在训练数据之外做预测．这些违背常识的特点不能保证这个方法起作用，事实上在许多问题上它给出与标准的用于分类的线性方法类似的结果．如果我们允许在输入的基展开 $h(X)$ 上做线性回归，这个方法可以导出概率的一致估计．当训练集的规模 $N$ 变大时，我们自适应地加入更多的基元素使得在这些基函数的线性回归达到条件期望．我们将在<a href="../../05-Basis-Expansions-and-Regularization/5.1-Introduction/index.html">第 5 章</a>中讨论．</p>
+<p>一个更简单的角度是对每个类别构造 <strong>目标值 (target)</strong> $t_k$，其中 $t_k$ 是 $K\times K$ 单位矩阵的第 $k$ 列．我们的预测问题是对一个观测尝试并且再生出合适的目标值．和之前的编码一样，对于第 $i$ 个观测的响应向量 $y_i$（$\mathbf Y$ 的第 $i$ 行），当 $g_i=k$ 时，$y_i=t_k$．我们可以通过最小二乘法来拟合线性模型</p>
 <p>
 <script type="math/tex; mode=display">
 \underset{\B}{\min}\sum\limits_{i=1}^N\Vert y_i-[(1,x_i^T)\mathbf B]^T\Vert^2\tag{4.5}
 </script>
 </p>
-<p>这个准则是目标值到拟合向量的欧几里得距离的平方和。对于新观测值，通过计算它的拟合向量 $\hat f(x)$ 从而把它分到最近的目标：</p>
+<p>这个准则是目标值到拟合向量的欧几里得距离的平方和．对于新观测值，通过计算它的拟合向量 $\hat f(x)$ 从而把它分到最近的目标：</p>
 <p>
 <script type="math/tex; mode=display">
 \hat G(x)=\underset{k}{\mathrm{argmin}}\Vert \hat f(x)-t_k\Vert^2\tag{4.6}
@@ -3294,41 +3257,57 @@
 </p>
 <p>这恰好与之前的方式相同：</p>
 <ul>
-<li>平方和准则恰巧是<strong>多重响应变量线性回归</strong>的准则，仅仅是理解的角度不同。因为二范数自身也是一个平方和，其组成成分可以分解然后重排列成关于每个元素的单独的线性模型。注意到这仅仅是可能的，因为在模型中没有办法将不同的响应变量结合在一起。</li>
-<li>可以很简单地发现最近目标分类准则 $\eqref{eq:4.6}$ 与 $\eqref{eq:4.4}$ 的最大拟合成分准则是一样的。</li>
+<li>平方和准则恰巧是<strong>多重响应变量线性回归</strong>的准则，仅仅是理解的角度不同．因为二范数自身也是一个平方和，其组成成分可以分解然后重排列成关于每个元素的单独的线性模型．注意到这仅仅是可能的，因为在模型中没有办法将不同的响应变量结合在一起．</li>
+<li>可以很简单地发现最近目标分类准则 $\eqref{eq:4.6}$ 与 $\eqref{eq:4.4}$ 的最大拟合成分准则是一样的．</li>
 </ul>
 <!--
-，但是需要要求拟合值的和为 1。
+，但是需要要求拟合值的和为 1．
 -->
 
-<p>当类别的数目 $K\ge 3$ 时候回归方法有个很严重的问题，特别当 $K$ 很大时问题会很常见。由于回归模型的刚性性质，某个类别可以被其他的类别掩盖掉 (masked)。图 4.2 展示了 $K=3$ 时的一个极端情形。</p>
+<p>当类别的数目 $K\ge 3$ 时候回归方法有个很严重的问题，特别当 $K$ 很大时问题会很常见．由于回归模型的刚性性质，某个类别可以被其他的类别掩盖掉 (masked)．图 4.2 展示了 $K=3$ 时的一个极端情形．</p>
 <p><img alt="" src="../../img/04/fig4.2.png" /></p>
 <blockquote>
-<p>图 4.2：这些数据来自 $\IR^2$ 的三个类别而且很简单地通过线性判别边界分开。右图显示了通过线性判别分析找到的边界。左图显示了通过对指示响应变量的线性回归找到的边界。中间的类别完全被掩盖掉了（不再是主要成分）。</p>
+<p>图 4.2：这些数据来自 $\IR^2$ 的三个类别而且很简单地通过线性判别边界分开．右图显示了通过线性判别分析找到的边界．左图显示了通过对指示响应变量的线性回归找到的边界．中间的类别完全被掩盖掉了（不再是主要成分）．</p>
 </blockquote>
-<p>这三个类别可以用线性判别边界完美地分离开，然而线性回归完全失去了中间这一类。</p>
-<p>图 4.3 中我们将数据投影到连接三个形心的直线上（这种情况下在垂直方向上没有信息），图中已经包含这三类点并对这些响应变量进行编码 $Y_1,Y_2$ 和 $Y_3$。另外左图中加入三条回归直线，而且我们看到对应中间类别的直线是水平，它的拟合值永远都不显著！</p>
+<p>这三个类别可以用线性判别边界完美地分离开，然而线性回归完全失去了中间这一类．</p>
+<p>图 4.3 中我们将数据投影到连接三个形心的直线上（这种情况下在垂直方向上没有信息），图中已经包含这三类点并对这些响应变量进行编码 $Y_1,Y_2$ 和 $Y_3$．另外左图中加入三条回归直线，而且我们看到对应中间类别的直线是水平，它的拟合值永远都不显著！</p>
 <p><img alt="" src="../../img/04/fig4.3.png" /></p>
 <blockquote>
-<p>图 4.3. $\IR$ 中对于含三个类别的问题的线性回归发生掩盖的影响。在坐标轴上的 rug plot 指示了每个观测值的位置以及类别关系。在每个面板上的三条曲线是根据三个类别的指示变量回归的拟合；举个例子，对于蓝色的类别，对于蓝色的观测值 $y_{blue}=1$，对于绿色和黄色的观测值为 0。拟合分别是线性的和二次的。每张图象的上方都是训练误差率。对于此问题，Bayes 误差率为 0.025，这也是 LDA 的误差率。</p>
+<p>图 4.3. $\IR$ 中对于含三个类别的问题的线性回归发生掩盖的影响．在坐标轴上的 rug plot 指示了每个观测值的位置以及类别关系．在每个面板上的三条曲线是根据三个类别的指示变量回归的拟合；举个例子，对于蓝色的类别，对于蓝色的观测值 $y_{blue}=1$，对于绿色和黄色的观测值为 0．拟合分别是线性的和二次的．每张图象的上方都是训练误差率．对于此问题，Bayes 误差率为 0.025，这也是 LDA 的误差率．</p>
 </blockquote>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：rug plot</p>
-<p>在 <code>R</code> 语言中 <code>rug</code> 是在坐标轴上标出元素出现的频数。出现一次，就会画一个小竖杠。从 <code>rug</code> 的疏密可以看出变量是什么地方出现的次数多，什么地方出现的次数少。</p>
+<p>在 <code>R</code> 语言中 <code>rug</code> 是在坐标轴上标出元素出现的频数．出现一次，就会画一个小竖杠．从 <code>rug</code> 的疏密可以看出变量是什么地方出现的次数多，什么地方出现的次数少．</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">weiya 注: 模拟 Fig. 4.2 &amp; Fig. 4.3</p>
-<p>已完成，参见<a href="../../notes/LDA/sim-4-3/index.html">这个笔记</a>。</p>
+<p>已完成，参见<a href="../../notes/LDA/sim-4-3/index.html">这篇笔记</a>．</p>
 </div>
-<p>因此，类别 2 的观测值要么被分到类别 1 要么是类别 3。右图采用二次回归而不是线性回归。对于这个简单的例子二次拟合（至少对于中间的类别）会解决这个问题。然而，可以看到如果有四个像这样的类别（而不是三个）二次也不行了，便需要三次了。一个不严谨但是一般的规则是如果排列着 $K\ge 3$ 个类别，则可能需要 $K-1$ 阶多项式才能解决这个问题。同样注意到这些是通过形心派生的方向上的多项式，它们可以有任意的原点。所以在 $p$ 维输入空间中，一般需要 $K-1$ 阶、$O(p^{K-1})$的多项式和交叉积来解决这种极坏的情形。</p>
-<p>这个例子是很极端的，但是对于大 $K$ 和小 $p$，这些掩盖会很自然地发生。作为一个更现实的图示，图 4.4 是元音识别问题中将训练数据投射到含有有用信息的二维子空间上。在 $p=10$ 维空间中有 $K=11$ 个类别。这是一个很复杂的分类问题，并且最好的方法在测试集上达到 40% 的误差。主要信息在表 4.1 中有总结；线性回归误差率为 67%，而与其很相关的线性判别分析误差率为 56%。在这种情形下掩盖现象进行了破坏。而本章中所有其他方法也都是基于关于 $x$ 的线性函数，它们以这种方式使用来避免掩盖问题。</p>
+<p>因此，类别 2 的观测值要么被分到类别 1 要么是类别 3．右图采用二次回归而不是线性回归．对于这个简单的例子二次拟合（至少对于中间的类别）会解决这个问题．然而，可以看到如果有四个像这样的类别（而不是三个）二次也不行了，便需要三次了．一个不严谨但是一般的规则是如果排列着 $K\ge 3$ 个类别，则可能需要 $K-1$ 阶多项式才能解决这个问题．同样注意到这些是通过形心派生的方向上的多项式，但是它们可以有任意的方向．所以在 $p$ 维输入空间中，一般需要 $K-1$ 阶、$O(p^{K-1})$项多项式和交叉积来解决这种极坏的情形．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注:</p>
+<p>尝试简单数学化。假设 $K$ 个类别中心排列在 $x$ 轴上，被 $K-1$ 个点分为 $K$ 个区间（类），</p>
+<p>
+<script type="math/tex; mode=display">
+(-\infty, x_1), (x_1,x_2),\ldots, (x_{K-1},+\infty)
+</script>
+</p>
+<p>如果要将相邻两类分开，那么判别边界必须要从这些分隔点处 <strong>穿过</strong> $x$ 轴，则满足条件的最低阶多项式为</p>
+<p>
+<script type="math/tex; mode=display">
+(x-x_1)(x-x_2)\ldots (x-x_{K-1})\,,
+</script>
+</p>
+<p>其阶数为 $K$. 当然任何更高奇次幂也会穿过 $x$ 轴，如 $(x-x_1)^3$.</p>
+</div>
+<p>这个例子是很极端的，但是对于大 $K$ 和小 $p$，这些掩盖会很自然地发生．作为一个更现实的图示，图 4.4 是元音识别问题中将训练数据投射到含有有用信息的二维子空间上．在 $p=10$ 维空间中有 $K=11$ 个类别．这是一个很复杂的分类问题，并且最好的方法在测试集上达到 40% 的误差．主要信息在表 4.1 中有总结；线性回归误差率为 67%，而与其很相关的线性判别分析误差率为 56%．在这种情形下掩盖现象进行了破坏．尽管本章中所有其他方法也都是基于关于 $x$ 的线性函数，但它们通过某种方式来避免掩盖问题．</p>
 <p><img alt="" src="../../img/04/fig4.4.png" /></p>
 <blockquote>
-<p>图4.4. 元音训练数据的二维图。这里有 11 个类别，$X\in \IR^{10}$，这是关于一个 LDA 模型最好的观察（4.3.3节）。颜色深的圆圈是每个类的投影均值向量，这些类的重叠度是很高的。</p>
+<p>图4.4. 元音训练数据的二维图．这里有 11 个类别，$X\in \IR^{10}$，这是关于一个 LDA 模型最好的观察（4.3.3节）．颜色深的圆圈是每个类的投影均值向量，这些类的重叠度是很高的．</p>
 </blockquote>
 <p><img alt="" src="../../img/04/tab4.1.png" /></p>
 <blockquote>
-<p>表4.1. 在元音数据上运用一系列不同的线性方法得到的训练和测试误差率。在 10 维空间内有 11 个类，其中 3 个维度可以解释 90% 的方差（通过主成分分析）。我们看到线性回归被掩盖破坏了，测试误差比训练误差提高了 10%。</p>
+<p>表4.1. 在元音数据上运用一系列不同的线性方法得到的训练和测试误差率．在 10 维空间内有 11 个类，其中 3 个维度可以解释 90% 的方差（通过主成分分析）．我们看到线性回归被掩盖破坏了，测试误差比训练误差提高了 10%．</p>
 </blockquote>
                 
                   
@@ -3336,18 +3315,44 @@
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/04-Linear-Methods-for-Classification/4.2-Linear-Regression-of-an-Indicator-Matrix/index.html";
+      this.page.identifier =
+        "/04-Linear-Methods-for-Classification/4.2-Linear-Regression-of-an-Indicator-Matrix/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3398,7 +3403,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3408,7 +3413,7 @@
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:33
+        Last Build Date UTC : 2026-10-24 02:32:54
       </div>
       
         
@@ -3421,7 +3426,7 @@
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3441,18 +3446,57 @@
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -499,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1291,8 +1288,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1627,8 +1624,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1711,8 +1708,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1723,8 +1720,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1807,8 +1804,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1819,8 +1816,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2083,8 +2080,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2095,8 +2092,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2337,8 +2334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2745,8 +2742,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="二次正则的逻辑斯底回归" class="md-nav__link">
-    二次正则的逻辑斯底回归
+  <a href="#_2" title="二次正则的逻辑斯蒂回归" class="md-nav__link">
+    二次正则的逻辑斯蒂回归
   </a>
   
 </li>
@@ -2766,8 +2763,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pn" title="当 $p&gt;&gt;N$ 时的计算捷径" class="md-nav__link">
-    当 $p&gt;&gt;N$ 时的计算捷径
+  <a href="#p-n" title="当 $p &gt; &gt; N$ 时的计算捷径" class="md-nav__link">
+    当 $p &gt; &gt; N$ 时的计算捷径
   </a>
   
 </li>
@@ -2775,8 +2772,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -2922,59 +2919,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3093,18 +3042,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3135,30 +3072,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3183,13 +3096,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3255,8 +3168,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3293,8 +3254,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="二次正则的逻辑斯底回归" class="md-nav__link">
-    二次正则的逻辑斯底回归
+  <a href="#_2" title="二次正则的逻辑斯蒂回归" class="md-nav__link">
+    二次正则的逻辑斯蒂回归
   </a>
   
 </li>
@@ -3314,8 +3275,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pn" title="当 $p&gt;&gt;N$ 时的计算捷径" class="md-nav__link">
-    当 $p&gt;&gt;N$ 时的计算捷径
+  <a href="#p-n" title="当 $p &gt; &gt; N$ 时的计算捷径" class="md-nav__link">
+    当 $p &gt; &gt; N$ 时的计算捷径
   </a>
   
 </li>
@@ -3323,8 +3284,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3340,13 +3301,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/18-High-Dimensional-Problems/18.3-Linear-Classifiers-with-Quadratic-Regularization.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="183">18.3 二次正则化的线性分类器<a class="headerlink" href="#183" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3355,12 +3318,12 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2017-04-27:2017-04-27</td>
+<td>发布</td>
+<td>2017-04-27</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2017-08-09, 2017-12-29, 2018-04-19, 2018-04-29</td>
+<td>2026-09-22</td>
 </tr>
 <tr>
 <td>状态</td>
@@ -3368,15 +3331,15 @@
 </tr>
 </tbody>
 </table>
-<p>Ramaswamy et al. (2001)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>提出一个更加困难的微阵列分类问题，涉及 144 个病人的 14 种癌症类型的训练集，以及含有 54 个病人的测试集。已知 16063 个基因的表达值。</p>
+<p>Ramaswamy et al. (2001)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>提出一个更加困难的微阵列分类问题，涉及 144 个病人的 14 种癌症类型的训练集，以及含有 54 个病人的测试集．已知 16063 个基因的表达值．</p>
 <p><img alt="" src="../../img/18/table18.1.png" /></p>
-<p>表 18.1 显示了通过 8 个不同的分类方法得到的预测结果。每个病人的数据首先经过标准化后使得均值为 0，方差为 1；这似乎提高了整个例子的预测正确性，表明每个基因表达谱的形状是很重要的，而不是表达的绝对水平。在每种情形中，选取正则参数使得交叉验证误差最小，并且展现了每个参数值的测试误差。当有多余一个的正则参数得到最小的交叉验证误差，报告该值对应的测试误差的平均值。</p>
-<p>RDA（正则判别分析），正则多元逻辑斯底回归，以及支持向量机是更复杂的方法，试图研究数据的多变量信息。我们依次描述每个方法，以及一系列正则化方法，包括 $L_1$ 和 $L_2$，以及两个都有的方法。</p>
+<p>表 18.1 显示了通过 $8$ 个不同的分类方法得到的预测结果．每个病人的数据首先经过标准化后使得均值为 $0$，方差为 $1$；这似乎提高了整个例子的预测正确性，表明每个基因表达谱的形状是很重要的，而不是表达的绝对水平．在每种情形中，选取正则参数使得交叉验证误差最小，并且展现了每个参数值的测试误差．当有多余一个的正则参数得到最小的交叉验证误差，报告该值对应的测试误差的平均值．</p>
+<p>RDA（正则判别分析），正则多元逻辑斯蒂回归，以及支持向量机是更复杂的方法，试图研究数据的多变量信息．我们依次描述每个方法，以及一系列正则化方法，包括 $L_1$ 和 $L_2$，以及两个都有的方法．</p>
 <h2 id="_1">正则化判别分析<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p><strong>正则化判别分析 (RDA)</strong> 在 <a href="../../04-Linear-Methods-for-Classification/4.3-Linear-Discriminant-Analysis/index.html">4.3.1 节</a>已经描述。线性判别分析涉及 $p\times p$ 类间协方差阵的逆。当 $p &gt;&gt; N$，该矩阵可以很大，秩至多为 $N &lt; p$，因此是奇异矩阵。RDA 克服了对类间协方差矩阵的估计 $\hat\Sigma$ 正则化的问题。这里我们采用一个将 $\hat\Sigma$ 收缩到其对角阵版本的 RDA：</p>
+<p><strong>正则化判别分析 (Regularized Discriminant Analysis, RDA)</strong> 在 <a href="../../04-Linear-Methods-for-Classification/4.3-Linear-Discriminant-Analysis/index.html">4.3.1 节</a>已经描述．线性判别分析涉及 $p\times p$ 类内协方差阵的逆．当 $p &gt;&gt; N$，该矩阵可以很大，秩至多为 $N &lt; p$，因此是奇异矩阵．RDA 克服了对类间协方差矩阵的估计 $\hat\Sigma$ 正则化的问题．这里我们采用一个将 $\hat\Sigma$ 收缩到其对角阵版本的 RDA：</p>
 <p>
 <script type="math/tex; mode=display">
-\hat\Sigma(\gamma) = \gamma\hat\Sigma + (1-\gamma) \diag(\hat\Sigma), \;\text{with}\; \gamma\in [0,1]\tag{18.9}
+\hat\Sigma(\gamma) = \gamma\hat\Sigma + (1-\gamma) \diag(\hat\Sigma), \;\text{with}\; \gamma\in [0,1]\tag{18.9}\label{18.9}
 </script>
 </p>
 <div class="admonition note">
@@ -3390,42 +3353,90 @@
 </script>
 </p>
 </div>
-<p>注意到 $\gamma = 0$ 对应对角 LDA，也是最近收缩重心的“无收缩”版本。(18.9) 的收缩形式很像岭回归（<a href="../../03-Linear-Methods-for-Regression/3.4-Shrinkage-Methods/index.html">3.4.1 节</a>），将整个特征的协方差矩阵收缩到对角（标量值）矩阵。实际上，将线性判别分析看成是类别响应变量的最优得分的线性回归（见 <a href="">12.6 节</a>的 (12.57)），这个等价性变得更加精确。</p>
-<p>求大型 $p\times p$ 矩阵逆的计算负担通过采用 18.3.5 节的方法可以克服。$\gamma$ 的值通过交叉验证取为表 18.1 中第二行的值；所有 $\gamma\in(0.002,0.550)$ 给出了相同的 CV 和测试误差。RDA 进一步的发展，除了协方差矩阵还包括重心的收缩，可以在 Guo et al. (2006)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>的工作中找到。</p>
-<h2 id="_2">二次正则的逻辑斯底回归<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>逻辑斯底回归（<a href="../../04-Linear-Methods-for-Classification/4.4-Logistic-Regression/index.html">4.4 节</a>）可以用相似的方式进行改进用来处理 $p &gt;&gt; N$ 的情形。在 $K$ 个类别的情形下，我们采用多类别逻辑斯底回归模型 (4.17):</p>
+<p>注意到 $\gamma = 0$ 对应对角 LDA，也是最近收缩重心的“无收缩”版本．\eqref{18.9} 的收缩形式很像岭回归（<a href="../../03-Linear-Methods-for-Regression/3.4-Shrinkage-Methods/index.html">3.4.1 节</a>），将整个特征的协方差矩阵收缩到对角（标量值）矩阵．实际上，将线性判别分析看成是类别响应变量的最优得分的线性回归（见 <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html">12.6 节</a>的 \eqref{12.57}），这个等价性变得更加精确．</p>
+<div class="admonition note">
+<p class="admonition-title">Recall</p>
+<p>
+<script type="math/tex; mode=display">
+ASR(\{\theta_\ell,\beta_\ell\}^L_{\ell=1})=\frac 1N\sum\limits_{\ell=1}^L\Big[\sum\limits_{i=1}^N\theta_\ell(g_i)-h^T(x_i)\beta_\ell)^2+\lambda\beta_\ell^T\mathbf \Omega\beta_\ell\Big].\tag{12.57}\label{12.57}
+</script>
+</p>
+</div>
+<p>求大型 $p\times p$ 矩阵逆的计算负担通过采用 <a href="">18.3.5 节</a>的方法可以克服．$\gamma$ 的值通过交叉验证取为表 18.1 中第二行的值；所有 $\gamma\in(0.002,0.550)$ 给出了相同的 CV 和测试误差．RDA 进一步的发展，除了协方差矩阵还包括重心的收缩，可以在 Guo et al. (2006)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>中找到．</p>
+<h2 id="_2">二次正则的逻辑斯蒂回归<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>逻辑斯蒂回归（<a href="../../04-Linear-Methods-for-Classification/4.4-Logistic-Regression/index.html">4.4 节</a>）可以用相似的方式进行改进来处理 $p &gt;&gt; N$ 的情形．在 $K$ 个类别的情形下，我们采用多类别逻辑斯蒂回归模型 \eqref{4.17}:</p>
 <p>
 <script type="math/tex; mode=display">
 \Pr(G=k\mid X=x)=\frac{\exp(\beta_{k0}+x^T\beta_k)}{\sum_{\ell=1}^K\exp(\beta_{\ell0}+x^T\beta_\ell)}\tag{18.10}
 </script>
 </p>
-<p>这有 $K$ 个对数几率参数 $\beta_1,\beta_2,\ldots,\beta_K$ 的系数向量。我们通过最大化惩罚的对数似然来正则化拟合</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：Recall</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{\{\beta_{0k},\beta_k\}_1^K}{\max}[\sum\limits_{i=1}^N\log\;\Pr(g_i\mid x_i)-\frac{\lambda}{2}\sum\limits_{k=1}^K\Vert\beta_k\Vert]_2^2\tag{18.11}
+\begin{array}{ll}
+\log\dfrac{\Pr(G=1\mid X=x)}{\Pr(G=K\mid X=x)}&=\beta_{10}+\beta_1^Tx\\
+\log\dfrac{\Pr(G=2\mid X=x)}{\Pr(G=K\mid X=x)}&=\beta_{20}+\beta_2^Tx\\
+&\ldots\\
+\log\dfrac{\Pr(G=K-1\mid X=x)}{\Pr(G=K\mid X=x)}&=\beta_{(K-1)0}+\beta_{K-1}^Tx\\
+\end{array}
+\tag{4.17}\label{4.17}
 </script>
 </p>
-<p>正则化自动解决了参数化中的冗余，并且使得 $\sum_{k=1}^K\hat\beta_{kj}=0,j=1,\ldots,p$（<a href="https://github.com/szcf-weiya/ESL-CN/issues/119">练习 18.3</a>）。注意到常数项 $\beta_{k0}$ 没有正则化（并且应该被设成 0）。结果得到的优化问题是凸的，而且可以通过牛顿算法或者其他数值技巧求解。详细细节在 Zhu and Hastie(2004)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>的工作中给出。Friedman et al.(2010)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> 提供了计算两个和多个类别逻辑斯底回归模型的正则化路径的软件。表 18.1，第 6 行报告了多重类别逻辑斯底回归模型的结果，称之为“多项式”。可以证明 (Rosset et al., 2004a<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>)，对于可分数据，当 $\lambda\rightarrow 0$，正则（两个类别）逻辑斯底回归估计（重标准化）收敛到<strong>最大边界分类器(maximal margin classifier)</strong>（<a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.2-The-Support-Vector-Classifier/index.html">12.2 节</a>）。这给出了支持向量机的一种受欢迎的替代方式，特别是在多重类别的情形中，这将在下面讨论。</p>
+</div>
+<p>这有 $K$ 个对数几率参数 $\beta_1,\beta_2,\ldots,\beta_K$ 的系数向量．我们通过最大化惩罚的对数似然来正则化拟合</p>
+<p>
+<script type="math/tex; mode=display">
+\underset{\{\beta_{0k},\beta_k\}_1^K}{\max}\left[\sum\limits_{i=1}^N\log\;\Pr(g_i\mid x_i)-\frac{\lambda}{2}\sum\limits_{k=1}^K\Vert\beta_k\Vert_2^2\right]\tag{18.11}
+</script>
+</p>
+<p>正则化自动解决了参数化中的冗余，并且使得 $\sum_{k=1}^K\hat\beta_{kj}=0,j=1,\ldots,p$（<a href="https://github.com/szcf-weiya/ESL-CN/issues/119">练习 18.3</a>）．注意到常数项 $\beta_{k0}$ 没有正则化（并且应该被设成 0）．</p>
+<div class="admonition info">
+<p class="admonition-title">weiya 注：Ex. 18.3</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/119">Issue 119: Ex. 18.3</a>. </p>
+</div>
+<p>最后得到的优化问题是凸的，而且可以通过牛顿算法或者其他数值技巧求解．详细细节在 Zhu and Hastie(2004)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>的工作中给出．Friedman et al.(2010)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> 提供了计算两个和多个类别逻辑斯蒂回归模型的正则化路径的软件．表 18.1，第 6 行报告了多重类别逻辑斯蒂回归模型的结果，称之为“multinomial”．可以证明 (Rosset et al., 2004a<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>)，对于可分数据，当 $\lambda\rightarrow 0$，正则化的（两个类别的）逻辑斯蒂回归估计（重标准化）收敛到 <strong>最大边界分类器(maximal margin classifier)</strong>（<a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.2-The-Support-Vector-Classifier/index.html">12.2 节</a>）．这给出了支持向量机的一种受欢迎的替代方式，特别是在多重类别的情形中，这将在下面讨论．</p>
 <h2 id="_3">支持向量分类器<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>两个类别情形的支持向量机在 <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.2-The-Support-Vector-Classifier/index.html">12.2 节</a>中讨论。当 $p &gt; N$ 时，特别受欢迎，因为一般情形下类别是可以被超平面完全可分的，除非在不同类别中有相同的特征向量。没有任何正则化，支持向量分类器寻找具有最大空白的分离超平面；也就是，超平面得到训练数据之间最大的间距。有点吃惊的是，当 $p &gt;&gt; N$ 时未正则化的支持向量机通常和最优正则版本表现得一样好。过拟合经常似乎不是一个问题，部分是因为误分类损失的不敏感性。</p>
-<p>有许多不同的方式将两个类别的支持向量分类器推广为 $K &gt; 2$ 个类别的情形。在<strong>一对一方法(ovo)</strong>中，我们计算所有的 $\binom{K}{2}$ 成对分类器。对每个测试点，预测类别是在大多数成对比较中获胜的那个。在<strong>一对多方法(ova)</strong>中，每个类别与所有的其他类别在 $K$ 次两类别比较中进行比较。为了对某个测试点分类，我们计算 $K$ 个分类器中的每一个计算置信度（到超平面的符号距离）。胜利者是有最高置信度的类别。最后，Vapnik(1998)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>，Weston and Watins(1999)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup> 提出推广两类别准则 (12.7) 的（有点复杂）多重类别准则。</p>
-<p>Tibshirani and Hastie（2007）<sup id="fnref:8"><a class="footnote-ref" href="#fn:8" rel="footnote">8</a></sup>提出<strong>边际树(margin tree)</strong>分类器，这是支持向量分类器用在二叉树中，很像在 CART（<a href="../../09-Additive-Models-Trees-and-Related-Methods/9.0-Introduction/index.html">第 9 章</a>）中一样。类别以分层形式进行组织，举个例子，对于将病人分类成不同的癌症类型是很有用的。</p>
-<p>表 18.1 的第三行显示了支持向量机采用 ova 方法的结果，Ramaswamy et al. (2001)<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>报告了（并且我们证实了）这个方法对于这个问题表现得很好。误差与第 6 行的误差很相似，正如我们在上一节的最后做出的评论那样。对于 $C &gt; 0.001$，误差率对 $C$ 的选择不是很敏感[式(12.8)的正则化参数]，。因为 $p &gt; N$，支持向量超平面可以通过设置 $C=\infty$ 完美地分离训练数据。</p>
+<p>两个类别情形的支持向量机在 <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.2-The-Support-Vector-Classifier/index.html">12.2 节</a>中讨论．当 $p &gt; N$ 时，特别受欢迎，因为一般情形下类别是可以被超平面完全可分的，除非在不同类别中有相同的特征向量．没有任何正则化，支持向量分类器寻找具有最大空白的分离超平面；也就是，超平面得到训练数据之间最大的间距．有点吃惊的是，当 $p &gt; &gt; N$ 时未正则化的支持向量机通常和最优正则版本表现得一样好．过拟合经常似乎不是一个问题，部分是因为误分类损失的不敏感性．</p>
+<p>有许多不同的方式将两个类别的支持向量分类器推广为 $K &gt; 2$ 个类别的情形．在 <strong>一对一方法 (ovo)</strong> 中，我们计算所有的 $\binom{K}{2}$ 成对分类器．对每个测试点，预测类别是在大多数成对比较中获胜的那个．在 <strong>一对多方法 (ova)</strong> 中，每个类别与所有的其他类别在 $K$ 次两类别比较中进行比较．为了对某个测试点分类，我们计算 $K$ 个分类器中的置信度（到超平面的符号距离）．胜利者是有最高置信度的类别．最后，Vapnik(1998)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>，Weston and Watins(1999)<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> 提出推广两类别准则 \eqref{12.7} 的（有点复杂）多重类别准则．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：Recall</p>
+<p>
+<script type="math/tex; mode=display">
+\min\;\Vert\beta\Vert\qquad s.t.\;\left\{\begin{array}{ll}y_i(x_i^T\beta+\beta_0)\ge 1-\xi_i\;\forall i,\\
+\xi_i\ge 0,\sum\xi_i\le constant.\end{array}\right.\tag{12.7}\label{12.7}
+</script>
+</p>
+</div>
+<p>Tibshirani and Hastie (2007)<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>提出 <strong>边际树 (margin tree)</strong> 分类器，这是支持向量分类器用在二叉树中，很像在 CART（<a href="../../09-Additive-Models-Trees-and-Related-Methods/9.0-Introduction/index.html">第 9 章</a>）中一样．类别以分层形式进行组织，举个例子，对于将病人分类成不同的癌症类型是很有用的．</p>
+<p>表 18.1 的第三行显示了支持向量机采用 ova 方法的结果，Ramaswamy et al. (2001)<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>报告了（并且我们证实了）这个方法对于这个问题表现得很好．误差与第 6 行的误差很相似，正如我们在上一节的最后做出的评论那样．对于 $C &gt; 0.001$，误差率对 $C$ 的选择不是很敏感【式 \eqref{12.8} 的正则化参数】．因为 $p &gt; N$，支持向量超平面可以通过设置 $C=\infty$ 完美地分离训练数据．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：Recall</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{array}{ll}
+\underset{\beta,\beta_0}{min}&\;\frac{1}{2}\Vert\beta\Vert^2+C\sum\limits_{i=1}^N\xi_i\\
+s.t.& \xi_i\ge 0,y_i(x_i^T\beta+\beta_0)\ge 1-\xi_i,\forall i
+\end{array}
+\tag{12.8}\label{12.8}
+</script>
+</p>
+</div>
 <h2 id="_4">特征选择<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>当 $p$ 值很大时，特征选择对于分类器来说是很重要的科学要求。判别分析、逻辑斯底回归，以及支持向量分类器都不能自动表现出特征选择，因为它们都用到了二次正则化。在这些模型中所有特征都有非零权重。举个例子，已经提出的用于特征选择的 Ad-hoc 方法，除掉系数较小的基因，然后重新拟合分类器。这可以用一种向后逐步的方式进行，以最小的权重开始，然后移动到较大的权重上去。这被称作<strong>递归特征消去(recursive feature elimination)</strong>(Guyon et. al，2002<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>)。在这个例子中，不是很成功；Ramaswamy et al.（2001）<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>称，举个例子，支持向量分类器的正确性随着基因数目（从全集 16063 开始）的下降而退化。这是非常重要的，因为训练样本的数目只有 44 个。我们对这个表现病没有一个解释。</p>
-<p>本节讨论的三个方法（RDA，LR，SVM）可以修改为用核来拟合非线性判别边界。通常这种方法的目的是增加模型的复杂度。当 $p &gt; &gt; N$，模型已经充分复杂，并且过拟合通常是很危险的。然而尽管高维度，径向核（12.3.3 节）有时在这些高维问题中表现出更好的结果。径向核趋向于抑制相距很远的点之间的内积，反过来导致离群点很鲁棒。这通常发生在高维的情形中，并且或许可以解释积极的结果。我们在表18.1中对 svm 试了一种径向核，但是这种情形下表现不好。</p>
-<h2 id="pn">当 $p&gt;&gt;N$ 时的计算捷径<a class="headerlink" href="#pn" title="Permanent link">&para;</a></h2>
-<p>这一节中讨论的计算技巧可以应用到任何对参数二次正则化的线性模型拟合中。这包含这节中讨论的所有方法，以及其他更多的方法。当 $p &gt; N$ 时，通过在 <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html">14.5 节</a>中介绍的奇异值分解方法，计算可以在 $N$ 维空间中进行，而不是 $p$。几何上直观的解释为：恰恰像三维空间中两点总是在一条直线上一样，在 $p$ 维空间中的 $N$ 个点位于 $(N-1)$ 维仿射子空间中。</p>
+<p>当 $p$ 值很大时，特征选择对于分类器来说是很重要的科学要求．判别分析、逻辑斯蒂回归，以及支持向量分类器都不能自动表现出特征选择，因为它们都用到了二次正则化．在这些模型中所有特征都有非零权重．举个例子，已经提出的用于特征选择的 Ad-hoc 方法，除掉系数较小的基因，然后重新拟合分类器．这可以用一种向后逐步的方式进行，以最小的权重开始，然后移动到较大的权重上去．这被称作 <strong>递归特征消去 (recursive feature elimination)</strong>(Guyon et. al，2002<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup>)．在这个例子中，不是很成功；举个例子，Ramaswamy et al.（2001）<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup>称，支持向量分类器的正确性随着基因数目（从全集 16063 开始）的下降而退化．这是非常重要的，因为训练样本的数目只有 44 个．我们对这个表现并没有一个解释．</p>
+<p>本节讨论的三个方法（RDA，LR，SVM）可以修改为用核来拟合非线性判别边界．通常这种方法的目的是增加模型的复杂度．当 $p &gt; &gt; N$，模型已经充分复杂，并且过拟合通常是很危险的．然而尽管高维度，径向核（<a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels/index.html">12.3.3 节</a>）有时在这些高维问题中表现出更好的结果．径向核趋向于抑制相距很远的点之间的内积，反过来导致离群点很鲁棒．这通常发生在高维的情形中，并且或许可以解释积极的结果．我们在表 18.1 中对 svm 试了一种径向核，但是这种情形下表现不好．</p>
+<h2 id="p-n">当 $p &gt; &gt; N$ 时的计算捷径<a class="headerlink" href="#p-n" title="Permanent link">&para;</a></h2>
+<p>这一节中讨论的计算技巧可以应用到任何对参数二次正则化的线性模型拟合中．这包含这节中讨论的所有方法，以及其他更多的方法．当 $p &gt; N$ 时，通过在 <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html">14.5 节</a>中介绍的奇异值分解方法，计算可以在 $N$ 维空间中进行，而不是 $p$．几何上直观的解释为：恰恰像三维空间中两点总是在一条直线上一样，在 $p$ 维空间中的 $N$ 个点位于 $(N-1)$ 维仿射子空间中．</p>
 <p>给定 $N\times p$ 的数据矩阵 $\mathbf X$，令</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{align}
-\mathbf X & = \mathbf {UDV^T}\quad (18.12)\\
-& = \mathbf{RV^T}\tag{18.13}
+\mathbf X & = \mathbf {UDV^T}\tag{18.12}\label{18.12}\\
+& = \mathbf{RV^T}\tag{18.13}\label{18.13}
 \end{align}
 </script>
 </p>
-<p>为 $\mathbf X$ 的奇异值分解；也就是，$\mathbf V$ 是有着正交列的 $p\times N$ 矩阵，$\mathbf U$ 是 $N\times N$ 正交矩阵，$\mathbf D$ 是元素为 $d_1\ge d_2\ge d_N\ge 0$ 的对角矩阵。矩阵 $\mathbf R$ 是 $N\times N$ 的，列为$r_i^T$。</p>
+<p>为 $\mathbf X$ 的奇异值分解；也就是，$\mathbf V$ 是有着正交列的 $p\times N$ 矩阵，$\mathbf U$ 是 $N\times N$ 正交矩阵，$\mathbf D$ 是元素为 $d_1\ge d_2\ge d_N\ge 0$ 的对角矩阵．矩阵 $\mathbf R$ 是 $N\times N$ 的，行为 $r_i^T$．</p>
 <p>举个简单的例子，我们首先考虑岭回归估计</p>
 <p>
 <script type="math/tex; mode=display">
@@ -3438,63 +3449,71 @@
 \hat\beta = \mathbf{V(R^TR+\lambda I)^{-1}\mathbf{R^Ty}}\tag{18.15}
 </script>
 </p>
-<p>（<a href="https://github.com/szcf-weiya/ESL-CN/issues/117">练习 18.4</a>）。</p>
+<p>（<a href="https://github.com/szcf-weiya/ESL-CN/issues/117">练习 18.4</a>）．</p>
 <div class="admonition info">
 <p class="admonition-title">Ex. 18.4</p>
-<p>已证。详细证明过程见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/117">Issue 117: Ex. 18.4</a>。</p>
+<p>已证．详细证明过程见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/117">Issue 117: Ex. 18.4</a>．</p>
 </div>
-<p>因此 $\hat\beta = \mathbf V\hat\theta$，其中 $\hat\theta$ 是采用 $N$ 个观测 $(r_i,y_i),i=1,2,\ldots,N$ 的岭回归估计。换句话说，我们可以简单地将数据矩阵从 $\mathbf X$ 降维成 $\mathbf R$，并且对 $\mathbf R$ 的行进行操作。这个技巧将 $p &gt; N$ 时的计算花费从 $O(p^3)$ 降为 $O(pN^2)$。</p>
-<p>这些结果可以推广到所有参数为线性并且有二次惩罚的模型。考虑任意的监督学习问题，我们采用线性函数 $f(X)=\beta_0+X^T\beta$ 来建立条件分布 $Y\mid X$ 的参数模型。我们通过在数据上最小化损失函数 $\sum_{i=1}^NL(y_i,f(x_i))$ 和 $\beta$ 上的二次惩罚来拟合参数 $\beta$。逻辑斯底回归是个很有用的例子。接着我们有下面简单的定理：</p>
+<p>因此 $\hat\beta = \mathbf V\hat\theta$，其中 $\hat\theta$ 是采用 $N$ 个观测 $(r_i,y_i),i=1,2,\ldots,N$ 的岭回归估计．换句话说，我们可以简单地将数据矩阵从 $\mathbf X$ 降维成 $\mathbf R$，并且对 $\mathbf R$ 的行进行操作．这个技巧将 $p &gt; N$ 时的计算花费从 $O(p^3)$ 降为 $O(pN^2)$．</p>
+<p>这些结果可以推广到所有参数为线性并且有二次惩罚的模型．考虑任意的监督学习问题，我们采用线性函数 $f(X)=\beta_0+X^T\beta$ 来建立条件分布 $Y\mid X$ 的参数模型．我们通过在数据上最小化损失函数 $\sum_{i=1}^NL(y_i,f(x_i))$ 和 $\beta$ 上的二次惩罚来拟合参数 $\beta$．逻辑斯蒂回归是个很有用的例子．接着我们有下面简单的定理：</p>
 <blockquote>
-<p>令 $f^*(r_i)=\theta_0+r_i^T\theta$， $r_i$ 如 (18.13) 定义，并且考虑成对优化问题：</p>
+<p>令 $f^*(r_i)=\theta_0+r_i^T\theta$， $r_i$ 如 \eqref{18.13} 定义，并且考虑成对优化问题：</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{align}
-(\hat\beta_0,\hat\beta) &= arg\underset{\beta_0,\beta\in R^p}{\min}\sum\limits_{i=1}^NL(y_i,\beta_0+x_i^T\beta)+\lambda\beta^T\beta\tag{18.16}\\
-(\hat\theta_0,\hat\theta) &= arg\underset{\theta_0,\theta\in R^N}{\min}\sum\limits_{i=1}^NL(y_i,\theta_0+r_i^T\theta)+\lambda\theta^T\theta\tag{18.17}
+(\hat\beta_0,\hat\beta) &= \arg\underset{\beta_0,\beta\in \IR^p}{\min}\sum\limits_{i=1}^NL(y_i,\beta_0+x_i^T\beta)+\lambda\beta^T\beta\tag{18.16}\\
+(\hat\theta_0,\hat\theta) &= \arg\underset{\theta_0,\theta\in \IR^N}{\min}\sum\limits_{i=1}^NL(y_i,\theta_0+r_i^T\theta)+\lambda\theta^T\theta\tag{18.17}
 \end{align}
 </script>
-于是有 $\hat\beta_0=\hat\theta_0, \hat\beta=\mathbf V\hat\theta$。</p>
+于是有 $\hat\beta_0=\hat\theta_0, \hat\beta=\mathbf V\hat\theta$．</p>
 </blockquote>
-<p>这个定理说我们可以用 $N$ 维的向量替换 $p$ 维向量，并且像之前一样进行带惩罚的拟合，但是有更少的预测变量。$N$ 维向量的解 $\hat\theta$ 接着通过简单的矩阵运算转化为 $p$ 维向量的解。这个结果是统计学传说之一，理应当被广泛知道——更多细节详见 Hastie and Tibshirani(2004)<sup id="fnref:9"><a class="footnote-ref" href="#fn:9" rel="footnote">9</a></sup> 等人的工作。</p>
-<p>几何上看，我们把特征旋转到除了前 $N$ 个坐标分量外其余分量都为 0 的坐标系中。这个旋转是允许的，因为二次惩罚在旋转下是不变的，并且线性模型是等价的。</p>
-<p>这个结果可以应用到本章中讨论的许多学习算法，比如正则化（多类别）逻辑斯底回归，线性判别分析（<a href="https://github.com/szcf-weiya/ESL-CN/issues/118">练习 18.6</a>），以及支持向量机。</p>
+<p>这个定理说我们可以用 $N$ 维的向量替换 $p$ 维向量，并且像之前一样进行带惩罚的拟合，但是有更少的预测变量．$N$ 维向量的解 $\hat\theta$ 接着通过简单的矩阵运算转化为 $p$ 维向量的解．这个结果是统计学传说之一，理应当被广泛知道——更多细节详见 Hastie and Tibshirani(2004)<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> 等人的工作．</p>
+<p>几何上看，我们把特征旋转到除了前 $N$ 个坐标分量外其余分量都为 0 的坐标系中．这个旋转是允许的，因为二次惩罚在旋转下是不变的，并且线性模型是等价的．</p>
+<p>这个结果可以应用到本章中讨论的许多学习算法，比如正则化（多类别）逻辑斯蒂回归，线性判别分析（<a href="https://github.com/szcf-weiya/ESL-CN/issues/118">练习 18.6</a>），以及支持向量机．</p>
 <div class="admonition info">
 <p class="admonition-title">Ex. 18.6</p>
-<p>已证。详细解答过程见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/118">Issue 118: Ex.18.6</a>。</p>
+<p>已证．详细解答过程见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/118">Issue 118: Ex.18.6</a>．</p>
 </div>
-<p>这也应用到有二次正则化的神经网络（<a href="../../11-Neural-Networks/11.5-Some-Issues-in-Training-Neural-Networks/index.html">11.5.2 节</a>）。然而，注意到，这并不应用到类似lasso的方法中，这些方法对系数加的是非平方惩罚（$L_1$）。</p>
-<p>一般地，我们采用交叉验证去选择参数 $\lambda$。可以看到（<a href="https://github.com/szcf-weiya/ESL-CN/issues/121">练习 18.12</a>）我们仅需要对原始数据构造一次 $\mathbf R$，并且用这个作为每个 CV 折的数据。</p>
-<p><a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels/index.html">12.3.7 节</a>中的支持向量机的“核技巧”在不同的情形下利用了这节中的降维。假设我们有 $N\times N$ 的（内积）矩阵 $\mathbf{K=XX^T}$。由 (18.12) 我们有 $\mathbf{K=UD^2U^T}$，所以 $\mathbf K$ 捕捉了与 $\mathbf R$ 一样的信息。<a href="https://github.com/szcf-weiya/ESL-CN/issues/122">练习 18.13</a> 显示了我们怎样在这节中利用这个想法用 $\mathbf K$ 和它的 SVD 分解来拟合岭逻辑斯底回归。</p>
+<p>这也应用到有二次正则化的神经网络（<a href="../../11-Neural-Networks/11.5-Some-Issues-in-Training-Neural-Networks/index.html">11.5.2 节</a>）．然而，注意到，这并不能应用到类似 lasso 的方法中，这些方法对系数加的是非平方惩罚（$L_1$）．</p>
+<p>一般地，我们采用交叉验证去选择参数 $\lambda$．可以看到（<a href="https://github.com/szcf-weiya/ESL-CN/issues/121">练习 18.12</a>）我们仅需要对原始数据构造一次 $\mathbf R$，并且用这个作为每个 CV 折的数据．</p>
+<div class="admonition info">
+<p class="admonition-title">Ex. 18.12</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/121">Issue 121: Ex. 18.12</a>. </p>
+</div>
+<p><a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels/index.html">12.3.7 节</a>中的支持向量机的“核技巧”在不同的情形下利用了这节中的降维．假设我们有 $N\times N$ 的（内积）矩阵 $\mathbf{K=XX^T}$．由 \eqref{18.12} 我们有 $\mathbf{K=UD^2U^T}$，所以 $\mathbf K$ 捕捉了与 $\mathbf R$ 一样的信息．<a href="https://github.com/szcf-weiya/ESL-CN/issues/122">练习 18.13</a> 显示了我们怎样利用这节的想法从 $\mathbf K$ 和它的 SVD 分解来拟合岭逻辑斯蒂回归．</p>
+<div class="admonition info">
+<p class="admonition-title">Ex. 18.13</p>
+<p>部分解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/122">Issue 122: Ex. 18.13</a>，不知道应该怎么说明对任意合适的 $\mathbf K$ 都适用，欢迎交流讨论。</p>
+</div>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Ramaswamy, S., Tamayo, P., Rifkin, R., Mukherjee, S., Yeang, C., Angelo, M., Ladd, C., Reich, M., Latulippe, E., Mesirov, J., Poggio, T., Gerald, W., Loda, M., Lander, E. and Golub, T. (2001). Multiclass cancer diagnosis using tumor gene expression signature, PNAS 98: 15149–15154.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Ramaswamy, S., Tamayo, P., Rifkin, R., Mukherjee, S., Yeang, C., Angelo, M., Ladd, C., Reich, M., Latulippe, E., Mesirov, J., Poggio, T., Gerald, W., Loda, M., Lander, E. and Golub, T. (2001). Multiclass cancer diagnosis using tumor gene expression signature, PNAS 98: 15149–15154.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Guo, Y., Hastie, T. and Tibshirani, R. (2006). Regularized linear discriminant analysis and its application in microarrays, Biostatistics 8: 86–100.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Guo, Y., Hastie, T. and Tibshirani, R. (2006). Regularized linear discriminant analysis and its application in microarrays, Biostatistics 8: 86–100.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Zhu, J. and Hastie, T. (2004). Classification of gene microarrays by penalized logistic regression, Biostatistics 5(2): 427–443.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Zhu, J. and Hastie, T. (2004). Classification of gene microarrays by penalized logistic regression, Biostatistics 5(2): 427–443.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Friedman, J., Hastie, T. and Tibshirani, R. (2010). Regularization paths for generalized linear models via coordinate descent, Journal of Statistical Software 33(1): 1–22.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Friedman, J., Hastie, T. and Tibshirani, R. (2010). Regularization paths for generalized linear models via coordinate descent, Journal of Statistical Software 33(1): 1–22.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>Rosset, S., Zhu, J. and Hastie, T. (2004a). Boosting as a regularized path to a maximum margin classifier, Journal of Machine Learning Research 5: 941–973.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Rosset, S., Zhu, J. and Hastie, T. (2004a). Boosting as a regularized path to a maximum margin classifier, Journal of Machine Learning Research 5: 941–973.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>Vapnik, V. (1998). Statistical Learning Theory, Wiley, New York.&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>Vapnik, V. (1998). Statistical Learning Theory, Wiley, New York.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 <li id="fn:7">
-<p>Weston, J. and Watkins, C. (1999). Multiclass support vector machines, in M. Verleysen (ed.), Proceedings of ESANN99, D. Facto Press, Brussels.&#160;<a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+<p>Weston, J. and Watkins, C. (1999). Multiclass support vector machines, in M. Verleysen (ed.), Proceedings of ESANN99, D. Facto Press, Brussels.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
 </li>
 <li id="fn:8">
-<p>Tibshirani, R. and Hastie, T. (2007). Margin trees for high-dimensional classification, Journal of Machine Learning Research 8: 637–652.&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+<p>Tibshirani, R. and Hastie, T. (2007). Margin trees for high-dimensional classification, Journal of Machine Learning Research 8: 637–652.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 <li id="fn:9">
-<p>Hastie, T. and Tibshirani, R. (2004). Efficient quadratic regularization for expression arrays, Biostatistics 5(3): 329–340. <a href="../../references/hastie_tibs_2004.pdf">下载</a>&#160;<a class="footnote-backref" href="#fnref:9" rev="footnote" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+<p>Hastie, T. and Tibshirani, R. (2004). Efficient quadratic regularization for expression arrays, Biostatistics 5(3): 329–340. <a href="../../references/hastie_tibs_2004.pdf">下载</a>&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3504,18 +3523,44 @@
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/18-High-Dimensional-Problems/18.3-Linear-Classifiers-with-Quadratic-Regularization/index.html";
+      this.page.identifier =
+        "/18-High-Dimensional-Problems/18.3-Linear-Classifiers-with-Quadratic-Regularization/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3566,7 +3611,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3576,7 +3621,7 @@
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:40
+        Last Build Date UTC : 2026-10-24 02:32:57
       </div>
       
         
@@ -3589,7 +3634,7 @@
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3609,18 +3654,57 @@
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>

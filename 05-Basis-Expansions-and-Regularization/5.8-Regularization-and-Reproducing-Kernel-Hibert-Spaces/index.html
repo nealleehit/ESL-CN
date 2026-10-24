@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -42,7 +42,7 @@
 	-->
       <link rel="shortcut icon" href="../../img/favicon.ico">
 
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.0">
+      <meta name="generator" content="mkdocs-0.17.2+weiyapatch1, mkdocs-material-2.6.0">
     
     
       
@@ -59,16 +59,41 @@
       <script src="../../assets/javascripts/modernizr.js"></script>
     
     
+          <!--rm disqus ad refer to https://www.javaer101.com/article/25891160.html-->
+          <script src="../../assets/javascripts/jquery-latest.min.js"></script>
+          <script>
+            (function($){
+              setInterval(() => {
+                  $.each($('iframe'), (arr,x) => {
+                      let src = $(x).attr('src');
+                      if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
+                          $(x).remove();
+                      }
+                      let title = $(x).attr('title');
+                      if (!src && title == "Disqus") {
+                        $(x).remove();
+                      }
+                  });
+              }, 300);
+          })(jQuery);
+          </script>   
+    
+    
       
-        <script src="../../js/iDisqus0.min.js"></script>
       
     
     
       
-      <!--
-      <style>body,input{font-family:"lucida grande", "lucida sans unicode", lucida, 'Open Sans', helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
-      -->
-      <style>body,input{font-family:Optima, Segoe, “Segoe UI”, Candara, Calibri, Arial,source-han-serif-sc,'Source Han Serif SC','Source Han Serif CN','Source Han Serif TC','Source Han Serif TW','Source Han Serif','Songti SC','Microsoft YaHei',sans-serif}code,kbd,pre{font-family: Consolas, monospace;}blockquote{font-family: 'Palatino Linotype','Book Antiqua',Palatino,STKaiti,KaiTi,'楷体',SimKai,DFKai-SB,NSimSun,serif;}</style>
+      <style>
+      body, input {
+        font-family: Optima, Segoe, “Segoe UI”, Calibri, Arial, 'Source Han Serif SC', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', sans-serif;
+        }
+      code, kbd, pre {
+        font-family: Consolas, "Courier New", monospace;
+        }
+      blockquote {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, "DFKai-SB", NSimSun, serif;}
+      </style>
       <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
       <link rel="stylesheet" href="../../css/icon.css">
       <link rel="stylesheet" href="../../css/mini-awesome/font-awesome.css">
@@ -76,18 +101,18 @@
     
       <link rel="stylesheet" href="../../css/misc.css">
     
-      <link rel="stylesheet" href="../../css/iDisqus.min.css">
-    
     
     <script src="../../js/mathjax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3680148472128768",
-    enable_page_level_ads: true
-  });
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KDYJ30F81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3KDYJ30F81');
+    </script>
   </head>
   
     
@@ -98,24 +123,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="github" width="416" height="448" viewBox="0 0 416 448"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75 19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360 304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25 2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75 1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75 0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5 46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -165,35 +173,11 @@
         <!--
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
-
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          
         
         -->
+        <!-- <div style="padding-top:0.4rem;padding-bottom:0.4rem;width:15rem;height:4rem;">
+          <iframe src="https://github.com/sponsors/szcf-weiya/button" title="Sponsor szcf-weiya" height="100%" width="100%" style="display:block;margin:auto;border:0;"></iframe>
+        </div> -->
       </div>
       
         <div class="md-flex__cell md-flex__cell--shrink">
@@ -204,7 +188,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -259,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="上篇" class="md-tabs__link">
+        <a href="../../01-Introduction/1.1-Introduction/index.html" title="上篇" class="md-tabs__link">
           上篇
         </a>
       
@@ -326,6 +310,19 @@
   
 
       
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tag/index.html" title="索引" class="md-tabs__link">
+          索引
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -354,7 +351,7 @@
   
 
 
-  <a href="https://github.com/szcf-weiya/ESL-CN" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/szcf-weiya/ESL-CN/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -501,7 +498,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-Introduction/2016-07-26-Chapter-1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
+    <a href="../../01-Introduction/1.1-Introduction/index.html" title="1.1 导言" class="md-nav__link">
       1.1 导言
     </a>
   </li>
@@ -1077,8 +1074,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -1371,8 +1368,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的 optimism" class="md-nav__link">
-      7.4 测试误差率的 optimism
+    <a href="../../07-Model-Assessment-and-Selection/7.4-Optimism-of-the-Training-Error-Rate/index.html" title="7.4 测试误差率的乐观偏差" class="md-nav__link">
+      7.4 测试误差率的乐观偏差
     </a>
   </li>
 
@@ -1707,8 +1704,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多变量自适应回归样条" class="md-nav__link">
-      9.4 多变量自适应回归样条
+    <a href="../../09-Additive-Models-Trees-and-Related-Methods/9.4-MARS/index.html" title="9.4 多元自适应回归样条" class="md-nav__link">
+      9.4 多元自适应回归样条
     </a>
   </li>
 
@@ -1791,8 +1788,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 boosting 方法" class="md-nav__link">
-      10.1 boosting 方法
+    <a href="../../10-Boosting-and-Additive-Trees/10.1-Boosting-Methods/index.html" title="10.1 Boosting 方法" class="md-nav__link">
+      10.1 Boosting 方法
     </a>
   </li>
 
@@ -1803,8 +1800,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 boosting 拟合可加模型" class="md-nav__link">
-      10.2 boosting 拟合可加模型
+    <a href="../../10-Boosting-and-Additive-Trees/10.2-Boosting-Fits-an-Additive-Model/index.html" title="10.2 Boosting 拟合可加模型" class="md-nav__link">
+      10.2 Boosting 拟合可加模型
     </a>
   </li>
 
@@ -1887,8 +1884,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 boosting 树" class="md-nav__link">
-      10.9 boosting 树
+    <a href="../../10-Boosting-and-Additive-Trees/10.9-Boosting-Trees/index.html" title="10.9 Boosting 树" class="md-nav__link">
+      10.9 Boosting 树
     </a>
   </li>
 
@@ -1899,8 +1896,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 Gradient Boosting 的数值优化" class="md-nav__link">
-      10.10 Gradient Boosting 的数值优化
+    <a href="../../10-Boosting-and-Additive-Trees/10.10-Numerical-Optimization-via-Gradient-Boosting/index.html" title="10.10 基于梯度提升的数值优化" class="md-nav__link">
+      10.10 基于梯度提升的数值优化
     </a>
   </li>
 
@@ -2163,8 +2160,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 FDA" class="md-nav__link">
-      12.5 FDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.5-Flexible-Disciminant-Analysis/index.html" title="12.5 灵活判别分析" class="md-nav__link">
+      12.5 灵活判别分析
     </a>
   </li>
 
@@ -2175,8 +2172,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 PDA" class="md-nav__link">
-      12.6 PDA
+    <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.6-Penalized-Discriminant-Analysis/index.html" title="12.6 惩罚判别分析" class="md-nav__link">
+      12.6 惩罚判别分析
     </a>
   </li>
 
@@ -2415,8 +2412,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分，主曲线以及主曲面" class="md-nav__link">
-      14.5 主成分，主曲线以及主曲面
+    <a href="../../14-Unsupervised-Learning/14.5-Principal-Components-Curves-and-Surfaces/index.html" title="14.5 主成分、主曲线与主曲面" class="md-nav__link">
+      14.5 主成分、主曲线与主曲面
     </a>
   </li>
 
@@ -2928,59 +2925,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      习题解答
+      实验重现
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
-        习题解答
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/manual/index.html" title="索引" class="md-nav__link">
-      索引
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../notes/Graph/ex-17-7/index.html" title="习题 Ex. 17.7" class="md-nav__link">
-      习题 Ex. 17.7
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
-    
-    <label class="md-nav__link" for="nav-5-3">
-      模拟实验
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
-        模拟实验
+        实验重现
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -3099,18 +3048,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../notes/HighDim/sim18_1/index.html" title="模拟 Fig. 18.1" class="md-nav__link">
-      模拟 Fig. 18.1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../notes/boosting/sim-eq-10-2/index.html" title="模拟 Eq. 10.2" class="md-nav__link">
       模拟 Eq. 10.2
     </a>
@@ -3141,30 +3078,6 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
-    
-    <label class="md-nav__link" for="nav-5-4">
-      算法实现
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
-        算法实现
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
@@ -3189,13 +3102,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-5">
+    <label class="md-nav__link" for="nav-5-3">
       比较总结
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-5">
+      <label class="md-nav__title" for="nav-5-3">
         比较总结
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3261,8 +3174,56 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/BS/bs/index.html" title="B 样条在 R, Python, Cpp 中的实现" class="md-nav__link">
+      B 样条在 R, Python, Cpp 中的实现
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      索引
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        索引
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tag/index.html" title="关键词" class="md-nav__link">
+      关键词
+    </a>
   </li>
 
         
@@ -3335,8 +3296,8 @@
       
       
         <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
+          <a href="#__comments" title="💬 讨论区" class="md-nav__link md-nav__link--active">
+            💬 讨论区
           </a>
         </li>
       
@@ -3352,13 +3313,15 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/szcf-weiya/ESL-CN/edit/master/docs/05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 <h1 id="58">5.8 正则化和再生核希尔伯特空间理论<a class="headerlink" href="#58" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
 <th>原文</th>
-<th><a href="../../book/The Elements of Statistical Learning.pdf#page=188">The Elements of Statistical Learning</a></th>
+<th><a href="https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf#page=188">The Elements of Statistical Learning</a></th>
 </tr>
 </thead>
 <tbody>
@@ -3367,56 +3330,52 @@
 <td>szcf-weiya</td>
 </tr>
 <tr>
-<td>时间</td>
-<td>2018-02-03; 2018-02-09</td>
+<td>发布</td>
+<td>2017-06-09</td>
 </tr>
 <tr>
 <td>更新</td>
-<td>2018-02-11; 2018-12-11</td>
-</tr>
-<tr>
-<td>状态</td>
-<td>Done</td>
+<td>2026-09-22</td>
 </tr>
 </tbody>
 </table>
-<p>这一节我们将样条放进更大的正规方法框架下以及 <strong>再生核希尔伯特空间 (reproducing kernel Hilbert spaces)</strong> 中。这部分非常专业 (quite technical)，因此不感兴趣或者有些畏惧的读者可以跳过。</p>
+<p>这一节我们将样条放进更大的正规方法框架下以及 <strong>再生核希尔伯特空间 (reproducing kernel Hilbert space, RKHS)</strong> 中．这部分非常专业 (quite technical)，因此不感兴趣或者有些畏惧的读者可以跳过．</p>
 <p>一般的正则化问题形式如下</p>
 <p>
 <script type="math/tex; mode=display">
 \underset{f\in{\cal H}}{\min}\Big[
 \sum\limits_{i=1}^NL(y_i,f(x_i))+\lambda J(f)
 \Big]\,,
-\tag{5.42}
+\tag{5.42}\label{5.42}
 </script>
 </p>
-<p>其中 $L(y,f(x))$ 是损失函数，$J(f)$ 是惩罚函数，$\cal H$ 是 $J(f)$ 有定义的函数空间。Girosi et al. (1995)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> 描述了形如下式的非常一般的惩罚函数</p>
+<p>其中 $L(y,f(x))$ 是损失函数，$J(f)$ 是惩罚函数，$\cal H$ 是 $J(f)$ 有定义的函数空间．Girosi et al. (1995)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> 描述了形如下式的非常一般的惩罚函数</p>
 <p>
 <script type="math/tex; mode=display">
-J(f)=\int_{\IR^d}\frac{\vert \tilde f(s)\vert^2}{\tilde G(s)}ds \tag{5.43}
+J(f)=\int_{\IR^d}\frac{\vert \tilde f(s)\vert^2}{\tilde G(s)}ds \tag{5.43}\label{5.43}
 </script>
 </p>
-<p>其中 $\tilde f$ 记为 $f$ 的 Fourier 变换，并且 $\tilde G$ 是当 $\Vert s\Vert\rightarrow \infty$ 趋于 $0$ 的正函数。上式想法是 $1/\tilde G$ 加大对 $f$ 的高频组分的惩罚。在一些额外的假设下，他们证明解有如下形式</p>
+<p>其中 $\tilde f$ 记为 $f$ 的 Fourier 变换，并且 $\tilde G$ 是当 $\Vert s\Vert\rightarrow \infty$ 趋于 $0$ 的正函数．上式想法是 $1/\tilde G$ 加大对 $f$ 的高频组分的惩罚．在一些额外的假设下，他们证明解有如下形式</p>
 <p>
 <script type="math/tex; mode=display">
 f(X)=\sum\limits_{k=1}^K\alpha_k\phi_k(X)+\sum\limits_{i=1}^N\theta_iG(X-x_i)\tag{5.44}
 </script>
 </p>
-<p>其中 $\phi_k$ 张成惩罚函数 $J$ 的零空间，并且 $G$ 是 $\tilde G$ 的逆 Fourier 变换。光滑样条和 thin-plate 样条都属于这个框架。这个解的显著特点是当准则 $(5.42)$ 定义在无限维空间，解是有限维。在下一节我们考虑一些具体的例子。</p>
+<p>其中 $\phi_k$ 张成惩罚函数 $J$ 的零空间，并且 $G$ 是 $\tilde G$ 的逆 Fourier 变换．光滑样条和 thin-plate 样条都属于这个框架．这个解的显著特点是当准则 \eqref{5.42} 定义在无限维空间，解是有限维．在下一节我们考虑一些具体的例子．</p>
 <h2 id="_1">核产生的函数空间<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>形如 $(5.42)$ 的问题的一个重要子类是由正定核 $K(x,y)$ 产生的，对应的函数空间 ${\cal H}_K$ 被称为 <strong>再生核希尔伯特空间 (reproducing kernel Hilbert space)</strong>，简称为 RKHS。惩罚函数也是用核来定义的。我们对这个模型类进行一个简短的介绍，这取自 Wahba (1990)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> 和 Girosi et al. (1995)<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>，并且在 Evgeniou et al. (2000)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> 中有很好的总结。</p>
-<p>令 $x,y\in \IR^p$。我们考虑由 $\{K(\cdot, y), y\in \IR^p\}$ 线性张成的函数空间；也就是，形如 $f(x)=\sum_m\alpha_mK(x, y_m)$ 的任意线性组合，其中每个核可以看成第一个变量的函数，并且由第二个变量索引。假设 $K$ 有 <strong>特征展开 (eigen-expansion)</strong></p>
+<p>形如 \eqref{5.42} 的问题的一个重要子类是由正定核 $K(x,y)$ 产生的，对应的函数空间 ${\cal H}_K$ 被称为 <strong>再生核希尔伯特空间 (reproducing kernel Hilbert space, RKHS)</strong>．惩罚函数也是用核来定义的．我们对这个模型类进行一个简短的介绍，这取自 Wahba (1990)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> 和 Girosi et al. (1995)<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>，并且在 Evgeniou et al. (2000)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> 中有很好的总结．</p>
+<p>令 $x,y\in \IR^p$．我们考虑由 $\{K(\cdot, y), y\in \IR^p\}$ 线性张成的函数空间；也就是，形如 $f(x)=\sum_m\alpha_mK(x, y_m)$ 的任意线性组合，其中每个核可以看成第一个变量的函数，并且由第二个变量索引．假设 $K$ 有 <strong>特征展开 (eigen-expansion)</strong></p>
 <p>
 <script type="math/tex; mode=display">
-K(x, y)=\sum\limits_{i=1}^\infty \gamma_i \phi_i(x)\phi_i(y)\tag{5.45}
+K(x, y)=\sum\limits_{i=1}^\infty \gamma_i \phi_i(x)\phi_i(y)\tag{5.45}\label{5.45}
 </script>
 </p>
-<p>其中 $\gamma_i\ge 0,\sum_{i=1}^\infty \gamma_i^2 &lt; \infty$。</p>
+<p>其中 $\gamma_i\ge 0,\sum_{i=1}^\infty \gamma_i^2 &lt; \infty$．</p>
 <div class="admonition note">
-<p class="admonition-title">weiya注：Mercer&rsquo;s theorem</p>
-<p>$(5.45)$ 的分解由 Mercer&rsquo;s theorem 保证，Mercer&rsquo;s theorem 将半正定矩阵的特征分解推广到半正定核函数的特征分解，具体地，
+<p class="admonition-title">weiya 注：Mercer&rsquo;s theorem</p>
+<p>\eqref{5.45} 的分解由 Mercer&rsquo;s theorem 保证，Mercer&rsquo;s theorem 将半正定矩阵的特征分解推广到半正定核函数的特征分解，具体地，
 <img alt="" src="../../../img/12/wiki_mercer.PNG" />
-图片来源: <a href="https://en.wikipedia.org/wiki/Mercer%27s_theorem">Wiki: Mercer&rsquo;s theorem</a>。</p>
+图片来源: <a href="https://en.wikipedia.org/wiki/Mercer%27s_theorem">Wiki: Mercer&rsquo;s theorem</a>．</p>
 </div>
 <p>${\cal H}_K$ 的元素是关于这些 <strong>特征函数 (eigen-functions)</strong> 的展开，即</p>
 <p>
@@ -3430,7 +3389,7 @@ f(x)=\sum\limits_{i=1}^\infty c_i\phi_i(x)\tag{5.46}
 \Vert f \Vert_{{\cal H}_K}^2\overset{def}{=}\sum\limits_{i=1}^\infty c_i^2/\gamma_i < \infty\tag{5.47}
 </script>
 </p>
-<p>其中 $\Vert f\Vert_{{\cal H}_K}$ 由 $K$ 导出的范数。</p>
+<p>其中 $\Vert f\Vert_{{\cal H}_K}$ 由 $K$ 导出的范数．</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注：Induced Norm</p>
 <p>希尔伯特空间是完备内积空间，对于一般的希尔伯特空间 $\cal H$，其 <strong>导出范数 (induced norm)</strong> 为
@@ -3439,68 +3398,91 @@ f(x)=\sum\limits_{i=1}^\infty c_i\phi_i(x)\tag{5.46}
 </script>
 </p>
 </div>
-<p>$(5.42)$ 中空间 ${\cal H}_K$ 惩罚函数定义为二次范数 $J(f)=\Vert f\Vert_{{\cal H}_K}^2$。$J(f)$ 的值可以解释为广义岭惩罚，其中在展开式 $(5.45)$ 中，大的特征值惩罚较小，反之亦然。</p>
-<p>重写 $(5.42)$，我们有</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：两种构造 RKHS 的方法</p>
+<p>一般地，有两种构造 RKHS 的方法：</p>
+<p>第一种，给定一个半正定核 $K$，定义映射 $\Phi:\calX\mapsto \IR^\calX$ 为 $\Phi(x) = K(\cdot, x)$，然后考虑向量空间 
+<script type="math/tex; mode=display">
+\span(\{\Phi(x):x\in\calX\}) = \left\{f(\cdot) = \sum_{i=1}^N\alpha_iK(\cdot, x_i)\right\}\,,
+</script>
+并对 $f = \sum_{i=1}^N\alpha_iK(\cdot, u_i), g = \sum_{i=1}^N\beta_iK(\cdot, v_i)$ 定义内积 
+<script type="math/tex; mode=display">
+\langle f, g\rangle = \sum_{i=1}^N\sum_{j=1}^N\alpha_i\beta_jK(u_i,v_j)\,,
+</script>
+则 $K$ 满足核再生性质，并且 $\overline{\span({\Phi(x)})}$ 定义了 RKHS.</p>
+<p>另外一种，则是用 Mercer 定理，定义内积
+<script type="math/tex; mode=display">
+\langle f, g\rangle_{\calH} = \sum_{j=1}^{\infty}\frac{\langle f,\phi_j\rangle\langle g,\phi_j\rangle}{\mu_j}
+</script>
+则
+<script type="math/tex; mode=display">
+\left\{f=\sum_{j=1}^\infty c_j\phi_j\mid \sum_{j=1}^\infty c_j^2/\mu_j < \infty\right\}
+</script>
+为 RKHS. </p>
+<p>参考 <a href="https://doi.org/10.1017/9781108627771">Wainwright (2019)</a> 和 <a href="https://people.eecs.berkeley.edu/~bartlett/courses/281b-sp08/7.pdf">Peter Bartlett&rsquo;s notes</a>.</p>
+</div>
+<p>\eqref{5.42} 中空间 ${\cal H}_K$ 的惩罚函数定义为二次范数 $J(f)=\Vert f\Vert_{{\cal H}_K}^2$．$J(f)$ 的值可以解释为广义岭惩罚，其中在展开式 \eqref{5.45} 中，大的特征值惩罚较小，反之亦然．</p>
+<p>重写 \eqref{5.42}，我们有</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{f\in {\cal H}_K}{\min}\Big[\sum\limits_{i=1}^NL(y_i, f(x_i))+\lambda \Vert f\Vert_{{\cal H}_K}^2\Big]\tag{5.48}
+\underset{f\in {\cal H}_K}{\min}\Big[\sum\limits_{i=1}^NL(y_i, f(x_i))+\lambda \Vert f\Vert_{{\cal H}_K}^2\Big]\tag{5.48}\label{5.48}
 </script>
 </p>
 <p>或者等价地，</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{\{c_j\}_1^\infty}{\min}\Big[\sum\limits_{i=1}^NL(y_i, \sum\limits_{j=1}^\infty c_j\phi_j(x_i))+\lambda \sum\limits_{j=1}^\infty c_j^2/\gamma_j\Big]\tag{5.49}
+\underset{\{c_j\}_1^\infty}{\min}\Big[\sum\limits_{i=1}^NL(y_i, \sum\limits_{j=1}^\infty c_j\phi_j(x_i))+\lambda \sum\limits_{j=1}^\infty c_j^2/\gamma_j\Big]\tag{5.49}\label{5.49}
 </script>
 </p>
-<p>可以证明（Wahba, 1990<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>, 另见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/163">练习 5.15</a>），$(5.48)$ 的解是有限的，并且如下形式</p>
+<p>可以证明（Wahba, 1990<sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, 另见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/163">练习 5.15</a>），\eqref{5.48} 的解是有限的，并且如下形式</p>
 <p>
 <script type="math/tex; mode=display">
-f(x)=\sum\limits_{i=1}^N\alpha_i K(x, x_i)\tag{5.50}
+f(x)=\sum\limits_{i=1}^N\alpha_i K(x, x_i)\tag{5.50}\label{5.50}
 </script>
 </p>
 <div class="admonition info">
 <p class="admonition-title">weiya 注：Ex. 5.15</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/163">Issue 163: Ex. 5.15</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/163">Issue 163: Ex. 5.15</a>, 其中证明了再生核性质。</p>
 </div>
-<p>基函数 $h_i(x)=K(x,x_i)$（关于第一个变量的函数）被称作 ${\cal H}_K$ 中 $x_i$ 处的 <strong>representer of evaluation</strong>，因为对于 $f\in {\cal H}_K$，容易看到 $\langle K(\cdot, x_i),f\rangle_{{\cal H}_K} = f(x_i)$。类似地，$\langle K(\cdot, x_i), K(\cdot,x_j)\rangle_{{\cal H}_K}=K(x_i, x_j)$（${\cal H}_K$ 的再生性质），</p>
+<p>基函数 $h_i(x)=K(x,x_i)$（关于第一个变量的函数）被称作 ${\cal H}_K$ 中 $x_i$ 处的 <strong>representer of evaluation</strong>，因为对于 $f\in {\cal H}_K$，容易看到 $\langle K(\cdot, x_i),f\rangle_{{\cal H}_K} = f(x_i)$．类似地，$\langle K(\cdot, x_i), K(\cdot,x_j)\rangle_{{\cal H}_K}=K(x_i, x_j)$（${\cal H}_K$ 的再生性质），</p>
 <div class="admonition note">
 <p class="admonition-title">weiya 注: 核再生性质 (kernel reproducing property)</p>
 <p>对于任意的 $x\in {\cal X}$, $K(\cdot, x) \in \cal H$，并且满足
 <script type="math/tex; mode=display">
 \langle f, K(\cdot, x)\rangle_{\cal H} = f(x)\qquad \text{for all }f\in \cal H\,.
 </script>
-这称为 <strong>核再生性质 (kernel reproducing property)</strong>。另外，对于任意半正定核 $K$，存在唯一的希尔伯特空间 $\cal H$ 满足核再生性质，此时 $\cal H$ 也被称之为 <strong>再生核希尔伯特空间 (RKHS)</strong>.</p>
+这称为 <strong>核再生性质 (kernel reproducing property)</strong>．另外，对于任意半正定核 $K$，存在唯一的希尔伯特空间 $\cal H$ 满足核再生性质，此时 $\cal H$ 也被称之为 RKHS.</p>
 </div>
 <p>也因此对于 $f(x)=\sum_{i=1}^N\alpha_iK(x,x_i)$</p>
 <p>
 <script type="math/tex; mode=display">
-J(f)=\sum\limits_{i=1}^N\sum\limits_{j=1}^NK(x_i,x_j)\alpha_i\alpha_j\tag{5.51}
+J(f)=\sum\limits_{i=1}^N\sum\limits_{j=1}^NK(x_i,x_j)\alpha_i\alpha_j\tag{5.51}\label{5.51}
 </script>
 </p>
-<p>根据 $(5.50)$ 和 $(5.51)$，$(5.48)$ 退化为有限维准则</p>
+<p>根据 \eqref{5.50} 和 \eqref{5.51}，\eqref{5.48} 退化为有限维准则</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{\aalpha}{\min} L(\y,\K\aalpha)+\lambda\aalpha^T\K\aalpha\tag{5.52}
+\underset{\aalpha}{\min} L(\y,\K\aalpha)+\lambda\aalpha^T\K\aalpha\tag{5.52}\label{5.52}
 </script>
 </p>
-<p>我们正在使用向量记号，其中 $\K$ 是第 $ij$ 个元素为 $K(x_i,x_j)$ 的 $N\times N$ 的矩阵。简单的数值算法可以用来优化 (5.52)。无限维问题 (5.48) 或 (5.49) 退化为有限维优化问题的现象在支持向量机（见<a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.1-Introduction/index.html">第 12 章</a>）中被称为 <strong>核性质 (kernel property)</strong>。</p>
-<p>这类模型有一个贝叶斯解释，其中 $f$ 被解释为零均值平稳高斯过程的实现，其中先验协方差函数为 $K$。特征值分解得到一系列方差为 $\gamma_j$ 的正交特征函数 $\phi_j(x)$。一般的情形是，“光滑”函数 $\phi_j$ 有更大的先验方差，而“粗糙”的 $\phi_j$ 有较小的先验方差。$(5.48)$ 中的惩罚是先验对联合概率的贡献度，并且方差越小惩罚越大（与 $(5.43)$ 相比）。</p>
-<p>为了简便，我们这里处理所有 $\cal H$ 中的成员都被惩罚的情形，如 $(5.48)$。更一般地，$\cal H$ 中可能有些组分我们希望单独留下来，比如 <a href="../5.4-Smoothing-Splines/index.html">5.4 节</a> 中的三次光滑样条的线性函数。<a href="../5.7-Multidimensional-Splines/index.html">5.7 节</a> 的多维 thin-plate 样条以及张量积样条也都属于这类。在这些情形下，有个更方便的表示 $\cal H=\cal H_0\oplus\cal H_1$，举个例子，其中零空间 $\cal H_0$ 由没有被惩罚的 $x$ 的低阶多项式组成。惩罚项变为 $J(f)=\Vert P_1f\Vert$，其中 $P_1$ 是 $f$ 在 $\cal H_1$ 上的正交投影。这个解形式为 $f(x)=\sum_{j=1}^M\beta_jh_j(x)+\sum_{i=1}^N\alpha_iK(x,x_i)$，其中第一项表示 $\cal H_0$ 中的展开。从贝叶斯的观点看，$\cal H_0$ 中组分的系数的先验的方差无穷大。</p>
+<p>我们正在使用向量记号，其中 $\K$ 是第 $ij$ 个元素为 $K(x_i,x_j)$ 的 $N\times N$ 的矩阵．简单的数值算法可以用来优化 \eqref{5.52}．无限维问题 \eqref{5.48} 或 \eqref{5.49} 退化为有限维优化问题的现象在支持向量机（见<a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.1-Introduction/index.html">第 12 章</a>）中被称为 <strong>核性质 (kernel property)</strong>．</p>
+<p>这类模型有一个贝叶斯解释，其中 $f$ 被解释为零均值平稳高斯过程的实现，其中先验协方差函数为 $K$．特征值分解得到一系列方差为 $\gamma_j$ 的正交特征函数 $\phi_j(x)$．一般的情形是，“光滑”函数 $\phi_j$ 有更大的先验方差，而“粗糙”的 $\phi_j$ 有较小的先验方差．\eqref{5.48} 中的惩罚是先验对联合概率的贡献度，并且方差越小惩罚越大（与 \eqref{5.43} 相比）．</p>
+<p>为了简便，我们这里处理所有 $\cal H$ 中的成员都被惩罚的情形，如 \eqref{5.48}．更一般地，$\cal H$ 中可能有些组分我们希望单独留下来，比如 <a href="../5.4-Smoothing-Splines/index.html">5.4 节</a> 中的三次光滑样条的线性函数．<a href="../5.7-Multidimensional-Splines/index.html">5.7 节</a> 的多维 thin-plate 样条以及张量积样条也都属于这类．在这些情形下，有个更方便的表示 $\cal H=\cal H_0\oplus\cal H_1$，举个例子，其中零空间 $\cal H_0$ 由没有被惩罚的 $x$ 的低阶多项式组成．惩罚项变为 $J(f)=\Vert P_1f\Vert$，其中 $P_1$ 是 $f$ 在 $\cal H_1$ 上的正交投影．这个解形式为 $f(x)=\sum_{j=1}^M\beta_jh_j(x)+\sum_{i=1}^N\alpha_iK(x,x_i)$，其中第一项表示 $\cal H_0$ 中的展开．从贝叶斯的观点看，$\cal H_0$ 中组分的系数的先验的方差无穷大．</p>
 <h2 id="rkhs">RKHS 的例子<a class="headerlink" href="#rkhs" title="Permanent link">&para;</a></h2>
-<p>上述的机理是由核 $K$ 和损失函数 $L$ 的选择 <strong>驱动 (driven)</strong> 的 。我们首先考虑采用平方误差损失的回归。将 $(5.48)$ 中的惩罚特定为最小二乘，则解可以用对应 $(5.49)$ 或 $(5.52)$ 的两个等价方式进行描述：</p>
+<p>上述的机理是由核 $K$ 和损失函数 $L$ 的选择 <strong>驱动 (driven)</strong> 的 ．我们首先考虑采用平方误差损失的回归．将 \eqref{5.48} 中的惩罚特定为最小二乘，则解可以用对应 \eqref{5.49} 或 \eqref{5.52} 的两个等价方式进行描述：</p>
 <p>对于无穷维的广义岭回归问题
 <script type="math/tex; mode=display">
-\underset{\{c_j\}_1^\infty}{\min}\sum\limits_{i=1}^N\Big(y_i-\sum\limits_{j=1}^\infty c_j\phi_j(x_i)\Big)^2+\lambda\sum\limits_{j=1}^\infty \frac{c_j^2}{\gamma_j}\tag{5.53}
+\underset{\{c_j\}_1^\infty}{\min}\sum\limits_{i=1}^N\Big(y_i-\sum\limits_{j=1}^\infty c_j\phi_j(x_i)\Big)^2+\lambda\sum\limits_{j=1}^\infty \frac{c_j^2}{\gamma_j}\tag{5.53}\label{5.53}
 </script>
 或者写成
 <script type="math/tex; mode=display">
-\underset{\alpha}{\min}(\y-\K\alpha)^T(\y-\K\alpha)+\lambda \aalpha^T\K\aalpha\tag{5.54}
+\underset{\alpha}{\min}(\y-\K\alpha)^T(\y-\K\alpha)+\lambda \aalpha^T\K\aalpha\tag{5.54}\label{5.54}
 </script>
 </p>
 <p>易得 $\alpha$ 的解</p>
 <p>
 <script type="math/tex; mode=display">
-\hat\aalpha = (\K+\lambda\I)^{-1}\y\tag{5.55}
+\hat\aalpha = (\K+\lambda\I)^{-1}\y\tag{5.55}\label{5.55}
 </script>
 </p>
 <p>且</p>
@@ -3514,14 +3496,22 @@ J(f)=\sum\limits_{i=1}^N\sum\limits_{j=1}^NK(x_i,x_j)\alpha_i\alpha_j\tag{5.51}
 <script type="math/tex; mode=display">
 \begin{align}
 \hat{\f} &=\K\hat\aalpha\notag\\
-&=\K(\K+\lambda\I)^{-1}\y\tag{5.57}\\
-&=(\I+\lambda \K^{-1})^{-1}\y\tag{5.58}
+&=\K(\K+\lambda\I)^{-1}\y\tag{5.57}\label{5.57}\\
+&=(\I+\lambda \K^{-1})^{-1}\y\tag{5.58}\label{5.58}
 \end{align}
 </script>
 </p>
-<p>估计值(5.57)也是稀疏统计 (Cressie, 1993)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> 中高斯随机域的 kriging 估计。其和(5.18)可以与光滑样条拟合(5.17)进行比较。</p>
+<p>估计值 \eqref{5.57} 也是稀疏统计 (Cressie, 1993)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> 中高斯随机域的 kriging 估计．另外 \eqref{5.58} 可以与光滑样条拟合 \eqref{5.17} 进行比较．</p>
+<div class="admonition note">
+<p class="admonition-title">weiya 注：Recall</p>
+<p>
+<script type="math/tex; mode=display">
+\mathbf S_\lambda=(\mathbf I+\lambda \mathbf K)^{-1}\tag{5.17}\label{5.17}
+</script>
+</p>
+</div>
 <h3 id="_2">带惩罚的多项式回归<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>核 $K(x,y)=(\langle x, y\rangle+1)^d$ (Vapnik, 1996)<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup>，对于 $x,y\in \IR^p$，有 $M=\binom{p+d}{d}$ 个特征函数，它张成了 $\IR^p$ 中总阶数为 $d$ 的多项式空间。举个例子，当 $p=2, d=2,M=6$，有</p>
+<p>核 $K(x,y)=(\langle x, y\rangle+1)^d$ (Vapnik, 1996)<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>，对于 $x,y\in \IR^p$，有 $M=\binom{p+d}{d}$ 个特征函数，它张成了 $\IR^p$ 中总阶数为 $d$ 的多项式空间．举个例子，当 $p=2, d=2,M=6$，有</p>
 <p>
 <script type="math/tex; mode=display">
 \begin{align}
@@ -3533,70 +3523,70 @@ K(x,y)&=1+2x_1y_1+2x_2y_2+x_1^2y_1^2+x_2^2y_2^2+2x_1x_2y_1y_2\tag{5.59}\\
 <p>其中</p>
 <p>
 <script type="math/tex; mode=display">
-h(x)^T=(1,\sqrt{2}x_1, \sqrt{2}x_2, x_1^2, x_2^2, \sqrt{2}x_1x_2)\tag{5.61}
+h(x)^T=(1,\sqrt{2}x_1, \sqrt{2}x_2, x_1^2, x_2^2, \sqrt{2}x_1x_2)\tag{5.61}\label{5.61}
 </script>
 </p>
 <p>可以用 $M$ 个 $K$ 的特征函数和特征值来表示 $h$</p>
 <p>
 <script type="math/tex; mode=display">
-h(x)=\V\D_\gamma^{\frac 12}\phi(x)\tag{5.62}
+h(x)=\V\D_\gamma^{\frac 12}\phi(x)\tag{5.62}\label{5.62}
 </script>
 </p>
-<p>其中 $\D_\gamma=\diag(\gamma_1,\gamma_2,\ldots, \gamma_M)$，并且 $\V$ 是 $M\times M$ 的，且为正交。</p>
+<p>其中 $\D_\gamma=\diag(\gamma_1,\gamma_2,\ldots, \gamma_M)$，并且 $\V$ 是 $M\times M$ 的，且为正交．</p>
 <div class="admonition info">
 <p class="admonition-title">weiya 注：</p>
-<p>练习 5.16(a) 要求推导 (5.62)，该小问已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/164">Issue 164: Ex. 5.16</a>。</p>
+<p>练习 5.16(a) 要求推导 \eqref{5.62}，该小问已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/164">Issue 164: Ex. 5.16</a>．</p>
 </div>
 <p>假设我们希望求解带惩罚的多项式回归问题</p>
 <p>
 <script type="math/tex; mode=display">
-\underset{\{\beta_m\}_1^M}{\min}\sum\limits_{i=1}^N\Big(y_i-\sum\limits_{m=1}^M\beta_mh_m(x_i)\Big)^2+\lambda \sum\limits_{m=1}^M\beta_m^2\tag{5.63}
+\underset{\{\beta_m\}_1^M}{\min}\sum\limits_{i=1}^N\Big(y_i-\sum\limits_{m=1}^M\beta_mh_m(x_i)\Big)^2+\lambda \sum\limits_{m=1}^M\beta_m^2\tag{5.63}\label{5.63}
 </script>
 </p>
-<p>将 $(5.62)$ 代入 $(5.63)$，我们得到 $(5.53)$ 的展开来进行优化（<a href="https://github.com/szcf-weiya/ESL-CN/issues/164">练习 5.16</a>）。</p>
+<p>将 \eqref{5.62} 代入 \eqref{5.63}，我们得到 \eqref{5.53} 的展开来进行优化（<a href="https://github.com/szcf-weiya/ESL-CN/issues/164">练习 5.16</a>）．</p>
 <div class="admonition info">
 <p class="admonition-title">weiya 注：Ex. 5.16</p>
-<p>除 (d) 小问，其余已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/164">Issue 164: Ex. 5.16</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/164">Issue 164: Ex. 5.16</a>．</p>
 </div>
-<p>基函数的个数 $M=\binom{p+d}{d}$ 可以非常大，通常大于 $N$。等式 $(5.55)$ 告诉我们如果采用解函数的核表示，我们仅仅需要对核进行 $N^2$ 次赋值，而且可以以 $O(N^3)$ 的计算量得到解。</p>
-<p>This simplicity is not without implications. $(5.61)$ 中的每个多项式 $h_m$ 从 $K$ 的特定形式继承了缩放因子，这对 $(5.63)$ 的惩罚有影响。我们将在下一节详细讨论。</p>
+<p>基函数的个数 $M=\binom{p+d}{d}$ 可以非常大，通常大于 $N$．等式 \eqref{5.55} 告诉我们如果采用解函数的核表示，我们仅仅需要对核进行 $N^2$ 次赋值，而且可以以 $O(N^3)$ 的计算量得到解．</p>
+<p>This simplicity is not without implications. \eqref{5.61} 中的每个多项式 $h_m$ 从 $K$ 的特定形式继承了缩放因子，这对 \eqref{5.63} 的惩罚有影响．我们将在下一节详细讨论．</p>
 <h3 id="_3">高斯径向基函数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>在前面的例子中，选择核是因为能表示成多项式的展开，这样可以方便地计算高维内积。在这个例子中，选择核是因为 $(5.50)$ 中的函数形式。</p>
+<p>在前面的例子中，选择核是因为能表示成多项式的展开，这样可以方便地计算高维内积．在这个例子中，选择核是因为 \eqref{5.50} 中的函数形式．</p>
 <p>举个例子，在平方误差损失下，高斯核 $K(x,y)=e^{-\nu \Vert x-y\Vert^2}$ 能得到展开式为高斯径向基函数的回归模型，</p>
 <p>
 <script type="math/tex; mode=display">
 k_m(x)=e^{-\nu \Vert x-x_m\Vert^2},m=1,\ldots, N\tag{5.64}
 </script>
 </p>
-<p>每个点都在训练特征向量 $x_m$ 处中心化了。可以采用 $(5.54)$ 来估计参数。</p>
+<p>每个点都在训练特征向量 $x_m$ 处中心化了．可以采用 \eqref{5.54} 来估计参数．</p>
 <p><img alt="" src="../../img/05/fig5.13.png" /></p>
-<p>图 5.13 采用第二章混合例子中的第一个坐标展示了 $\IR^1$ 中的径向核。我们展示了 $200$ 个核基函数 $k_m(x)=K(x,x_m)$ 中的五个。</p>
+<p>图 5.13 采用第二章混合例子中的第一个坐标展示了 $\IR^1$ 中的径向核．我们展示了 $200$ 个核基函数 $k_m(x)=K(x,x_m)$ 中的五个．</p>
 <p><img alt="" src="../../img/05/fig5.14.png" /></p>
-<p>图 5.14 展示了 $x\in \IR^1$ 的径向核的隐式特征空间。我们计算 $200\times 200$ 的核矩阵 $\K$，以及其特征分解 $\Phi\D_\gamma\Phi^T$。我们可以认为 $\Phi$ 的列和 $\D_\gamma$ 中对应的特征值是特征展开 $(5.45)$ 中的经验估计。</p>
+<p>图 5.14 展示了 $x\in \IR^1$ 的径向核的隐式特征空间．我们计算 $200\times 200$ 的核矩阵 $\K$，以及其特征分解 $\Phi\D_\gamma\Phi^T$．我们可以认为 $\Phi$ 的列和 $\D_\gamma$ 中对应的特征值是特征展开 \eqref{5.45} 中的经验估计．</p>
 <div class="admonition note">
 <p class="admonition-title">原书脚注：</p>
-<p>$\Phi$ 的第 $\ell$ 列是 $\phi_\ell$ 的一个估计，这是对 $N$ 个观测中的每一个进行赋值。另外，$\Phi$ 的第 $i$ 行是基函数 $\phi(x_i)$（在 $x_i$ 处取值）的估计向量。尽管原则上，$\phi$ 可以有无穷多的元素，但我们的估计至多有 $N$ 个元素。</p>
+<p>$\Phi$ 的第 $\ell$ 列是 $\phi_\ell$ 的一个估计，这是对 $N$ 个观测中的每一个进行赋值．另外，$\Phi$ 的第 $i$ 行是基函数 $\phi(x_i)$（在 $x_i$ 处取值）的估计向量．尽管原则上，$\phi$ 可以有无穷多的元素，但我们的估计至多有 $N$ 个元素．</p>
 </div>
-<p>尽管特征向量是离散的，但我们还是可以将它们表示成 $\IR^1$ 中的函数（<a href="https://github.com/szcf-weiya/ESL-CN/issues/165">练习 5.17</a>）。</p>
+<p>尽管特征向量是离散的，但我们还是可以将它们表示成 $\IR^1$ 中的函数（<a href="https://github.com/szcf-weiya/ESL-CN/issues/165">练习 5.17</a>）．</p>
 <p><img alt="" src="../../img/05/fig5.15.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">weiya 注：Ex. 5.17</p>
-<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/165">Issue 165: Ex. 5.17</a>。</p>
+<p>已解决，详见 <a href="https://github.com/szcf-weiya/ESL-CN/issues/165">Issue 165: Ex. 5.17</a>．</p>
 </div>
-<p>图 5.15 展示了 $\K$ 的最大的 $50$ 个特征值。最大特征值对应的特征函数是光滑的，并且它们随着 order 增加变得更加弯曲。这使得 $(5.49)$ 中的惩罚变成了可能，其中我们看到高阶函数的系数比低阶函数惩罚更多。图 5.14 中的右面板显示了下面特征函数对应的特征空间的表示</p>
+<p>图 5.15 展示了 $\K$ 的最大的 $50$ 个特征值．最大特征值对应的特征函数是光滑的，并且它们随着 order 增加变得更加弯曲．这使得 \eqref{5.49} 中的惩罚变成了可能，其中我们看到高阶函数的系数比低阶函数惩罚更多．图 5.14 中的右面板显示了下面特征函数对应的特征空间的表示</p>
 <p>
 <script type="math/tex; mode=display">
 h_\ell(x)=\sqrt{\hat{\gamma_\ell}}\hat\phi_\ell(x),\ell=1,\ldots, N\tag{5.65}
 </script>
 </p>
-<p>注意到 $\langle h(x_i), h(x_{i&rsquo;})\rangle=K(x_i, x_{i&rsquo;})$。通过特征值来缩放快速将大部分的函数降为 $0$，在这种情形下留下大约 $12$ 个有效维度。对应的优化问题是如 $(5.63)$ 中标准的岭回归。所以尽管原则上隐式的特征空间是无穷维的，但有效维度还是非常小的，因为对每个基函数应用相对大小的收缩。核缩放参数 $\nu$ 在这里也起一定作用；更大的 $\nu$ 意味着更多局部的 $k_m$ 函数，并且也增加了特征空间的有效维度。更多细节参见 Hastie and Zhu (2006)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup>。</p>
-<p>我们知道被称为 thin-plate 样条 (<a href="../5.7-Multidimensional-Splines/index.html">5.7 节</a>)是关于径向基函数的展开 (Girosi et al., 1995)<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>，它由下列核产生</p>
+<p>注意到 $\langle h(x_i), h(x_{i&rsquo;})\rangle=K(x_i, x_{i&rsquo;})$．通过特征值来缩放快速将大部分的函数降为 $0$，在这种情形下留下大约 $12$ 个有效维度．对应的优化问题是如 \eqref{5.63} 中标准的岭回归．所以尽管原则上隐式的特征空间是无穷维的，但有效维度还是非常小的，因为对每个基函数应用相对大小的收缩．核缩放参数 $\nu$ 在这里也起一定作用；更大的 $\nu$ 意味着更多局部的 $k_m$ 函数，并且也增加了特征空间的有效维度．更多细节参见 Hastie and Zhu (2006)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>．</p>
+<p>我们知道被称为 thin-plate 样条 (<a href="../5.7-Multidimensional-Splines/index.html">5.7 节</a>)是关于径向基函数的展开 (Girosi et al., 1995)<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup>，它由下列核产生</p>
 <p>
 <script type="math/tex; mode=display">
 K(x, y)=\Vert x-y\Vert^2\LOG(\Vert x-y\Vert)\tag{5.66}
 </script>
 </p>
-<p>径向基函数将在 <a href="../../6.7-Radial-Basis-Functions-and-Kernels/index.html">6.7 节</a>详细讨论。</p>
+<p>径向基函数将在 <a href="../../6.7-Radial-Basis-Functions-and-Kernels/index.html">6.7 节</a>详细讨论．</p>
 <h3 id="_4">支持向量机<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p><a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.1-Introduction/index.html">第 12 章</a>中用于两个类别分类的支持向量机有形式 $f(x)=\alpha_0+\sum_{i=1}^N\alpha_iK(x,x_i)$，选择参数使下式最小化</p>
 <p>
@@ -3604,30 +3594,30 @@ K(x, y)=\Vert x-y\Vert^2\LOG(\Vert x-y\Vert)\tag{5.66}
 \underset{\alpha_0,\aalpha}{\min}\Big\{
   \sum\limits_{i=1}^N[1-y_if(x_i)]_+ + \frac{\lambda}{2}\aalpha^T\K\aalpha
 \Big\}
-\tag{5.67}
+\tag{5.67}\label{5.67}
 </script>
 </p>
-<p>其中 $y_i\in \{-1, 1\}$，并且 $[z]_+$ 记做 $z$ 的正值部分。这可以看成是带线性约束的二次优化问题，并要求该解的二次规划算法。支持向量 (support vector) 的名字来自这样一个事实： 一般有许多的$\hat\alpha_i=0$[因为(5.67)中损失函数的piecewise-zero特性]，也因此 $\hat f$ 是 $K(\cdot, x_i)$ 的子集的展开。更多细节见 <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels/index.html#svm_2">12.3.3节</a>。</p>
+<p>其中 $y_i\in \{-1, 1\}$，并且 $[z]_+$ 记做 $z$ 的正值部分．这可以看成是带线性约束的二次优化问题，并要求该解的二次规划算法．支持向量 (support vector) 的名字来自这样一个事实： 一般有许多的$\hat\alpha_i=0$【因为 \eqref{5.67} 中损失函数的 piecewise-zero 特性】，也因此 $\hat f$ 是 $K(\cdot, x_i)$ 的子集的展开．更多细节见 <a href="../../12-Support-Vector-Machines-and-Flexible-Discriminants/12.3-Support-Vector-Machines-and-Kernels/index.html#svm_2">12.3.3节</a>．</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Girosi, F., Jones, M. and Poggio, T. (1995). Regularization theory and neural network architectures, Neural Computation 7: 219–269.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Girosi, F., Jones, M. and Poggio, T. (1995). Regularization theory and neural network architectures, Neural Computation 7: 219–269.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Wahba, G. (1990). Spline Models for Observational Data, SIAM, Philadelphia.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Wahba, G. (1990). Spline Models for Observational Data, SIAM, Philadelphia.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Evgeniou, T., Pontil, M. and Poggio, T. (2000). Regularization networks and support vector machines, Advances in Computational Mathematics 13(1): 1–50.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Evgeniou, T., Pontil, M. and Poggio, T. (2000). Regularization networks and support vector machines, Advances in Computational Mathematics 13(1): 1–50.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Cressie, N. (1993). Statistics for Spatial Data (Revised Edition), Wiley-Interscience, New York.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Cressie, N. (1993). Statistics for Spatial Data (Revised Edition), Wiley-Interscience, New York.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>Vapnik, V. (1996). The Nature of Statistical Learning Theory, Springer, New York.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Vapnik, V. (1996). The Nature of Statistical Learning Theory, Springer, New York.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>Hastie, T. and Zhu, J. (2006). Discussion of “Support vector machines with applications” by Javier Moguerza and Alberto Munoz, Statistical Science 21(3): 352–357.&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>Hastie, T. and Zhu, J. (2006). Discussion of “Support vector machines with applications” by Javier Moguerza and Alberto Munoz, Statistical Science 21(3): 352–357.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3637,18 +3627,44 @@ K(x, y)=\Vert x-y\Vert^2\LOG(\Vert x-y\Vert)\tag{5.66}
               
               
                 
-                  <h2 id="__comments">Comments</h2>
-                  <div id="comment"></div>
-<script>
-    var disq = new iDisqus('comment', {
-    forum: 'esl-hohoweiya-xyz',
-    api: 'https://api.hohoweiya.xyz/disqus-old',
-    site: 'https://esl.hohoweiya.xyz',
-    mode: 1,
-    timeout: 3000,
-    init: true
-});
+                  <h2 id="__comments">💬 讨论区</h2>
+                  <script src="https://giscus.app/client.js"
+        data-repo="szcf-weiya/ESL-CN"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk2OTYyNTgzOA=="
+        data-category="评论区"
+        data-category-id="DIC_kwDOBCZn7s4ChHU6"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
 </script>
+
+
+<div id="disqus_thread"></div>
+<script>
+  if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+    var disqus_config = function () {
+      this.page.url = "https://esl.hohoweiya.xyz/05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html";
+      this.page.identifier =
+        "/05-Basis-Expansions-and-Regularization/5.8-Regularization-and-Reproducing-Kernel-Hibert-Spaces/index.html";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//esl-hohoweiya-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  } else {
+    console.log("Disqus is disabled on localhost.");
+  }
+</script>
+
+
                 
               
             </article>
@@ -3699,7 +3715,7 @@ K(x, y)=\Vert x-y\Vert^2\LOG(\Vert x-y\Vert)\tag{5.66}
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016-2019 weiya
+            Copyright &copy; 2016-2025 weiya
           </div>
         
         <!--
@@ -3709,7 +3725,7 @@ K(x, y)=\Vert x-y\Vert^2\LOG(\Vert x-y\Vert)\tag{5.66}
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
         -->
-        Last Build Date UTC : 2019-03-14 06:15:34
+        Last Build Date UTC : 2026-10-24 02:32:54
       </div>
       
         
@@ -3722,7 +3738,7 @@ K(x, y)=\Vert x-y\Vert^2\LOG(\Vert x-y\Vert)\tag{5.66}
     
       <a href="https://hohoweiya.xyz" class="md-footer-social__link fa fa-home"></a>
     
-      <a href="https://blog.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
+      <a href="https://stats.hohoweiya.xyz" class="md-footer-social__link fa fa-rss"></a>
     
       <a href="https://www.linkedin.com/in/szcfweiya/" class="md-footer-social__link fa fa-linkedin"></a>
     
@@ -3742,18 +3758,57 @@ K(x, y)=\Vert x-y\Vert^2\LOG(\Vert x-y\Vert)\tag{5.66}
     <!--
       
     -->
-	    <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+	    <script>app.initialize({version:"0.17.2+weiyapatch1",url:{base:"../.."}})</script>
 	          <!---->
 
     <script>var base_url = '../..';</script>
     <!--
       
     -->
+    <script src="../../js/baiduzhanzhang.js"></script>
     
     
       
         <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-85046550-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
+    <!--adjust disqus recommendation width (possibly occupied by ads)-->
+    <script>
+// 确保在 DOM 完全加载后执行
+document.addEventListener('DOMContentLoaded', function() {
+    // 定义修复宽度的函数
+    function fixDisqusWidth() {
+        const iframe = document.querySelector('#disqus_recommendations iframe');
+        if (iframe) {
+            iframe.style.cssText += 'width: 100% !important; max-width: 100% !important;';
+        }
+    }
+
+    // 初次尝试修复
+    fixDisqusWidth();
+
+    // 监听 Disqus 容器的动态加载
+    const observer = new MutationObserver(function(mutations) {
+        fixDisqusWidth();
+    });
+
+    // 获取 Disqus 容器
+    const targetNode = document.getElementById('disqus_recommendations');
+    if (targetNode) {
+        // 如果容器已存在，直接监听
+        observer.observe(targetNode, { childList: true, subtree: true });
+    } else {
+        // 如果容器未加载，监听整个文档直到其出现
+        const docObserver = new MutationObserver(function(mutations) {
+            const lateTarget = document.getElementById('disqus_recommendations');
+            if (lateTarget) {
+                observer.observe(lateTarget, { childList: true, subtree: true });
+                docObserver.disconnect();
+            }
+        });
+        docObserver.observe(document.body, { childList: true, subtree: true });
+    }
+});
+    </script>
   </body>
 </html>
